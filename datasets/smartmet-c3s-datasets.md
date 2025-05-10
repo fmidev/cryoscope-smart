@@ -17,14 +17,14 @@
 |Sea ice area fraction (ci)|0-1||IC-0TO1|
 |Total cloud cover (tcc)|0-1||N-0TO1|
 |Time-integrated northward turbulent surface stress (nsss)|N m-2 s||NSSS-NM2S|
-|Mean sea level pressure (msl)|Pa|PSEA-HPA|
+|Mean sea level pressure (msl)|Pa||PSEA-HPA|
 |Surface short-wave (solar) radiation downwards (ssrd)|J m-2||RADGLOA-JM2|
 |Surface long-wave (thermal) radiation downwards (strd)|J m-2||RADLWA-JM2|
 |Surface net long-wave (thermal) radiation (str)|J m-2||RNETLWA-JM2|
 |Surface net short-wave (solar) radiation (ssr)|J m-2||RNETSWA-JM2|
 |Runoff (ro)|m||RO-M|
 |Total precipitation (tp)|m||RR-M|
-|Top net long-wave (thermal) radiation (ttr)||J m-2|RTOPLWA-JM2|
+|Top net long-wave (thermal) radiation (ttr)|J m-2||RTOPLWA-JM2|
 |Snow depth (sd)|m of water equivalent||SD-M|
 |Snowfall (sf)|m of water equivalent||SNACC-KGM2|
 |Snow density (rsn)|kg m-3||SND-KGM3|
