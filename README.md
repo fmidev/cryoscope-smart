@@ -4,6 +4,8 @@ This repo...
 
  document explains how to interact with the SmartMet Server set up for the CryoSCOPE project. It is intended for users who need to query, visualize, or contribute data via the server.
 
+ See https://github.com/fmidev/cryoscope-smartmet for code. 
+
 
 ## Table of Contents
 
