@@ -14,7 +14,7 @@ This repo...
 - [Timeseries API](docs/02_Timeseries.md)
 - [WMS API](docs/03_WMS.md)
 - [EDR API](docs/04_EDR.md)
-- [Example scripts](docs/05_Examples.md)
+- [Examples](docs/05_Examples.md)
 - [Datasets available](docs/06_Datasets.md)
 - [Contact Us](docs/07_Contact.md)
 - [FAQ](docs/08_FAQ.md)
