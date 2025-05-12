@@ -17,6 +17,15 @@ This repo...
 - [EDR API](docs/04_EDR.md)
 - [Examples](docs/05_Examples.md)
 - [Datasets available](docs/06_Datasets.md)
-- [Contact Us](docs/07_Contact.md)
-- [FAQ](docs/08_FAQ.md)
+- [FAQ](docs/07_FAQ.md)
+
+## Contact Us
+
+Questions, feedback, or need support, feel free to reach out:
+
+👩‍💻 Maintainer: Anni Kröger, Finnish Meteorological Institute
+
+📧 Email: anni.kroger@fmi.fi
+
+🌐 About the CryoSCOPE project: https://cryoscope-project.eu
 
