@@ -1,4 +1,5 @@
 # SmartMet for CryoSCOPE
+SmartMet server is a...more in documentation below. 
 
 This repo...
 
@@ -7,7 +8,7 @@ This repo...
  See https://github.com/fmidev/cryoscope-smartmet for code. 
 
 
-## Table of Contents
+## Documentation
 
 - [SmartMet Server Overview](docs/00_Overview.md)
 - [Data Contribution Guide](docs/01_Data_Contribution.md)
