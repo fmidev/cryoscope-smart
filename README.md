@@ -6,6 +6,7 @@ This repo contains information on the SmartMet server for CryoSCOPE: documentati
 
 See https://github.com/fmidev/cryoscope-smartmet for server configuration and workflows.
 
+[Note: This repository is a work in progress during summer 2025.]
 
 ## Documentation
 
