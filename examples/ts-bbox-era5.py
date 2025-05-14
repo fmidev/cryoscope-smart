@@ -14,7 +14,7 @@ def ts_bbox_query(source,bbox,value,start,end,hours,name):
     ''' Timeseries query for bbox'''
     df=pd.DataFrame()
     query=f'http://{source}/timeseries?bbox={bbox}&param=utctime,latitude,longitude,{value}&starttime={start}&endtime={end}&hour={hours}&format=json&precision=full&tz=utc&timeformat=sql'
-    print(query)
+    print(query) # debugging - copy to browser and change format=debug
     response=requests.get(url=query)
     results_json=json.loads(response.content)
     #print(results_json) # for debugging
@@ -30,7 +30,7 @@ def ts_bbox_query(source,bbox,value,start,end,hours,name):
     return(df)
 
 # path to your output directory
-output_dir=f'/YOUR/PATH/'
+output_dir=f'/home/ubuntu/data/ML/'
 
 # bbox latitudes and longitudes
 latlons = {
@@ -45,20 +45,22 @@ bbox = f"{latlons['min_lon']},{latlons['min_lat']},{latlons['max_lon']},{latlons
 # ERA5 reanalysis parameters for query
 # own name : FMI-KEY
 ERA5_pars = [
-    {'u10':'U10-MS:ERA5:5021:1:0:1:0'},  # 10m u-component of wind (m/s)
-    {'v10':'V10-MS:ERA5:5021:1:0:1:0'},  # 10m v-component of wind (m/s)
-    {'t2':'T2-K:ERA5:5021:1:0:1:0'},     # 2m temperature (K)
-    {'t850': 'T-K:ERA5:5021:2:850:1:0'}, # temperature (K), pressure level 850 hPa       
-    {'t700': 'T-K:ERA5:5021:2:700:1:0'}, # temperature (K), pressure level 700 hPa 
-    {'t500': 'T-K:ERA5:5021:2:500:1:0'}  # temperature (K), pressure level 500 hPa
+    {'u10-ms':'U10-MS:ERA5:5021:1:0:1:0'},  # 10m u-component of wind (m/s)
+    {'v10-ms':'V10-MS:ERA5:5021:1:0:1:0'},  # 10m v-component of wind (m/s)
+    {'t2-K':'T2-K:ERA5:5021:1:0:1:0'},     # 2m temperature (K)
+    {'t2-C':'SUM{T2-K:ERA5:5021:1:0:1:0;-273.15}'},     # 2m temperature (C)
+    {'t850-K': 'T-K:ERA5:5021:2:850:1:0'}, # temperature (K), pressure level 850 hPa       
+    {'t700-K': 'T-K:ERA5:5021:2:700:1:0'}, # temperature (K), pressure level 700 hPa 
+    {'t500-K': 'T-K:ERA5:5021:2:500:1:0'}  # temperature (K), pressure level 500 hPa
 ]
 
 # ERA5 daily statistics (ERA5D) parameters for query
 # own name : FMI-KEY
 ERA5D_pars = [
-    {'tp':'RR-M:ERA5D:5021:1:0:1'},     # Previous day sum Total precipitation
-    {'mx2t':'TMAX-K:ERA5D:5021:1:0:1'}, # Previous day maximum Maximum temperature in the last 24h
-    {'mn2t':'TMIN-K:ERA5D:5021:1:0:1'}  # Previous day minimum Minimum temperature in the last 24h
+    {'tp-m':'RR-M:ERA5D:5021:1:0:1'},     # Previous day sum Total precipitation (m)
+    {'tp-mm':'MUL{RR-M:ERA5D:5021:1:0:1;1000}'},     # Previous day sum Total precipitation (mm)
+    {'mx2t-K':'TMAX-K:ERA5D:5021:1:0:1'}, # Previous day maximum Maximum temperature in the last 24h (K)
+    {'mn2t-K':'TMIN-K:ERA5D:5021:1:0:1'}  # Previous day minimum Minimum temperature in the last 24h (K)
 ]
 
 # SmartMet server hosting the data
