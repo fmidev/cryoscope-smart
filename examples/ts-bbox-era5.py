@@ -30,7 +30,7 @@ def ts_bbox_query(source,bbox,value,start,end,hours,name):
     return(df)
 
 # path to your output directory
-output_dir=f'/home/ubuntu/data/ML/'
+output_dir=f'/YOUR/PATH/'
 
 # bbox latitudes and longitudes
 latlons = {
