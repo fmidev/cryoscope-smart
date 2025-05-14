@@ -13,7 +13,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 def ts_bbox_query(source,bbox,value,start,end,hours,name):
     ''' Timeseries query for bbox'''
     df=pd.DataFrame()
-    query=f'http://{source}/timeseries?bbox={bbox}&param=utctime,latitude,longitude,{value}&starttime={start}&endtime={end}&hour={hours}&format=json&precision=full&tz=utc&timeformat=sql'
+    query=f'http://{source}/timeseries?bbox={bbox}&param=utctime,latitude,longitude,{value}&starttime={start}&endtime={end}&hour={hours}&format=json&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z'
     print(query) # debugging - copy to browser and change format=debug
     response=requests.get(url=query)
     results_json=json.loads(response.content)
@@ -68,7 +68,7 @@ source='desm.harvesterseasons.com:8080'
 
 # start and end for timeseries period
 # YYYYMMDDTHHMMSSZ
-start='20220101T000000Z'
+start='20200101T000000Z'
 end='20221231T120000Z'
 
 # timesteps for query 
