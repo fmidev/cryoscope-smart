@@ -2,7 +2,9 @@
 
 The Timeseries plugin can be used to fetch time series information for observation and forecast data, with specific time or time interval chosen by the user. The datasets can be downloaded with an HTTP request which contains the parameters needed to obtain the information, processing the results and formatting the output. (Note: Examples of Python scripts for the Timeseries API with output in CSV can be found in [Examples](05_Examples.md)).
 
-For more detailed information, see "the official" [Timeseries API documentation](https://github.com/fmidev/smartmet-plugin-timeseries/tree/master).
+For more detailed information, see "the official" [Timeseries API documentation](https://github.com/fmidev/smartmet-plugin-timeseries/tree/master). This document follows the official Timeseries doc, adapted to the CryoSCOPE project. 
+
+## Example HTTP request
 
 A simple example of an HTTP request: 
 
@@ -24,34 +26,38 @@ Let's break it down:
 
 *Figure 2. FMI Key can be copied from grid-gui to Timeseries request.*
 
+## Locations and areas
+
+Timeseries data can be requested for one (latlon) or multiple point (latlons) locations, or for an area inside a bounding box (bbox). There are several other parameters for geographical locations listed in the the official [Timeseries API documentation](https://github.com/fmidev/smartmet-plugin-timeseries/tree/master). 
+
+radius
+bbox grid points
+
+|parameter|description|
+|:-|:-|
+|latlon||
+|lonlat||
+|latlons|The list of requested geographical locations expressed by the latitude and the longitude coordinates `latlons=60.17,24.94,60.45,22.27,61.50,23.76`|
+|lonlats||
+|bbox||
+
+Below are a few example queries. 
+
+Data for locations around point (`latlon=22.4545,73.111`) with radius of the area 30 km, returns data for 4 ERA5 grid points within that area:
+
+https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111:30&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
+
+https://sm.cryo-scope.eu/timeseries?lonlats=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z&grouplocations=1
+
+https://sm.cryo-scope.eu/timeseries?lonlats=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
+
+https://sm.cryo-scope.eu/timeseries?bbox=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
 
-functions
+## Time period
 
-bbox, area, point, etc
+## Functions 
 
-formats
+## Response formatting
 
-time
-
-Key features:
-
-Location-based queries: request data for coordinates, place names, administrative areas, or polygons.
-
-Time range selection: flexible definition of start and end times, temporal resolution, and step length.
-
-Variable selection: access to a wide range of forecast, observation, and reanalysis parameters.
-
-Multiple formats: results available in JSON, XML, or CSV for easy integration with applications and workflows.
-
-Aggregation & statistics: compute averages, sums, maxima/minima, or other statistics over defined periods.
-
-Integration: well-suited for modeling, visualization dashboards, or application backends that need on-demand timeseries data.
-
-Example use cases:
-
-Extracting temperature and precipitation forecasts for wildfire risk modeling.
-
-Providing soil moisture time series to support trafficability assessments.
-
-Supplying climate indicators for user-facing services and decision support systems.
+## Available data sets

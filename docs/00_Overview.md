@@ -24,6 +24,8 @@ screenshot(s) of grid-gui
 
 fmi-key break down
 
+ks timeseries official doc for source! (anni note)
+
 geometry
 
 etc kaikki muuttujat siinä vasemmalla
