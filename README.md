@@ -15,7 +15,7 @@ See https://github.com/fmidev/cryoscope-smartmet for server configuration and wo
 - [Timeseries API](docs/02_Timeseries.md)
 - [WMS API](docs/03_WMS.md)
 - [EDR API](docs/04_EDR.md)
-- [Examples](docs/05_Examples.md)
+- [Script Examples (Python)](docs/05_Examples.md)
 - [Datasets available](docs/06_Datasets.md)
 - [Example end-user service: HarvesterSeasons](docs/07_HarvesterSeasons.md)
 - [FAQ](docs/08_FAQ.md)
