@@ -28,31 +28,32 @@ Let's break it down:
 
 ## Locations and areas
 
-Timeseries data can be requested for one (latlon) or multiple point (latlons) locations, or for an area inside a bounding box (bbox). There are several other parameters for geographical locations listed in the the official [Timeseries API documentation](https://github.com/fmidev/smartmet-plugin-timeseries/tree/master). 
-
-radius
-bbox grid points
+Timeseries data can be requested for one (latlon, lonlat) or multiple point (latlons,lonlats) locations, or for an area inside a bounding box (bbox). To get data around a given location, user can define the centre location and radius for the circular area from which the data is requested.
 
 |parameter|description|
 |:-|:-|
-|latlon||
-|lonlat||
-|latlons|The list of requested geographical locations expressed by the latitude and the longitude coordinates `latlons=60.17,24.94,60.45,22.27,61.50,23.76`|
-|lonlats||
-|bbox||
+|latlon|The requested geographical location expressed by the latitude and the longitude coordinates `latlon=22.4545,73.111`|
+|lonlat|The requested geographical location expressed by the longitude and the latitude coordinates `lonlat=73.111,22.4545`|
+|latlons|The list of requested geographical locations expressed by the latitude and the longitude coordinates `latlons=30.0,77.5,31.1,80.1,30.5,79.2`|
+|lonlats|The requested geographical location expressed by the longitude and the latitude coordinates `lonlats=77.5,30.0,80.1,31.1,79.2,30.5`|
+|bbox|The requested geographical area expressed as the bounding box coordinates `bbox=77.5,30.0,80.1,31.1`. Returns all data points inside that area. Syntax is bbox=minlon,minlat,maxlon,maxlat|
 
-Below are a few example queries. 
+Below are a few additional example queries. 
 
 Data for locations around point (`latlon=22.4545,73.111`) with radius of the area 30 km, returns data for 4 ERA5 grid points within that area:
 
 https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111:30&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
-https://sm.cryo-scope.eu/timeseries?lonlats=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z&grouplocations=1
+Data for 3 locations (`lonlats=77.5,30.0,80.1,31.1,79.2,30.5`):
+ 
+https://sm.cryo-scope.eu/timeseries?lonlats=77.5,30.0,80.1,31.1,79.2,30.5&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z&grouplocations=1
 
-https://sm.cryo-scope.eu/timeseries?lonlats=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
+
+Data for points within the bounding box `bbox=77.5,30.0,80.1,31.1`:
 
 https://sm.cryo-scope.eu/timeseries?bbox=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
+(There are several other parameters for geographical locations listed in the the official [Timeseries API documentation](https://github.com/fmidev/smartmet-plugin-timeseries/tree/master). Some of them are not valid for CryoScope SmartMet as they would require additional configurations.)
 
 ## Time period
 
