@@ -17,7 +17,8 @@ See https://github.com/fmidev/cryoscope-smartmet for server configuration and wo
 - [EDR API](docs/04_EDR.md)
 - [Examples](docs/05_Examples.md)
 - [Datasets available](docs/06_Datasets.md)
-- [FAQ](docs/07_FAQ.md)
+- [Example end-user service: HarvesterSeasons](docs/07_HarvesterSeasons.md)
+- [FAQ](docs/08_FAQ.md)
 
 ## Contact Us
 
