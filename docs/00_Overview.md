@@ -13,7 +13,11 @@ SmartMet server is a data and product server that provides access to observation
 
 Both project’s internal and external users can access and explore the CryoSCOPE datasets via SmartMet server APIs (e.g. Timeseries, WMS, EDR) and the general data browser (grid-gui).
 
-Timeseries, WMS, EDR 
+[Timeseries](02_Timeseries.md) to get time series data. 
+
+[WMS](03_WMS.md) for web map layers. 
+
+[EDR](04_EDR.md) for environmental data retrieval. 
 
 ## Why SmartMet for CryoSCOPE? 
 - Centralized data access: 
