@@ -40,7 +40,7 @@ Timeseries data can be requested for one (latlon, lonlat) or multiple point (lat
 
 Below are a few additional example queries. 
 
-Data for locations around point (`latlon=22.4545,73.111`) with radius of the area 30 km, returns data for 4 ERA5 grid points within that area:
+Data for locations around point with radius of the area 30 km (`latlon=22.4545,73.111:30`), returns data for 4 ERA5 grid points within that area:
 
 https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111:30&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
@@ -49,7 +49,7 @@ Data for 3 locations (`lonlats=77.5,30.0,80.1,31.1,79.2,30.5`):
 https://sm.cryo-scope.eu/timeseries?lonlats=77.5,30.0,80.1,31.1,79.2,30.5&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z&grouplocations=1
 
 
-Data for points within the bounding box `bbox=77.5,30.0,80.1,31.1`:
+Data for points within the bounding box (`bbox=77.5,30.0,80.1,31.1`):
 
 https://sm.cryo-scope.eu/timeseries?bbox=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
