@@ -5,7 +5,7 @@
 - Main dissemination server: **sm.cryo-scope.eu** 
 - Secondary server: firedanger.nsdc.fmi.fi (testing and development)
 - General data browser (grid-gui): https://sm.cryo-scope.eu/grid-gui
-- NOTE! Server to service data for Europe **desm.harvesterseasons.com** (not to duplicate existing datasets from previous work), https://desm.harvesterseasons.com/grid-gui
+- NOTE! Server to service data for Europe **desm.harvesterseasons.com** and https://desm.harvesterseasons.com/grid-gui (not to duplicate existing datasets from previous work)
 - [The official SmartMet server documentation](https://github.com/fmidev/smartmet-server)
 
 ## What is SmartMet server? 
