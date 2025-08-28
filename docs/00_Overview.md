@@ -12,6 +12,9 @@
     - [Geometry](#geometry)
     - [Time group and time](#time-group-and-time)
     - [Presentation](#presentation)
+    - [Projection](#projection)
+    - [Color map](#color-map)
+    - [FMI Key](#fmi-key)
 
 ## SmartMet server - sources and links
 
@@ -131,4 +134,20 @@ For each producer, there are different sets of available parameters with SmartMe
 
 *Figure 10. .* 
 
+### Projection 
 
+![figure 11](../projection.png)
+
+*Figure 11. .* 
+
+
+### Color map
+![figure 12](../colormap.png)
+
+*Figure 12. .* 
+
+### FMI Key
+
+![figure 13](../ecsf-fmi-key.png)
+
+*Figure 13. .* 
