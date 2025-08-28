@@ -22,7 +22,7 @@ Both project’s internal and external users can access and explore the CryoSCOP
 ## Why SmartMet for CryoSCOPE? 
 - Centralized data access: 
 - Standard APIs
-- end-user services with data from smartmet
+- End-user services with data directly from Smartmet: simple & efficient
 
 ## Grid-GUI interface
 
