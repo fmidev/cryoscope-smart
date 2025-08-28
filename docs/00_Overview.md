@@ -25,6 +25,21 @@ Both project’s internal and external users can access and explore the CryoSCOP
 - end-user services with data from smartmet
 
 ## Grid-GUI interface
+
+The general data browsers (grid-gui) can be found from: 
+- https://sm.cryo-scope.eu/grid-gui (Figure 1) or
+- https://desm.harvesterseasons.com/grid-gui 
+
+The latter one already has a lot of data for European domain. However, main dissemination server for CryoSCOPE will be **sm.cryo-scope.eu**. 
+
+
+![figure 1](../smartmet-view.png)
+*Figure 1. View of grid-gui interface for sm.cryo-scope.eu/grid-gui.*
+
+From the grid-gui interface user can browse available producers, products (data sets), parameters, and time periods. It is a useful tool for [Timeseries](02_Timeseries.md) requests and other APIs.  
+
+
+
 screenshot(s) of grid-gui
 
 fmi-key break down
