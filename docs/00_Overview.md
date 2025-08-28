@@ -1,5 +1,18 @@
 # SmartMet server for CryoSCOPE - Overview
 
+- [SmartMet server - sources and links](#smartmet-server---sources-and-links)
+- [What is SmartMet server?](#what-is-smartmet-server)
+- [Why SmartMet for CryoSCOPE?](#why-smartmet-for-cryoscope)
+- [Grid-GUI interface](#grid-gui-interface)
+    - [Producers](#producers)
+    - [Generation](#generation)
+    - [Parameter](#parameter)
+    - [Level type and value](#level-type-and-value)
+    - [Forecast type and number](#forecast-type-and-number)
+    - [Geometry](#geometry)
+    - [Time group and time](#time-group-and-time)
+    - [Presentation](#presentation)
+
 ## SmartMet server - sources and links
 
 - Main dissemination server: **sm.cryo-scope.eu** 
@@ -53,7 +66,6 @@ The general data browsers (grid-gui) can be found from:
 
 The latter one already has a lot of data for European domain. However, main dissemination server for CryoSCOPE will be **sm.cryo-scope.eu**. 
 
-
 ![figure 1](../smartmet-view.png)
 
 *Figure 1. View of grid-gui interface for [sm.cryo-scope.eu/grid-gui](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=1766;fn=0;ft=1;g=156;gm=5080;hu=128;is=DarkGrey;iv=Generated;k=T2-K:ERA5:5080:1:0:1:0;l=0;lb=Default;lm=LightGrey;lo=None;lt=1;m=3;max=16;mi=Default;min=6;p=T2-K;pg=main;pi=9;pn=ERA5;pre=Image;pro=5080;sa=60;sm=LightCyan;st=10;sy=None;t=20250704T000000;tg=202507;tgt=Month;u=;xx=;yy=;&cm=Temperature%20(240K..341K)).*
@@ -85,7 +97,6 @@ In some cases, the data is stored in separate generations to avoid overlapping i
 
 For each producer, there are different sets of available parameters with SmartMet server shortnames and explanations. Note: the shortname syntax is PARAMETER-UNIT but in some cases the actual units differ from the parameter name. Some parameters, like temperatures, are also available in different units (celcius in addition to Kelvins), but those are not shown in grid-gui, unfortunately. Refer to [Datasets tables](06_Datasets.md) for more information. 
 
-
 ### Level type and value
 
 ![figure 5](../levels.png)
@@ -107,4 +118,17 @@ For each producer, there are different sets of available parameters with SmartMe
 ![figure 8](../geometry.png)
 
 *Figure 8. .* 
+
+### Time group and time
+
+![figure 9](../times.png)
+
+*Figure 9. .* 
+
+### Presentation
+
+![figure 10](../presentation.png)
+
+*Figure 10. .* 
+
 

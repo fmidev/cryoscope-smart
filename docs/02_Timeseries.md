@@ -1,5 +1,15 @@
 # Timeseries API
 
+- [Timeseris API Overview](#overview)
+- [Example HTTP request](#example-http-request)
+- [Locations and areas](#locations-and-areas)
+- [Time period](#time-period)
+- [Functions](#functions)
+- [Response formatting](#response-formatting)
+- [Available data sets](#available-data-sets)
+
+## Timeseries API Overview 
+
 The Timeseries plugin can be used to fetch time series information for observation and forecast data, with specific time or time interval chosen by the user. The datasets can be downloaded with an HTTP request which contains the parameters needed to obtain the information, processing the results and formatting the output. (Note: Examples of Python scripts for the Timeseries API with output in CSV can be found in [Examples](05_Examples.md)).
 
 To see what data is available, check out the general data browsers (grid-gui) at
