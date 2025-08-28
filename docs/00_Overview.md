@@ -150,4 +150,22 @@ For each producer, there are different sets of available parameters with SmartMe
 
 ![figure 13](../ecsf-fmi-key.png)
 
-*Figure 13. .* 
+*Figure 13. Example of one FMI key.* 
+
+FMI key is an unique identifier for data that is used for example in [Timeseries](02_Timeseries.md) requests. It consists of 7 fields (example from Figure 13):
+
+**T-K:ECSF:5081:2:500:3:8**
+
+1. Parameter name (T-K Temperature in Kelvins)
+2. Producer name (ECSF)
+3. Grid geometry number (5081 for ECSF grid India-Himalayas domain)
+4. Level type (2 = Pressure level)
+5. Level (500 hPa level)
+6. Forecast type (3 = Ensemble forecast)
+7. Forecast number (8 = 8th Ensemble member)
+
+Therefore, user can make Timeseries requests for parameters from multiple producers and multiple levels with the same request using these unique identifiers. Here is an example request for ERA5 reanalysis 2 m temperature and ECSF seasonal forecast temperature at 500 hPa, for same time period (try it out!): 
+
+https://sm.cryo-scope.eu/timeseries?latlon=31.3,77.3&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,T-K:ECSF:5081:2:500:3:8&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=12&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
+
+More details in [Timeseries](02_Timeseries.md) documentation. 
