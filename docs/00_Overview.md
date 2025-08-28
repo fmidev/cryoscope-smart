@@ -43,6 +43,7 @@ The server provides several output interfaces:
 - Centralized data access
 - Standard APIs
 - End-user services with Smartmet as the backend data server: simple & efficient
+- A cool and powerful tool for many purposes! E.g., machine learning data preparation, showcasing CryoSCOPE data products, services presenting CryoSCOPE data in an accessible and user-friendly format, etc.
 
 ## Grid-GUI interface
 
