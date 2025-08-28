@@ -152,7 +152,7 @@ For each producer, there are different sets of available parameters with SmartMe
 
 *Figure 13. Example of one FMI key.* 
 
-FMI key is an unique identifier for data that is used for example in [Timeseries](02_Timeseries.md) requests. It consists of 7 fields (example from Figure 13):
+FMI key is an unique identifier for data that is used for example in [Timeseries](02_Timeseries.md) requests. It consists of 7 fields (Figure 13):
 
 **T-K:ECSF:5081:2:500:3:8**
 
