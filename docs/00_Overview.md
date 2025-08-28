@@ -42,7 +42,7 @@ The server provides several output interfaces:
 ## Why SmartMet for CryoSCOPE? 
 - Centralized data access
 - Standard APIs
-- End-user services with data directly from Smartmet: simple & efficient
+- End-user services with Smartmet as the backend data server: simple & efficient
 
 ## Grid-GUI interface
 
