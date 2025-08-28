@@ -40,7 +40,7 @@ The server provides several output interfaces:
 - Raster images
 
 ## Why SmartMet for CryoSCOPE? 
-- Centralized data access: 
+- Centralized data access
 - Standard APIs
 - End-user services with data directly from Smartmet: simple & efficient
 
