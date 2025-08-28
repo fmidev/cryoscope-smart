@@ -5,6 +5,9 @@
 - [Locations and areas](#locations-and-areas)
 - [Time period](#time-period)
 - [Functions](#functions)
+    - [Aggregate functions over an area](#aggregate-functions-over-an-area)
+    - [Aggregate functions over a time interval](#aggregate-functions-over-a-time-interval)
+    - [Mathematical & Unit Change Functions (Grid-Engine Functions)](#mathematical--unit-change-functions-grid-engine-functions)
 - [Response formatting](#response-formatting)
 - [Available data sets](#available-data-sets)
 
@@ -97,6 +100,29 @@ Seasonal forecast (control run) with origintime `20250801T000000Z` ([ECSF datase
 https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=utctime,latitude,longitude,T2-K:ECSF:5081:1:0:1:0&starttime=20250815T000000Z&endtime=20251231T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20250801T000000Z
 
 ## Functions 
+
+### Aggregate functions over an area
+
+The following aggregate functions can be used to calculate the aggregate values over a given geographical area.
+
+|Function| 	Description|
+|:-|:-|
+|median(field) 	|The median value of the field evaluated over the given area.|
+mean(field) 	The mean value of the field evaluated over the given area.
+circlemean(field) 	The circular mean value of a direction parameter over the given area or time.
+min(field) 	The minimum value of the field in the given area.
+max(field) 	The maximum value of the field in the given area.
+sum(field) 	The sum of the field values calculated over the given area.
+integ(field) 	The weighted sum of the field values calculated over the given area. Duration is used as the weight.
+sdev(field) 	The standard deviation of the field values calculated over the given area.
+trend(field) 	The trend of the field values calculated over the given area.
+change(field) 	The change of the field values calculated over the given area.
+count[min:max](field) 	The number of the field values in the given range (min..max) calculated over the given area. The function returns the total number of the field values if no range is given.
+percentage[min:max](field) 	The percentage of the field values in the given range (min..max) calculated over the given area. The function return 100 (%) if no range is given.
+
+### Aggregate functions over a time interval
+
+### Mathematical & Unit Change Functions (Grid-Engine Functions)
 
 ## Response formatting
 
