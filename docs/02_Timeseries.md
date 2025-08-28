@@ -2,6 +2,12 @@
 
 The Timeseries plugin can be used to fetch time series information for observation and forecast data, with specific time or time interval chosen by the user. The datasets can be downloaded with an HTTP request which contains the parameters needed to obtain the information, processing the results and formatting the output. (Note: Examples of Python scripts for the Timeseries API with output in CSV can be found in [Examples](05_Examples.md)).
 
+To see what data is available, check out the general data browsers (grid-gui) at
+- https://sm.cryo-scope.eu/grid-gui (CryoSCOPE main dissemination server)
+- https://desm.harvesterseasons.com/grid-gui (already hosts a lot of European domain data)
+
+and see grid-gui documentation in [SmartMet Overview](00_Overview.md).
+
 For more detailed information, see "the official" [Timeseries API documentation](https://github.com/fmidev/smartmet-plugin-timeseries/tree/master). This document follows the official Timeseries doc, adapted to the CryoSCOPE project. 
 
 ## Example HTTP request

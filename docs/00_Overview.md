@@ -85,13 +85,25 @@ In some cases, the data is stored in separate generations to avoid overlapping i
 For each producer, there are different sets of available parameters with SmartMet server shortnames and explanations. Note: the shortname syntax is PARAMETER-UNIT but in some cases the actual units differ from the parameter name. Some parameters, like temperatures, are also available in different units (celcius in addition to Kelvins), but those are not shown in grid-gui, unfortunately. Refer to [Datasets tables](06_Datasets.md) for more information. 
 
 
+### Level type and value
 
-screenshot(s) of grid-gui
+![figure 5](../levels.png)
 
-fmi-key break down
+*Figure 5. .* 
 
-ks timeseries official doc for source! (anni note)
+### Forecast type and number
 
-geometry
+![figure 6](../forecast_type.png)
 
-etc kaikki muuttujat siinä vasemmalla
+*Figure 6. .* 
+
+![figure 7](../ensemble.png)
+
+*Figure 7. .* 
+
+### Geometry 
+
+![figure 8](../geometry.png)
+
+*Figure 8. .* 
+
