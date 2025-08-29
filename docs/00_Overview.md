@@ -133,19 +133,23 @@ For each producer, there are different sets of available parameters with SmartMe
 ![figure 10](../presentation.png)
 
 *Figure 10. Several presentations for the grid-gui view are available, Image being the default.* 
- 
+
+Image is the default Presentation. Info shows information on, f.ex., the source grib such as **gribParameterId** and **gribParameterName**, along with other possibly useful details.  
 
 ### Projection 
 
 ![figure 11](../projection.png)
 
-*Figure 11. .* 
+*Figure 11. Default projection configured for ERA5 India-Himalayas data set.* 
 
+There are several available projections, default is the one configured for a certain data set. 
 
 ### Color map
 ![figure 12](../colormap.png)
 
-*Figure 12. .* 
+*Figure 12. Available alternatives for Color map for grid-gui display.* 
+
+User can choose a few other alternatives for the display on the grid-gui view, default in None. Figure 12 shows available alternatives. For example Figure 1 has Temperature (240K...341K) as Color map. 
 
 ### FMI Key
 

@@ -108,17 +108,17 @@ The following aggregate functions can be used to calculate the aggregate values 
 |Function| 	Description|
 |:-|:-|
 |median(field) 	|The median value of the field evaluated over the given area.|
-mean(field) 	The mean value of the field evaluated over the given area.
-circlemean(field) 	The circular mean value of a direction parameter over the given area or time.
-min(field) 	The minimum value of the field in the given area.
-max(field) 	The maximum value of the field in the given area.
-sum(field) 	The sum of the field values calculated over the given area.
-integ(field) 	The weighted sum of the field values calculated over the given area. Duration is used as the weight.
-sdev(field) 	The standard deviation of the field values calculated over the given area.
-trend(field) 	The trend of the field values calculated over the given area.
-change(field) 	The change of the field values calculated over the given area.
-count[min:max](field) 	The number of the field values in the given range (min..max) calculated over the given area. The function returns the total number of the field values if no range is given.
-percentage[min:max](field) 	The percentage of the field values in the given range (min..max) calculated over the given area. The function return 100 (%) if no range is given.
+|mean(field) 	|The mean value of the field evaluated over the given area.
+|circlemean(field) |	The circular mean value of a direction parameter over the given area or time.|
+|min(field) |	The minimum value of the field in the given area.|
+|max(field) |	The maximum value of the field in the given area.|
+|sum(field) |	The sum of the field values calculated over the given area.|
+|integ(field) 	|The weighted sum of the field values calculated over the given area. Duration is used as the weight.|
+|sdev(field) |	The standard deviation of the field values calculated over the given area.|
+|trend(field) |	The trend of the field values calculated over the given area.
+|change(field) |	The change of the field values calculated over the given area.|
+|count[min:max](field)| 	The number of the field values in the given range (min..max) calculated over the given area. The function returns the total number of the field values if no range is given.|
+|percentage[min:max](field) |	The percentage of the field values in the given range (min..max) calculated over the given area. The function return 100 (%) if no range is given.|
 
 ### Aggregate functions over a time interval
 
