@@ -4,9 +4,7 @@ This section includes links to python scripts for Timeseries queries. The script
 
   - [Links to example scripts](#links-to-example-scripts)
   - [ERA5 for given bounding box (bbox)](#era5-for-given-bounding-box-bbox)
-    - [Parameter list (Table 1)](#parameter-list-table-1)
-    - [Bounding box figure](#bounding-box-figure)
-    - [Example query](#example-query)
+
 
 ## Links to example scripts
 - [Requirements](../xgb2-conda-env.yml)
