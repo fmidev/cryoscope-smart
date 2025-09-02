@@ -2,7 +2,13 @@
 
 This section includes links to python scripts for Timeseries queries. The scripts save data as csv files and, in some cases, plot time series of data. These are intended as examples of various ways to get data via [Timeseries API](02_Timeseries.md). 
 
-## Example scripts
+  - [Links to example scripts](#links-to-example-scripts)
+  - [ERA5 for given bounding box (bbox)](#era5-for-given-bounding-box-bbox)
+    - [Parameter list (Table 1)](#parameter-list-table-1)
+    - [Bounding box figure](#bounding-box-figure)
+    - [Example query](#example-query)
+
+## Links to example scripts
 - [Requirements](../xgb2-conda-env.yml)
 - [ERA5 for given bounding box (bbox)](../examples/ts-bbox-era5.py)
 
