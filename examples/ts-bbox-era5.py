@@ -64,6 +64,7 @@ ERA5D_pars = [
 ]
 
 # SmartMet server hosting the data
+# For Europen domain, source is desm.harvesterseasons.com:8080
 source='desm.harvesterseasons.com:8080'
 
 # start and end for timeseries period
