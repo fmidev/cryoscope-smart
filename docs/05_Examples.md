@@ -4,7 +4,7 @@ This section includes links to python scripts for Timeseries queries. The script
 
   - [Links to example scripts](#links-to-example-scripts)
   - [ERA5 for given bounding box (bbox)](#era5-for-given-bounding-box-bbox)
-
+  - [ECSF for multiple locations & time series plot](#ecsf-for-multiple-locations--time-series-plot)
 
 ## Links to example scripts
 - [Requirements](../xgb2-conda-env.yml)
@@ -38,8 +38,11 @@ The requested are is shown as red rectangle in Figure 1.
 
 *Figure 1. Bounding box for the Timeseries query (in red).*
 
-As this is for European domain, the source server is *desm.harvesterseasons.com*. Each parameter is queried separately, example query this script produces (with format chagnged to debug here): 
+As this is for European domain, the source server is *desm.harvesterseasons.com*. Each parameter is queried separately, example query this script produces (with format changed to debug here): 
 
 http://desm.harvesterseasons.com:8080/timeseries?bbox=23.604126,59.642764,26.251831,60.777937&param=utctime,latitude,longitude,MUL%7bRR-M:ERA5D:5021:1:0:1;1000%7d&starttime=20220101T000000Z&endtime=20221231T120000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
 You could also query all parameters with one request, but for large queries (multiple timesteps, multiple grid points or locations) it is more efficient to request one parameter at a time. 
+
+## ECSF for multiple locations & time series plot
+
