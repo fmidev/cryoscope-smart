@@ -16,3 +16,10 @@ Figure 1. View of the Harvester Seasons service.
 
 ![figure 2](../lua.jpg)
 
+### WMS layers for map vizualisation 
+
+![figure 2](../wms.jpg)
+
+### Time series graphs
+
+![figure 2](../times.jpg)
