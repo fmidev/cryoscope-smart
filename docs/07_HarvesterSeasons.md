@@ -4,5 +4,7 @@ With smartmet server as backend, yOu can build services for end-user showcasing 
 
 The service has three main components: index for trafficability conditions, WMS layers, and time series graphs. 
 
+![figure 1](../harvesterseasons.jpg)
+
 ### Define own indexes with LUA functions
 
