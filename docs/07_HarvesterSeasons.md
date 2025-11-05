@@ -36,3 +36,9 @@ Users can zoom, pan, and switch between layers to view different variables (e.g.
 ### Time series graphs
 
 ![figure 2](../times.jpg)
+
+The time series view allows users to explore temporal evolution of key variables and indices at a selected location. By clicking a point on the map, the service retrieves corresponding data values through the SmartMet Server Timeseries API, and plots them as interactive graphs. More on Timeseries API in [Timeseries](02_Timeseries.md).  
+
+Users can compare multiple parameters (here, for example, soil water index, soil temperature, and snow depth). The graphs can show past observed, near-real-time, and forecasted data. Black vertical line is for current date. (In Harvester Seasons, seasonal forecasts with its 51-ensemble members are plotted, hence the crowded plots.)  
+
+Time series functionality helps users understand local variability and trends — for instance, how soil conditions or snow depth evolve during a season, or how forecasted conditions differ from recent observations.
