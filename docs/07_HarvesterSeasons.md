@@ -26,6 +26,13 @@ Figure 2. Trafficability Index
 
 ![figure 2](../wms.jpg)
 
+More about WMS layers in [WMS](03_WMS.md). 
+
+With SmartMet Server Web Map Service (WMS) layers, the data can be interactively explored on a map interface. Each map layer provides spatial and temporal visualization of key environmental parameters and indices, allowing users to assess changing conditions across regions and seasons.
+
+Users can zoom, pan, and switch between layers to view different variables (e.g. soil water index, soil temperature, snow height, etc). Some layers become available when zooming out/in. The interface includes a time-slider for that can enable stepping through historical records, near-real-time updates, or forecasted conditions. 
+
+
 ### Time series graphs
 
 ![figure 2](../times.jpg)
