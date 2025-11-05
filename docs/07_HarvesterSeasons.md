@@ -12,12 +12,14 @@ The service has three main components: Trafficability index, WMS layers, and Tim
 
 Figure 1. View of the Harvester Seasons service. 
 
+(Note: figures here have quite poor quality, updated later!)
 
 ### Define own indices with LUA functions
 
 Harvester Seasons shows Trafficability Summer/Winter Index that indicates whether forest terrain is suitable for heavy machinery to operate - with simple Good, Bad, No data states. Here, trafficability refers to vehicle bearing capacity of the ground based on soil and snow conditions. Similarly, other indices can be derived data using f.ex. thresholds implemented in SmartMet Server LUA functions, for the CryoSCOPE project end-user services. 
 
 ![figure 2](../lua.jpg)
+
 Figure 2. Trafficability Index
 
 ### WMS layers for map vizualisation 
