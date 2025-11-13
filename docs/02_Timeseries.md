@@ -101,26 +101,20 @@ https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=utctime,latitude
 
 ## Functions 
 
+There are several ready functions available and listed in the official [Timeseries API documentation: Functions](https://github.com/fmidev/smartmet-plugin-timeseries/blob/master/docs/Using-the-Timeseries-API.md#functions), see tables there for all functions. Here below are a few examples. 
+
 ### Aggregate functions over an area
 
-The following aggregate functions can be used to calculate the aggregate values over a given geographical area.
+Get minimum, maximum and mean ERA5 2m temperatures (K) for area within the bounding box (`bbox=77.5,30.0,80.1,31.1`), and rename variables:
 
-|Function| 	Description|
-|:-|:-|
-|median(field) 	|The median value of the field evaluated over the given area.|
-|mean(field) 	|The mean value of the field evaluated over the given area.
-|circlemean(field) |	The circular mean value of a direction parameter over the given area or time.|
-|min(field) |	The minimum value of the field in the given area.|
-|max(field) |	The maximum value of the field in the given area.|
-|sum(field) |	The sum of the field values calculated over the given area.|
-|integ(field) 	|The weighted sum of the field values calculated over the given area. Duration is used as the weight.|
-|sdev(field) |	The standard deviation of the field values calculated over the given area.|
-|trend(field) |	The trend of the field values calculated over the given area.
-|change(field) |	The change of the field values calculated over the given area.|
-|count[min:max](field)| 	The number of the field values in the given range (min..max) calculated over the given area. The function returns the total number of the field values if no range is given.|
-|percentage[min:max](field) |	The percentage of the field values in the given range (min..max) calculated over the given area. The function return 100 (%) if no range is given.|
+[https://sm.cryo-scope.eu/timeseries?bbox=77.5,30.0,80.1,31.1&param=utctime,latitude,longitude,min(T2-K:ERA5:5080:1:0:1:0) as mintemp,max(T2-K:ERA5:5080:1:0:1:0) as maxtemp&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z](https://sm.cryo-scope.eu/timeseries?bbox=77.5,30.0,80.1,31.1&param=utctime,name,min(T2-K:ERA5:5080:1:0:1:0)%20as%20mintemp,max(T2-K:ERA5:5080:1:0:1:0)%20as%20maxtemp,mean(T2-K:ERA5:5080:1:0:1:0)%20as%20meantemp&starttime=20250815T000000Z&endtime=20250820T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z)
+
 
 ### Aggregate functions over a time interval
+
+Get maximum and minimum daily (24h) 2m temperatures for previous day. Syntax is (variable/btime/atime) where 'btime' is the time before the time step and 'atime' is the time after the time step. Similar functions for summation, mean, etc. 
+
+https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,max_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymaxtemp,min_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymintemp&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
 ### Mathematical & Unit Change Functions (Grid-Engine Functions)
 
