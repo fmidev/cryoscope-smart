@@ -18,6 +18,7 @@ Table below lists all available producers on CryoSCOPE SmartMet server. In secti
 
 |Producer|Short Description|
 |:-|:-|
+|MODIS||
 
 ## Datasets on smartmetxyz
 
