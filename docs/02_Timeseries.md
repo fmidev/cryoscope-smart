@@ -1,6 +1,6 @@
 # Timeseries API
 
-- [Timeseris API Overview](#overview)
+- [Timeseries API Overview](#timeseries-api-overview)
 - [Example HTTP request](#example-http-request)
 - [Locations and areas](#locations-and-areas)
 - [Time period](#time-period)
@@ -9,7 +9,7 @@
     - [Aggregate functions over a time interval](#aggregate-functions-over-a-time-interval)
     - [Mathematical & Unit Change Functions (Grid-Engine Functions)](#mathematical--unit-change-functions-grid-engine-functions)
 - [Response formatting](#response-formatting)
-- [Available data sets](#available-data-sets)
+- [Available data sets for CryoSCOPE](#available-data-sets-for-cryoscope)
 
 ## Timeseries API Overview 
 
@@ -112,12 +112,19 @@ Get minimum, maximum and mean ERA5 2m temperatures (K) for area within the bound
 
 ### Aggregate functions over a time interval
 
-Get maximum and minimum daily (24h) 2m temperatures for previous day. Syntax is (variable/btime/atime) where 'btime' is the time before the time step and 'atime' is the time after the time step. Similar functions for summation, mean, etc. 
+Get maximum and minimum daily (24h) 2m temperatures for previous day, and rename variables. Syntax is (variable/btime/atime) where 'btime' is the time before the time step and 'atime' is the time after the time step.  
 
-https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,max_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymaxtemp,min_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymintemp&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
+[https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,max_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymaxtemp,min_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymintemp&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z](https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,max_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymaxtemp,min_t(T2-K:ERA5:5080:1:0:1:0/24h/0h)%20as%20dailymintemp&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z)
+
+Similar functions for summation, mean, etc. You can also filter data by adding brackets f.ex. `max_t[0:](variable/btime/atime)` to filter only values above zero or `max_t[0:20](variable/btime/atime)` to have only values between zero and 20.
 
 ### Mathematical & Unit Change Functions (Grid-Engine Functions)
 
+There are several build-in functions available written with C++, listed in the official SmartMet server [Timeseries API documentation: Functions](https://github.com/fmidev/smartmet-plugin-timeseries/blob/master/docs/Using-the-Timeseries-API.md#functions) under the Grid-Engine Functions. One example here is to add -273.15 to temperature to convert from Kelvins to Celsius, or use K2C for same unit conversion directly. 
+
+[https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,SUM{T2-K:ERA5:5080:1:0:1:0;-273.15},K2C{T2-K:ERA5:5080:1:0:1:0}&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z](https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,SUM{T2-K:ERA5:5080:1:0:1:0;-273.15},K2C{T2-K:ERA5:5080:1:0:1:0}&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z)
+
+
 ## Response formatting
 
-## Available data sets
+## Available data sets for CryoSCOPE
