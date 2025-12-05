@@ -95,9 +95,9 @@ Starting 15.8.2025 at 00 UTC, data every 2-hours, 5 time steps:
 
 https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111:30&param=utctime,latitude,longitude,T2-K:ERA5:5080:1:0:1:0&starttime=20250815T000000Z&timestep=2&timesteps=5&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
-Seasonal forecast (control run) with origintime `20250801T000000Z` ([ECSF dataset in grid-gui](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=1875;fn=0;ft=1;g=178;gm=5081;hu=128;is=DarkGrey;iv=Generated;k=T2-K:ECSF:5081:1:0:1:0;l=0;lb=Default;lm=LightGrey;lo=None;lt=1;m=4;max=16;mi=Default;min=6;p=T2-K;pg=main;pi=14;pn=ECSF;pre=Table(sample);pro=5081;sa=60;sm=LightCyan;st=10;sy=None;t=20250802T000000;tg=202508;tgt=Month;u=;xx=;yy=;&t=20250802T000000&f=1875&m=4&ft=1&fn=0&pre=Image)):
+Seasonal forecast (control run and ensemble member number 15) with origintime `20250801T000000Z` ([ECSF dataset in grid-gui](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=1875;fn=0;ft=1;g=178;gm=5081;hu=128;is=DarkGrey;iv=Generated;k=T2-K:ECSF:5081:1:0:1:0;l=0;lb=Default;lm=LightGrey;lo=None;lt=1;m=4;max=16;mi=Default;min=6;p=T2-K;pg=main;pi=14;pn=ECSF;pre=Table(sample);pro=5081;sa=60;sm=LightCyan;st=10;sy=None;t=20250802T000000;tg=202508;tgt=Month;u=;xx=;yy=;&t=20250802T000000&f=1875&m=4&ft=1&fn=0&pre=Image)):
 
-https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=utctime,latitude,longitude,T2-K:ECSF:5081:1:0:1:0&starttime=20250815T000000Z&endtime=20251231T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20250801T000000Z
+https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=utctime,latitude,longitude,T2-K:ECSF:5081:1:0:1:0,T2-K:ECSF:5081:1:0:3:15&starttime=20250815T000000Z&endtime=20251231T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20250801T000000Z
 
 ## Functions 
 
