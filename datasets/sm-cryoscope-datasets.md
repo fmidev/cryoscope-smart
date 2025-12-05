@@ -1,6 +1,8 @@
 ## ECSF, ECBSF, ECB2SF
 
-ECSF Seasonal forecasts (SF) are forecasts for 215 days forward updated monthly, with 51 ensemble members (1 control and 50 perturbed members). Each month a new updated SF is added to SmartMet server. 
+[ECSF Seasonal forecasts (SF)](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=;pn=;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&pi=14) are forecasts for 215 days forward updated monthly, with 51 ensemble members (1 control and 50 perturbed members). Each month a new updated SF is added to SmartMet server. 
+
+Horizontal resolution 1° x 1°. Coverage India-Himalayas region. Daily data for single and pressure levels.  
 
 From Climate Data Store (CDS): 
 
@@ -9,8 +11,8 @@ From Climate Data Store (CDS):
 
 See Table below for available variables for ECSF. `x` marks if variable is also available as ECBSF or ECB2SF version.
 
-|SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|
-|:-|:-|:-|:-|:-|:-|
+|SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|Frequency|
+|:-|:-|:-|:-|:-|:-|:-|
 |DD-D|Wind direction|deg|||wdir|
 |EVAP-M|Evaporation|m of water equivalent|||e|
 |EWSS-NM2S|Eastward turbulent surface stress|N m-2 s|||ewss|
@@ -29,8 +31,8 @@ See Table below for available variables for ECSF. `x` marks if variable is also 
 |RADLWA-JM2|Surface long-wave (thermal) radiation downwards|J m-2|||strd|
 |RNETLWA-JM2|Surface net long-wave (thermal) radiation|J m-2|||str|
 |RNETSWA-JM2|Surface net short-wave (solar) radiation|J m-2|||ssr|
-|||||||
-|||||||
+|RO-M|Runoff|m|||ro|
+|RR-M|||||tp|
 |||||||
 |||||||
 |||||||
