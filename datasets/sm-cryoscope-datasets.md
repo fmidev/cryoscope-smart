@@ -32,8 +32,10 @@ See Table below for available variables for ECSF. `x` marks if variable is also 
 |RNETLWA-JM2|Surface net long-wave (thermal) radiation|J m-2|||str||sl|
 |RNETSWA-JM2|Surface net short-wave (solar) radiation|J m-2|||ssr||sl|
 |RO-M|Runoff|m|||ro||sl|
-|RR-M|||||tp||sl|
-|||||||
+|RR-M|Total precipitation|m|||tp|24h aggregation since beginning of forecast|sl|
+|RTOPLWA-JM2|Top net long-wave (thermal) radiation|J m-2|||ttr|	
+
+24h aggregation since beginning of forecast|sl|
 |||||||
 |||||||
 |||||||
