@@ -99,6 +99,8 @@ Seasonal forecast (control run and ensemble member number 15) with origintime `2
 
 https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=utctime,latitude,longitude,T2-K:ECSF:5081:1:0:1:0,T2-K:ECSF:5081:1:0:3:15&starttime=20250815T000000Z&endtime=20251231T000000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20250801T000000Z
 
+`origintime` is important to define especially if dataset has multiple generations (this can be seen in grid-gui from the "Generation" dropdown). For seasonal forecasts, f.ex., new data is always stored in a new generation to avoid overlapping. It is safer to include this parameter to your query always.    
+
 ## Functions 
 
 There are several ready functions available and listed in the official [Timeseries API documentation: Functions](https://github.com/fmidev/smartmet-plugin-timeseries/blob/master/docs/Using-the-Timeseries-API.md#functions), see tables there for all functions. Here below are a few examples. 
