@@ -15,13 +15,13 @@ See Tables below for available variables for ECSF. `x` marks if variable is also
 
 |SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|Frequency|
 |:-|:-|:-|:-|:-|:-|:-|
-|PSEA-HPA|Mean sea level pressure|Pa|||msl||
-|T2-K|2m temperature|K|||2t||
-|STL1-K|Soil temperature level 1|K|||stl1||
-|TD2-K|2m dewpoint temperature|K|||2d||
-|TMAX-24-K|Maximum 2m temperature in the last 24 hours|K|||mx2t24||
-|TMIN-24-K|Minimum 2m temperature in the last 24 hours|K|||mn2t24||
-|TSEA-K||K|||sst||
+|PSEA-HPA|Mean sea level pressure|Pa|||msl|instantaneous|
+|T2-K|2m temperature|K|x|x|2t|instantaneous|
+|STL1-K|Soil temperature level 1|K|x|x|stl1|instantaneous|
+|TD2-K|2m dewpoint temperature|K|x|x|2d|instantaneous|
+|TMAX-24-K|Maximum 2m temperature in the last 24 hours|K|||mx2t24|24h aggregation|
+|TMIN-24-K|Minimum 2m temperature in the last 24 hours|K|||mn2t24|24h aggregation|
+|TSEA-K|Sea surface temperature|K|||sst|instantaneous|
 
 ### Wind
 |SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|Frequency|
@@ -71,7 +71,7 @@ See Tables below for available variables for ECSF. `x` marks if variable is also
 
 |SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|Frequency|
 |:-|:-|:-|:-|:-|:-|:-|
-|DD-D|Wind direction|deg|||wdir||
+|DD-D|Wind direction (derived)|deg|||wdir||
 |FF-MS|10m Wind speed (derived)|m s-1|||ws||
 |KX|K index (derived)|K|||kx||
 |Q-KGKG|Specific humidity|kg kg-1|||qv||
