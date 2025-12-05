@@ -127,4 +127,16 @@ There are several build-in functions available written with C++, listed in the o
 
 ## Response formatting
 
+User can decide the `format` of response in the TimeSeries request (the `format` parameter in the query). Available formats include json, debug, ascii, csv, xml, php, serial, html, wxml. 
+
+Examples below for debug and json: 
+
+[https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,SUM{T2-K:ERA5:5080:1:0:1:0;-273.15},K2C{T2-K:ERA5:5080:1:0:1:0}&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z](https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,SUM{T2-K:ERA5:5080:1:0:1:0;-273.15},K2C{T2-K:ERA5:5080:1:0:1:0}&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z)
+
+[https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,SUM{T2-K:ERA5:5080:1:0:1:0;-273.15},K2C{T2-K:ERA5:5080:1:0:1:0}&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=json&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z](https://sm.cryo-scope.eu/timeseries?latlon=22.4545,73.111&param=time,latitude,longitude,T2-K:ERA5:5080:1:0:1:0,SUM{T2-K:ERA5:5080:1:0:1:0;-273.15},K2C{T2-K:ERA5:5080:1:0:1:0}&starttime=20250815T000000Z&hour=0&endtime=20250830T000000&format=json&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z)
+
+See [Examples](05_Examples.md) section for Python scripts for the Timeseries API with response downloaded to a CSV file. Note that if you change `format=csv` to html query, the response csv file will automatically be downloaded. 
+
 ## Available data sets for CryoSCOPE
+
+Please refer to [Datasets](06_Datasets.md) for available datasets on CryoSCOPE SmartMet server. 
