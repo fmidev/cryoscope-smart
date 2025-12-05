@@ -1,5 +1,7 @@
 # Datasets on Dissemination Servers
 
+If you have suggestions or wishes for datasets to be added to the SmartMet Server, please contact anni.kroger@fmi.fi.  
+
   - [Datasets on sm.cryo-scope.eu](#datasets-on-smcryo-scopeeu)
   - [Datasets on smartmetxyz](#datasets-on-smartmetxyz)
   - [Seasonal forecast](#seasonal-forecast)
@@ -14,11 +16,18 @@
 
 [Tables of datasets on sm.cryo-scope.eu](../datasets/sm-cryoscope-datasets.md)
 
-Table below lists all available producers on CryoSCOPE SmartMet server. In sections below you'll find a little more information on these. 
+Table below lists all available producers on CryoSCOPE SmartMet server. In sections below you'll find a little more information on these. More data sets can and will be added. 
 
 |Producer|Short Description|
 |:-|:-|
-|MODIS||
+|ECB2SF|Seasonal forecast statistically bias-adjusted, with ERA5|
+|ECBSF|Seasonal forecast statistically bias-adjusted, with ERA5-Land|
+|ECSF|Seasonal forecast from CDS|
+|ERA5|ERA5 Reanalysis data from CDS|
+|ERA5L|ERA5-Land Reanalysis data from CDS|
+|MODIS|	MODIS data from SYKE|
+
+*CDS short for [Climate Data Store](https://cds.climate.copernicus.eu/)*
 
 ## Datasets on smartmetxyz
 
@@ -46,7 +55,6 @@ From Climate Data Store:
 
 ### ECXSF and ECXENS
 
-
 ## ERA5
 
 ERA5 Reanalysis data from Climate Data Store:
@@ -64,3 +72,8 @@ ERA5-Land Reanalysis (ERA5L) data from Climate Data Store:
 - [ERA5-Land post-processed daily statistics from 1950 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview)
 
 ## SWI
+
+Copernicus Global Land Soil Wetness Index
+
+## MODIS
+
