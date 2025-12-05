@@ -1,7 +1,7 @@
 # Datasets on Dissemination Servers
 
   - [Datasets on sm.cryo-scope.eu](#datasets-on-smcryo-scopeeu)
-  - [Datasets on desm.harvesterseasons.com](#datasets-on-desmharvesterseasonscom)
+  - [Datasets on smartmetxyz](#datasets-on-smartmetxyz)
   - [Seasonal forecast](#seasonal-forecast)
     - [ECSF](#ecsf)
     - [ECBSF and ECB2SF](#ecbsf-and-ecb2sf)
@@ -19,9 +19,9 @@ Table below lists all available producers on CryoSCOPE SmartMet server. In secti
 |Producer|Short Description|
 |:-|:-|
 
-## Datasets on desm.harvesterseasons.com
+## Datasets on smartmetxyz
 
-[Tables of datasets on desm](../datasets/desm-cryoscope-datasets.md)
+[Tables of datasets on smartmetxyz](../datasets/smartmetxyz-cryoscope-datasets.md)
 
 ## Seasonal forecast
 
