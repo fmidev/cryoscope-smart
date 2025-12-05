@@ -27,17 +27,15 @@ See Table below for available variables for ECSF. `x` marks if variable is also 
 |NSSS-NM2S|Northward turbulent surface stress|N m-2 s|||nsss||sl|
 |PSEA-HPA|Mean sea level pressure|Pa|||msl||sl|
 |Q-KGKG|Specific humidity|kg kg-1|||qv||pl|
-|RADGLOA-JM2|Surface short-wave (solar) radiation downwards|J m-2|||ssrd||sl|
-|RADLWA-JM2|Surface long-wave (thermal) radiation downwards|J m-2|||strd||sl|
-|RNETLWA-JM2|Surface net long-wave (thermal) radiation|J m-2|||str||sl|
-|RNETSWA-JM2|Surface net short-wave (solar) radiation|J m-2|||ssr||sl|
+|RADGLOA-JM2|Surface short-wave (solar) radiation downwards|J m-2|||ssrd|24h aggregation since beginning of forecast|sl|
+|RADLWA-JM2|Surface long-wave (thermal) radiation downwards|J m-2|||strd|24h aggregation since beginning of forecast|sl|
+|RNETLWA-JM2|Surface net long-wave (thermal) radiation|J m-2|||str|24h aggregation since beginning of forecast|sl|
+|RNETSWA-JM2|Surface net short-wave (solar) radiation|J m-2|||ssr|24h aggregation since beginning of forecast|sl|
 |RO-M|Runoff|m|||ro||sl|
 |RR-M|Total precipitation|m|||tp|24h aggregation since beginning of forecast|sl|
-|RTOPLWA-JM2|Top net long-wave (thermal) radiation|J m-2|||ttr|	
-
-24h aggregation since beginning of forecast|sl|
-|||||||
-|||||||
+|RTOPLWA-JM2|Top net long-wave (thermal) radiation|J m-2|||ttr|	24h aggregation since beginning of forecast|sl|
+|SD-M|Snow depth|m of water equivalent|||sd||sl|
+|SNACC-KGM2|Snowfall|m of water equivalent|||sf|24h aggregation since beginning of forecast|sl|
 |||||||
 |||||||
 |||||||
