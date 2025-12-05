@@ -2,14 +2,14 @@
 
 [ECSF Seasonal forecasts (SF)](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=;pn=;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&pi=14) are forecasts for 215 days forward updated monthly, with 51 ensemble members (1 control and 50 perturbed members). Each month a new updated SF is added to SmartMet server. 
 
-Horizontal resolution 1° x 1°. Coverage India-Himalayas region. Daily data for single (sl) and pressure (pl) levels (925 hPa, 850 hPa, 700 hPa, and 500 hPa).  
+Horizontal resolution 1° x 1°. Coverage India-Himalayas region. Daily data for single and pressure levels (925 hPa, 850 hPa, 700 hPa, and 500 hPa).  
 
 From Climate Data Store (CDS): 
 
 - [Seasonal forecast daily and subdaily data on single levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-single-levels?tab=overview)
 - [Seasonal forecast subdaily data on pressure levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-pressure-levels?tab=overview)
 
-See Tables below for available variables for ECSF. `x` marks if variable is also available as ECBSF or ECB2SF version.
+See Tables below for available variables for ECSF. `x` marks if variable is also available as ECBSF or ECB2SF version (statistically bias-adjusted with either ERA5L or ERA5).
 
 ### Temperature and pressure
 
@@ -26,21 +26,23 @@ See Tables below for available variables for ECSF. `x` marks if variable is also
 ### Wind
 |SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|Frequency|
 |:-|:-|:-|:-|:-|:-|:-|
-|FFG-MS|10m wind gust since previous post-processing|m s-1|||10fg||
-|U10-MS|||||10u||
-|V10-MS|||||10v||
+|FFG-MS|10m wind gust since previous post-processing|m s-1|||10fg|24h aggregation|
+|U10-MS|10 metre U wind component|m s-1|x|x|10u|instantaneous|
+|V10-MS|10 metre V wind component|m s-1|x|x|10v|instantaneous|
+
+*Note: ECBSF and ECB2SF both have Wind speed (FF-MS) variable derived from 10u and 10v which ECSF does not have for single level data on SmartMet server, different therefore from the pressure level winds derived variable FF-MS.*
 
 ### Radiation and heat
 
 |SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|Frequency|
 |:-|:-|:-|:-|:-|:-|:-|
-|FLLAT-JM2|Surface latent heat flux|J m-2|||slhf||
-|FLSEN-JM2|Surface sensible heat flux||J m-2||sshf||
+|FLLAT-JM2|Surface latent heat flux|J m-2|||slhf|24h aggregation since beginning of forecast|
+|FLSEN-JM2|Surface sensible heat flux|J m-2|||sshf|24h aggregation since beginning of forecast|
 |RADGLOA-JM2|Surface short-wave (solar) radiation downwards|J m-2|||ssrd|24h aggregation since beginning of forecast|
 |RADLWA-JM2|Surface long-wave (thermal) radiation downwards|J m-2|||strd|24h aggregation since beginning of forecast|
 |RNETLWA-JM2|Surface net long-wave (thermal) radiation|J m-2|||str|24h aggregation since beginning of forecast|
 |RNETSWA-JM2|Surface net short-wave (solar) radiation|J m-2|||ssr|24h aggregation since beginning of forecast|
-|TSR-J|||||tsr||
+|TSR-J|||||tsr|24h aggregation since beginning of forecast|
 |RTOPLWA-JM2|Top net long-wave (thermal) radiation|J m-2|||ttr|	24h aggregation since beginning of forecast|
 
 ### Clouds, evaporation, runoff and precipitation
