@@ -28,7 +28,7 @@ Table below lists all available producers on smartmet.xyz SmartMet server.
 
 |Producer|Short Description|
 |:-|:-|
-|MODIS||
+|||
 
 ## Seasonal forecast
 
