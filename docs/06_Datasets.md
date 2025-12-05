@@ -14,7 +14,9 @@
 
 [Tables of datasets on sm.cryo-scope.eu](../datasets/sm-cryoscope-datasets.md)
 
-|Producer|Description|
+Table below lists all available producers on CryoSCOPE SmartMet server. In sections below you'll find a little more information on these. 
+
+|Producer|Short Description|
 |:-|:-|
 
 ## Datasets on desm.harvesterseasons.com

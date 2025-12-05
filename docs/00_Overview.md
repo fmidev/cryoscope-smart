@@ -25,7 +25,7 @@
 - [The official SmartMet server documentation](https://github.com/fmidev/smartmet-server)
 
 ## What is SmartMet server? 
-SmartMet server is a data and product server that provides access to observational, forecast, and model data. It is used for data services and product generation. The server can host datasets and products from several producers, e.g. the new datasets and products produced in the CryoSCOPE project. 
+SmartMet server is a data and product server that provides access to observational, forecast, and model data. It is used for data services and product generation. The server can host datasets and products from several producers, e.g. the new datasets and products produced in the CryoSCOPE project. The main point within this project is that SmartMet server can be used for end-user services with Smartmet as the backend data server: simple & efficient.
 
 Both project’s internal and external users can access and explore the CryoSCOPE datasets via SmartMet server APIs (e.g. Timeseries, WMS, EDR) and the general data browser (grid-gui).
 
