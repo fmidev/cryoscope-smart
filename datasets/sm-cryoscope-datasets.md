@@ -36,9 +36,28 @@ See Table below for available variables for ECSF. `x` marks if variable is also 
 |RTOPLWA-JM2|Top net long-wave (thermal) radiation|J m-2|||ttr|	24h aggregation since beginning of forecast|sl|
 |SD-M|Snow depth|m of water equivalent|||sd||sl|
 |SNACC-KGM2|Snowfall|m of water equivalent|||sf|24h aggregation since beginning of forecast|sl|
-|||||||
-|||||||
-|||||||
+|SND-KGM3|Snow density|kg m-3|||rsn||sl|
+|STL1-K|Soil temperature level 1|K|||stl1||sl|
+|T-K|Temperature|K|||t||pl|
+|T2-K|2m temperature|K|||2t||sl|
+|TCLW-KGM2|Total column cloud liquid water|kg m-2|||tclw||sl|
+|TD-K|Dewpoint temperature|K|||dpt||pl|
+|TD2-K|2m dewpoint temperature|K|||2d||sl|
+|TMAX-24-K|Maximum 2m temperature in the last 24 hours|K|||mx2t24|||
+|TMIN-24-K|Minimum 2m temperature in the last 24 hours|K|||mn2t24|||
+|TOTCWV-KGM2|Total column water vapour|kg m-2|||tcwv||sl|
+|TSEA-K||K|||sst||sl|
+|TSR-J|||||tsr||sl|
+|U-MS|||||u||pl|
+|U10-MS|||||10u||sl|
+|V-MS|||||v||pl|
+|V10-MS|||||10v||sl|
+|VP-M2S|Velocity potential (derived)|m2 s-1|||vp||pl|
+|VSW-M3M3|Volumetric soil moisture (needs to be fixed)|m3 m-3|||vsw||sl|
+|Z-M2S2|Geopotential|m2 s-2|||z||pl|
+
+
+
 
 
 
