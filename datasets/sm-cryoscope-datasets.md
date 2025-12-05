@@ -7,7 +7,7 @@ From Climate Data Store (CDS):
 - [Seasonal forecast daily and subdaily data on single levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-single-levels?tab=overview)
 - [Seasonal forecast subdaily data on pressure levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-pressure-levels?tab=overview)
 
-See Table below for available variables for ECSF. `z` marks if variable is also available as ECBSF or ECB2SF version.
+See Table below for available variables for ECSF. `x` marks if variable is also available as ECBSF or ECB2SF version.
 
 |SmartMet server name| Description | units | ECBSF | ECB2SF|Parameter shortname|
 |:-|:-|:-|:-|:-|:-|
@@ -22,8 +22,24 @@ See Table below for available variables for ECSF. `z` marks if variable is also 
 |IC-0TO1|Sea-ice cover|0-1|||ci|
 |KX|K index (derived)|K|||kx|
 |N-0TO1|Total cloud cover|0-1|||tcc|
-||||||
-||||||
+|NSSS-NM2S|Northward turbulent surface stress|N m-2 s|||nsss|
+|PSEA-HPA|Mean sea level pressure|Pa|||msl|
+|Q-KGKG|Specific humidity|kg kg-1|||qv|
+|RADGLOA-JM2|Surface short-wave (solar) radiation downwards|J m-2|||ssrd|
+|RADLWA-JM2|Surface long-wave (thermal) radiation downwards|J m-2|||strd|
+|RNETLWA-JM2|Surface net long-wave (thermal) radiation|J m-2|||str|
+|RNETSWA-JM2|Surface net short-wave (solar) radiation|J m-2|||ssr|
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+
+
+
 
 ## ERA5
 
