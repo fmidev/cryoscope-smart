@@ -31,9 +31,7 @@ Table below lists all available producers on CryoSCOPE SmartMet server. In secti
 
 ## Datasets on smartmetxyz
 
-[Detailed tables of datasets and variables on smartmetxyz](../datasets/smartmetxyz-cryoscope-datasets.md)
-
-Table below lists all available producers on smartmet.xyz SmartMet server.
+Table below lists all available producers on smartmet.xyz SmartMet server. 
 
 |Producer|Short Description|
 |:-|:-|
@@ -77,3 +75,4 @@ Copernicus Global Land Soil Wetness Index
 
 ## MODIS
 
+https://doi.org/10.23729/fd-1bad8a16-9edf-38d9-9628-2bd025d8d9ce 
