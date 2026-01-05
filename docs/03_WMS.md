@@ -16,3 +16,9 @@ Relevant links for more information:
 See also example end-user service utilizing WMS layers [HarvesterSeasons.com](07_HarvesterSeasons.md)
 
 ## WMS requests
+
+Example request for ERA5-Land 2 metre temperature over Europe (20251211T000000):
+
+https://smartmet.xyz/wms?&SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=gui:isobands:ERA5L_T2-K&STYLES=&FORMAT=image/png&TRANSPARENT=true&HEIGHT=800&WIDTH=1000&time=20251211T000000&CRS=EPSG:4326&BBOX=25,-30,75,50
+
+![figure 1](../wmsexample.png)
