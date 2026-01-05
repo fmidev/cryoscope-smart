@@ -1,10 +1,6 @@
 # Examples
 
-This section includes links to python scripts for Timeseries queries. The scripts save data as csv files and, in some cases, plot time series of data. These are intended as examples of various ways to get data via [Timeseries API](02_Timeseries.md). 
-
-  - [Links to example scripts](#links-to-example-scripts)
-  - [ERA5 for given bounding box (bbox)](#era5-for-given-bounding-box-bbox)
-  - [ECSF for multiple locations & time series plot](#ecsf-for-multiple-locations--time-series-plot)
+This section includes links to python scripts for Timeseries queries. The scripts save data as csv files. More examples will be added upon request (anni.kroger@fmi.fi).
 
 ## Links to example scripts
 - [Requirements](../xgb2-conda-env.yml)
@@ -43,6 +39,3 @@ As this is for European domain, the source server is *smartmet.xyz*. Each parame
 http://smartmet.xyz:8080/timeseries?bbox=23.604126,59.642764,26.251831,60.777937&param=utctime,latitude,longitude,MUL%7bRR-M:ERA5D:5021:1:0:1;1000%7d&starttime=20220101T000000Z&endtime=20221231T120000Z&hour=00&format=debug&precision=full&tz=utc&timeformat=sql&origintime=20000101T000000Z
 
 You could also query all parameters with one request, but for large queries (multiple timesteps, multiple grid points or locations) it is more efficient to request one parameter at a time. 
-
-## ECSF for multiple locations & time series plot
-
