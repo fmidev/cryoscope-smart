@@ -9,8 +9,6 @@ See https://github.com/fmidev/cryoscope-smartmet for server configuration and wo
 
 See [the official SmartMet server documentation](https://github.com/fmidev/smartmet-server) for more details. 
 
-[Note: This repository is a work in progress during summer 2025.]
-
 ## Documentation
 
 - [SmartMet Server Overview](docs/00_Overview.md)
