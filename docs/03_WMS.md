@@ -8,7 +8,7 @@ Available WMS layers for CryoSCOPE project can be discovered using a `GetCapabil
 
 https://sm.cryo-scope.eu/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities
 
-Upon request, more WMS layers and configurations can be added to CryoSCOPE SmartMet server. 
+Upon request, more WMS layers and configurations can be added to CryoSCOPE SmartMet server. Contact anni.kroger@fmi.fi. 
 
 Relevant links for more information: 
 - https://github.com/fmidev/smartmet-plugin-wms
