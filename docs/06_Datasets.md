@@ -25,7 +25,9 @@ Table below lists all available producers on CryoSCOPE SmartMet server. In secti
 |ECSF|Seasonal forecast from CDS|
 |ERA5|ERA5 Reanalysis data from CDS|
 |ERA5L|ERA5-Land Reanalysis data from CDS|
+|ERA5LD||
 |MODIS|	MODIS data from SYKE|
+|CLMS|| 
 
 *CDS short for [Climate Data Store](https://cds.climate.copernicus.eu/)*
 
