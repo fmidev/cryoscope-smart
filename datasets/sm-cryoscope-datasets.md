@@ -100,7 +100,11 @@ See Tables below for available variables for ECSF. `x` marks if variable is also
 
 ## ERA5
 
-## ERA5L
+## ERA5-Land
+
+## ERA5-Land daily statistics
+
+## ERA5-Land derived climatologies
 
 ## MODIS
 
