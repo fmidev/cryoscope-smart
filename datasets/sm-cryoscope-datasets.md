@@ -100,13 +100,28 @@ See Tables below for available variables for ECSF. `x` marks if variable is also
 
 ## ERA5
 
+ERA5 Reanalysis data from Climate Data Store:
+
+- [ERA5 hourly data on single levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview)
+- [ERA5 hourly data on pressure levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=overview)
+- [ERA5 post-processed daily statistics on single levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-single-levels-daily-statistics?tab=overview)
+- [ERA5 post-processed daily statistics on pressure levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-pressure-levels-daily-statistics?tab=overview)
+
+
 ## ERA5-Land
 
+ERA5-Land Reanalysis (ERA5L) data from Climate Data Store:
+
+- [ERA5-Land hourly data from 1950 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview)
+
 ## ERA5-Land daily statistics
+
+- [ERA5-Land post-processed daily statistics from 1950 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview)
+
 
 ## ERA5-Land derived climatologies
 
 ## MODIS
 
-
+https://doi.org/10.23729/fd-1bad8a16-9edf-38d9-9628-2bd025d8d9ce
 

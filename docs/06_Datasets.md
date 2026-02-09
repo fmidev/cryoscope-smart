@@ -14,9 +14,9 @@ If you have suggestions or wishes for datasets to be added to the SmartMet Serve
 
 ## Datasets on sm.cryo-scope.eu
 
-[Detailed tables of datasets and variables on sm.cryo-scope.eu](../datasets/sm-cryoscope-datasets.md)
+[Detailed tables of datasets and variables on sm.cryo-scope.eu](../datasets/sm-cryoscope-datasets.md) with more information of available producers, including links to sources.
 
-Table below lists all available producers on CryoSCOPE SmartMet server. In sections below you'll find a little more information on these. More data sets can and will be added. 
+Table below lists all available producers on CryoSCOPE SmartMet server. More data sets can and will be added. 
 
 |Producer|Short Description|
 |:-|:-|
@@ -38,43 +38,3 @@ Table below lists all available producers on smartmet.xyz SmartMet server.
 |Producer|Short Description|
 |:-|:-|
 |||
-
-## Seasonal forecast
-
-### ECSF
-
-ECSF Seasonal forecasts are forecasts for 215 days forward updated monthly, with 51 ensemble members (1 control and 50 perturbed members). 
-
-From Climate Data Store: 
-
-- [Seasonal forecast daily and subdaily data on single levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-single-levels?tab=overview)
-- [Seasonal forecast subdaily data on pressure levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-pressure-levels?tab=overview)
-
-
-### ECBSF and ECB2SF
-
-### ECXSF and ECXENS
-
-## ERA5
-
-ERA5 Reanalysis data from Climate Data Store:
-
-- [ERA5 hourly data on single levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview)
-- [ERA5 hourly data on pressure levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=overview)
-- [ERA5 post-processed daily statistics on single levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-single-levels-daily-statistics?tab=overview)
-- [ERA5 post-processed daily statistics on pressure levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-pressure-levels-daily-statistics?tab=overview)
-
-## ERA5-Land
-
-ERA5-Land Reanalysis (ERA5L) data from Climate Data Store:
-
-- [ERA5-Land hourly data from 1950 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview)
-- [ERA5-Land post-processed daily statistics from 1950 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview)
-
-## SWI
-
-Copernicus Global Land Soil Wetness Index
-
-## MODIS
-
-https://doi.org/10.23729/fd-1bad8a16-9edf-38d9-9628-2bd025d8d9ce 
