@@ -4,13 +4,6 @@ If you have suggestions or wishes for datasets to be added to the SmartMet Serve
 
   - [Datasets on sm.cryo-scope.eu](#datasets-on-smcryo-scopeeu)
   - [Datasets on smartmetxyz](#datasets-on-smartmetxyz)
-  - [Seasonal forecast](#seasonal-forecast)
-    - [ECSF](#ecsf)
-    - [ECBSF and ECB2SF](#ecbsf-and-ecb2sf)
-    - [ECXSF and ECXENS](#ecxsf-and-ecxens)
-  - [ERA5](#era5)
-  - [ERA5-Land](#era5-land)
-  - [SWI](#swi)
 
 ## Datasets on sm.cryo-scope.eu
 
