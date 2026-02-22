@@ -1,5 +1,25 @@
 # TABLES OF DATASETS AND VARIABLES ON sm.cryo-scope.eu
 
+# Table of Contents
+
+  - [ECSF, ECBSF, ECB2SF](#ecsf-ecbsf-ecb2sf)
+    - [Temperature and pressure](#temperature-and-pressure)
+    - [Wind](#wind)
+    - [Radiation and heat](#radiation-and-heat)
+    - [Clouds, evaporation, runoff and precipitation](#clouds-evaporation-runoff-and-precipitation)
+    - [Snow and ice](#snow-and-ice)
+    - [Soil](#soil)
+    - [Pressure level data](#pressure-level-data)
+    - [Other](#other)
+  - [ERA5](#era5)
+  - [ERA5-Land](#era5-land)
+  - [ERA5-Land derived daily statistics](#era5-land-derived-daily-statistics)
+  - [ERA5-Land derived climatologies](#era5-land-derived-climatologies)
+  - [MODIS](#modis)
+  - [CLMS](#clms)
+  - [SNOWCAP climatologies for snowdepth and SWE](#snowcap-climatologies-for-snowdepth-and-swe)
+  - [RGI2000](#rgi2000)
+
 ## ECSF, ECBSF, ECB2SF
 
 [ECSF Seasonal forecasts (SF)](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=;pn=;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&pi=14) are forecasts for 215 days forward updated monthly, with 51 ensemble members (1 control and 50 perturbed members). Each month a new updated SF is added to SmartMet server. 
