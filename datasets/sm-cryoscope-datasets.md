@@ -1,16 +1,6 @@
 # TABLES OF DATASETS AND VARIABLES ON sm.cryo-scope.eu
 
-# Table of Contents
-
   - [ECSF, ECBSF, ECB2SF](#ecsf-ecbsf-ecb2sf)
-    - [Temperature and pressure](#temperature-and-pressure)
-    - [Wind](#wind)
-    - [Radiation and heat](#radiation-and-heat)
-    - [Clouds, evaporation, runoff and precipitation](#clouds-evaporation-runoff-and-precipitation)
-    - [Snow and ice](#snow-and-ice)
-    - [Soil](#soil)
-    - [Pressure level data](#pressure-level-data)
-    - [Other](#other)
   - [ERA5](#era5)
   - [ERA5-Land](#era5-land)
   - [ERA5-Land derived daily statistics](#era5-land-derived-daily-statistics)
