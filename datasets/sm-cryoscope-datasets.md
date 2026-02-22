@@ -1,3 +1,5 @@
+# TABLES OF DATASETS AND VARIABLES ON sm.cryo-scope.eu
+
 ## ECSF, ECBSF, ECB2SF
 
 [ECSF Seasonal forecasts (SF)](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=;pn=;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&pi=14) are forecasts for 215 days forward updated monthly, with 51 ensemble members (1 control and 50 perturbed members). Each month a new updated SF is added to SmartMet server. 
@@ -92,12 +94,6 @@ See Tables below for available variables for ECSF. `x` marks if variable is also
 |TCLW-KGM2|Total column cloud liquid water|kg m-2|||tclw||
 |TOTCWV-KGM2|Total column water vapour|kg m-2|||tcwv||
 
-
-
-
-
-
-
 ## ERA5
 
 ERA5 Reanalysis data from Climate Data Store:
@@ -114,9 +110,7 @@ ERA5-Land Reanalysis (ERA5L) data from Climate Data Store:
 
 - [ERA5-Land hourly data from 1950 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview)
 
-## ERA5-Land daily statistics
-
-- [ERA5-Land post-processed daily statistics from 1950 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview)
+## ERA5-Land derived daily statistics
 
 
 ## ERA5-Land derived climatologies
@@ -125,3 +119,25 @@ ERA5-Land Reanalysis (ERA5L) data from Climate Data Store:
 
 https://doi.org/10.23729/fd-1bad8a16-9edf-38d9-9628-2bd025d8d9ce
 
+## CLMS
+
+## SNOWCAP climatologies for snowdepth and SWE
+
+Data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from SNOWCAP, in approximately 1 km grid. Data is organized in multiple *Generations* on SmartMet server to avoid overlapping, see table below. 
+
+Although the timestamps are set to 1 January 2020 – 31 December 2020, the valuea are climatological statistics calculated over the period 2015–2023. For daily statistics, each calendar day in 2020 represents the multi-year mean for that specific day-of-year over 2015–2023. For monthly statistics, each monthly value in 2020 represents the multi-year mean for that calendar month over 2015–2023.
+
+SmartMet server parameters **SDE-CM is snowdepth** data (m) and **SD-M is SWE** data (m of water equivalent). 
+
+|Generation | Climatology | Description |
+|:-|:-|:-|
+|20200101T000000|ydaymean|Multi-year daily mean|
+|20200201T000000|ydaymax|Multi-year daily maximum|
+|20200301T000000|ydaymin|Multi-year daily minimum|
+|20230101T000000|ymonmean|Multi-year montly mean|
+|20230201T000000|ymonmax|Multi-year montly maximum|
+|20230301T000000|ymonmin|Multi-year monthly minimum|
+
+
+
+## RGI2000
