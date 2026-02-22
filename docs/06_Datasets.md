@@ -22,7 +22,7 @@ Table below lists all available producers on CryoSCOPE SmartMet server. More dat
 |ERA5LC|2000-2025 Climatologies from ERA5-Land Reanalysis data from CDS||
 |MODIS|	MODIS data from SYKE||
 |CLMS|||
-|SNOWCAP|2015-2023 Climatologies for SWE and snowdepth from SNOWCAP data in 1km grid||
+|SNOWCAP|2015-2023 Climatologies for SWE and snowdepth from SNOWCAP data|Scandinavia, ~1km grid|
 
 *CDS short for [Climate Data Store](https://cds.climate.copernicus.eu/)*
 
