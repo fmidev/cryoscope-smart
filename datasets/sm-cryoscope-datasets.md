@@ -133,7 +133,7 @@ https://doi.org/10.23729/fd-1bad8a16-9edf-38d9-9628-2bd025d8d9ce
 
 ## SNOWCAP climatologies for snowdepth and SWE
 
-Data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from SNOWCAP, in approximately 1 km grid. Data is organized in multiple *Generations* on SmartMet server to avoid overlapping, see table below. 
+Data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from SNOWCAP, in approximately 1 km grid over Scandinavia. Data is organized in multiple *Generations* on SmartMet server to avoid overlapping, see table below. 
 
 Although the timestamps are set to 1 January 2020 – 31 December 2020, the values are climatological statistics calculated over the period 2015–2023. For daily statistics, each calendar day in 2020 represents the multi-year mean/maximum/minimum for that specific day-of-year over 2015–2023. For monthly statistics, each monthly value in 2020 represents the multi-year mean/maximum/minimum for that calendar month over 2015–2023.
 
