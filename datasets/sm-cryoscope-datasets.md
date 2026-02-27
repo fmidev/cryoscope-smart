@@ -151,20 +151,18 @@ Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SW
 
 ## SNOWCAP climatologies for snowdepth and SWE
 
-Data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from SNOWCAP, in approximately 1 km grid over Scandinavia. Data is organized in multiple *Generations* on SmartMet server to avoid overlapping, see table below. 
+On SmartMet server, the data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from SNOWCAP, in approximately 1 km grid over Scandinavia. To avoid overlapping, data is organized in multiple Generations on SmartMet server.  
 
-Although the timestamps are set to 1 January 2020 – 31 December 2020, the values are climatological statistics calculated over the period 2015–2023. For daily statistics, each calendar day in 2020 represents the multi-year mean/maximum/minimum for that specific day-of-year over 2015–2023. For monthly statistics, each monthly value in 2020 represents the multi-year mean/maximum/minimum for that calendar month over 2015–2023.
+Although the timestamps are set to 1 January 2020 – 31 December 2020, the values are climatological statistics calculated over the period 2015–2023. For daily statistics, each calendar day in 2020 represents the multi-year mean/maximum/minimum for that specific day-of-year over 2015–2023. For monthly statistics, each monthly value in 2020 represents the multi-year mean/maximum/minimum for that calendar month over 2015–2023. 
 
-SmartMet server parameters **SDE-CM is snowdepth** data (m) and **SD-M is SWE** data (m of water equivalent). 
+SmartMet server parameters **SDE-CM is snowdepth data (m)** and **SD-M is SWE data (m of water equivalent)**.  
 
-|Generation | Climatology | Description |
-|:-|:-|:-|
-|20200101T000000|ydaymean|Multi-year daily mean|
-|20200201T000000|ydaymax|Multi-year daily maximum|
-|20200301T000000|ydaymin|Multi-year daily minimum|
-|20230101T000000|ymonmean|Multi-year montly mean|
-|20230201T000000|ymonmax|Multi-year montly maximum|
-|20230301T000000|ymonmin|Multi-year monthly minimum|
+The climatologies will be updated when updated Snowcap datasets become available. 
+
+|Snowcap variable| Links to daily and monthly climatologies (2015-2023) |
+|:-|:-|
+|Snow depth|Multi-year [Daily mean] / [Daily max] / [Daily min] Multi-year monthly mean / monthly max / monthly min|
+|SWE|ydaymax|Multi-year [Daily mean] / [Daily max] / [Daily min] Multi-year monthly mean / monthly max / monthly min|
 
 
 
