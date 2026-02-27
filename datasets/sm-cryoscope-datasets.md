@@ -123,26 +123,24 @@ ERA5-Land Reanalysis (ERA5L) hourly data for India-Himalayas region (North: 40°
 |ERA5L VARIABLES (link)|Links to daily statistics|Links to climatologies|
 |:-|:-|:-|
 |[Soil temperature level 1](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=359;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=11;pn=ERA5L;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&p=STL1-K) |||
-|Soil temperature level 2  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
-|Soil temperature level 3  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+|Soil temperature level 2  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min Multi-year monthly mean / monthly max / monthly min |
+|Soil temperature level 3  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min Multi-year monthly mean / monthly max / monthly min |
 |Soil temperature level 4  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+Multi-year monthly mean / monthly max / monthly min |
 |Skin temperature  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+Multi-year monthly mean / monthly max / monthly min |
 |2 m temperature  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+Multi-year monthly mean / monthly max / monthly min |
 |2 m dewpoint temperature |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min | 
+Multi-year monthly mean / monthly max / monthly min | 
 |Snow albedo  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+Multi-year monthly mean / monthly max / monthly min |
 |Snow depth m of water equivalent |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min | 
+Multi-year monthly mean / monthly max / monthly min | 
 |Temperature of snow layer  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+Multi-year monthly mean / monthly max / monthly min |
 |Snow density  |Daily mean / Daily max / Daily min|Multi-year daily mean / daily max / daily min 
-Mylti-year monthly mean / monthly max / monthly min |
+Multi-year monthly mean / monthly max / monthly min |
 
 
 ## MODIS
