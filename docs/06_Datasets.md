@@ -13,10 +13,10 @@ Table below lists all available producers on CryoSCOPE SmartMet server. More dat
 
 |Producer|Short Description|Area|
 |:-|:-|:-|
-|ECB2SF|Seasonal forecast statistically bias-adjusted, with ERA5||
-|ECBSF|Seasonal forecast statistically bias-adjusted, with ERA5-Land||
-|ECSF|Seasonal forecast from CDS||
-|ERA5|ERA5 Reanalysis data from CDS||
+|ECB2SF|Seasonal forecast statistically bias-adjusted, with ERA5|India-Himalayas|
+|ECBSF|Seasonal forecast statistically bias-adjusted, with ERA5-Land|India-Himalayas|
+|ECSF|Seasonal forecast from CDS|India-Himalayas|
+|ERA5|ERA5 Reanalysis data from CDS|India-Himalayas|
 |ERA5L|ERA5-Land Reanalysis data from CDS|India-Himalayas|
 |ERA5LD|Daily statistics derived from ERA5L|India-Himalayas|
 |ERA5LC|2000-2025 Climatologies derived from ERA5LD|India-Himalayas|
