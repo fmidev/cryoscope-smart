@@ -114,78 +114,28 @@ ERA5 Reanalysis data from Climate Data Store:
 - [ERA5 post-processed daily statistics on pressure levels from 1940 to present](https://cds.climate.copernicus.eu/datasets/derived-era5-pressure-levels-daily-statistics?tab=overview)
 
 
-## ERA5-Land
+## ERA5-Land, derived daily statistics and climatologies
 
-ERA5-Land Reanalysis (ERA5L) data from Climate Data Store:
+ERA5-Land Reanalysis (ERA5L) hourly data from Climate Data Store:
 
 - [ERA5-Land hourly data from 1950 to present](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview)
 
 ERA5-Land Reanalysis (ERA5L) hourly data for India-Himalayas region (North: 40°, West: 65°, South: 5°, East: 100°) for 2000-2025 is downloaded from Climate Data Store (CDS) and set up to SmartMet server under producer ERA5L. Daily statistics are first derived from hourly data, under producer ERA5LD. Prior to aggregation, the UTC timestamps are shifted so that 00:00 corresponds to local midnight in the India–Himalayas region rather than 00:00 UTC (e.g. +6 hours shift). These are then used to compute daily and monthly climatological means, maxima, and minima for the period 2000–2025, under producer ERA5LC. Tables 2 and 3 list all the variables available at the time of writing this document; more ERA5-Land variables are added still, for example, soil water variables, precipitation, evaporation, winds, and so on.  
 
-## ERA5-Land derived daily statistics
-
-|ERA5LD VARIABLE|Short Description|Area|
+|ERA5L VARIABLE|Links to daily statistics|Links to climatologies|
 |:-|:-|:-|
 |Soil temperature level 1 |||
-	
+||Soil temperature level 2  |||
+|Soil temperature level 3  |||
+|Soil temperature level 4  |||
+|Skin temperature  |||
+|2 m temperature  |||
+|2 m dewpoint temperature ||| 
+|Snow albedo  |||
+|Snow depth m of water equivalent ||| 
+|Temperature of snow layer  |||
+|Snow density  |||
 
-LINKS TO DAILY STATISTICS (2000-2025) 
-
-Soil temperature level 1 
-	
-
-Daily mean / Daily max / Daily min  
-
-Soil temperature level 2 
-	
-
-Daily mean / Daily max / Daily min 
-
-Soil temperature level 3 
-	
-
-Daily mean / Daily max / Daily min 
-
-Soil temperature level 4 
-	
-
-Daily mean / Daily max / Daily min 
-
-Skin temperature 
-	
-
-Daily mean / Daily max / Daily min 
-
-2 m temperature 
-	
-
-Daily mean / Daily max / Daily min 
-
-2 m dewpoint temperature 
-	
-
-Daily mean / Daily max / Daily min 
-
-Snow albedo 
-	
-
-Daily mean / Daily max / Daily min 
-
-Snow depth m of water equivalent 
-	
-
-Daily mean / Daily max / Daily min 
-
-Temperature of snow layer 
-	
-
-Daily mean / Daily max / Daily min 
-
-Snow density 
-	
-
-Daily mean / Daily max / Daily min 
-## ERA5-Land derived climatologies
 
 ## MODIS
 
