@@ -75,6 +75,7 @@ The climatologies will be updated when updated Snowcap datasets become available
 
 ## RGI2000
 
+Precipitation and air temperature for different glacier IDs
 
 ## ECSF, ECBSF, ECB2SF
 
