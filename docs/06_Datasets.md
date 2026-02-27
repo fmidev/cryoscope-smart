@@ -17,11 +17,11 @@ Table below lists all available producers on CryoSCOPE SmartMet server. More dat
 |ECBSF|Seasonal forecast statistically bias-adjusted, with ERA5-Land||
 |ECSF|Seasonal forecast from CDS||
 |ERA5|ERA5 Reanalysis data from CDS||
-|ERA5L|ERA5-Land Reanalysis data from CDS||
-|ERA5LD|||
-|ERA5LC|2000-2025 Climatologies from ERA5-Land Reanalysis data from CDS||
-|MODIS|	MODIS data from SYKE||
-|CLMS|||
+|ERA5L|ERA5-Land Reanalysis data from CDS|India-Himalayas|
+|ERA5LD|Daily statistics derived from ERA5L|India-Himalayas|
+|ERA5LC|2000-2025 Climatologies derived from ERA5LD|India-Himalayas|
+|MODIS|	MODIS data from SYKE|Europe|
+|CLMS||Northern Hemisphere|
 |SNOWCAP|2015-2023 Climatologies for SWE and snowdepth from SNOWCAP data|Scandinavia, ~1km grid|
 
 *CDS short for [Climate Data Store](https://cds.climate.copernicus.eu/)*
