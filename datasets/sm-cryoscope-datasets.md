@@ -69,7 +69,7 @@ The climatologies will be updated when updated Snowcap datasets become available
 |Snowcap variable| Links to daily and monthly climatologies (2015-2023) |
 |:-|:-|
 |Snow depth|Multi-year [Daily mean] / [Daily max] / [Daily min] Multi-year monthly mean / monthly max / monthly min|
-|SWE|ydaymax|Multi-year [Daily mean] / [Daily max] / [Daily min] Multi-year monthly mean / monthly max / monthly min|
+|SWE|Multi-year [Daily mean] / [Daily max] / [Daily min] Multi-year monthly mean / monthly max / monthly min|
 
 
 
