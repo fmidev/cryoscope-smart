@@ -19,7 +19,7 @@ Table below lists all available producers on CryoSCOPE SmartMet server. More dat
 |ERA5LC|2000-2025 Climatologies derived from ERA5LD|India-Himalayas|
 |MODIS|	SYKE Yearly European Melt-off-day 2001-2023|Europe|
 |CLMS|Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE)|Northern Hemisphere|
-|SNOWCAP|2015-2023 Climatologies for SWE and snowdepth from SNOWCAP data|Scandinavia, ~1km grid|
+|SNOWCAP|Multi-year climatologies (2000-2025) for SWE and snowdepth from SNOWCAP data|Scandinavia, ~1km grid|
 |RGI2000|Precipitation and air temperature for different glacier IDs|glacier IDs|
 |ECSF|Seasonal forecast from CDS|India-Himalayas|
 |ECB2SF|Seasonal forecast statistically bias-adjusted, with ERA5|India-Himalayas|
