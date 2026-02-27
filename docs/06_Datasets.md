@@ -13,16 +13,17 @@ Table below lists all available producers on CryoSCOPE SmartMet server. More dat
 
 |Producer|Short Description|Area|
 |:-|:-|:-|
+|ERA5|ERA5 Reanalysis data from CDS|India-Himalayas|
+|ERA5L|ERA5-Land hourly Reanalysis data from CDS 2000-2025|India-Himalayas|
+|ERA5LD|Daily statistics derived from ERA5L 2000-2025|India-Himalayas|
+|ERA5LC|2000-2025 Climatologies derived from ERA5LD|India-Himalayas|
+|MODIS|	SYKE Yearly European Melt-off-day 2001-2023|Europe|
+|CLMS|Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE)|Northern Hemisphere|
+|SNOWCAP|2015-2023 Climatologies for SWE and snowdepth from SNOWCAP data|Scandinavia, ~1km grid|
+|RGI2000|Precipitation and air temperature for different glacier IDs|glacier IDs|
+|ECSF|Seasonal forecast from CDS|India-Himalayas|
 |ECB2SF|Seasonal forecast statistically bias-adjusted, with ERA5|India-Himalayas|
 |ECBSF|Seasonal forecast statistically bias-adjusted, with ERA5-Land|India-Himalayas|
-|ECSF|Seasonal forecast from CDS|India-Himalayas|
-|ERA5|ERA5 Reanalysis data from CDS|India-Himalayas|
-|ERA5L|ERA5-Land Reanalysis data from CDS|India-Himalayas|
-|ERA5LD|Daily statistics derived from ERA5L|India-Himalayas|
-|ERA5LC|2000-2025 Climatologies derived from ERA5LD|India-Himalayas|
-|MODIS|	MODIS data from SYKE|Europe|
-|CLMS||Northern Hemisphere|
-|SNOWCAP|2015-2023 Climatologies for SWE and snowdepth from SNOWCAP data|Scandinavia, ~1km grid|
 
 *CDS short for [Climate Data Store](https://cds.climate.copernicus.eu/)*
 
