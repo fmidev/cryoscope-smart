@@ -123,7 +123,7 @@ ERA5-Land Reanalysis (ERA5L) hourly data for India-Himalayas region (North: 40°
 |ERA5L VARIABLE|Links to daily statistics|Links to climatologies|
 |:-|:-|:-|
 |Soil temperature level 1 |||
-||Soil temperature level 2  |||
+|Soil temperature level 2  |||
 |Soil temperature level 3  |||
 |Soil temperature level 4  |||
 |Skin temperature  |||
