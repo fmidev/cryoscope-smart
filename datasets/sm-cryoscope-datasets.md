@@ -58,7 +58,7 @@ Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SW
 
 ## SNOWCAP climatologies for snowdepth and SWE
 
-On SmartMet server, the data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from SNOWCAP, in approximately 1 km grid over Scandinavia. To avoid overlapping, data is organized in multiple Generations on SmartMet server.  
+On SmartMet server, the data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from [Snowcap](https://snowcap.info/), in approximately 1 km grid over Scandinavia. To avoid overlapping, data is organized in multiple Generations on SmartMet server.  
 
 Although the timestamps are set to 1 January 2020 – 31 December 2020, the values are climatological statistics calculated over the period 2015–2023. For daily statistics, each calendar day in 2020 represents the multi-year mean/maximum/minimum for that specific day-of-year over 2015–2023. For monthly statistics, each monthly value in 2020 represents the multi-year mean/maximum/minimum for that calendar month over 2015–2023. 
 
