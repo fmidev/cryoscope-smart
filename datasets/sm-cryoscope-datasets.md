@@ -135,11 +135,19 @@ ERA5-Land Reanalysis (ERA5L) hourly data for India-Himalayas region (North: 40°
 |[Snow density](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=359;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=TSN-K;pg=main;pi=11;pn=ERA5L;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&p=SND-KGM3)  |[Daily mean] / [Daily max] / [Daily min]|Multi-year [Daily mean] / [Daily max] / [Daily min] Multi-year monthly mean / monthly max / monthly min |
 
 
-## MODIS
+## MODIS Yearly European Melt-off-day (2001-2023)
 
 https://doi.org/10.23729/fd-1bad8a16-9edf-38d9-9628-2bd025d8d9ce
 
+"Dataset of 23 yearly maps featuring information on the first snow-free day in 0.005 degree grid over Europe, EPSG 4326 . These maps are based on Fractional Snow Cover (FSC) maps generated from Terra/MODIS satellite data published within Copernicus service CryoLand. The calculation procedure for deriving Melt-off day from these FSC-maps is developed at Syke.
+
+Melt-off-day is given as Day of Year (DOY), i.e. sequential day number starting with day 1 on January 1st each year.
+
+special codes: -3 no data (meaning that there is not a proper seasonal snow period that Melt-off day could be provided for) -7 permanent snow -13 water"
+
 ## CLMS
+
+Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE) for Northern Hemisphere. 
 
 ## SNOWCAP climatologies for snowdepth and SWE
 
