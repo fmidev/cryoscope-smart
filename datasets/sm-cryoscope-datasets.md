@@ -120,9 +120,9 @@ ERA5-Land Reanalysis (ERA5L) hourly data from Climate Data Store:
 
 ERA5-Land Reanalysis (ERA5L) hourly data for India-Himalayas region (North: 40°, West: 65°, South: 5°, East: 100°) for 2000-2025 is downloaded from Climate Data Store (CDS) and set up to SmartMet server under producer ERA5L. Daily statistics are first derived from hourly data, under producer ERA5LD. Prior to aggregation, the UTC timestamps are shifted so that 00:00 is closer to local midnight in the India–Himalayas region rather than 00:00 UTC (e.g. +6 hours shift). These are then used to compute daily and monthly climatological means, maxima, and minima for the period 2000–2025, under producer ERA5LC. Table below lists all the variables available at the time of writing this; more ERA5-Land variables are added still, for example, soil water variables, precipitation, evaporation, winds, and so on.  
 
-|ERA5L VARIABLE|Links to daily statistics|Links to climatologies|
+|ERA5L VARIABLES (link)|Links to daily statistics|Links to climatologies|
 |:-|:-|:-|
-|Soil temperature level 1 |||
+|[Soil temperature level 1](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=359;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=11;pn=ERA5L;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&p=STL1-K) |||
 |Soil temperature level 2  |||
 |Soil temperature level 3  |||
 |Soil temperature level 4  |||
