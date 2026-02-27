@@ -1,14 +1,12 @@
 # TABLES OF DATASETS AND VARIABLES ON sm.cryo-scope.eu
 
-  - [ECSF, ECBSF, ECB2SF](#ecsf-ecbsf-ecb2sf)
-  - [ERA5](#era5)
-  - [ERA5-Land](#era5-land)
-  - [ERA5-Land derived daily statistics](#era5-land-derived-daily-statistics)
-  - [ERA5-Land derived climatologies](#era5-land-derived-climatologies)
-  - [MODIS](#modis)
-  - [CLMS](#clms)
-  - [SNOWCAP climatologies for snowdepth and SWE](#snowcap-climatologies-for-snowdepth-and-swe)
-  - [RGI2000](#rgi2000)
+- [ECSF, ECBSF, ECB2SF](#ecsf-ecbsf-ecb2sf)
+- [ERA5](#era5)
+- [ERA5-Land, derived daily statistics and climatologies](#era5-land-derived-daily-statistics-and-climatologies)
+- [MODIS](#modis)
+- [CLMS](#clms)
+- [SNOWCAP climatologies for snowdepth and SWE](#snowcap-climatologies-for-snowdepth-and-swe)
+- [RGI2000](#rgi2000)
 
 ## ECSF, ECBSF, ECB2SF
 
