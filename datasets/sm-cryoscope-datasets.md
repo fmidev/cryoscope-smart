@@ -75,7 +75,7 @@ The climatologies will be updated when updated Snowcap datasets become available
 
 ## RGI2000
 
-Precipitation and air temperature for different glacier IDs
+Precipitation and air temperature for different glacier IDs. More information from Harsh Beria (hberia@ethz.ch). 
 
 ## ECSF, ECBSF, ECB2SF
 
