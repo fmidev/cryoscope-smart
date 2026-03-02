@@ -7,7 +7,7 @@ If you have suggestions or wishes for datasets to be added to the SmartMet Serve
 
 ## Datasets on sm.cryo-scope.eu
 
-[Detailed tables of datasets and variables on sm.cryo-scope.eu](../datasets/sm-cryoscope-datasets.md) with more information of available producers, including links to sources.
+[Detailed tables of datasets and variables on sm.cryo-scope.eu](../datasets/sm-cryoscope-datasets.md) with more information of available producers, including links to sources and processing information (all data converted to GRIB1 or GRIB2 before setting up to SmartMet server).
 
 Table below lists all available producers on CryoSCOPE SmartMet server. More data sets can and will be added. 
 
