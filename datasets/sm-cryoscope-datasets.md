@@ -74,7 +74,7 @@ The climatologies will be updated when updated Snowcap datasets become available
 
 ## RGI2000
 
-Precipitation (0.01x mm/day) and air temperature (K) for glacier at Svalbard. More information from Harsh Beria (hberia@ethz.ch). 
+[Precipitation](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=;pn=;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&pi=44) (0.01x mm/day) and [air temperature](https://sm.cryo-scope.eu/grid-gui?session=bg=light;bl=1;cl=Grey;cm=None;f=;fn=;ft=;g=364;gm=;hu=128;is=DarkGrey;iv=Generated;k=;l=;lb=Default;lm=LightGrey;lo=None;lt=;m=0;max=16;mi=Default;min=6;p=;pg=main;pi=44;pn=RGI2000;pre=Image;pro=;sa=60;sm=LightCyan;st=10;sy=None;t=;tg=;tgt=Month;u=;xx=;yy=;&p=TG-K) (K) for glacier at Svalbard. More information from Harsh Beria (hberia@ethz.ch). 
 
 ## ECSF, ECBSF, ECB2SF
 
