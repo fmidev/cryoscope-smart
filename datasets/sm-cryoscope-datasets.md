@@ -56,7 +56,7 @@ special codes: -3 no data (meaning that there is not a proper seasonal snow peri
 
 Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE) for Northern Hemisphere. 
 
-## SNOWCAP climatologies for snowdepth and SWE
+## SNOWCAP climatologies for snow depth and SWE
 
 On SmartMet server, the data under the SNOWCAP producer contains climatologies (2015-2023) for snow depth and SWE from [Snowcap](https://snowcap.info/), in approximately 1 km grid over Scandinavia. To avoid overlapping, data is organized in multiple Generations on SmartMet server.  
 
