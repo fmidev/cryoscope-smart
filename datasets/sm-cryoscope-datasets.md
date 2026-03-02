@@ -74,7 +74,7 @@ The climatologies will be updated when updated Snowcap datasets become available
 
 ## RGI2000
 
-Precipitation (0.01x mm/day) and air temperature (K) for different glacier IDs. More information from Harsh Beria (hberia@ethz.ch). 
+Precipitation (0.01x mm/day) and air temperature (K) for glacier at Svalbard. More information from Harsh Beria (hberia@ethz.ch). 
 
 ## ECSF, ECBSF, ECB2SF
 
