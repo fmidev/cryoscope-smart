@@ -1,0 +1,1 @@
+Here info about ECSF, ECBSF and ECB2SF processing. 

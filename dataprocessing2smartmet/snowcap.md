@@ -1,0 +1,1 @@
+Here info about Snowcap processing
