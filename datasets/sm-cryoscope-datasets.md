@@ -54,9 +54,13 @@ Melt-off-day is given as Day of Year (DOY), i.e. sequential day number starting 
 
 special codes: -3 no data (meaning that there is not a proper seasonal snow period that Melt-off day could be provided for) -7 permanent snow -13 water"
 
+More info on processing workflows from [MODIS processing](../dataprocessing2smartmet/MODIS.md).
+
 ## CLMS
 
 Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE) for Northern Hemisphere. 
+
+More info on processing workflows from [CLMS processing](../dataprocessing2smartmet/CLMS.md).
 
 ## SNOWCAP climatologies for snow depth and SWE
 
@@ -67,6 +71,8 @@ Although the timestamps are set to 1 January 2020 – 31 December 2020, the valu
 SmartMet server parameters **SDE-CM is snowdepth data (m)** and **SD-M is SWE data (m of water equivalent)**.  
 
 The climatologies will be updated when updated Snowcap datasets become available. 
+
+More info on processing workflows from [SNOWCAP processing](../dataprocessing2smartmet/snowcap.md).
 
 |Snowcap variable| Links to daily and monthly climatologies (2015-2023) |
 |:-|:-|
@@ -90,6 +96,8 @@ From Climate Data Store (CDS):
 - [Seasonal forecast subdaily data on pressure levels](https://cds.climate.copernicus.eu/datasets/seasonal-original-pressure-levels?tab=overview)
 
 See Tables below for available variables for ECSF. `x` marks if variable is also available as ECBSF or ECB2SF version (statistically bias-adjusted with either ERA5L or ERA5).
+
+More info on processing workflows from [ECSF processing](../dataprocessing2smartmet/ECSF.md).
 
 ### Temperature and pressure
 
