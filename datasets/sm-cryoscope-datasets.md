@@ -58,9 +58,13 @@ More info on processing workflows from [MODIS processing](../dataprocessing2smar
 
 ## CLMS
 
-Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE) for Northern Hemisphere. 
+Copernicus Land Monitoring service Snow Cover Extend & Snow Water Equivalent (SWE) for Northern Hemisphere (NH). 
 
-More info on processing workflows from [CLMS processing](../dataprocessing2smartmet/CLMS.md).
+|CLMS Variable|Link to Dataset|DOI|
+|:-|:-|:-|
+|Snow Water Equivalent, 5km, NH||https://doi.org/10.2909/58ca9f01-a526-418d-8862-b4be43ef4738|
+
+More info on SmartMet server processing workflows from [CLMS processing](../dataprocessing2smartmet/CLMS.md).
 
 ## SNOWCAP climatologies for snow depth and SWE
 
