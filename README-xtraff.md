@@ -10,6 +10,18 @@ The time it takes to run a XGBoost model training dependes f.ex. on the number o
 
 ## Dependencies
 
+To create xgb environment used in this project, check out the [environment-xtraff.yml](environment-xtraff.yml) file.
+
+To download the seasonal forecast data etc from the Climate Data Store, the CDS API client needs to be installed https://cds.climate.copernicus.eu/api-how-to. You will need to register for an ECMWF account to download data from CDS. To download the seasonal forecast data etc from the Climate Data Store, the CDS API client needs to be installed https://cds.climate.copernicus.eu/api-how-to. You will need to register for an ECMWF account to download data from CDS.
+
+Instructions for Optuna and Optuna Dashboard at https://optuna.org.
+
+For each step it is adviced to use the Linux screen, downloading the data and running the model training/prediction takes time.
+
+The Climate Data Operator (CDO) software is used in predicting the SWI2 for handling the input/output grib files https://code.mpimet.mpg.de/projects/cdo/embedded/index.html#x1-30001.1.
+
+We use the GNU parallel: Tange, O., 2018. GNU Parallel 2018. Available at: https://doi.org/10.5281/zenodo.1146014
+
 ## Target variable 
 
 ## Downloading the features used in model training
