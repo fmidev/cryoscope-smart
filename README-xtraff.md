@@ -27,7 +27,7 @@ We use the GNU parallel: Tange, O., 2018. GNU Parallel 2018. Available at: https
 Target variable for the XGBoost classification model is 1,348 collected in-situ observations via the *Water in Your Boots?* web application form during summer 2025 observation campaign. Includes location information and datetime, among other. 
 
 | Target Variable | Sources | Spatial resolution | Temporal resolution |
-|---|---|---|---|
+|:-|:-|:-|:-|
 | Soil wetness class<br>Very dry – 0<br>Dry – 1<br>Moist – 2<br>Wet – 3<br>Extremely wet – 4 | In-situ observations from *Water in Your Boots?* 2025 observation campaign | 1,348 observations used as ML training target from Finland, Sweden, Norway (1,716 in total) | March 2025 – October 2025 |
 
 ## Downloading the features used in model training
