@@ -125,7 +125,22 @@ From path `~/config/engines/grid-engine` you find `mapping fmi.csv` and `mapping
 
 `ERA5L;T2-C;2;T2-K;5022;;1;00000;;;;0;E;SUM{$,-273.15};SUM{$,273.15};;`
 
-Now, new parameter should become visible at grid-gui. If not, check for typos in definition files. You can also check with grid dump if mappings are correct at server: `sudo docker exec smartmet-server /bin/files/grid_dump /srv/data/grib/name_of_file.grib | less`. Sometimes there might be duplicate mappings (ids or names) which mess up the system, check for those too. Now, if you see something like FMI-0 in the `mapping fmi auto.csv`, something went wrong in the mappings definitions. 
+Now, new parameter should become visible at grid-gui. If not, check for typos in definition files. You can also check with grid dump if mappings are correct at server: `sudo docker exec smartmet-server /bin/files/grid_dump /srv/data/grib/name_of_file.grib | less`. Sometimes there might be duplicate mappings (ids or names) which mess up the system, check for those too. Now, if you see something like `FMI-0` instead of your variable name in the `mapping fmi auto.csv`, something went wrong in the mappings definitions. 
 
 ### Removing tmp files 
 
+Run the following commands: 
+
+1) `sudo docker exec -ti smartmet-server bash`
+2) `cd tmp/`
+3) `grep ERA5L_2000 F2*`
+
+Here, #3 is example if the name for the GRIB file that has our variable starts with that (f.ex. full filename could be ERA5L_20000101T000000_2014_soilwater.grib). This will print all filenames with similar start, so more specific gives less results. One example: 
+
+`F2S_9736373159601227040:#:/srv/data/grib/ERA5L_20000101T000000_2014_soilwater.grib`
+
+That's the one we are looking for. Next, remove the tmp file with 
+
+`rm F2S_9736373159601227040`
+
+Then continue what previous section said. 
