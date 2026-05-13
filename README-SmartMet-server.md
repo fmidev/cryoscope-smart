@@ -56,9 +56,31 @@ In case you can't find your variable, define a new row in `~/config/libraries/gr
 
 `10000165;U10-MS;m/s;10 metre U wind component;1;1;1;2;`
 
-Here, FmiParameterId is given as 10000000 + parameter ID from https://codes.ecmwf.int/grib/param-db/. For example for 10m U-wind component parameterID is 165 (https://codes.ecmwf.int/grib/param-db/?id=165). FmiParameterName is fmi-name with units, for new parameters you can decide the name (here U10-MS). In theory you could name it to RAINBOW-PONY, but common rule to follow is NAME-UNITS and using descriptive names. You can copy an existing row in the file, and just change the 4 first fields. So, to recap, fill in this information: 
+Here, FmiParameterId is given as 10000000 + parameter ID from https://codes.ecmwf.int/grib/param-db/. For example for 10m U-wind component parameterID is 165 (https://codes.ecmwf.int/grib/param-db/?id=165). FmiParameterName is fmi-name with units, for new parameters you can decide the name (here U10-MS). In theory you could name it to RAINBOW-PONY, but common rule to follow is SHORTNAME-UNITS and using descriptive names. You can copy an existing row in the file, and just change the 4 first fields. So, to recap, fill in this information: 
 
 1) FMI-ID (10000000 + parameter ID)
-2) FMI-name (variable-units)
+2) FMI-name (shortname-units)
 3) Units
 4) Full name of variable
+
+### GRIB parameter definitions
+
+From path `~/config/libraries/grid-files` and `~/config/libraries/grid-files/ext` you will find grib1 parameters.csv and and grib2 parameters.csv, for GRIB1 and GRIB2 parameter definitions, respectively. 
+
+Usually GRIB definitions already exist, but there are exeptions. Similar to before, if there isn’t a definition for parameter, create a new one in `ext/grib1 parameters.csv` or `ext/grib2 parameters.csv`. Below are examples for GRIB1 and GRIB2:
+
+`# GRIB1`
+
+`# Soil wetness level 2`
+
+`171;table2Version=128,indicatorOfParameter=171;`
+
+All the info can be found in https://codes.ecmwf.int/grib/param-db/ OR in the grib file with `sinfo` and `sinfon`. First field is parameter-id (here grib-id), for grib1 you need to give table2version and indicatorOfParameter. F.ex. for soil wetness level 2 check out https://codes.ecmwf.int/grib/param-db/?id=171 GRIB1 edition for these.
+
+`# GRIB2`
+
+`# Soil type`
+
+`43;discipline=2,parameterCategory=3,parameterNumber=0;`
+
+Here https://codes.ecmwf.int/grib/param-db/?id=43 and GRIB2 edition for discipline, parameterCategory and parameterNumber information for soil type.
