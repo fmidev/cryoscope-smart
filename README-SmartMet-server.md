@@ -1,5 +1,19 @@
 # SmartMet server configuration instructions
 
+## Table of Contents
+
+- [SmartMet server configuration instructions](#smartmet-server-configuration-instructions)
+  - [Parameter mapping](#parameter-mapping)
+    - [Inspecting GRIB files](#inspecting-grib-files)
+    - [FMI parameter definitions](#fmi-parameter-definitions)
+    - [GRIB parameter definitions](#grib-parameter-definitions)
+    - [FMI to GRIB definitions](#fmi-to-grib-definitions)
+    - [Reading in new mappings](#reading-in-new-mappings)
+    - [Removing tmp files](#removing-tmp-files)
+    - [One more note](#one-more-note)
+
+
+
 ## Parameter mapping 
 
 ### Inspecting GRIB files 
