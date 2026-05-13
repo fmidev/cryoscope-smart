@@ -2,7 +2,6 @@
 import pandas as pd
 import xgboost as xgb
 from sklearn.model_selection import train_test_split
-# CHANGED: added cohen_kappa_score and recall_score
 from sklearn.metrics import f1_score, classification_report, cohen_kappa_score, recall_score
 from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
@@ -24,15 +23,13 @@ print(f"Study name: {studyName}")
 
 class_names = ['Very dry', 'Dry', 'Moist', 'Wet', 'Extremely wet']
 
-# ====================================================================
-# CHANGED: Optuna optimization metric configuration
 # Choose the metric Optuna maximizes. All metrics are reported in
 # the evaluation regardless of which one is used for optimization.
 #   'qwk'          - Quadratic Weighted Kappa (ordinal-aware, recommended)
 #   'macro_f1'     - Macro-averaged F1 score (original)
 #   'macro_recall' - Macro-averaged recall (emphasises not missing classes)
 #   'composite'    - 0.6 * QWK + 0.4 * Macro F1
-# ====================================================================
+
 OPTIMIZATION_METRIC = 'qwk'
 
 METRIC_DISPLAY_NAMES = {
@@ -65,7 +62,6 @@ def compute_all_metrics(y_true, y_pred):
     }
 
 print(f"Optimization metric: {METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]}")
-# ====================================================================
 
 # paths
 optuna_dir = '/home/smartmet/copernicus/IBAML/'
@@ -76,7 +72,7 @@ os.makedirs(res_dir, exist_ok=True)
 
 os.chdir(optuna_dir)
 
-input_file = f'{optuna_dir}xtraff_training_data_filled.csv'
+input_file = f'{optuna_dir}xtraff_training_data.csv'
 
 # Columns used in training (not used are commented out)
 use_cols=[#'time', 'latitude', 'longitude', 'latlon_id', 'certainty', 'date', 'closest_hour', 'answer',
@@ -200,7 +196,6 @@ def objective(trial):
     )
 
     y_pred = model.predict(X_valid)
-    # CHANGED: use compute_score() with configurable metric
     score = compute_score(y_valid, y_pred)
     return score
 
@@ -214,7 +209,6 @@ study = optuna.create_study(
 study.optimize(objective, n_trials=100)
 
 # Optuna optimization history plot (dashboard not working)
-# CHANGED: dynamic metric label in plot
 metric_label = METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]
 trials = study.trials
 trial_numbers = [t.number for t in trials]
@@ -242,7 +236,6 @@ print("\n" + "=" * 60)
 print("BEST TRIAL")
 print("=" * 60)
 trial = study.best_trial
-# CHANGED: dynamic metric name in printout
 print(f"{metric_label} (validation): {trial.value:.4f}")
 print(f"Params: {trial.params}")
 
@@ -269,8 +262,6 @@ with open(feature_list_file, 'w') as fout:
     json.dump(final_model.get_booster().feature_names, fout, indent=2)
 print(f"Feature list saved to {feature_list_file}")
 
-
-# CHANGED: evaluate_and_save now returns and prints all three metrics
 def evaluate_and_save(model, X_data, y_data, dataset_label, studyName, res_dir, class_names):
     y_pred = model.predict(X_data)
     all_metrics = compute_all_metrics(y_data, y_pred)
@@ -309,8 +300,6 @@ def evaluate_and_save(model, X_data, y_data, dataset_label, studyName, res_dir, 
 
     return report_str, all_metrics
 
-
-# CHANGED: callers now receive dict of all metrics instead of just macro F1
 report_train, metrics_train = evaluate_and_save(
     final_model, X_train, y_train, "train", studyName, res_dir, class_names)
 report_valid, metrics_valid = evaluate_and_save(
@@ -324,7 +313,6 @@ summary_file = f'{res_dir}xgb_iba_summary_{studyName}.txt'
 with open(summary_file, 'w') as f:
     f.write(f"Study: {studyName}\n")
     f.write(f"Input file: {input_file}\n")
-    # CHANGED: log which optimization metric was used
     f.write(f"Optimization metric: {METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]} "
             f"(key: {OPTIMIZATION_METRIC})\n")
     f.write(f"Dataset shape: {df.shape}\n")
@@ -357,11 +345,9 @@ with open(summary_file, 'w') as f:
     f.write("=" * 60 + "\n")
     f.write("BEST OPTUNA TRIAL\n")
     f.write("=" * 60 + "\n")
-    # CHANGED: dynamic label
     f.write(f"{metric_label} (validation, Optuna): {trial.value:.4f}\n")
     f.write(f"Params: {json.dumps(trial.params, indent=2)}\n\n")
 
-    # CHANGED: include all three metrics for each split
     for label, metrics, report in [
         ("train", metrics_train, report_train),
         ("valid", metrics_valid, report_valid),
