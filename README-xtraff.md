@@ -38,11 +38,11 @@ We use the GNU parallel: Tange, O., 2018. GNU Parallel 2018. Available at: https
 
 ## Target variable 
 
-Target variable for the XGBoost classification model is 1,348 in-situ observations collected via the *Water in Your Boots?* (currently: https://trafficability.xyz/) web application during summer 2025 observation campaign. Includes location information and datetime, among other. More information from the publication. To process observations, we run [process-iba-observations.py](process-iba-observations.py) script. The 2025 observations are not yet published. To plot observation locations on map, run [plot](plot). 
+Target variable for the XGBoost classification model is 1,708 in-situ observations collected via the *Water in Your Boots?* (currently: https://trafficability.xyz/) web application during summer 2025 observation campaign. More information of target variable from the publication. To process observations, we run [process-xtraff-observations.py](process-xtraff-observations.py) script. The 2025 observations are not yet published.  
 
 | Target Variable | Sources | Spatial resolution | Temporal resolution |
 |:-|:-|:-|:-|
-| Soil wetness class<br>Very dry – 0<br>Dry – 1<br>Moist – 2<br>Wet – 3<br>Extremely wet – 4 | In-situ observations from *Water in Your Boots?* 2025 observation campaign | 1,348 observations used as ML training target from Finland, Sweden, Norway (1,716 in total) | March 2025 – October 2025 |
+| Soil wetness class<br>Very dry – 0<br>Dry – 1<br>Moist – 2<br>Wet – 3<br>Extremely wet – 4 | In-situ observations from *Water in Your Boots?* 2025 observation campaign | 1,708 observations used as ML training target from Finland, Sweden, Norway (1,716 in total) | March 2025 – October 2025 |
 
 ## Downloading the features used in model training
 
@@ -60,13 +60,9 @@ To fetch the static ECC features, run the [ts-ecc-xtraff.py](ts-ecc-xtraff.py) s
 
 The other static features, such as TWI, were acquired from copernicus.data.lit.fmi.fi (HTML index not up-to-date) with `gdallocationinfo`. Example query: `(echo "lat,lon,clay_5-15cm"; paste iba_lonlat.txt <(gdallocationinfo -wgs84 -valonly /vsicurl/https://copernicus.data.lit.fmi.fi/soilgrids/clay/202005_clay_5-15cm_mean_250.tif < iba_lonlat.txt) | awk '{print $2","$1","$3}') > soilgrids/iba-clay_5-15cm.txt` where you need text file which lists one point per row, with longitude in the first column and latitude in the second. 
 
-All features used in training are described in [Appendix A1](linkhere). 
-
 ## Training the model 
 
-You´ll need to combine all the features and target as one input csv for the XGBoost training scripts (all chosen locations, full time series) with Linux standard cut and paste commands, or by other means (python scripts). Note that static predictors need to be repeated daily to match timeseries data. The first row of the input table should be column names, all parameters from training csv file (not all were used in the final trained model):
-
-`time,latitude,longitude,latlon_id,class_target,date,closest_hour,user_latitude,user_longitude,accuracy,certainty,answer,accuracy_own,laihv,lailv,rsn,sd,sp,stl1,swvl1,swvl2,swvl3,swvl4,t2,td2,u10,v10,q500,q700,q850,q925,t500,t700,t850,t925,u500,u700,u850,u925,v500,v700,v850,v925,z500,z700,z850,z925,e,ro,sf,slhf,sro,sshf,ssr,ssrd,ssro,str,strd,tp,swi2,date_reform,VH,VV,VH/VV,pm_VH,pm_VV,pm_VH/VV,ndmi_1,ndmi_2,swi1,twi300m,twi,dtmaspect,dtmslope,dtmheight,cvh,lake_cover,land_cover,tvh,urban_cover,cvl,lake_depth,soiltype,tvl,clay_0-5cm,clay_5-15cm,clay_15-30cm,sand_0-5cm,sand_5-15cm,sand_15-30cm,silt_0-5cm,silt_5-15cm,silt_15-30cm,soc_0-5cm,soc_5-15cm,soc_15-30cm,tri,swi1_twi_corrected,swi2_twi_corrected`
+You´ll need to combine all the features and target as one input csv for the XGBoost training scripts (all chosen locations, full time series) with Linux standard cut and paste commands, or by other means (python scripts). Note that static predictors need to be repeated daily to match timeseries data. The first row of the input table should be column names.
 
 To perform the Optuna hyperparameter tuning (https://optuna.org/), run [xgb-fit-optuna-xtraff.py](xgb-fit-optuna-xtraff.py) and give studynumber as cmd (example: `python xgb-fit-optuna-xtraff.py 001`). This script will produce several results (SHAP figures, confusion matrix, classification report, Optuna optimization history plot, model trained with best hyperparameters, etc). 
 
@@ -78,7 +74,7 @@ XGBoost prediction is done with [xgb-predict-xtraff-present.py](xgb-predict-xtra
 
 ## End-user service trafficability.xyz 
 
-
+https://github.com/fmidev/trafficability-app 
 
 ## Contact
 

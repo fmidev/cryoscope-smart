@@ -90,8 +90,8 @@ conda activate cdo
 
 ## create disaccumulated variables
 [ -s ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-nd-50.grib ] && ! [ -s ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-disacc-nd-50.grib ] && \
- seq 0 50 | parallel "cdo -s --eccodes -O mergetime -seltimestep,1 -selname,e,tp,slhf,sshf,ro,sro,ssro,str,strd,ssr,ssrd,sf ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-nd-{}.grib \
-     -deltat -selname,e,tp,slhf,sshf,ro,sro,ssro,str,strd,ssr,ssrd,sf ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-nd-{}.grib ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-disacc-nd-{}.grib"
+ seq 0 50 | parallel "cdo -s --eccodes -O mergetime -seltimestep,1 -selname,e,pev,tp,slhf,sshf,ro,sro,ssro,str,strd,ssr,ssrd,sf ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-nd-{}.grib \
+     -deltat -selname,e,pev,tp,slhf,sshf,ro,sro,ssro,str,strd,ssr,ssrd,sf ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-nd-{}.grib ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-disacc-nd-{}.grib"
 
 # add snow depth to ec-ens
 [ -s ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-nd-50.grib ] && [ ! -s ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc+sde-nd-50.grib ] && \
@@ -138,9 +138,9 @@ echo 'shift laihv lailv swi2clim dates'
     cdo -s seldate,$DATE,$EDATE -shifttime,${diff}years SWIC_20000101T000000_2020_2015-2022_swis-ydaymean-nd-9km-fixed-fix-merged.grib ec-ens/SWIC_${year}${month}${day}T000000_2020_2015-2022_swis-ydaymean-nd-9km-fixed.grib || echo 'not shifting'
 #seldate,$DATE,$EDATE
 
-# EC-ENS sfc+sde 2t,2d,rsn,sd,stl1,swvl1-4,sde,sp,u10,v10
+# EC-ENS sfc+sde 2t,2d,rsn,sd,stl1,stl2,swvl1-4,sde,sp,u10,v10,src,skt
 sfc_input=ec-ens/ensmems/ECENS_${year}${month}${day}T000000_${era}_sfc+sde-nd-{}.grib
-# disaccumulated variables e,tp,slhf,sshf,ro,sro,ssro,str,strd,ssr,ssrd,sf
+# disaccumulated variables e,pev,tp,slhf,sshf,ro,sro,ssro,str,strd,ssr,ssrd,sf
 disacc_input=ec-ens/ensmems/ec-ens_${DATE}_${era}_sfc-disacc-nd-{}.grib
 # pressure level variables t u q v z at 500,700,850,925 hPa
 pl_input=ec-ens/ensmems/ECENS_${year}${month}${day}T000000_${era}_pl-nd-{}.grib
@@ -252,7 +252,7 @@ oceanmask=ec-ens/ERA5L_oceanmask_${ONEDATE}.grib
 echo 'start xgboost predict for SWI1 present model'
 conda activate xgb2
 #! [ -s ec-ens/ensmems/ECXENS_${year}${month}${day}_swi1-present_300m-nd-50.nc ] && 
-seq 0 50 | parallel --ungroup -j1 python /home/users/smartmet/firedanger-smartmet/bin/xgb-predict-iba-present.py $sfc_input_2 $disacc_input_2 $pl_input_2 $laihv_input_2 $lailv_input_2 $swi2_input_2 $sg_input $ecc_input $twi_input $oceanmask $height_in $aspect_in $slope_in $tri_input $output2  || echo 'NOT XGBoost predict for SWI1 - no input or already produced'
+seq 0 50 | parallel --ungroup -j1 python /home/users/smartmet/firedanger-smartmet/bin/xgb-predict-xtraff-present.py $sfc_input_2 $disacc_input_2 $pl_input_2 $laihv_input_2 $lailv_input_2 $swi2_input_2 $sg_input $ecc_input $twi_input $oceanmask $height_in $aspect_in $slope_in $tri_input $output2 {} || echo 'NOT XGBoost predict for SWI1 - no input or already produced'
 
 conda activate cdo
 # netcdf to grib
@@ -269,7 +269,7 @@ seq 0 50 | parallel grib_set -r -s edition=1,setLocalDefinition=1,localDefinitio
 echo 'join ensemble members and move to grib folder'
 generation="${ONEDATE//-/}"
 #! [ -s grib/ECXENS_${year}${month}${day}T120000_${ONEDATE}_swi1-present-300m-nd.grib ] && 
-grib_copy ec-ens/ensmems/ECXENS_${year}${month}${day}_swi1-present_nd-*-fixed.grib grib/XTRAFF_${generation}T000000_soilmoistureclass-present-300m-nd-FINALMODEL.grib || echo "NOT joining ens members - no input or already done"
+grib_copy ec-ens/ensmems/ECXENS_${year}${month}${day}_swi1-present_nd-*-fixed.grib grib/XTRAFF_20250101T000000_${generation}T000000_waterinyourboots-300m-nd-XTRAFF-FIN.grib || echo "NOT joining ens members - no input or already done"
 
 #sudo docker exec smartmet-server /bin/fmi/filesys2smartmet /home/smartmet/config/libraries/tools-grid/filesys-to-smartmet.cfg 0
 
