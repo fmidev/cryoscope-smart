@@ -84,3 +84,24 @@ All the info can be found in https://codes.ecmwf.int/grib/param-db/ OR in the gr
 `43;discipline=2,parameterCategory=3,parameterNumber=0;`
 
 Here https://codes.ecmwf.int/grib/param-db/?id=43 and GRIB2 edition for discipline, parameterCategory and parameterNumber information for soil type.
+
+### FMI to GRIB definitions
+
+Next comes the "mapping" - we need to map GRIB identifiers to FMI identifiers. Paths are same, files are named `fmi parameterID grib.csv`. Below is an example: 
+
+`# FIELDS:`
+
+`# 1) FmiParameterId/FmiParameterName`
+
+`# 2) GribParameterId`
+
+`# 3) ConversionFunction`
+
+`# 4) ReverseConversionFunction`
+
+`# 165:10 metre U wind component (m s-1)`
+
+`U10-MS;165;;;`
+
+First field is fmi-name defined in fmi parameters.csv, second field is grib-id from grib* parameters.csv. It is that simple.
+
