@@ -105,3 +105,27 @@ Next comes the "mapping" - we need to map GRIB identifiers to FMI identifiers. P
 
 First field is fmi-name defined in fmi parameters.csv, second field is grib-id from grib* parameters.csv. It is that simple.
 
+### Reading in new mappings
+
+When all three mapping definitions are ready, you need to run **filesys2smartmet** to generate automatic mappings and read data to server. 
+
+`sudo docker exec smartmet-server /bin/fmi/filesys2smartmet /etc/smartmet/libraries/tools-grid/filesys-to-smartmet.cfg 0`
+
+Sometimes tmp files need to be removed first, otherwise new mappings are not visible. Instructions for that are in the next section. The working order is. 
+
+1) Remove tmp files (see next section)
+2) Move GRIB file from grib/ directory to /data directory 
+3) Run **filesys2smartmet** 
+4) Move GRIB file back to grib/ directory
+5) Run **filesys2smartmet** again
+
+From path `~/config/engines/grid-engine` you find `mapping fmi.csv` and `mapping fmi auto.csv` with all mappings for parameters. Mappings are automatically generated to `mapping fmi auto.csv` and they should be moved to the permanent mapping file `mapping fmi.csv` which is not automatically overriden. Below two examples. First is automatically generated mapping for parameter, second is user-defined (afterwards added) unit change. Here T2-K and T2-C are 2m temperatures in Kelvins and Celsius. Only T2-K is visible at grid-gui but f.ex. Timeseries queries or WMS layers can be made for T2-C too. There are several functions for these, f.ex. MUL for multiplication. More information can be seen in the mapping files.
+
+`ERA5L;T2-K;2;T2-K;5022;;1;00000;;;;0;E;;;;`
+
+`ERA5L;T2-C;2;T2-K;5022;;1;00000;;;;0;E;SUM{$,-273.15};SUM{$,273.15};;`
+
+Now, new parameter should become visible at grid-gui. If not, check for typos in definition files. You can also check with grid dump if mappings are correct at server: `sudo docker exec smartmet-server /bin/files/grid_dump /srv/data/grib/name_of_file.grib | less`. Sometimes there might be duplicate mappings (ids or names) which mess up the system, check for those too. Now, if you see something like FMI-0 in the `mapping fmi auto.csv`, something went wrong in the mappings definitions. 
+
+### Removing tmp files 
+
