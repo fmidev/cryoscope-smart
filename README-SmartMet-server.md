@@ -56,4 +56,9 @@ In case you can't find your variable, define a new row in `~/config/libraries/gr
 
 `10000165;U10-MS;m/s;10 metre U wind component;1;1;1;2;`
 
-Here, FmiParameterId is given as 10000000 + parameter ID from https://codes.ecmwf.int/grib/param-db/. For example for 10m U-wind component parameterID is 165 (https://codes.ecmwf.int/grib/param-db/?id=165). FmiParameterName is fmi-name with units, for new parameters you can decide the name (here U10-MS). In theory you could name it to RAINBOW-PONY, but common rule to follow is NAME-UNITS and using descriptive names. 
+Here, FmiParameterId is given as 10000000 + parameter ID from https://codes.ecmwf.int/grib/param-db/. For example for 10m U-wind component parameterID is 165 (https://codes.ecmwf.int/grib/param-db/?id=165). FmiParameterName is fmi-name with units, for new parameters you can decide the name (here U10-MS). In theory you could name it to RAINBOW-PONY, but common rule to follow is NAME-UNITS and using descriptive names. You can copy an existing row in the file, and just change the 4 first fields. So, to recap, fill in this information: 
+
+1) FMI-ID (10000000 + parameter ID)
+2) FMI-name (variable-units)
+3) Units
+4) Full name of variable
