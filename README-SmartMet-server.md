@@ -37,12 +37,23 @@ The file we are interested in is `fmi_parameters.csv` - identical filename in bo
 In case you can't find your variable, define a new row in `~/config/libraries/grid-files/ext/fmi_parameters.csv`. Here example for 10m U-component of wind:
 
 `# FIELDS:`
+
 `# 1) FmiParameterId`
+
 `# 2) FmiParameterName`
+
 `# 3) FmiParameterUnits`
+
 `# 4) FmiParameterDescription`
+
 `# 5) AreaInterpolationMethod`
+
 `# 6) TimeInterpolationMethod`
+
 `# 7) LevelInterpolationMethod`
+
 `# 8) DefaultPrecision`
+
 `10000165;U10-MS;m/s;10 metre U wind component;1;1;1;2;`
+
+Here, FmiParameterId is given as 10000000 + parameter ID from https://codes.ecmwf.int/grib/param-db/. For example for 10m U-wind component parameterID is 165 (https://codes.ecmwf.int/grib/param-db/?id=165). FmiParameterName is fmi-name with units, for new parameters you can decide the name (here U10-MS). In theory you could name it to RAINBOW-PONY, but common rule to follow is NAME-UNITS and using descriptive names. 
