@@ -2,7 +2,8 @@
 import pandas as pd
 import xgboost as xgb
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import f1_score, classification_report
+# CHANGED: added cohen_kappa_score and recall_score
+from sklearn.metrics import f1_score, classification_report, cohen_kappa_score, recall_score
 from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,13 +19,56 @@ Usage: python xgb-iba-optuna.py <study_number>
 '''
 
 study_number = sys.argv[1]
-studyName = f'xgb-soilmoistureclass_{study_number}'
+studyName = f'xgb_waterinyourboots_{study_number}'
 print(f"Study name: {studyName}")
 
 class_names = ['Very dry', 'Dry', 'Moist', 'Wet', 'Extremely wet']
 
+# ====================================================================
+# CHANGED: Optuna optimization metric configuration
+# Choose the metric Optuna maximizes. All metrics are reported in
+# the evaluation regardless of which one is used for optimization.
+#   'qwk'          - Quadratic Weighted Kappa (ordinal-aware, recommended)
+#   'macro_f1'     - Macro-averaged F1 score (original)
+#   'macro_recall' - Macro-averaged recall (emphasises not missing classes)
+#   'composite'    - 0.6 * QWK + 0.4 * Macro F1
+# ====================================================================
+OPTIMIZATION_METRIC = 'qwk'
+
+METRIC_DISPLAY_NAMES = {
+    'qwk':          'Quadratic Weighted Kappa',
+    'macro_f1':     'Macro F1',
+    'macro_recall': 'Macro Recall',
+    'composite':    '0.6 * QWK + 0.4 * Macro F1',
+}
+
+def compute_score(y_true, y_pred, metric=OPTIMIZATION_METRIC):
+    """Single-value scoring function for Optuna."""
+    if metric == 'qwk':
+        return cohen_kappa_score(y_true, y_pred, weights='quadratic')
+    elif metric == 'macro_f1':
+        return f1_score(y_true, y_pred, average='macro')
+    elif metric == 'macro_recall':
+        return recall_score(y_true, y_pred, average='macro')
+    elif metric == 'composite':
+        return (0.6 * cohen_kappa_score(y_true, y_pred, weights='quadratic')
+                + 0.4 * f1_score(y_true, y_pred, average='macro'))
+    else:
+        raise ValueError(f"Unknown OPTIMIZATION_METRIC: {metric}")
+
+def compute_all_metrics(y_true, y_pred):
+    """Compute all relevant metrics for reporting."""
+    return {
+        'macro_f1':     f1_score(y_true, y_pred, average='macro'),
+        'macro_recall': recall_score(y_true, y_pred, average='macro'),
+        'qwk':          cohen_kappa_score(y_true, y_pred, weights='quadratic'),
+    }
+
+print(f"Optimization metric: {METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]}")
+# ====================================================================
+
 # paths
-optuna_dir = 'yourpath/optuna/'
+optuna_dir = '/home/smartmet/copernicus/IBAML/'
 mod_dir = f'{optuna_dir}/models/'
 res_dir = f'{optuna_dir}/results/'
 os.makedirs(mod_dir, exist_ok=True)
@@ -32,45 +76,38 @@ os.makedirs(res_dir, exist_ok=True)
 
 os.chdir(optuna_dir)
 
-input_file = 'yourpath/training_iba_era5_era5l_swi2_swi1_sg_ecc_twi30m_twi300m_tri_ndmi_sen1_dtm.csv'
+input_file = f'{optuna_dir}xtraff_training_data_filled.csv'
 
-# Columns used in training
-use_cols=[
-    #'time', 'accuracy', 'certainty', 'answer', 'date','latlon_id', 'closest_hour', 'date_reform', 
-    'class_target', 
-    'latitude', 'longitude', 'user_latitude', 'user_longitude',
-    'accuracy_own', 
-    'laihv', 'lailv', 'rsn', 'sd', 'sp', 'stl1', 'swvl1', 'swvl2', 'swvl3', #'swvl4', 
-    't2', 'td2', 'u10', 'v10', 
-    #'q500', 't500', 'u500', 'v500', 'z500',
-    'q700', 't700', 'u700', 'v700','z700',
-    'q850', 't850','u850', 'v850', 'z850',
-    'q925',  't925', 'u925', 'v925', 'z925', 
-    'e', 'ro', 'sf', 'slhf', 'sro', 'sshf', 'ssr', 'ssrd',
-    'ssro', 'str', 'strd', 'tp', 'cvh', 
-    'lake_cover', 'land_cover', 'tvh', 'urban_cover', 'cvl', 
-    'lake_depth', 'soiltype', 'tvl',
-    #'VH', 'VV', 'VH/VV', 'pm_VH', 'pm_VV', 'pm_VH/VV',
-    'clay_0-5cm', 'clay_5-15cm', 'clay_15-30cm', 'sand_0-5cm', 'sand_5-15cm', 'sand_15-30cm',
-    'silt_0-5cm', 'silt_5-15cm', 'silt_15-30cm', 'soc_0-5cm', 'soc_5-15cm', 'soc_15-30cm',
-    'twi', 
-    #'ndmi_1', 'ndmi_2', 
-    'swi1','swi2', 
-    #'tpi',
-    'tri',
-    #'dtw',
-    'dtmheight', 'dtmslope', 'dtmaspect'
-    ]
+# Columns used in training (not used are commented out)
+use_cols=[#'time', 'latitude', 'longitude', 'latlon_id', 'certainty', 'date', 'closest_hour', 'answer',
+          'class_target', 'accuracy_own',
+          'swi1', 'swi2',
+          'clay_0-5cm', 'clay_5-15cm', 'clay_15-30cm',
+          'sand_0-5cm', 'sand_5-15cm', 'sand_15-30cm',
+          'silt_0-5cm', 'silt_5-15cm', 'silt_15-30cm',
+          'soc_0-5cm', 'soc_5-15cm', 'soc_15-30cm',
+          'dtm_height', 'dtm_aspect', 'dtm_slope',
+          'twi', 'tri',
+          'cvh', 'lake_cover', 'land_cover', 'tvh', 'urban_cover', 'cvl', 'lake_depth', 'soiltype', 'tvl',
+          #'laihv_era5l', 'lailv_era5l',
+          'rsn', 'sd', 
+          'skt', 'sp', 'src', 'stl1', 'stl2',# 'stl3', 'stl4',
+          'swvl1', 'swvl2', 'swvl3', #'swvl4',
+          't2', 'td2', 'u10', 'v10',
+          'e', 'ep', 'ro', 'sf', 'slhf', 'sro', 'sshf', 'ssr', 'ssrd', 'ssro',
+          'str', 'strd', #'t24max', 't24min', 
+          'tp', #'kx', 'lsp',
+          'q700', 't700', 'u700','v700', 'z700', 
+          'q850', 't850', 'u850', 'v850', 'z850', 
+          'q925', 't925', 'u925', 'v925', 'z925',
+          #'laihv_ecc', 'lailv_ecc',
+          #'DayOfYear',
+          'laihv', 'lailv',
+          'doy_sin', 'doy_cos']
 
 # Read in training data
 df = pd.read_csv(input_file, usecols=use_cols)
 print(df)
-
-# Resolve latitude/longitude: prefer user-reported location
-df['lat'] = df['user_latitude'].fillna(df['latitude'])
-df['lon'] = df['user_longitude'].fillna(df['longitude'])
-df = df.drop(columns=['latitude', 'longitude', 'user_latitude', 'user_longitude'])
-df = df.drop(columns=['lat', 'lon'])
 
 # Drop columns that are entirely NaN
 df = df.dropna(axis=1, how='all')
@@ -82,6 +119,7 @@ print(f"Class distribution:\n{df['class_target'].value_counts().sort_index()}")
 X = df.drop(columns=['class_target'])
 y = df['class_target']
 
+print(X.columns.tolist())
 print(f"Features: {len(X.columns)}")
 
 ### 2-way stratified split: train / validation
@@ -91,7 +129,6 @@ X_train, X_valid, y_train, y_valid = train_test_split(
 print(f"Train: {len(X_train)}, Valid: {len(X_valid)}")
 print(f"  Train classes: {dict(y_train.value_counts().sort_index())}")
 print(f"  Valid classes:  {dict(y_valid.value_counts().sort_index())}")
-
 
 # Handle class imbalance by oversampling in the training set
 def oversample_minority_classes(X_train, y_train, target_ratio=0.5):
@@ -134,15 +171,15 @@ class_weights = dict(zip(classes, weights))
 sample_weights = y_train_os.map(class_weights)
 print(f"Class weights: {class_weights}")
 
-# Optuna objective function for hyperparameter tuning and finding best model parameters based on validation macro F1 score
+# Optuna objective function for hyperparameter tuning and finding best model parameters
 def objective(trial):
     params = {
-        'objective': trial.suggest_categorical("objective", ["multi:softmax", "multi:softprob"]),
+        'objective': 'multi:softmax',
         'num_class': 5,
         'eval_metric': 'mlogloss',
         'max_depth': trial.suggest_int('max_depth', 3, 10),
         'learning_rate': trial.suggest_float('learning_rate', 0.005, 0.3, log=True),
-        'n_estimators': trial.suggest_int('n_estimators', 100, 1500, step=50),
+        'n_estimators': trial.suggest_int('n_estimators', 500, 1500,step=100),
         'subsample': trial.suggest_float('subsample', 0.5, 1.0),
         'colsample_bytree': trial.suggest_float('colsample_bytree', 0.5, 1.0),
         'gamma': trial.suggest_float('gamma', 0.0, 5.0),
@@ -163,7 +200,8 @@ def objective(trial):
     )
 
     y_pred = model.predict(X_valid)
-    score = f1_score(y_valid, y_pred, average='macro')
+    # CHANGED: use compute_score() with configurable metric
+    score = compute_score(y_valid, y_pred)
     return score
 
 # Run Optuna study
@@ -176,17 +214,19 @@ study = optuna.create_study(
 study.optimize(objective, n_trials=100)
 
 # Optuna optimization history plot (dashboard not working)
+# CHANGED: dynamic metric label in plot
+metric_label = METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]
 trials = study.trials
 trial_numbers = [t.number for t in trials]
 trial_values = [t.value if t.value is not None else np.nan for t in trials]
 best_so_far = pd.Series(trial_values).cummax()
 
 fig, ax = plt.subplots(figsize=(10, 5))
-ax.scatter(trial_numbers, trial_values, s=15, alpha=0.6, label='Trial F1')
+ax.scatter(trial_numbers, trial_values, s=15, alpha=0.6, label=f'Trial {metric_label}')
 ax.plot(trial_numbers, best_so_far, color='red', linewidth=1.5, label='Best so far')
 ax.set_xlabel('Trial number')
-ax.set_ylabel('Macro F1 score')
-ax.set_title(f'Optuna Optimization History — {studyName}')
+ax.set_ylabel(metric_label)
+ax.set_title(f'Optuna Optimization History ({metric_label}) — {studyName}')
 ax.legend()
 ax.grid(True, alpha=0.3)
 plt.tight_layout()
@@ -202,7 +242,8 @@ print("\n" + "=" * 60)
 print("BEST TRIAL")
 print("=" * 60)
 trial = study.best_trial
-print(f"Macro F1 (validation): {trial.value:.4f}")
+# CHANGED: dynamic metric name in printout
+print(f"{metric_label} (validation): {trial.value:.4f}")
 print(f"Params: {trial.params}")
 
 # Retrain final model with best params
@@ -229,22 +270,25 @@ with open(feature_list_file, 'w') as fout:
 print(f"Feature list saved to {feature_list_file}")
 
 
-
-# Evaluation: classification report + confusion matrix for train (raw), valid, and full datasets
+# CHANGED: evaluate_and_save now returns and prints all three metrics
 def evaluate_and_save(model, X_data, y_data, dataset_label, studyName, res_dir, class_names):
     y_pred = model.predict(X_data)
-    macro_f1 = f1_score(y_data, y_pred, average='macro')
+    all_metrics = compute_all_metrics(y_data, y_pred)
 
     report_str = classification_report(y_data, y_pred, target_names=class_names)
     print(f"\n{'=' * 60}")
     print(f"CLASSIFICATION REPORT — {dataset_label} (n={len(y_data)})")
     print(f"{'=' * 60}")
     print(report_str)
-    print(f"Macro F1: {macro_f1:.4f}")
+    print(f"  Macro F1:                  {all_metrics['macro_f1']:.4f}")
+    print(f"  Macro Recall:              {all_metrics['macro_recall']:.4f}")
+    print(f"  Quadratic Weighted Kappa:  {all_metrics['qwk']:.4f}")
 
-    # Save metrics CSV
+    # Save metrics CSV (per-class report + summary metrics row)
     report_dict = classification_report(y_data, y_pred, target_names=class_names, output_dict=True)
     df_report = pd.DataFrame(report_dict).transpose()
+    # Append the additional summary metrics as a separate row
+    df_report.loc['quadratic_weighted_kappa'] = [np.nan, np.nan, all_metrics['qwk'], np.nan]
     metrics_file = f'{res_dir}xgb_iba_metrics_{dataset_label}_{studyName}.csv'
     df_report.to_csv(metrics_file, index=True, index_label="class")
     print(f"Metrics saved to {metrics_file}")
@@ -263,14 +307,15 @@ def evaluate_and_save(model, X_data, y_data, dataset_label, studyName, res_dir, 
     plt.close()
     print(f"Confusion matrix saved to {cm_file}.png/.svg")
 
-    return report_str, macro_f1
+    return report_str, all_metrics
 
 
-report_train, f1_train = evaluate_and_save(
+# CHANGED: callers now receive dict of all metrics instead of just macro F1
+report_train, metrics_train = evaluate_and_save(
     final_model, X_train, y_train, "train", studyName, res_dir, class_names)
-report_valid, f1_valid = evaluate_and_save(
+report_valid, metrics_valid = evaluate_and_save(
     final_model, X_valid, y_valid, "valid", studyName, res_dir, class_names)
-report_full, f1_full = evaluate_and_save(
+report_full, metrics_full = evaluate_and_save(
     final_model, X, y, "full", studyName, res_dir, class_names)
 
 
@@ -279,6 +324,9 @@ summary_file = f'{res_dir}xgb_iba_summary_{studyName}.txt'
 with open(summary_file, 'w') as f:
     f.write(f"Study: {studyName}\n")
     f.write(f"Input file: {input_file}\n")
+    # CHANGED: log which optimization metric was used
+    f.write(f"Optimization metric: {METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]} "
+            f"(key: {OPTIMIZATION_METRIC})\n")
     f.write(f"Dataset shape: {df.shape}\n")
     f.write(f"Features: {len(X.columns)}\n")
     f.write(f"Feature list: {list(X.columns)}\n\n")
@@ -309,26 +357,24 @@ with open(summary_file, 'w') as f:
     f.write("=" * 60 + "\n")
     f.write("BEST OPTUNA TRIAL\n")
     f.write("=" * 60 + "\n")
-    f.write(f"Macro F1 (validation, Optuna): {trial.value:.4f}\n")
+    # CHANGED: dynamic label
+    f.write(f"{metric_label} (validation, Optuna): {trial.value:.4f}\n")
     f.write(f"Params: {json.dumps(trial.params, indent=2)}\n\n")
 
-    f.write("=" * 60 + "\n")
-    f.write(f"CLASSIFICATION REPORT — train (n={len(y_train)})\n")
-    f.write("=" * 60 + "\n")
-    f.write(report_train + "\n")
-    f.write(f"Macro F1: {f1_train:.4f}\n\n")
-
-    f.write("=" * 60 + "\n")
-    f.write(f"CLASSIFICATION REPORT — valid (n={len(y_valid)})\n")
-    f.write("=" * 60 + "\n")
-    f.write(report_valid + "\n")
-    f.write(f"Macro F1: {f1_valid:.4f}\n\n")
-
-    f.write("=" * 60 + "\n")
-    f.write(f"CLASSIFICATION REPORT — full (n={len(y)})\n")
-    f.write("=" * 60 + "\n")
-    f.write(report_full + "\n")
-    f.write(f"Macro F1: {f1_full:.4f}\n")
+    # CHANGED: include all three metrics for each split
+    for label, metrics, report in [
+        ("train", metrics_train, report_train),
+        ("valid", metrics_valid, report_valid),
+        ("full",  metrics_full,  report_full),
+    ]:
+        n = {'train': len(y_train), 'valid': len(y_valid), 'full': len(y)}[label]
+        f.write("=" * 60 + "\n")
+        f.write(f"CLASSIFICATION REPORT — {label} (n={n})\n")
+        f.write("=" * 60 + "\n")
+        f.write(report + "\n")
+        f.write(f"Macro F1:                  {metrics['macro_f1']:.4f}\n")
+        f.write(f"Macro Recall:              {metrics['macro_recall']:.4f}\n")
+        f.write(f"Quadratic Weighted Kappa:  {metrics['qwk']:.4f}\n\n")
 
 print(f"\nSummary saved to {summary_file}")
 
