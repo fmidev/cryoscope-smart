@@ -2,172 +2,214 @@
 
 import os, requests, json
 import pandas as pd
+import numpy as np
+from urllib.parse import quote_plus
 
-# IBA timseseries era5l fetch script
-# ERA5L data for IBA observation locations
-# remember to run this in screen session if not debugging
+# ERA5L data for IBA observation locations with SmartMet timeseries API.
+# Locations are passed as a WKT MULTIPOINT geometry (lon lat order).
+# The WKT response returns each timestep with lat/lon/feature as a
+# numpy-style string of values (e.g. "[41.82 41.83 ...]"), so we parse
+# them into lists and then explode to one row per (time, location, value).
 
-iba_dir='yourpath' # change names to your paths
-era5l_dir='yourpath/era5l/'
+iba_dir='/home/smartmet/copernicus/IBAML'
+era5l_dir='/home/smartmet/copernicus/IBAML/era5l/mlsmart/'
+
+source='http://ml.harvesterseasons.com:8080'
+
+
+def parse_array_string(s):
+    """Convert SmartMet's '[41.82 41.83 ...]' string into a list of floats.
+    Returns the input unchanged if it's already a list / array, and
+    handles non-numeric tokens (e.g. 'nan', 'None') by inserting NaN."""
+    if not isinstance(s, str):
+        return s
+    s = s.strip()
+    if s.startswith('['):
+        s = s[1:]
+    if s.endswith(']'):
+        s = s[:-1]
+    out = []
+    for tok in s.split():
+        try:
+            out.append(float(tok))
+        except ValueError:
+            out.append(np.nan)
+    return out
+
+
+def explode_response(df1, feat):
+    """Parse the three list-like columns from strings to lists, then explode."""
+    for col in ('latitude', 'longitude', feat):
+        df1[col] = df1[col].apply(parse_array_string)
+    df1 = df1.explode(['latitude', 'longitude', feat], ignore_index=True)
+    df1['latitude'] = df1['latitude'].astype(str)
+    df1['longitude'] = df1['longitude'].astype(str)
+    return df1
+
 
 # --- Read in location information from observations --- # 
-obs_file=os.path.join(iba_dir, 'ibahavainnot_processed.csv')
-# read latlon_id as string to preserve leading zeros
+obs_file=os.path.join(iba_dir, 'iba_observations_2025_processed.csv') 
 df_obs=pd.read_csv(obs_file, dtype={'latlon_id': str})
 
-# ml area is 83N to 25S to -30W to 50E (ERA5L data available), drop latlon outside this area
-df_obs = df_obs[(df_obs['latitude'] <= 83) & (df_obs['latitude'] >= -25) &
-                (df_obs['longitude'] >= -30) & (df_obs['longitude'] <= 50)]
-print(df_obs)
-
-# make a dictionary where latlon_id is key and (user_latitude, user_longitude) is value but if user_latitude or user_longitude is nan, then use latitude, longitude instead
+# Build dict: latlon_id -> (lat, lon)
 obsloc_dict = {}
 for index, row in df_obs.iterrows():
-    lat = row['latitude']
-    lon = row['longitude']
-    user_lat = row['user_latitude']
-    user_lon = row['user_longitude']
-    if pd.isna(user_lat) or pd.isna(user_lon):
-        obsloc_dict[row['latlon_id']] = (lat, lon)
-    else:
-        obsloc_dict[row['latlon_id']] = (user_lat, user_lon)
+    obsloc_dict[row['latlon_id']] = (row['latitude'], row['longitude'])
 
-# build one comma-sep latlons string for ts query
-user_coords_flat = [str(v) for pair in obsloc_dict.values() for v in pair]
-latlons_param= ",".join(user_coords_flat)
-# DEBUGGING with one location: create str until second , in latlons_param for user latlons
-#latlons_param = ",".join(latlons_param.split(",")[:6])
-#print(latlons_param)
+# --- Batching setup --- #
+locations = list(obsloc_dict.values())   # list of (lat, lon) tuples
+batch_size = 2000
+n_batches = (len(locations) + batch_size - 1) // batch_size
+print(f"Total {len(locations)} locations -> {n_batches} batches of up to {batch_size}")
 
 # --- ERA5L instant features --- # 
-# ml name : fmi-key 
 era5l_features = {
-    #'t2': 'T2-K:ERA5L:5078:1:0:1:0', # 2m temperature
-    #'td2': 'TD2-K:ERA5L:5078:1:0:1:0', # 2m dewpoint temperature
-    #'laihv': 'LAI_HV-M2M2:ERA5L:5078:1:0:1:0', # leaf area incease high vegetation
-    #'lailv': 'LAI_LV-M2M2:ERA5L:5078:1:0:1:0', # leaf area incease low vegetation
-    #'sp': 'PGR-PA:ERA5L:5078:1:0:1:0', # surface pressure
-    #'sd': 'SD-M:ERA5L:5078:1:0:1:0', # snow depth m of water equivalent ## fill
-    #'rsn': 'SND-KGM3:ERA5L:5078:1:0:1:0', # snow density ## fill
-    #'swvl1': 'SOILWET-M3M3:ERA5L:5078:9:7:1:0', # volumetric soil water layer 1 ## fill
-    #'swvl2': 'SWVL2-M3M3:ERA5L:5078:9:1820:1:0', # volumetric soil water layer 2 ## fill
-    #'swvl3': 'SWVL3-M3M3:ERA5L:5078:9:7268:1:0', # volumetric soil water layer 3 ## fill
-    #'swvl4': 'SWVL4-M3M3:ERA5L:5078:9:25855:1:0', # volumetric soil water layer 4 ## fill
-    #'stl1': 'STL1-K:ERA5L:5078:9:7:1:0', # soil temperature layer 1
-    #'u10': 'U10-MS:ERA5L:5078:1:0:1:0', # 10m u wind component
-    #'v10': 'V10-MS:ERA5L:5078:1:0:1:0' # 10m v wind component
+    't2': 'T2-K:ERA5L:5078:1:0:1:0',
+    'td2': 'TD2-K:ERA5L:5078:1:0:1:0',
+    'laihv_era5l': 'LAI_HV-M2M2:ERA5L:5078:1:0:1:0',
+    'lailv_era5l': 'LAI_LV-M2M2:ERA5L:5078:1:0:1:0',
+    'sp': 'PGR-PA:ERA5L:5078:1:0:1:0',
+    'sd': 'SD-M:ERA5L:5078:1:0:1:0',
+    'rsn': 'SND-KGM3:ERA5L:5078:1:0:1:0',
+    'swvl1': 'SOILWET-M3M3:ERA5L:5078:9:7:1:0',
+    'swvl2': 'SWVL2-M3M3:ERA5L:5078:9:1820:1:0',
+    'swvl3': 'SWVL3-M3M3:ERA5L:5078:9:7268:1:0',
+    #'swvl4': 'SWVL4-M3M3:ERA5L:5078:9:25855:1:0',
+    'stl1': 'STL1-K:ERA5L:5078:9:7:1:0',
+    'stl2': 'TSOIL-K:ERA5L:5078:9:1820:1:0',
+    #'stl3': 'STL3-K:ERA5L:5078:9:7268:1:0',
+    #'stl4': 'STL4-K:ERA5L:5078:9:25855:1:0',
+    'u10': 'U10-MS:ERA5L:5078:1:0:1:0',
+    'v10': 'V10-MS:ERA5L:5078:1:0:1:0',
+    'skt': 'SKT-K:ERA5L:5078:1:0:1:0',
+    'src': 'SRC-M:ERA5L:5078:1:0:1:0',
 }
 
 # --- ERA5L 24h aggregated features (daily at hour 00) --- #
 era5l_24h_features = {
-    #'tp': 'RR-M:ERA5L:5078:1:0:1:0', # total precipitation
-    #'e': 'EVAP-M:ERA5L:5078:1:0:1:0', # evaporation
-    #'sf': 'SNACC-KGM2:ERA5L:5078:1:0:1:0', # snow fall ## fill
-    #'ro': 'RO-M:ERA5L:5078:1:0:1:0', # runoff
-    #'ssro': 'SSRO-M:ERA5L:5078:1:0:1:0', # subsurface runoff
-    #'sshf': 'FLSEN-JM2:ERA5L:5078:1:0:1:0', # surface sensible heat flux
-    #'ssr': 'RNETSWA-JM2:ERA5L:5078:1:0:1:0', # surface net solar radiation
-    #'str': 'RNETLWA-JM2:ERA5L:5078:1:0:1:0', # surface net thermal radiation
-    #'slhf': 'FLLAT-JM2:ERA5L:5078:1:0:1:0',   # surface latent heat flux
-    #'ssrd': 'RADGLOA-JM2:ERA5L:5078:1:0:1:0', # surface solar radiation downwards
-    #'strd': 'RADLWA-JM2:ERA5L:5078:1:0:1:0', # surface thermal radiation downwards
-
-    'aslr': 'ALBEDOSLR-0TO1:ERA5L:5078:1:0:1', # albedo with solar angle correction
-    'asn': 'ASN-0TO1:ERA5L:5073:1:0:1:0', # snow albedo
-    'es': 'ES-M:ERA5L:5073:1:0:1:0', # snow evaporation
-    'ebs': 'EVABS-M:ERA5L:5073:1:0:0', # evaporation from bare soil
-    'eow': 'EVAOW-M:ERA5L:5073:1:0:0', # evaporation from open water excluding oceans
-    'ep': 'EVAPP-M:ERA5L:5073:1:0:1:0', # potential evaporation
-    'etc': 'EVATC-M:ERA5L:5073:1:0:0', # evaporation from the top of canopy
-    'evt': 'EVAVT-M:ERA5L:5073:1:0:0', # evaporation from vegetation transpiration
-    'lsf': 'LSHF:ERA5L:5073:1:0:1:0', # lake shape factor
-    'st': 'SKT-K:ERA5L:5073:1:0:1', # skin temperature
-    'sm': 'SMLT-M:ERA5L:5073:1:0:1:0', # snowmelt
-    'sfa': 'SNACC-KGM2:ERA5L:5073:1:0:1:0', # snowfall accumulation
-    'sro': 'SRO-M:ERA5L:5078:1:0:1:0', # surface runoff
-    'st2': 'STL2-K:ERA5L:5073:9:1820:1', # soil temperature level 2 in kelvins
-    'st3': 'STL3-K:ERA5L:5073:9:7268:1', # soil temperature level 3 in kelvins
-    'st4': 'STL4-K:ERA5L:5073:9:25600:1', # soil temperature level 4 in kelvins
-    'src': 'SRC-M:ERA5L:5073:1:0:1:0' # skin reservoir content
+    'tp': 'RR-M:ERA5L:5078:1:0:1:0',
+    'e': 'EVAP-M:ERA5L:5078:1:0:1:0',
+    'ep': 'EVAPP-M:ERA5L:5078:1:0:1:0',
+    'sf': 'SNACC-KGM2:ERA5L:5078:1:0:1:0',
+    'ro': 'RO-M:ERA5L:5078:1:0:1:0',
+    'sro': 'SRO-M:ERA5L:5078:1:0:1:0',
+    'ssro': 'SSRO-M:ERA5L:5078:1:0:1:0',
+    'sshf': 'FLSEN-JM2:ERA5L:5078:1:0:1:0',
+    'ssr': 'RNETSWA-JM2:ERA5L:5078:1:0:1:0',
+    'str': 'RNETLWA-JM2:ERA5L:5078:1:0:1:0',
+    'slhf': 'FLLAT-JM2:ERA5L:5078:1:0:1:0',
+    'ssrd': 'RADGLOA-JM2:ERA5L:5078:1:0:1:0',
+    'strd': 'RADLWA-JM2:ERA5L:5078:1:0:1:0',
 }
 
-# --- ERA5LD 24h aggregated features (daily at hour 00) --- #
-# remember to use origintime=20250101T000000Z for era5ld features in ts queries
-# data on smartmet duplicate tmax, tmin needs to be fixed
-era5ld_features = {
-    #'tmax':'TMAX-24-K:ERA5LD:5022:1:0:1', # maximum temperature
-    #'tmin':'TMIN-24-K:ERA5LD:5022:1:0:1', # minimum temperature
-}
+# --- ERA5LD 24h aggregated features --- #
+era5ld_tmax = {'t24max': 'T2-K:ERA5LD:5078:1:0:1'}
+era5ld_tmin = {'t24min': 'T2-K:ERA5LD:5078:1:0:1'}
 
-# --- Timeseries query for INSTANT features --- #
-hours_list = [f"{i:02d}" for i in range(24)] # all hours of day
-hours=",".join(hours_list)
+# --- Common time settings --- #
+hours_list = [f"{i:02d}" for i in range(24)]
+hours = ",".join(hours_list)
 
-start='20250101T000000'
-end='20251101T000000' 
+start_inst='20250101T000000'
+end_inst='20251101T000000'
 
-# Time series query for instant features
-for pair in era5l_features.items():
-    feat,fmikey=pair
-    print(feat)
-    q1 = (
-        "http://smartmet.xyz:8080/timeseries"
-        f"?latlons={latlons_param}"
-        f"&param=time,latitude,longitude,{fmikey}"
-        f"&starttime={start}Z&endtime={end}Z&hour={hours}"
-        "&format=json&precision=full&timeformat=sql"
+start_d='20250101T113000'
+end_d='20251101T000000'
+
+
+# === Outer batch loop === #
+for batch_idx in range(n_batches):
+    batch_num = batch_idx + 1   # 1-indexed for filenames
+    batch_locs = locations[batch_idx * batch_size : (batch_idx + 1) * batch_size]
+
+    # WKT MULTIPOINT uses (lon lat) order; points separated by commas.
+    # batch_locs is a list of (lat, lon) tuples — swap order here.
+    wkt_raw = "MULTIPOINT(" + ",".join(f"{lon} {lat}" for lat, lon in batch_locs) + ")"
+    wkt_param = quote_plus(wkt_raw)
+
+    print(f"\n=== Batch {batch_num}/{n_batches} ({len(batch_locs)} locations) ===")
+
+    # --- Instant features --- #
+    for feat, fmikey in era5l_features.items():
+        out = os.path.join(era5l_dir, f'era5l_{feat}_2025_all-{batch_num}.csv')
+        if os.path.exists(out):
+            print(f'  skipping (exists): {feat}')
+            continue
+        print(f'  fetching instant: {feat}')
+        q1 = (
+            f"{source}/timeseries"
+            f"?wkt={wkt_param}"
+            f"&param=time,latitude,longitude,{fmikey}"
+            f"&starttime={start_inst}Z&endtime={end_inst}Z&hour={hours}"
+            "&format=json&precision=full&timeformat=sql"
         )
-    print(q1) # for "debugging" in browser
-    response=requests.get(url=q1)
-    results_json=json.loads(response.content)
-    df1=pd.DataFrame(results_json)   
-    # change column names to feats
-    df1.columns = ['time', 'latitude', 'longitude', feat]
-    # add latlon_id column based on latitude and longitude matching obsloc_dict
-    def get_latlon_id(row):
-        lat = row['latitude']
-        lon = row['longitude']
-        for latlon_id, (user_lat, user_lon) in obsloc_dict.items():
-            if lat == user_lat and lon == user_lon:
-                return latlon_id
-        return None
+        response = requests.get(url=q1)
+        df1 = pd.DataFrame(json.loads(response.content))
+        df1.columns = ['time', 'latitude', 'longitude', feat]
+        df1 = explode_response(df1, feat)
+        print(df1.dropna())
+        df1.to_csv(out, index=False)
 
-    df1['latlon_id'] = df1.apply(get_latlon_id, axis=1)
-    print(df1)
-    # save to csv for each latlon_id
-    for latlon_id, df_group in df1.groupby('latlon_id'):
-        output_file = os.path.join(era5l_dir, f'era5l_{feat}_2025_instant_{latlon_id}.csv')
-        df_group.to_csv(output_file, index=False)
-
-# Time series query for 24h features
-for pair in era5l_24h_features.items():
-    feat,fmikey=pair
-    print(feat)
-    q1 = (
-        "http://smartmet.xyz:8080/timeseries"
-        f"?latlons={latlons_param}"
-        f"&param=time,latitude,longitude,{fmikey}"
-        f"&starttime={start}Z&endtime={end}Z&hour=00"
-        "&format=json&precision=full&timeformat=sql"
+    # --- 24h aggregated features --- #
+    for feat, fmikey in era5l_24h_features.items():
+        out = os.path.join(era5l_dir, f'era5l_{feat}_2025_24hagg_all-{batch_num}.csv')
+        if os.path.exists(out):
+            print(f'  skipping (exists): {feat}')
+            continue
+        print(f'  fetching 24h: {feat}')
+        q1 = (
+            f"{source}/timeseries"
+            f"?wkt={wkt_param}"
+            f"&param=utctime,latitude,longitude,{fmikey}"
+            f"&starttime={start_inst}Z&endtime={end_inst}Z&hour=00"
+            "&format=json&precision=full&timeformat=sql&tz=utc"
         )
-    print(q1) # for "debugging" in browser
-    response=requests.get(url=q1)
-    results_json=json.loads(response.content)
-    df1=pd.DataFrame(results_json)   
-    # change column names to feats
-    df1.columns = ['time', 'latitude', 'longitude', feat]
-    # add latlon_id column based on latitude and longitude matching obsloc_dict
-    def get_latlon_id(row):
-        lat = row['latitude']
-        lon = row['longitude']
-        for latlon_id, (user_lat, user_lon) in obsloc_dict.items():
-            if lat == user_lat and lon == user_lon:
-                return latlon_id
-        return None
+        response = requests.get(url=q1)
+        df1 = pd.DataFrame(json.loads(response.content))
+        df1.columns = ['time', 'latitude', 'longitude', feat]
+        df1 = explode_response(df1, feat)
+        print(df1.dropna())
+        df1.to_csv(out, index=False)
 
-    df1['latlon_id'] = df1.apply(get_latlon_id, axis=1)
-    print(df1)
-    # save to csv for each latlon_id
-    for latlon_id, df_group in df1.groupby('latlon_id'):
-        output_file = os.path.join(era5l_dir, f'era5l_{feat}_2025_24hagg_{latlon_id}.csv')
-        df_group.to_csv(output_file, index=False)
+    source='http://smartmet.xyz:8080'
+    # --- ERA5LD daily max --- #
+    for feat, fmikey in era5ld_tmax.items():
+        out = os.path.join(era5l_dir, f'era5l_{feat}_2025_24hagg_all-{batch_num}.csv')
+        if os.path.exists(out):
+            print(f'  skipping (exists): {feat}')
+            continue
+        print(f'  fetching tmax: {feat}')
+        q1 = (
+            f"{source}/timeseries"
+            f"?wkt={wkt_param}"
+            f"&param=utctime,latitude,longitude,{fmikey}"
+            f"&starttime={start_d}Z&endtime={end_d}Z&hour=12"
+            "&format=json&precision=full&timeformat=sql&tz=utc&origintime=20000101T000000"
+        )
+        response = requests.get(url=q1)
+        df1 = pd.DataFrame(json.loads(response.content))
+        df1.columns = ['time', 'latitude', 'longitude', feat]
+        df1 = explode_response(df1, feat)
+        print(df1.dropna())
+        df1.to_csv(out, index=False)
+
+    # --- ERA5LD daily min --- #
+    for feat, fmikey in era5ld_tmin.items():
+        out = os.path.join(era5l_dir, f'era5l_{feat}_2025_24hagg_all-{batch_num}.csv')
+        if os.path.exists(out):
+            print(f'  skipping (exists): {feat}')
+            continue
+        print(f'  fetching tmin: {feat}')
+        q1 = (
+            f"{source}/timeseries"
+            f"?wkt={wkt_param}"
+            f"&param=utctime,latitude,longitude,{fmikey}"
+            f"&starttime={start_d}Z&endtime={end_d}Z&hour=12"
+            "&format=json&precision=full&timeformat=sql&tz=utc&origintime=20000201T000000"
+        )
+        response = requests.get(url=q1)
+        df1 = pd.DataFrame(json.loads(response.content))
+        df1.columns = ['time', 'latitude', 'longitude', feat]
+        df1 = explode_response(df1, feat)
+        print(df1.dropna())
+        df1.to_csv(out, index=False)

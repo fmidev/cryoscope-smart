@@ -1,100 +1,88 @@
 #!/usr/bin/env python3
-import os, requests, json, time
+
+import os, requests, json
 import pandas as pd
 
-# scrip to fetch era5 pressure level features for adjusted skt times
-iba_dir='yourpath'
-era5_dir='yourpath/era5/'
+# ERA5 data for IBA observation locations with SmartMet timeseries API
+
+iba_dir='/home/smartmet/copernicus/IBAML'
+era5_dir='/home/smartmet/copernicus/IBAML/era5/'
 
 # --- Read in location information from observations --- # 
-obs_file=os.path.join(iba_dir, 'ibahavainnot_processed.csv')
-# read latlon_id as string to preserve leading zeros
+obs_file=os.path.join(iba_dir, 'iba_observations_2025_processed.csv') 
 df_obs=pd.read_csv(obs_file, dtype={'latlon_id': str})
 
-# ml area is 83N to 25S to -30W to 50E (ERA5L data available), drop latlon outside this area
-df_obs = df_obs[(df_obs['latitude'] <= 83) & (df_obs['latitude'] >= -25) &
-                (df_obs['longitude'] >= -30) & (df_obs['longitude'] <= 50)]
-print(df_obs)
-
-# make a dictionary where latlon_id is key and (user_latitude, user_longitude) is value but if user_latitude or user_longitude is nan, then use latitude, longitude instead
+# Build dict: latlon_id -> (lat, lon)
 obsloc_dict = {}
 for index, row in df_obs.iterrows():
-    lat = row['latitude']
-    lon = row['longitude']
-    user_lat = row['user_latitude']
-    user_lon = row['user_longitude']
-    if pd.isna(user_lat) or pd.isna(user_lon):
-        obsloc_dict[row['latlon_id']] = (lat, lon)
-    else:
-        obsloc_dict[row['latlon_id']] = (user_lat, user_lon)
+    obsloc_dict[row['latlon_id']] = (row['latitude'], row['longitude'])
 
-# build one comma-sep latlons string for ts query
-user_coords_flat = [str(v) for pair in obsloc_dict.values() for v in pair]
-latlons_param= ",".join(user_coords_flat)
-# DEBUGGING with one location: create str until second , in latlons_param for user latlons
-#latlons_param = ",".join(latlons_param.split(",")[:6])
-#print(latlons_param)
+# --- Batching setup --- #
+locations = list(obsloc_dict.values())   # list of (lat, lon) tuples
+batch_size = 50
+n_batches = (len(locations) + batch_size - 1) // batch_size
+print(f"Total {len(locations)} locations -> {n_batches} batches of up to {batch_size}")
 
- 
-era5_pl_features = {
-    't500': 'T-K:ERA5:5081:2:500:1:0', # 500hPa temperature
-    't700': 'T-K:ERA5:5081:2:700:1:0', # 700hPa temperature
-    't850': 'T-K:ERA5:5081:2:850:1:0', # 850hPa temperature
-    't925': 'T-K:ERA5:5081:2:925:1:0', # 925hPa temperature
-    'z500': 'Z-M2S2:ERA5:5081:2:500:1:0', # 500hPa geopotential height
-    'z700': 'Z-M2S2:ERA5:5081:2:700:1:0', # 700hPa geopotential height
-    'z850': 'Z-M2S2:ERA5:5081:2:850:1:0', # 850hPa geopotential height
-    'z925': 'Z-M2S2:ERA5:5081:2:925:1:0', # 925hPa geopotential height
-    'u500': 'U-MS:ERA5:5081:2:500:1:0', # 500hPa u wind component
-    'u700': 'U-MS:ERA5:5081:2:700:1:0', # 700hPa u wind component
-    'u850': 'U-MS:ERA5:5081:2:850:1:0', # 850hPa u wind component
-    'u925': 'U-MS:ERA5:5081:2:925:1:0', # 925hPa u wind component
-    'v500': 'V-MS:ERA5:5081:2:500:1:0', # 500hPa v wind component
-    'v700': 'V-MS:ERA5:5081:2:700:1:0', # 700hPa v wind component
-    'v850': 'V-MS:ERA5:5081:2:850:1:0',  # 850hPa v wind component
-    'v925': 'V-MS:ERA5:5081:2:925:1:0',  # 925hPa v wind component
-    'q500': 'Q-KGKG:ERA5:5081:2:500:1:0', # 500hPa specific humidity
-    'q700': 'Q-KGKG:ERA5:5081:2:700:1:0', # 700hPa specific humidity
-    'q850': 'Q-KGKG:ERA5:5081:2:850:1:0',  # 850hPa specific humidity
-    'q925': 'Q-KGKG:ERA5:5081:2:925:1:0'  # 925hPa specific humidity
-    }
+# --- ERA5 pressure-level features --- #
+era5_features = {
+    #'t500': 'T-K:ERA5:5081:2:500:1:0',
+    't700': 'T-K:ERA5:5081:2:700:1:0',
+    't850': 'T-K:ERA5:5081:2:850:1:0',
+    't925': 'T-K:ERA5:5081:2:925:1:0',
+    #'z500': 'Z-M2S2:ERA5:5081:2:500:1:0',
+    'z700': 'Z-M2S2:ERA5:5081:2:700:1:0',
+    'z850': 'Z-M2S2:ERA5:5081:2:850:1:0',
+    'z925': 'Z-M2S2:ERA5:5081:2:925:1:0',
+    #'u500': 'U-MS:ERA5:5081:2:500:1:0',
+    'u700': 'U-MS:ERA5:5081:2:700:1:0',
+    'u850': 'U-MS:ERA5:5081:2:850:1:0',
+    'u925': 'U-MS:ERA5:5081:2:925:1:0',
+    #'v500': 'V-MS:ERA5:5081:2:500:1:0',
+    'v700': 'V-MS:ERA5:5081:2:700:1:0',
+    'v850': 'V-MS:ERA5:5081:2:850:1:0',
+    'v925': 'V-MS:ERA5:5081:2:925:1:0',
+    #'q500': 'Q-KGKG:ERA5:5081:2:500:1:0',
+    'q700': 'Q-KGKG:ERA5:5081:2:700:1:0',
+    'q850': 'Q-KGKG:ERA5:5081:2:850:1:0',
+    'q925': 'Q-KGKG:ERA5:5081:2:925:1:0',
+    'kx':   'KX:ERA5:5081:1:0:0',
+    'lsp':  'RRL-KGM2:ERA5:5081:1:0:1:0',
+}
 
-# --- Timeseries query for INSTANT features --- #
-hours_list = [f"{i:02d}" for i in range(24)] # all hours of day
-hours=",".join(hours_list)
+# --- Common time settings --- #
+hours_list = [f"{i:02d}" for i in range(24)]
+hours = ",".join(hours_list)
 
-start='20250101T000000'
-end='20251101T000000' 
+start = '20250101T000000'
+end   = '20251101T000000'
 
-# Time series query for instant features
-for pair in era5_pl_features.items():
-    feat,fmikey=pair
-    print(feat)
-    q1 = (
-        "http://smartmet.xyz:8080/timeseries"
-        f"?latlons={latlons_param}"
-        f"&param=time,latitude,longitude,{fmikey}"
-        f"&starttime={start}Z&endtime={end}Z&hour={hours}"
-        "&format=json&precision=full&timeformat=sql"
+
+# === Outer batch loop === #
+for batch_idx in range(n_batches):
+    batch_num = batch_idx + 1   # 1-indexed for filenames
+    batch_locs = locations[batch_idx * batch_size : (batch_idx + 1) * batch_size]
+    coords_flat = [str(v) for pair in batch_locs for v in pair]
+    latlons_param = ",".join(coords_flat)
+
+    print(f"\n=== Batch {batch_num}/{n_batches} ({len(batch_locs)} locations) ===")
+
+    # --- Pressure-level features --- #
+    for feat, fmikey in era5_features.items():
+        out = os.path.join(era5_dir, f'era5_{feat}_2025_all-{batch_num}.csv')
+        if os.path.exists(out):
+            print(f'  skipping (exists): {feat}')
+            continue
+        print(f'  fetching: {feat}')
+        q1 = (
+            "http://smartmet.xyz:8080/timeseries"
+            f"?latlons={latlons_param}"
+            f"&param=time,latitude,longitude,{fmikey}"
+            f"&starttime={start}Z&endtime={end}Z&hour={hours}"
+            "&format=json&precision=full&timeformat=sql"
         )
-    print(q1) # for "debugging" in browser
-    response=requests.get(url=q1)
-    results_json=json.loads(response.content)
-    df1=pd.DataFrame(results_json)   
-    # change column names to feats
-    df1.columns = ['time', 'latitude', 'longitude', feat]
-    # add latlon_id column based on latitude and longitude matching obsloc_dict
-    def get_latlon_id(row):
-        lat = row['latitude']
-        lon = row['longitude']
-        for latlon_id, (user_lat, user_lon) in obsloc_dict.items():
-            if lat == user_lat and lon == user_lon:
-                return latlon_id
-        return None
-
-    df1['latlon_id'] = df1.apply(get_latlon_id, axis=1)
-    print(df1)
-    # save to csv for each latlon_id
-    for latlon_id, df_group in df1.groupby('latlon_id'):
-        output_file = os.path.join(era5_dir, f'era5_{feat}_2025_pressure_{latlon_id}.csv')
-        df_group.to_csv(output_file, index=False)
+        response = requests.get(url=q1)
+        df1 = pd.DataFrame(json.loads(response.content))
+        df1.columns = ['time', 'latitude', 'longitude', feat]
+        df1['latitude'] = df1['latitude'].astype(str)
+        df1['longitude'] = df1['longitude'].astype(str)
+        df1.to_csv(out, index=False)

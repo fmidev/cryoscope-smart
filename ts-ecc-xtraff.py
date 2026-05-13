@@ -5,17 +5,13 @@ import pandas as pd
 warnings.simplefilter(action='ignore', category=FutureWarning)
 ### SmarMet-server timeseries query to fetch static ECC parameters to training data for machine learning
 
-iba_dir='yourpath'
-ecc_dir='yourpath/ecc/'
+iba_dir='/home/smartmet/copernicus/IBAML/'
+ecc_dir='/home/smartmet/copernicus/IBAML/ecc/'
 
 # --- Read in location information from observations --- # 
-obs_file=os.path.join(iba_dir, 'ibahavainnot_processed.csv')
-# read latlon_id as string to preserve leading zeros
+obs_file=os.path.join(iba_dir, 'iba_observations_2025_processed.csv') 
 df_obs=pd.read_csv(obs_file, dtype={'latlon_id': str})
 
-# ml area is 83N to 25S to -30W to 50E (ERA5L data available), drop latlon outside this area
-df_obs = df_obs[(df_obs['latitude'] <= 83) & (df_obs['latitude'] >= -25) &
-                (df_obs['longitude'] >= -30) & (df_obs['longitude'] <= 50)]
 print(df_obs)
 
 # make a dictionary where latlon_id is key and (user_latitude, user_longitude) is value but if user_latitude or user_longitude is nan, then use latitude, longitude instead
@@ -23,12 +19,8 @@ obsloc_dict = {}
 for index, row in df_obs.iterrows():
     lat = row['latitude']
     lon = row['longitude']
-    user_lat = row['user_latitude']
-    user_lon = row['user_longitude']
-    if pd.isna(user_lat) or pd.isna(user_lon):
-        obsloc_dict[row['latlon_id']] = (lat, lon)
-    else:
-        obsloc_dict[row['latlon_id']] = (user_lat, user_lon)
+    obsloc_dict[row['latlon_id']] = (lat, lon)
+
 
 # build one comma-sep latlons string for ts query
 user_coords_flat = [str(v) for pair in obsloc_dict.values() for v in pair]
@@ -50,7 +42,6 @@ pardict = {
     'tvl':'TVL-N:ECC:5059:1:0:0' # type of low vegetation
 }
 
-source='smartmet.xyz:8080'
 hour='00'
 start='data' # static values have different dates for available data at smartmet-desm
 end='data'
@@ -63,30 +54,48 @@ for pair in pardict.items():
         f"?latlons={latlons_param}"
         f"&param=time,latitude,longitude,{fmikey} as {feat}"
         f"&starttime={start}&endtime={end}"
-        "&format=json&precision=full&timeformat=sql"
+        "&format=json&precision=full&timeformat=sql&origintime=20000101T000000"
         )
     #print(q1) # for "debugging" in browser
     response=requests.get(url=q1)
     results_json=json.loads(response.content)
     df1=pd.DataFrame(results_json)   
-    # add latlon_id column based on latitude and longitude matching obsloc_dict
-    def get_latlon_id(row):
-        lat = row['latitude']
-        lon = row['longitude']
-        for latlon_id, (user_lat, user_lon) in obsloc_dict.items():
-            if lat == user_lat and lon == user_lon:
-                return latlon_id
-        return None
 
-    df1['latlon_id'] = df1.apply(get_latlon_id, axis=1)
     # change time to be always 2025-01-01 12:00:00
     df1['time'] = '2025-01-01 12:00:00'
     df1['time'] = pd.to_datetime(df1['time'])
+    # change latitude longitude type to str
+    df1['latitude'] = df1['latitude'].astype(str)
+    df1['longitude'] = df1['longitude'].astype(str)
     print(df1)
     # save to csv for each feat
     output_file = os.path.join(ecc_dir, f'ecc_{feat}_static_alllocs.csv')
     df1.to_csv(output_file, index=False)
 
-    #for latlon_id, df_group in df1.groupby('latlon_id'):
-    #    output_file = os.path.join(iba_dir, f'ecc_{feat}_static_{latlon_id}.csv')
-    #    df_group.to_csv(output_file, index=False)
+# fetch ecc laihv lailv for 2020
+
+laidict = {
+    'laihv_ecc': 'LAI_HV-M2M2:ECC:5059:1:0:0',
+    'lailv_ecc': 'LAI_LV-M2M2:ECC:5059:1:0:0'
+}
+
+for feat, fmikey in laidict.items():
+    print(feat)
+    q1 = (
+        "http://smartmet.xyz:8080/timeseries"
+        f"?latlons={latlons_param}"
+        f"&param=utctime,latitude,longitude,{fmikey} as {feat}"
+        f"&starttime=20200101T000000Z&endtime=20210101T000000Z&hour=0"
+        "&format=json&precision=full&timeformat=sql&tz=utc&origintime=20000101T000000"
+        )
+    response=requests.get(url=q1)
+    results_json=json.loads(response.content)
+    df1=pd.DataFrame(results_json)   
+
+    # change latitude longitude type to str
+    df1['latitude'] = df1['latitude'].astype(str)
+    df1['longitude'] = df1['longitude'].astype(str)
+    print(df1)
+    # save to csv for each feat
+    output_file = os.path.join(ecc_dir, f'ecc_{feat}_2020_alllocs.csv')
+    df1.to_csv(output_file, index=False)

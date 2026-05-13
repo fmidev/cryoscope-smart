@@ -1,90 +1,72 @@
 #!/usr/bin/env python3
-import time, warnings,requests, os,json
-#import sys
+
+import time, warnings, requests, os, json
 import pandas as pd
 import functions as fcts
 warnings.simplefilter(action='ignore', category=FutureWarning)
-# SmarMet-server timeseries query to fetch SWI training data for machine learning
-# remember to: conda activate xgb2
-# data for IBA observation locations
-# remember to run this in screen session if not debugging
 
-iba_dir='yourpath'
-swis_dir='yourpath/swis/'
+# SmartMet-server timeseries query to fetch SWI training data for machine learning
+
+iba_dir='/home/smartmet/copernicus/IBAML'
+swis_dir='/home/smartmet/copernicus/IBAML/swis/'
 
 # --- Read in location information from observations --- # 
-obs_file=os.path.join(iba_dir, 'ibahavainnot_processed.csv')
-# read latlon_id as string to preserve leading zeros
+obs_file=os.path.join(iba_dir, 'iba_observations_2025_processed.csv')
 df_obs=pd.read_csv(obs_file, dtype={'latlon_id': str})
 
-# ml area is 83N to 25S to -30W to 50E (ERA5L data available), drop latlon outside this area
-df_obs = df_obs[(df_obs['latitude'] <= 83) & (df_obs['latitude'] >= -25) &
-                (df_obs['longitude'] >= -30) & (df_obs['longitude'] <= 50)]
 print(df_obs)
 
-# make a dictionary where latlon_id is key and (user_latitude, user_longitude) is value but if user_latitude or user_longitude is nan, then use latitude, longitude instead
+# Build dict: latlon_id -> (lat, lon)
 obsloc_dict = {}
 for index, row in df_obs.iterrows():
-    lat = row['latitude']
-    lon = row['longitude']
-    user_lat = row['user_latitude']
-    user_lon = row['user_longitude']
-    if pd.isna(user_lat) or pd.isna(user_lon):
-        obsloc_dict[row['latlon_id']] = (lat, lon)
-    else:
-        obsloc_dict[row['latlon_id']] = (user_lat, user_lon)
+    obsloc_dict[row['latlon_id']] = (row['latitude'], row['longitude'])
 
-# build one comma-sep latlons string for ts query
-user_coords_flat = [str(v) for pair in obsloc_dict.values() for v in pair]
-latlons_param= ",".join(user_coords_flat)
-# DEBUGGING with one location: create str until second , in latlons_param for user latlons
-#latlons_param = ",".join(latlons_param.split(",")[:6])
-#print(latlons_param)
+# --- Batching setup --- #
+locations = list(obsloc_dict.values())   # list of (lat, lon) tuples
+batch_size = 50
+n_batches = (len(locations) + batch_size - 1) // batch_size
+print(f"Total {len(locations)} locations -> {n_batches} batches of up to {batch_size}")
 
-### SWI predictands 
-# +- 2 days interpolation in time to get more features if NaN values
+# --- SWI predictands --- #
 swis = {
-    'swi1':'interpolate_t(SWI1:SWI:5059:1:0:0/2d/2d)', # Soil wetness index layer 1
-    'swi2':'interpolate_t(SWI2:SWI:5059:1:0:0/2d/2d)', # Soil wetness index layer 2
-    'swi3':'interpolate_t(SWI3:SWI:5059:1:0:0/2d/2d)', # Soil wetness index layer 3
-    'swi4':'interpolate_t(SWI4:SWI:5059:1:0:0/2d/2d)' # Soil wetness index layer 4 
-    }
+    'swi1': 'interpolate_t(SWI1:SWI:5059:1:0:0/2d/2d)',
+    'swi2': 'interpolate_t(SWI2:SWI:5059:1:0:0/2d/2d)',
+    #'swi3': 'interpolate_t(SWI3:SWI:5059:1:0:0/2d/2d)',
+    #'swi4': 'interpolate_t(SWI4:SWI:5059:1:0:0/2d/2d)',
+}
 
-start='20250101T120000'
-end='20251101T120000' 
+start = '20250101T120000'
+end   = '20251101T120000'
 
-### timeseries query to server
-for swi in swis.items():
-    feat,fmikey = swi
-    print(feat)
-    q1 = (
-        "http://smartmet.xyz:8080/timeseries"
-        f"?latlons={latlons_param}"
-        f"&param=time,latitude,longitude,{fmikey} as {feat}"
-        f"&starttime={start}Z&endtime={end}Z&hour=12"
-        "&format=json&precision=full&timeformat=sql&origintime=20000101T000000"
+
+# === Outer batch loop === #
+for batch_idx in range(n_batches):
+    batch_num = batch_idx + 1   # 1-indexed for filenames
+    batch_locs = locations[batch_idx * batch_size : (batch_idx + 1) * batch_size]
+    coords_flat = [str(v) for pair in batch_locs for v in pair]
+    latlons_param = ",".join(coords_flat)
+
+    print(f"\n=== Batch {batch_num}/{n_batches} ({len(batch_locs)} locations) ===")
+
+    for feat, fmikey in swis.items():
+        # Make sure per-feature subdir exists (preserves your swis/swi1/, swi2/ etc. layout)
+        feat_dir = os.path.join(swis_dir, feat)
+        os.makedirs(feat_dir, exist_ok=True)
+        out = os.path.join(feat_dir, f'swis_{feat}_2025_all-{batch_num}.csv')
+        if os.path.exists(out):
+            print(f'  skipping (exists): {feat}')
+            continue
+        print(f'  fetching: {feat}')
+        q1 = (
+            "http://desm.harvesterseasons.com:8080/timeseries"
+            f"?latlons={latlons_param}"
+            f"&param=time,latitude,longitude,{fmikey} as {feat}"
+            f"&starttime={start}Z&endtime={end}Z&hour=12"
+            "&format=json&precision=full&timeformat=sql&origintime=20000101T000000"
         )
-    print(q1) # for "debugging" in browser
-    
-    response=requests.get(url=q1)
-    #print(response)
-    results_json=json.loads(response.content)
-    df=pd.DataFrame(results_json)   
-
-    print(df)
-    print(df.dropna())
-
-    def get_latlon_id(row):
-        lat = row['latitude']
-        lon = row['longitude']
-        for latlon_id, (user_lat, user_lon) in obsloc_dict.items():
-            if lat == user_lat and lon == user_lon:
-                return latlon_id
-        return None
-
-    df['latlon_id'] = df.apply(get_latlon_id, axis=1)
-    print(df)
-    # save to csv for each latlon_id
-    for latlon_id, df_group in df.groupby('latlon_id'):
-        output_file = os.path.join(swis_dir, f'{feat}/swis_{feat}_2025_{latlon_id}.csv')
-        df_group.to_csv(output_file, index=False)
+        response = requests.get(url=q1)
+        df1 = pd.DataFrame(json.loads(response.content))
+        df1.columns = ['time', 'latitude', 'longitude', feat]
+        df1['latitude'] = df1['latitude'].astype(str)
+        df1['longitude'] = df1['longitude'].astype(str)
+        df1.to_csv(out, index=False)
