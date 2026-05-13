@@ -23,3 +23,26 @@ We will need this information for parameter mappings. If not all parameters from
 
 ![figure 1](sinfoprint.png)
 Figure 1. 
+
+### FMI parameter definitions 
+
+Good job, you have found a variable not yet configured to SmartMet server!
+
+We start with FMI parameter definitions. All configuration files for parameter mappings are in path `~/config/libraries/grid-files/`. Files for new configurations are in `~/config/libraries/grid-files/ext/` - it is super important to define new mappings under `ext/` directory so that they will not be overridden!! 
+
+The file we are interested in is `fmi_parameters.csv` - identical filename in both working directories. First check if `~/config/libraries/grid-files/fmi_parameters.csv` already has definition for the new parameter (search by name, not shortname). For example, rsn is already mapped there and you should find a row: 
+
+`1035;SND-KGM3;kg m-2;Snow density in kg/m3;1;1;1;;`
+
+In case you can't find your variable, define a new row in `~/config/libraries/grid-files/ext/fmi_parameters.csv`. Here example for 10m U-component of wind:
+
+`# FIELDS:`
+`# 1) FmiParameterId`
+`# 2) FmiParameterName`
+`# 3) FmiParameterUnits`
+`# 4) FmiParameterDescription`
+`# 5) AreaInterpolationMethod`
+`# 6) TimeInterpolationMethod`
+`# 7) LevelInterpolationMethod`
+`# 8) DefaultPrecision`
+`10000165;U10-MS;m/s;10 metre U wind component;1;1;1;2;`
