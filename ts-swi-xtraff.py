@@ -23,7 +23,7 @@ for index, row in df_obs.iterrows():
 
 # --- Batching setup --- #
 locations = list(obsloc_dict.values())   # list of (lat, lon) tuples
-batch_size = 50
+batch_size = 2000
 n_batches = (len(locations) + batch_size - 1) // batch_size
 print(f"Total {len(locations)} locations -> {n_batches} batches of up to {batch_size}")
 
