@@ -38,7 +38,7 @@ We use the GNU parallel: Tange, O., 2018. GNU Parallel 2018. Available at: https
 
 ## Target variable 
 
-Target variable for the XGBoost classification model is 1,348 in-situ observations collected via the *Water in Your Boots?* (currently: https://trafficability.xyz/) web application during summer 2025 observation campaign. Includes location information and datetime, among other. More information from the publication. 
+Target variable for the XGBoost classification model is 1,348 in-situ observations collected via the *Water in Your Boots?* (currently: https://trafficability.xyz/) web application during summer 2025 observation campaign. Includes location information and datetime, among other. More information from the publication. To process observations, we run [process-iba-observations.py](process-iba-observations.py) script. The 2025 observations are not yet published. To plot observation locations on map, run [plot](plot). 
 
 | Target Variable | Sources | Spatial resolution | Temporal resolution |
 |:-|:-|:-|:-|
