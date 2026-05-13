@@ -144,3 +144,7 @@ That's the one we are looking for. Next, remove the tmp file with
 `rm F2S_9736373159601227040`
 
 Then continue what previous section said. 
+
+### One more note
+
+Check out https://github.com/fmidev/cryoscope-smart/blob/main/docs/00_Overview.md#grid-gui-interface for general grid-gui interface instructions. 
