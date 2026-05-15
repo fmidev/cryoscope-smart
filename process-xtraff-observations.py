@@ -3,6 +3,9 @@ import json
 import os
 import pandas as pd
 
+# Script to pre-process observations from the Water in Your Boots? campaign for use in ML model training and analysis (2025)
+# (IBA Arctic Wildfire Preparedness & Terrain trafficability)
+
 iba_dir='/home/smartmet/copernicus/IBAML'
 era5l_dir='/home/smartmet/copernicus/IBAML/era5l/'
 
@@ -63,7 +66,6 @@ df['date'] = pd.to_datetime(df['time']).dt.date
 #df_era5l['closest_hour'] = pd.to_datetime(df_era5l['time']).dt.hour
 
 # create new datetime with only date and hours minutes in time 
-
 df['datetime'] = pd.to_datetime(df['time']).dt.round('h')
 df['closest_hour'] = pd.to_datetime(df['datetime']).dt.hour
 df['closest_hour'] = df['closest_hour'].astype(int)
@@ -91,7 +93,6 @@ print(df.columns)
 
 # print unique closest_hour values
 #print(df['closest_hour'].unique())
-
 
 # Save the DataFrame to a CSV file
 df.to_csv(f"{iba_dir}/iba_observations_2025_processed.csv", index=False, encoding="utf-8")
