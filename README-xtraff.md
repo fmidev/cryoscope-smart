@@ -12,7 +12,7 @@ This code reproduces the data and model training and prediction workflows used i
 - [Training the model](#training-the-model)
 - [Predicting soil wetness classes](#predicting-soil-wetness-classes)
 - [End-user service trafficability.xyz](#end-user-service-trafficabilityxyz)
-- [Link Link to Appendix A1 (Tables of training and prediction data sets)](#link-to-appendix-a1-tables-of-training-and-prediction-data-sets)
+- [Link to Appendix A1 (Tables of training and prediction data sets)](#link-to-appendix-a1-tables-of-training-and-prediction-data-sets)
 - [Contact](#contact)
 - [References](#references)
 
