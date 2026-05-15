@@ -76,6 +76,10 @@ XGBoost prediction is done with [xgb-predict-xtraff-present.py](xgb-predict-xtra
 
 https://github.com/fmidev/trafficability-app 
 
+## Link to Appendix A1 (Tables of training and prediction data sets)
+
+[Appendix A1](https://fmi100-my.sharepoint.com/:w:/g/personal/anni_kroger_fmi_fi/IQC0QYEGmFOwT7djOAxsIhjwAVS2MMbdQ9nA7jE3GhBM8bs?e=5pjaMP) 
+
 ## Contact
 
 Anni Kröger Finnish Meteorological Institute anni.kroger@fmi.fi for more information. 
