@@ -9,13 +9,11 @@ import matplotlib.pyplot as plt
 import optuna, os, sys, joblib, json, shap
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
-'''
-Optuna hyperparameter optimization for XGBoost IBA soil moisture classifier.
-(Includes oversampling and class weighting to handle imbalanced classes.)
-Trains and saves best model, SHAP analysis, confusion matrix, and metrics.
-
-Usage: python xgb-iba-optuna.py <study_number>
-'''
+# Optuna hyperparameter optimization for XGBoost soil moisture classifier.
+# (IBA Arctic Wildfire Preparedness & Terrain Trafficability)
+# Includes oversampling and class weighting to handle imbalanced classes.
+# Trains and saves best model, SHAP analysis, confusion matrix, and metrics, etc. 
+# Usage: python xgb-iba-optuna.py <study_number>
 
 study_number = sys.argv[1]
 studyName = f'xgb_waterinyourboots_{study_number}'
@@ -25,22 +23,22 @@ class_names = ['Very dry', 'Dry', 'Moist', 'Wet', 'Extremely wet']
 
 # Choose the metric Optuna maximizes. All metrics are reported in
 # the evaluation regardless of which one is used for optimization.
-#   'qwk'          - Quadratic Weighted Kappa (ordinal-aware, recommended)
-#   'macro_f1'     - Macro-averaged F1 score (original)
-#   'macro_recall' - Macro-averaged recall (emphasises not missing classes)
+#   'qwk'          - Quadratic Weighted Kappa
+#   'macro_f1'     - Macro-averaged F1 score
+#   'macro_recall' - Macro-averaged recall
 #   'composite'    - 0.6 * QWK + 0.4 * Macro F1
 
-OPTIMIZATION_METRIC = 'qwk'
+optimization_metric = 'qwk'
 
-METRIC_DISPLAY_NAMES = {
+metric_display_names = {
     'qwk':          'Quadratic Weighted Kappa',
     'macro_f1':     'Macro F1',
     'macro_recall': 'Macro Recall',
     'composite':    '0.6 * QWK + 0.4 * Macro F1',
 }
 
-def compute_score(y_true, y_pred, metric=OPTIMIZATION_METRIC):
-    """Single-value scoring function for Optuna."""
+def compute_score(y_true, y_pred, metric=optimization_metric):
+    # Single-value scoring function for Optuna.
     if metric == 'qwk':
         return cohen_kappa_score(y_true, y_pred, weights='quadratic')
     elif metric == 'macro_f1':
@@ -51,17 +49,17 @@ def compute_score(y_true, y_pred, metric=OPTIMIZATION_METRIC):
         return (0.6 * cohen_kappa_score(y_true, y_pred, weights='quadratic')
                 + 0.4 * f1_score(y_true, y_pred, average='macro'))
     else:
-        raise ValueError(f"Unknown OPTIMIZATION_METRIC: {metric}")
+        raise ValueError(f"Unknown optimization_metric: {metric}")
 
 def compute_all_metrics(y_true, y_pred):
-    """Compute all relevant metrics for reporting."""
+    # Compute all relevant metrics for reporting
     return {
         'macro_f1':     f1_score(y_true, y_pred, average='macro'),
         'macro_recall': recall_score(y_true, y_pred, average='macro'),
         'qwk':          cohen_kappa_score(y_true, y_pred, weights='quadratic'),
     }
 
-print(f"Optimization metric: {METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]}")
+print(f"Optimization metric: {metric_display_names[optimization_metric]}")
 
 # paths
 optuna_dir = '/home/smartmet/copernicus/IBAML/'
@@ -70,7 +68,7 @@ res_dir = f'{optuna_dir}/results/'
 os.makedirs(mod_dir, exist_ok=True)
 os.makedirs(res_dir, exist_ok=True)
 
-os.chdir(optuna_dir)
+os.chdir(optuna_dir) # Must be run where Optuna storage is located
 
 input_file = f'{optuna_dir}xtraff_training_data.csv'
 
@@ -112,13 +110,13 @@ print(f"Dataset shape: {df.shape}")
 print(f"Class distribution:\n{df['class_target'].value_counts().sort_index()}")
 
 # Split to features (X) and target (y)
-X = df.drop(columns=['class_target'])
-y = df['class_target']
+X = df.drop(columns=['class_target']) # Features (predictors) for training
+y = df['class_target'] # Soil wetness class observations from Water in Your Boot? application (predictand)
 
 print(X.columns.tolist())
 print(f"Features: {len(X.columns)}")
 
-### 2-way stratified split: train / validation
+# 2-way stratified split: train / validation
 X_train, X_valid, y_train, y_valid = train_test_split(
     X, y, test_size=0.2, stratify=y, random_state=42
 )
@@ -153,7 +151,6 @@ def oversample_minority_classes(X_train, y_train, target_ratio=0.5):
     y_out = df_oversampled['class_target']
     X_out = df_oversampled.drop(columns=['class_target'])
     return X_out, y_out, oversample_log
-
 
 print("\nOversampling minority classes (training set only)...")
 X_train_os, y_train_os, oversample_log = oversample_minority_classes(X_train, y_train, target_ratio=0.5)
@@ -208,8 +205,8 @@ study = optuna.create_study(
 )
 study.optimize(objective, n_trials=100)
 
-# Optuna optimization history plot (dashboard not working)
-metric_label = METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]
+# Optuna optimization history plot (Optuna Dashboard not working/not fixed on mosaic server)
+metric_label = metric_display_names[optimization_metric]
 trials = study.trials
 trial_numbers = [t.number for t in trials]
 trial_values = [t.value if t.value is not None else np.nan for t in trials]
@@ -278,7 +275,7 @@ def evaluate_and_save(model, X_data, y_data, dataset_label, studyName, res_dir, 
     # Save metrics CSV (per-class report + summary metrics row)
     report_dict = classification_report(y_data, y_pred, target_names=class_names, output_dict=True)
     df_report = pd.DataFrame(report_dict).transpose()
-    # Append the additional summary metrics as a separate row
+    # Additional summary metrics as a separate row
     df_report.loc['quadratic_weighted_kappa'] = [np.nan, np.nan, all_metrics['qwk'], np.nan]
     metrics_file = f'{res_dir}xgb_iba_metrics_{dataset_label}_{studyName}.csv'
     df_report.to_csv(metrics_file, index=True, index_label="class")
@@ -308,13 +305,13 @@ report_full, metrics_full = evaluate_and_save(
     final_model, X, y, "full", studyName, res_dir, class_names)
 
 
-# Save summary txt: oversampling info + classification reports
+# Save summary txt: oversampling info and classification reports
 summary_file = f'{res_dir}xgb_iba_summary_{studyName}.txt'
 with open(summary_file, 'w') as f:
     f.write(f"Study: {studyName}\n")
     f.write(f"Input file: {input_file}\n")
-    f.write(f"Optimization metric: {METRIC_DISPLAY_NAMES[OPTIMIZATION_METRIC]} "
-            f"(key: {OPTIMIZATION_METRIC})\n")
+    f.write(f"Optimization metric: {metric_display_names[optimization_metric]} "
+            f"(key: {optimization_metric})\n")
     f.write(f"Dataset shape: {df.shape}\n")
     f.write(f"Features: {len(X.columns)}\n")
     f.write(f"Feature list: {list(X.columns)}\n\n")
@@ -364,7 +361,7 @@ with open(summary_file, 'w') as f:
 
 print(f"\nSummary saved to {summary_file}")
 
-# SHAP analysis for train (raw, not oversampled), valid, and full dataset
+# SHAP analysis for train (not oversampled), valid, and full dataset
 max_shap_display = 40
 model_features = final_model.get_booster().feature_names
 feature_names = np.array(model_features)
