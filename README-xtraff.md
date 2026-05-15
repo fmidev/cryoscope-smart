@@ -1,6 +1,6 @@
 # Training a model to forecas soil wetness classes for trafficability with eXtreme gradient boosting (XGBoost)
 
-This code reproduces the data and model training and prediction workflows used in `Kröger et al.: Water in Your Boots: Community-Based App for Arctic Wildfire Preparedness and Terrain Trafficability Conditions`
+This code describes the data and model training and prediction workflows used in `Kröger et al.: Water in Your Boots: Community-Based App for Arctic Wildfire Preparedness and Terrain Trafficability Conditions`
 
 
 ## Table of contents
