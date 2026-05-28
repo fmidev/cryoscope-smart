@@ -12,8 +12,8 @@ soil temp
 
 |Target|Source 1|Source 2|Source 3|
 |:-|:-|:-|:-|
-|2m air temperature|||
-| Soil temperature (top level)|||
+|2m air temperature|tiesääasemat air temp||
+| Soil temperature (top level)|tiesääasemat (tsr? road service temp)||
 
 # notes below
 
