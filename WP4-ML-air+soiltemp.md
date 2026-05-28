@@ -15,7 +15,25 @@ soil temp
 |2m air temperature|||
 | Soil temperature (top level)|||
 
-#
+# notes below
+
+Muistarit: 
+Kiinnostaa 2m lämpötila ja stl1 opetustavoitteena (output tavoite). Mitä opetustargetteja siihen kerätään: 
+- yhdistelmä 3sta eri lähteestä opetustarget
+- tiesääasemat ja niiden road service temp (stl1 vertautuva) ja air temp mittaukset 1000 asemaa suomessa, mutta tehdään suoraan alueelle mitä Rasmuksella ~400 -> aineisto valmiina vain siellä pitää uudelleen koostaa lähimmän, tunnin era5 ja era5l on haettu jostain, jossain on havainnot tunnin välein ja era5 kamat tunnin välein jo haettuna  
+- soiltemp db havainnot euroopasta ja mitä meillä jo on 2500. Ei ole ilman lämpötila havaintoja välttämättä kohteista mukana. 15cm maan yllä on jo lähempänä 2m lämpötilaa kuin maanpinnnan., validointiin sitten Joonas etc 
+- havaintoasemapaikat (aws asemat avs asemat) joista ilmanlämpötilamittaus, käytetäänkin satelliittihavaintoja niissä pisteissä, yksin oli huono ja paljon härödataa, opetusmalli niin että on semmosiakin lähteitä missä ei ole häröä ja datan runsaus korvaa häröt, niille hetkille havaintodatat uusiksi koko päivän tiedot. Havaintoasemat paikat ne jotka osuu alueelle missä satkudataa on (helsinki, tampere). 
+trs on joku tiesäälämpötila
+2 tulosta erikseen
+- vektoriopetus
+- koetetaan ratkaista yhtäaikaa
+opetusaineistot kasvaa kun yhdistetaan monen aineiston aineksia ja yhtenäismalli 
+soiltemp malli pelikkä soiltemp asemilla hyvä
+tiesääasemat tunnin välein 
+päiväsignaali opetettua 
+Katso Rasmuksen se malli 
+AMSR, SSMI SSMI YLI LAIDAN, AMSR Yleinen siivous että jos älyttömän kylmää (droppaa kahden mittauksen v'lillä valtavasti niin suodatetaan pois edellisen ja seuraavan mittauksen vertailu että droppaa 30 asteen erolla sen kylmemmän tai 20 astetta) 
+Lopputuloksen kannalta (aurora hankkeessa) että me validoidaan niillä satkudatatuotteilla meidän hommia. Jos käytetään tätä opetukseen ja validoidaan tai ei käytetä ja validoidaan niin hyvyyden vertailua (2 ensimmäistä havaintoaineistoa opetus ja sitten 3 vaan validointiin, toinen malli 3lla datalla ja validoidaan).Mikon hommaa.
 
 # Air + Soil Temperature Models — Working Notes (CryoSCOPE)
 
