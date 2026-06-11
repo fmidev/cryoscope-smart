@@ -12,7 +12,7 @@ soil temp
 
 |Target|Source 1|Source 2|Source 3|
 |:-|:-|:-|:-|
-|2m air temperature|tiesääasemat air temp||
+|2m air temperature|AWS tiesääasemat air temp|SoiltempDB havainnot|Satkuhavainnot havaintoasemapisteissä|
 | Soil temperature (top level)|tiesääasemat (tsr? road service temp)||
 
 # notes below
