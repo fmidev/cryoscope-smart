@@ -1,0 +1,1 @@
+"<b>Training data processing</b><br/>──────────<br/>Builds prediction type matched training data set to locations specified by training target variable. Feature overlap (reanalysis vs. prediction target type) decreases from EC-ENS to CMIP."

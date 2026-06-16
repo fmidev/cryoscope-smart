@@ -5,18 +5,16 @@
 - ERA5LC
 - ERA5 single level data
 - ERA5 pressure level data
-- ERA5D
+- ERA5D: sm.cryo-scope.eu
 - CARRA2
 - ECSF / ECBSF / ECB2SF
 - ECENS
 
 ### Table of matches
 
-# Datasets comparison for Precipitation 15-day and seasonal forecast XGBoost downscaling with ECA&D station observations
-
-| **Feature** (shortname) | **ECENS** Mars 0.1° x 0.1° OR 0.25° x 0.25° | **ECSF** CDS | **ERA5L** CDS 0.1° x 0.1° | **ERA5** CDS 0.25° x 0.25° | **ERA5LD** CDS | **ERA5D** CDS |
-| --- | --- | --- | --- | --- | --- | --- |
-| 2 metre dewpoint temperature | 168.128 surface 12 UTC instant | sl 6h instant [K] |  | Instant 00 UTC 12 UTC [K] |  |  |
+| **Feature** (shortname) | **ECENS** | **ECSF** | **ERA5L** | **ERA5** | **ERA5LD** | **ERA5D** | **CARRA2**|
+| --- | --- | --- | --- | --- | --- | --- |--- |
+| 2 metre dewpoint temperature | 168.128 12 UTC instant | sl 6h instant [K] |  | Instant 00 UTC 12 UTC [K] |  |  |
 | 2 metre relative humidity | 260242 surface |  |  |  |  |  |
 | 2 metre temperature | 167.128 surface 12 UTC instant | sl 6h instant [K] |  | Instant 00 UTC 12 UTC [K] |  |  |
 | 10 metre U wind component | 165.128 surface 12 UTC instant | sl 00 UTC 12 UTC instant [m s-1] |  | Instant 00 UTC 12 UTC [m s-1] |  |  |
