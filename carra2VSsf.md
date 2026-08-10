@@ -62,25 +62,16 @@
 |wind direction||pressure||||||
 
 
-Derived variables 
+Derived variables. Calculate dpt from datasets and then fetch data, calculate these in dataframe (no need to create new variables to smartmet)
 
 |derived variable|equation|ECSF variables| ECSF levels |ECSF temporal resolution| CARRA2 variables| CARRA2 levels |CARRA2 temporal resolution|
 |:-|:-|:-|:-|:-|:-|:-|:-|
-|K index||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-
-
+|dewpoint temperature on pressure levels||||||||
+|K index|	(T850−T500) + Td850 − (T700−Td700)|||||||
+|vertical totals|T850 − T500|||||||
+|cross totals|	Td850 − T500|||||||
+|totals totals|	T850 + Td850 − 2·T500|||||||
+|dewpoint depression|T850 − Td850|||||||
+|mid-level lapse rate|(T850−T500) / ((Z500−Z850)/g)|||||||
+|thickness|1000–500	(Z500 − Z1000)/g|||||||
+|pressure change from previous day|
