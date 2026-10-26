@@ -1,3 +1,5 @@
+fix here which ones are from CARRA2D and which from CARRA2
+
 | CARRA2 variable|CARRA2 unit | CARRA2 level |CARRA2 temporal resolution|ECSF variable|ECSF units| ECSF level |ECSF temporal resolution|
 |:-|:-|:-|:-|:-|:-|:-|:-|
 |10m u component of wind||single||10m u component of wind||single||
