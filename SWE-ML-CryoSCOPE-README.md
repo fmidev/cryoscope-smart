@@ -1,12 +1,12 @@
 # ML for Snow Water Equivalent from EO data: Combining Snowcap SWE as target with meteorological and satellite data to forecast SWE conditions with XGBoost​
 
-This repository reproduces the training data generation, model training, validation and prediction workflows for the snow water equivalent (SWE) model. The model is trained using SNOWCAP SWE as the target and ERA5 Land reanalysis, SNOWCAP climatology, terrain and forest statistics data as input features. Operational predictions are made from the ECMWF ensemble forecast for 15-day and 215-day inputs. This work is part of the CryoSCOPE project.
+This README describes the training data generation, model training, validation and prediction workflows for the snow water equivalent (SWE) model. The model is trained using SNOWCAP SWE as the target and ERA5 Land reanalysis, SNOWCAP climatology, terrain and forest statistics data as input features. Operational predictions are made from the ECMWF ensemble forecast for 15-day and 215-day inputs. This work is part of the CryoSCOPE project.
 
 
 ## System requirements
 Python version Python 3.12.7 in the UNIX/Linux environment was used in this project.
 
-The time it takes to run the model training dependes f.ex. on the number of locations, number of predictors, selected hyperparameters, etc. For 10 000 locations, 47 predictors and hyperparameters described in the article, it took approximately 5.5 hours to train the model used in this study, with 64 CPU cores and 228G memory. With the fitted model, predicting SWI2 from seasonal forecast data takes around 5 hours with a similar setup.   
+The time it takes to run the model training dependes f.ex. on the number of locations, number of predictors, selected hyperparameters, etc. For 20 000 locations, 24 features and Optuna tuning, it took approximately 3 days to train the model used in this study, with 64 CPU cores and 228G memory. With the fitted model, predicting SWE from 15-day forecast data takes around XX hours, and predicting with seasonal forecast data takes around YY hours, with a similar setup.   
 
 ## Dependencies
 To create xgb environment used in this project, check out the `requirements.txt` file.
