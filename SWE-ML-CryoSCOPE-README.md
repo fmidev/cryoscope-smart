@@ -1,9 +1,10 @@
-# Training a model to forecast soil water index (SWI) with gradient boosting
+# ML for Snow Water Equivalent from EO data: Combining Snowcap SWE as target with meteorological and satellite data to forecast SWE conditions with XGBoost​
 
-This code reproduces the data and model training and prediction workflows used in `Strahlendorff et al.: Forestry climate adaptation with HarvesterSeasons service - a gradient boosting model to forecast soil water index SWI from a comprehensive set of IFS model predictors in Destination Earth `
+This repository reproduces the training data generation, model training, validation and prediction workflows for the snow water equivalent (SWE) model. The model is trained using SNOWCAP SWE as the target and ERA5 Land reanalysis, SNOWCAP climatology, terrain and forest statistics data as input features. Operational predictions are made from the ECMWF ensemble forecast for 15-day and 215-day inputs. This work is part of the CryoSCOPE project.
+
 
 ## System requirements
-Python version 3.10.13 in the UNIX/Linux environment was used in this project.
+Python version Python 3.12.7 in the UNIX/Linux environment was used in this project.
 
 The time it takes to run the model training dependes f.ex. on the number of locations, number of predictors, selected hyperparameters, etc. For 10 000 locations, 47 predictors and hyperparameters described in the article, it took approximately 5.5 hours to train the model used in this study, with 64 CPU cores and 228G memory. With the fitted model, predicting SWI2 from seasonal forecast data takes around 5 hours with a similar setup.   
 
