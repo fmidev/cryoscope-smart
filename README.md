@@ -33,7 +33,7 @@ Questions, feedback, or need support, feel free to reach out:
 
 # Cryoscope Arctic observing analysis
 
-Smart climate monitoring and Arctic cryosphere observation platform are used as context for an AI led analysis of how Arctic Observig is doing based on Claude Sonnet 5 agent work guided by Mikko Strahlendorff. The key data set was fetched from WMO Oscar surface at https://oscar.wmo.int/surface/#/search. The empty search was changed by matching ANY criteria and defining the bounding box as 60..90N and -180..180E.
+Smart climate monitoring and Arctic cryosphere observation platform are used as context for an AI led analysis of how Arctic Observig is doing based on Claude Sonnet 5 agent work guided by Mikko Strahlendorff. The key data set was fetched from WMO Oscar surface at https://oscar.wmo.int/surface/#/search. The empty search was changed by matching ANY criteria and defining the bounding box as 60..90N and -180..180E. The result was downloaded as a csv and passed to the agent.
 
 ## 📊 Analysis & Data
 
