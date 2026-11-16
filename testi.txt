@@ -1,1 +1,3 @@
-moi testi
+This is test file in a test directory
+ignore or
+can me removed

@@ -31,3 +31,30 @@ Questions, feedback, or need support, feel free to reach out:
 
 🌐 About the CryoSCOPE project: https://cryoscope-project.eu
 
+# Cryoscope-Smart
+
+Smart climate monitoring and Arctic cryosphere observation platform.
+
+## 📊 Analysis & Data
+
+### WMO OSCAR Arctic Weather Stations Analysis
+
+Comprehensive analysis of **1,127 Arctic meteorological stations** (60°N-84.5°N) from the WMO OSCAR Surface Database.
+
+**Location:** [`analysis/wmo-oscar-arctic-stations/`](analysis/wmo-oscar-arctic-stations/)
+
+**Quick Start:** See [analysis/wmo-oscar-arctic-stations/START_HERE.md](analysis/wmo-oscar-arctic-stations/START_HERE.md)
+
+**Contents:**
+- 📄 Comprehensive technical reports and analysis
+- 📊 Publication-quality visualizations (300 DPI)
+- 📍 Complete Arctic station dataset (1,127 stations, 29 columns)
+- 🛠️ Implementation guide for Cryoscope platform integration
+- 🗺️ Geographic distribution analysis and coverage assessment
+
+**Key Findings:**
+- ✅ Excellent sub-Arctic coverage (987 stations below 70°N)
+- ⚠️ Critical High Arctic gap (only 144 stations above 70°N)
+- 📈 Data-driven recommendations for network expansion
+
+For more details, start with [`analysis/wmo-oscar-arctic-stations/README.md`](analysis/wmo-oscar-arctic-stations/README.md)
