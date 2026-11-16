@@ -13,10 +13,19 @@ This folder contains a comprehensive analysis of Arctic meteorological stations 
 
 ### Core Reports
 - **[WMO_OSCAR_ARCTIC_ANALYSIS.md](WMO_OSCAR_ARCTIC_ANALYSIS.md)** - Comprehensive technical analysis (15 min read)
+- **[ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md)** - How the network has grown (and where it hasn't) from the 1980s to today, with data caveats
 - **[PROJECT_COMPLETION_SUMMARY.md](PROJECT_COMPLETION_SUMMARY.md)** - Executive summary (5 min read)
 - **[ARCTIC_STATIONS_ANALYSIS.md](ARCTIC_STATIONS_ANALYSIS.md)** - Detailed geographic breakdown
 - **[INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)** - Implementation guide for Cryoscope platform
 - **[DELIVERABLES.txt](DELIVERABLES.txt)** - Complete reference of all files and usage
+
+**Note on the reports above:** the "Core Reports" describe a single 2026 snapshot of
+the station network (the WMO OSCAR export only includes currently-Operational
+stations) and still include 14 Bosnia and Herzegovina WMO **test stations** (not
+real Arctic observing sites) in their totals and High Arctic counts. For how the
+network has changed *over time* since the 1980s — and with those test stations
+excluded — see
+[ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md).
 
 ---
 
@@ -33,6 +42,11 @@ This folder contains a comprehensive analysis of Arctic meteorological stations 
   - 144 stations north of 70°N
   - Ideal for climate research and polar monitoring
 
+### Network Evolution Dataset
+- **[oscar_arctic_stations_by_decade.csv](oscar_arctic_stations_by_decade.csv)**
+  - New and cumulative active-station counts per decade (pre-1980 through 2020s), by country
+  - Derived from the `Date established` field of the primary dataset; see the evolution report for caveats
+
 ---
 
 ## 📈 Visualizations
@@ -46,6 +60,9 @@ This folder contains a comprehensive analysis of Arctic meteorological stations 
 - **[oscar_arctic_stations_regional_focus.png](oscar_arctic_stations_regional_focus.png)** (348 KB)
   - 4-panel regional analysis with High Arctic focus
   - Elevation analysis and sector distribution
+
+- **[oscar_arctic_station_network_evolution.png](oscar_arctic_station_network_evolution.png)**
+  - Cumulative active-station growth by establishment year (1950-2026) and new stations added per decade, by country
 
 ---
 
