@@ -27,6 +27,14 @@ network has changed *over time* since the 1980s — and with those test stations
 excluded — see
 [ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md).
 
+### Marine Observations Follow-Up
+- **[ARCTIC_MARINE_OBSERVATIONS_AND_SHIP_DATA.md](ARCTIC_MARINE_OBSERVATIONS_AND_SHIP_DATA.md)** -
+  Since the Arctic is mostly ocean, this extends the evolution analysis to ships and
+  drifting sea-ice buoys: cross-references ECMWF real-time observation-monitoring
+  charts against the OSCAR data, explains why the global ship-observation growth
+  trend doesn't carry over to the Arctic Ocean, and reconstructs a 2000-2024 trend
+  in Arctic drifting-buoy counts from public IABP data.
+
 ---
 
 ## 📊 Data Files
@@ -47,6 +55,11 @@ excluded — see
   - New and cumulative active-station counts per decade (pre-1980 through 2020s), by country
   - Derived from the `Date established` field of the primary dataset; see the evolution report for caveats
 
+### Marine Observations Dataset
+- **[iabp_arctic_buoy_counts_by_year.csv](iabp_arctic_buoy_counts_by_year.csv)**
+  - Distinct International Arctic Buoy Programme (IABP) buoy IDs reporting from ≥60°N, for 13 sample years 2000-2024
+  - Reconstructed from IABP's public Level-1 bulk per-year data; see the marine observations report for methodology and caveats
+
 ---
 
 ## 📈 Visualizations
@@ -63,6 +76,17 @@ excluded — see
 
 - **[oscar_arctic_station_network_evolution.png](oscar_arctic_station_network_evolution.png)**
   - Cumulative active-station growth by establishment year (1950-2026) and new stations added per decade, by country
+
+### Marine Observations Context
+
+- **[ecmwf_synop_2m_temp_northpolar_monitoring.png](ecmwf_synop_2m_temp_northpolar_monitoring.png)** -
+  ECMWF real-time observation-monitoring screenshot (2m temperature, SYNOP, 90°N/78°N
+  domain) used as a reference in the marine observations report
+- **[ecmwf_ship_pressure_global_monitoring.png](ecmwf_ship_pressure_global_monitoring.png)** -
+  ECMWF real-time observation-monitoring screenshot (pressure from ship, global
+  domain) used as a reference in the marine observations report
+- **[iabp_arctic_buoy_count_trend.png](iabp_arctic_buoy_count_trend.png)** -
+  Reconstructed count of distinct IABP drifting buoys reaching ≥60°N per year, 2000-2024
 
 ---
 
