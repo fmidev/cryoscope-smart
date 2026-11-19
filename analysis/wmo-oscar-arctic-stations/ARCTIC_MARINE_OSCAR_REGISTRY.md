@@ -95,6 +95,14 @@ of fake "establishments" in 2025–2026. This is why the companion marine report
 instead reconstructed a real buoy-count trend from IABP's own per-observation bulk
 data rather than from OSCAR's station metadata.
 
+**Follow-up:** the same question can be asked of the "Underwater (mobile)" (Argo
+float) category using the Argo program's own data authority, OceanOPS/JCOMMOPS,
+instead of OSCAR — see
+[ARCTIC_ARGO_OCEANOPS_ANALYSIS.md](ARCTIC_ARGO_OCEANOPS_ANALYSIS.md). Unlike the
+ice buoys above, OceanOPS's Argo deployment dates are genuine and usable for a
+time series, and they show a real, sharply accelerating deployment trend in
+2025-2026.
+
 ## Bottom line
 
 OSCAR's own marine/ocean registry reinforces, rather than changes, the conclusions

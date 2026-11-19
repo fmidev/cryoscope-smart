@@ -43,6 +43,11 @@ undercount fixed and closures finally included — see
   cross-checks it against the external IABP estimate, and explains why these
   platforms' OSCAR establishment dates can't be used for a time-series analysis
   the way land-station dates can.
+- **[ARCTIC_ARGO_OCEANOPS_ANALYSIS.md](ARCTIC_ARGO_OCEANOPS_ANALYSIS.md)** -
+  Checks Argo-specific statistics directly from the Argo program's own data
+  authority, OceanOPS/JCOMMOPS (ocean-ops.org): 694 floats ever deployed ≥60°N out
+  of 22,393 worldwide, a genuine and sharply accelerating deployment trend in
+  2025-2026, and a cross-check against OSCAR's own Argo-equivalent count.
 
 ### Geographic Context
 - **[ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md](ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md)** -
@@ -90,6 +95,11 @@ undercount fixed and closures finally included — see
     buoys, Argo floats) north of 60°N, all declared statuses, with program affiliation
   - See [ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md) for why
     these platforms' dates aren't used for a time series the way land stations' are
+- **[oceanops_argo_arctic_floats.csv](oceanops_argo_arctic_floats.csv)**
+  - 694 Argo floats with a deployment position ≥60°N, pulled directly from
+    OceanOPS/JCOMMOPS (the Argo program's own data authority), with real deployment
+    dates, program/country, and current status
+  - See [ARCTIC_ARGO_OCEANOPS_ANALYSIS.md](ARCTIC_ARGO_OCEANOPS_ANALYSIS.md) for methodology and findings
 
 ### Geographic Context Dataset
 - **[latitude_circle_length_by_band.csv](latitude_circle_length_by_band.csv)**
@@ -130,6 +140,8 @@ undercount fixed and closures finally included — see
   Reconstructed count of distinct IABP drifting buoys reaching ≥60°N per year, 2000-2024
 - **[oscar_arctic_marine_platforms_by_status.png](oscar_arctic_marine_platforms_by_status.png)** -
   OSCAR-registered marine/ocean platforms (ships, ice buoys, Argo floats) by type and current status
+- **[oceanops_argo_arctic_deployments.png](oceanops_argo_arctic_deployments.png)** -
+  Argo floats deployed ≥60°N by year (2001-2026) from OceanOPS/JCOMMOPS, with cumulative total and current status breakdown
 
 ### Geographic Context
 
