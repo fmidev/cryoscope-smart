@@ -276,13 +276,6 @@ This analysis examines **1,127 meteorological stations** registered in the WMO O
 3. Establish maintenance protocols for critical stations
 4. Enhance real-time data availability
 
-### For Aurora-SmartMet Integration
-1. Import oscar_arctic_stations_60n.csv into spatial database
-2. Create visualization layers showing station density
-3. Display real-time observations where available
-4. Highlight coverage gaps and monitoring needs
-5. Enable station-specific climate monitoring dashboards
-
 ---
 
 ## 10. References

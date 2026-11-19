@@ -1,43 +1,44 @@
-# WMO OSCAR Arctic Weather Stations Analysis
+# WMO OSCAR Arctic Observing Network Analysis
 
-**Cryoscope Project Repository**
-
-This folder contains a comprehensive analysis of Arctic meteorological stations (1,127 stations north of 60°N) from the WMO OSCAR Surface Database, prepared for integration with the Cryoscope smart climate monitoring platform.
+This folder analyzes how the Arctic (60°N+) observing network — land weather
+stations, drifting sea-ice buoys, ships, and Argo profiling floats — looks today
+and how it has evolved over time, using the WMO OSCAR Surface Database and the
+Argo program's own data authority (OceanOPS/JCOMMOPS).
 
 ---
 
 ## 📄 Documentation
 
-### Quick Start
-- **[START_HERE.md](START_HERE.md)** ⭐ **Begin here** - Quick navigation guide for different user types
+### Land Stations
+- **[WMO_OSCAR_ARCTIC_ANALYSIS.md](WMO_OSCAR_ARCTIC_ANALYSIS.md)** - Comprehensive
+  technical analysis of the current (2026) land-station network: geographic
+  distribution, country breakdown, latitude bands, station types, and reporting status
+- **[ARCTIC_STATIONS_ANALYSIS.md](ARCTIC_STATIONS_ANALYSIS.md)** - Detailed
+  geographic and regional breakdown, with a focus on the Finnish Meteorological
+  Institute's network and High Arctic (70°N+) coverage
+- **[ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md)** -
+  How the land-station network has actually grown (and where it hasn't) from the
+  1980s to today, using establishment **and** closure dates for a true historical
+  active-count series — not just a snapshot of today's survivors
 
-### Core Reports
-- **[WMO_OSCAR_ARCTIC_ANALYSIS.md](WMO_OSCAR_ARCTIC_ANALYSIS.md)** - Comprehensive technical analysis (15 min read)
-- **[ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md)** - How the network has grown (and where it hasn't) from the 1980s to today, with data caveats
-- **[PROJECT_COMPLETION_SUMMARY.md](PROJECT_COMPLETION_SUMMARY.md)** - Executive summary (5 min read)
-- **[ARCTIC_STATIONS_ANALYSIS.md](ARCTIC_STATIONS_ANALYSIS.md)** - Detailed geographic breakdown
-- **[INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)** - Implementation guide for Cryoscope platform
-- **[DELIVERABLES.txt](DELIVERABLES.txt)** - Complete reference of all files and usage
-
-**Note on the reports above:** the "Core Reports" describe a single 2026 snapshot of
-the station network (the WMO OSCAR export only includes currently-Operational
-stations) and still include 14 Bosnia and Herzegovina WMO **test stations** (not
-real Arctic observing sites) in their totals and High Arctic counts. The bundled
-`oscar_arctic_stations_60n.csv` export was also found to **undercount even the
-Operational stations** by 10-46% depending on country (see the evolution report) —
+**Note on the reports above:** the two "Core Reports" describe a single 2026
+snapshot of the station network (the bundled WMO OSCAR export only includes
+currently-Operational stations) and still include 14 Bosnia and Herzegovina WMO
+**test stations** (not real Arctic observing sites) in their totals and High
+Arctic counts. The bundled `oscar_arctic_stations_60n.csv` export was also found
+to **undercount even the Operational stations** by 10-46% depending on country —
 for anything beyond a quick first look, use
 [oscar_arctic_land_stations_allstatus_60n.csv](oscar_arctic_land_stations_allstatus_60n.csv)
-instead. For how the network has changed *over time* since the 1980s — with the
-undercount fixed and closures finally included — see
-[ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md).
+instead, and see the evolution report for the full detail.
 
-### Marine Observations Follow-Up
+### Ocean/Marine Platforms
 - **[ARCTIC_MARINE_OBSERVATIONS_AND_SHIP_DATA.md](ARCTIC_MARINE_OBSERVATIONS_AND_SHIP_DATA.md)** -
-  Since the Arctic is mostly ocean, this extends the evolution analysis to ships and
-  drifting sea-ice buoys: cross-references ECMWF real-time observation-monitoring
-  charts against the OSCAR data, explains why the global ship-observation growth
-  trend doesn't carry over to the Arctic Ocean, and reconstructs a 2000-2024 trend
-  in Arctic drifting-buoy counts from public IABP data.
+  Since the Arctic is mostly ocean, this extends the land-station analysis to ships
+  and drifting sea-ice buoys: cross-references real-time ECMWF observation-monitoring
+  data against the OSCAR register, explains why global ship-observation growth
+  trends don't carry over to the Arctic Ocean, and reconstructs a 2000-2024 trend
+  in Arctic drifting-buoy counts from public International Arctic Buoy Programme
+  (IABP) data.
 - **[ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md)** -
   Pulls OSCAR's own ship/buoy/float register (all declared statuses) for ≥60°N,
   cross-checks it against the external IABP estimate, and explains why these
@@ -61,237 +62,162 @@ undercount fixed and closures finally included — see
 
 ## 📊 Data Files
 
-### Primary Dataset
-- **[oscar_arctic_stations_60n.csv](oscar_arctic_stations_60n.csv)** (723 KB)
-  - 1,127 stations north of 60°N latitude
-  - 29 metadata columns per station
-  - Ready for database import and analysis
+### Land Stations — Snapshot
+- **[oscar_arctic_stations_60n.csv](oscar_arctic_stations_60n.csv)** (723 KB) —
+  1,127 stations north of 60°N, 29 metadata columns, currently-Operational only
+- **[oscar_high_arctic_stations_70n.csv](oscar_high_arctic_stations_70n.csv)** (98 KB) —
+  144-station High Arctic (≥70°N) subset of the file above
 
-### High Arctic Subset
-- **[oscar_high_arctic_stations_70n.csv](oscar_high_arctic_stations_70n.csv)** (98 KB)
-  - 144 stations north of 70°N
-  - Ideal for climate research and polar monitoring
+### Land Stations — Evolution (all statuses, including closures)
+- **[oscar_arctic_land_stations_allstatus_60n.csv](oscar_arctic_land_stations_allstatus_60n.csv)** —
+  **Supersedes the snapshot above for historical analysis.** 1,621 land stations
+  (`Land (fixed)` + `Land (on ice)`) north of 60°N, **all declared statuses**
+  (Operational, Closed, Silent, Partly operational, Unknown), pulled directly from
+  the OSCAR API, with `Date established` and `Date closed` for a true historical
+  active-count series
+- **[oscar_arctic_land_stations_by_decade_allstatus.csv](oscar_arctic_land_stations_by_decade_allstatus.csv)** —
+  Established/closed/net-change/cumulative true-active counts per decade (pre-1980 through 2020s)
+- **[oscar_arctic_stations_by_decade.csv](oscar_arctic_stations_by_decade.csv)** —
+  *(Superseded — kept for history)* Same idea but from the undercounted,
+  operational-only snapshot; see the evolution report for why the file above
+  should be used instead
 
-### Network Evolution Dataset
-- **[oscar_arctic_land_stations_allstatus_60n.csv](oscar_arctic_land_stations_allstatus_60n.csv)**
-  - **Supersedes the primary dataset above for historical/evolution analysis.**
-    1,621 land stations (`Land (fixed)` + `Land (on ice)`) north of 60°N, **all
-    declared statuses** (Operational, Closed, Silent, Partly operational, Unknown),
-    pulled directly from the OSCAR API rather than the bundled export
-  - Includes `Date established` and `Date closed` for true historical active-count analysis
-- **[oscar_arctic_land_stations_by_decade_allstatus.csv](oscar_arctic_land_stations_by_decade_allstatus.csv)**
-  - Established/closed/net-change/cumulative true-active counts per decade (pre-1980 through 2020s)
-- **[oscar_arctic_stations_by_decade.csv](oscar_arctic_stations_by_decade.csv)**
-  - *(Superseded — kept for history)* Same idea but from the undercounted,
-    operational-only bundled CSV; see the evolution report for why the file above
-    should be used instead
+### Ocean/Marine Platforms
+- **[iabp_arctic_buoy_counts_by_year.csv](iabp_arctic_buoy_counts_by_year.csv)** —
+  Distinct International Arctic Buoy Programme (IABP) buoy IDs reporting from
+  ≥60°N, for 13 sample years 2000-2024, reconstructed from IABP's public bulk data
+- **[oscar_arctic_marine_platforms_allstatus_60n.csv](oscar_arctic_marine_platforms_allstatus_60n.csv)** —
+  1,651 OSCAR-registered marine/ocean platforms (ships, drifting ice buoys, moored
+  buoys, Argo floats) north of 60°N, all declared statuses, with program affiliation
+- **[oceanops_argo_arctic_floats.csv](oceanops_argo_arctic_floats.csv)** —
+  694 Argo floats with a deployment position ≥60°N, pulled directly from
+  OceanOPS/JCOMMOPS, with real deployment dates, program/country, and current status
 
-### Marine Observations Dataset
-- **[iabp_arctic_buoy_counts_by_year.csv](iabp_arctic_buoy_counts_by_year.csv)**
-  - Distinct International Arctic Buoy Programme (IABP) buoy IDs reporting from ≥60°N, for 13 sample years 2000-2024
-  - Reconstructed from IABP's public Level-1 bulk per-year data; see the marine observations report for methodology and caveats
-- **[oscar_arctic_marine_platforms_allstatus_60n.csv](oscar_arctic_marine_platforms_allstatus_60n.csv)**
-  - 1,651 OSCAR-registered marine/ocean platforms (ships, drifting ice buoys, moored
-    buoys, Argo floats) north of 60°N, all declared statuses, with program affiliation
-  - See [ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md) for why
-    these platforms' dates aren't used for a time series the way land stations' are
-- **[oceanops_argo_arctic_floats.csv](oceanops_argo_arctic_floats.csv)**
-  - 694 Argo floats with a deployment position ≥60°N, pulled directly from
-    OceanOPS/JCOMMOPS (the Argo program's own data authority), with real deployment
-    dates, program/country, and current status
-  - See [ARCTIC_ARGO_OCEANOPS_ANALYSIS.md](ARCTIC_ARGO_OCEANOPS_ANALYSIS.md) for methodology and findings
-
-### Geographic Context Dataset
-- **[latitude_circle_length_by_band.csv](latitude_circle_length_by_band.csv)**
-  - Operational station count, latitude-circle circumference, and stations-per-1,000km-of-circle for each 5° band 60-90°N
-  - See [ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md](ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md) for the derivation and findings
+### Geographic Context
+- **[latitude_circle_length_by_band.csv](latitude_circle_length_by_band.csv)** —
+  Station count, latitude-circle circumference, and stations-per-1,000km-of-circle
+  for each 5° band 60-90°N
 
 ---
 
 ## 📈 Visualizations
 
-### Publication-Quality Dashboards (300 DPI)
+### Land Station Snapshot and Evolution
+- **[oscar_arctic_stations_comprehensive.png](oscar_arctic_stations_comprehensive.png)** (1.3 MB) —
+  9-panel dashboard: geographic map, latitude/country distributions, station types, reporting status
+- **[oscar_arctic_stations_regional_focus.png](oscar_arctic_stations_regional_focus.png)** (348 KB) —
+  4-panel regional analysis with High Arctic focus, elevation, and sector distribution
+- **[oscar_arctic_land_stations_true_evolution.png](oscar_arctic_land_stations_true_evolution.png)** —
+  TRUE cumulative active-station count by establishment year (1950-2026),
+  accounting for real closures, plus stations established vs. closed per decade
+- **[oscar_arctic_station_network_evolution.png](oscar_arctic_station_network_evolution.png)** —
+  *(Superseded)* Earlier cumulative-growth chart from the undercounted,
+  operational-only snapshot — see the true-evolution chart above instead
 
-- **[oscar_arctic_stations_comprehensive.png](oscar_arctic_stations_comprehensive.png)** (1.3 MB)
-  - 9-panel dashboard with geographic map, distributions, and statistics
-  - Ready for presentations and publications
-
-- **[oscar_arctic_stations_regional_focus.png](oscar_arctic_stations_regional_focus.png)** (348 KB)
-  - 4-panel regional analysis with High Arctic focus
-  - Elevation analysis and sector distribution
-
-- **[oscar_arctic_station_network_evolution.png](oscar_arctic_station_network_evolution.png)**
-  - *(Superseded)* Cumulative active-station growth from the undercounted,
-    operational-only bundled CSV — see
-    [oscar_arctic_land_stations_true_evolution.png](oscar_arctic_land_stations_true_evolution.png) below instead
-- **[oscar_arctic_land_stations_true_evolution.png](oscar_arctic_land_stations_true_evolution.png)**
-  - TRUE cumulative active-station count by establishment year (1950-2026),
-    accounting for real closures, plus stations established vs. closed per decade
-
-### Marine Observations Context
-
+### Ocean/Marine Platforms
 - **[ecmwf_synop_2m_temp_northpolar_monitoring.png](ecmwf_synop_2m_temp_northpolar_monitoring.png)** -
-  ECMWF real-time observation-monitoring screenshot (2m temperature, SYNOP, 90°N/78°N
-  domain) used as a reference in the marine observations report
+  ECMWF real-time observation-monitoring reference chart (2m temperature, SYNOP, 90°N/78°N domain)
 - **[ecmwf_ship_pressure_global_monitoring.png](ecmwf_ship_pressure_global_monitoring.png)** -
-  ECMWF real-time observation-monitoring screenshot (pressure from ship, global
-  domain) used as a reference in the marine observations report
+  ECMWF real-time observation-monitoring reference chart (pressure from ship, global domain)
 - **[iabp_arctic_buoy_count_trend.png](iabp_arctic_buoy_count_trend.png)** -
   Reconstructed count of distinct IABP drifting buoys reaching ≥60°N per year, 2000-2024
 - **[oscar_arctic_marine_platforms_by_status.png](oscar_arctic_marine_platforms_by_status.png)** -
   OSCAR-registered marine/ocean platforms (ships, ice buoys, Argo floats) by type and current status
 - **[oceanops_argo_arctic_deployments.png](oceanops_argo_arctic_deployments.png)** -
-  Argo floats deployed ≥60°N by year (2001-2026) from OceanOPS/JCOMMOPS, with cumulative total and current status breakdown
+  Argo floats deployed ≥60°N by year (2001-2026), with cumulative total and current status breakdown
 
 ### Geographic Context
-
 - **[oscar_latitude_distribution_with_circle_length.png](oscar_latitude_distribution_with_circle_length.png)** -
-  Updated version of the dashboard's "Latitude Distribution" panel, with the
-  circumference of the circle of latitude overlaid on a secondary axis
+  Latitude-distribution histogram with the circumference of the circle of latitude overlaid on a secondary axis
 - **[oscar_latitude_circle_length_vs_stations.png](oscar_latitude_circle_length_vs_stations.png)** -
-  3-panel band view: station counts by 5° latitude band, circle-of-latitude
-  circumference, and the resulting density-adjusted coverage
+  3-panel band view: station counts by 5° latitude band, circle-of-latitude circumference, and density-adjusted coverage
 
 ---
 
 ## 🎯 Key Findings
 
-**Network Overview:**
-- ✅ 1,127 meteorological stations across 12 Arctic nations
-- ✅ Excellent sub-Arctic coverage (987 stations below 70°N)
-- ✅ Coordinated international WMO network
+### Land stations
+- 1,621 land stations have ever been registered north of 60°N across 11
+  countries; 1,505 are currently Operational — ~10-46% more than the bundled
+  snapshot export suggested, depending on country.
+- The currently-active network has grown from 597 stations in 1980 to 1,338
+  today (+124%), but growth has slowed every decade, closures have accelerated
+  (32 already in the 2020s vs. 14 in the entire pre-1980 era), and the true
+  cumulative total has been roughly flat to slightly declining since ~2020.
+- The High Arctic (≥70°N) share of the network has stayed in a narrow 9-12% band
+  for over 40 years — a persistent, not recent, monitoring gap — and remains
+  real even after adjusting for the shrinking circumference of latitude circles
+  toward the pole.
+- Russia, Finland, and Canada are the largest contributors; most growth since
+  1980 has added stations in the 60-70°N sub-Arctic band, not the High Arctic.
 
-**Geographic Leaders:**
-- Russia: 330 stations (29.3%)
-- Finland: 170 stations (15.1%)
-- Canada: 162 stations (14.4%)
-- Norway: 149 stations (13.2%)
-
-**Critical Gaps Identified:**
-- ❌ High Arctic shortage (only 144 of 1,127 stations above 70°N)
-- ❌ Central Arctic Basin unmonitored
-- ⚠️ 42.1% of stations not fully operational
-
----
-
-## 🛠️ Implementation for Cryoscope
-
-### Quick Integration Path
-
-**Phase 1 (1-2 weeks):**
-1. Import `oscar_arctic_stations_60n.csv` to Cryoscope database
-2. Create Arctic station layer in map interface
-3. Build station status dashboard
-
-**Phase 2 (2-4 weeks):**
-4. Add real-time station monitoring
-5. Implement coverage gap visualization
-6. Network health tracking
-
-**Phase 3 (4-8 weeks):**
-7. Station lifecycle analysis
-8. Arctic amplification dashboards
-9. Integration with climate models
-
-See **[INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)** for detailed implementation steps, database schema, and code examples.
+### Ocean/marine platforms
+- Drifting sea-ice buoys (International Arctic Buoy Programme): grew from
+  near-zero in 2000 to a peak of ~550 distinct buoys reporting from ≥60°N in
+  2020, then declined to ~300 by 2024.
+- Argo profiling floats: only 694 of 22,393 floats worldwide (3.1%) have ever
+  been deployed ≥60°N, concentrated in the Nordic/Barents Seas and Fram Strait
+  rather than the central Arctic basin — but deployment has accelerated sharply
+  in 2025-2026, the one clearly growing signal found across this analysis.
+- Global ship-based pressure observations have grown ~4x since 2000, but that
+  growth is driven by automation of existing mid-latitude shipping lanes and
+  does not reflect increased coverage of the Arctic Ocean itself.
+- OSCAR's own marine/ocean register (1,651 platforms ≥60°N across ships, ice
+  buoys, and Argo floats) captures only a fraction of the real international
+  fleet (e.g. ~53 of OSCAR's "Sea (on ice)" records are IABP-tagged, vs. ~228
+  IABP buoys reported active by NOAA), reflecting fragmented registration across
+  many separate national programs.
 
 ---
 
-## 📋 Data Dictionary
+## 📋 Data Dictionary (primary land-station files)
 
 | Column | Type | Description |
 |--------|------|-------------|
 | Station | String | Official station name |
 | Country | String | ISO country name |
-| Latitude | Float | WGS84 latitude (60-84.5°N) |
-| Longitude | Float | WGS84 longitude (-179 to 179°E) |
+| Latitude | Float | WGS84 latitude |
+| Longitude | Float | WGS84 longitude |
 | Elevation | Float | Meters above sea level |
-| Date Established | Date | Station installation date |
-| Status | String | WMO declared operational status |
-| Station Type | String | "Land (fixed)", "Sea (mobile)", etc. |
+| Date established | Date | Station installation date |
+| Date closed | Date | Station closure date (if applicable) |
+| Declared status | String | WMO declared operational status |
+| Station type | String | "Land (fixed)", "Sea (mobile)", etc. |
 | Programs/Networks | String | Affiliated monitoring networks |
 | Reporting Status | String | Assessed operational status |
 
-**Note:** 127 stations missing establishment dates (11.3%); 248 with unknown reporting status (22%)
-
 ---
 
-## ✅ Data Quality
+## ✅ Data Quality Notes
 
-- ✅ **Coordinates:** 100% valid (1,127 of 1,127)
-- ✅ **Geographic bounds:** 60-84.5°N, -179 to 179°E verified
-- ✅ **Duplicates:** None found
-- ✅ **Projection:** WGS84 confirmed
-- ⚠️ **Establishment dates:** 88.7% present (127 missing)
+- **Coordinates:** 100% valid across all land-station files
+- **Geographic bounds:** 60-85°N, -180 to 180°E verified
+- **Duplicates:** None found among land stations
+- **Establishment dates:** present for ~88% of land stations; reliable for
+  historical analysis (unlike mobile marine-platform dates — see
+  [ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md) for why)
+- **Closure dates:** the bundled operational-only snapshot export has almost no
+  closure data (1 of 1,127); the comprehensive all-status pull captures 91
+  genuine closures, enabling the true-evolution analysis
 
-**Data Source:** WMO OSCAR Surface Database (https://oscar.wmo.int/surface/)  
-**Quality Level:** Authoritative, official WMO records
+**Data sources:** WMO OSCAR Surface Database (https://oscar.wmo.int/surface/),
+OceanOPS/JCOMMOPS (https://www.ocean-ops.org), International Arctic Buoy
+Programme (https://iabp.apl.uw.edu)
 
 ---
 
 ## 🌐 Resources
 
 - **WMO OSCAR:** https://oscar.wmo.int/surface/
-- **Cryoscope Project:** [Parent Repository]
+- **OceanOPS/JCOMMOPS:** https://www.ocean-ops.org
+- **International Arctic Buoy Programme:** https://iabp.apl.uw.edu
 - **FMI Open Data:** https://opendata.fmi.fi/
 - **Arctic Council:** https://www.arcticcouncil.org/
 
 ---
 
-## 📞 Usage & Support
+## 📄 Citation
 
-**For different user types:**
-- **Project Manager:** Read `PROJECT_COMPLETION_SUMMARY.md`
-- **Developer:** See `INTEGRATION_GUIDE.md` with code examples
-- **Climate Researcher:** Review `WMO_OSCAR_ARCTIC_ANALYSIS.md`
-- **Data Analyst:** Import `oscar_arctic_stations_60n.csv`
-
----
-
-## 📚 File Organization
-
-```
-wmo-oscar-arctic-stations/
-├── README.md                                 (This file)
-├── START_HERE.md                            ⭐ Start here
-├── WMO_OSCAR_ARCTIC_ANALYSIS.md             (Technical report)
-├── PROJECT_COMPLETION_SUMMARY.md            (Executive summary)
-├── ARCTIC_STATIONS_ANALYSIS.md              (Detailed analysis)
-├── INTEGRATION_GUIDE.md                     (Developer guide)
-├── COMPREHENSIVE_ARCTIC_ANALYSIS_SUMMARY.txt (Executive summary alt)
-├── DELIVERABLES.txt                         (Reference guide)
-├── oscar_arctic_stations_60n.csv            (1,127 stations)
-├── oscar_high_arctic_stations_70n.csv       (144 High Arctic)
-├── oscar_arctic_stations_comprehensive.png   (1.3 MB dashboard)
-└── oscar_arctic_stations_regional_focus.png  (348 KB regional)
-```
-
----
-
-## 🚀 Next Steps
-
-1. **Review** [START_HERE.md](START_HERE.md) (5 minutes)
-2. **Understand** the analysis scope and findings
-3. **Choose your implementation path** (see Integration Guide)
-4. **Import data** to Cryoscope database
-5. **Build** map visualization and dashboards
-6. **Deploy** Arctic station monitoring feature
-
----
-
-## 📄 License & Citation
-
-**Data Source:** WMO OSCAR Surface Database (public domain)  
-**Analysis:** Prepared for Cryoscope Project  
-**Generated:** 2026-11-16
-
-**Citation:**
-> Arctic Weather Station Analysis based on WMO OSCAR Surface Database (1,127 stations, 60°N-84.5°N). Data retrieved from https://oscar.wmo.int/surface/. Analysis prepared for Cryoscope smart climate platform.
-
----
-
-**Analysis Status:** ✅ COMPLETE  
-**Data Quality:** ✅ VERIFIED  
-**Ready for Integration:** ✅ YES
-
-Ready to integrate Arctic stations into Cryoscope? Start with [START_HERE.md](START_HERE.md)! 🌍
+> Arctic observing network analysis based on the WMO OSCAR Surface Database and
+> OceanOPS/JCOMMOPS. Data retrieved from https://oscar.wmo.int/surface/ and
+> https://www.ocean-ops.org.
