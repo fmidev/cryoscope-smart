@@ -1,0 +1,1652 @@
+Name,Territory,Platform type,Declared status,Date established,Date closed,Latitude,Longitude,Programs
+AMI (RESEARCH VESSEL),Norway,Sea (fixed),Closed,1976-09-01,1985-01-01,71.5,19,GOS General:Closed
+FORMER MIKE,Norway,Sea (mobile),Closed,1949-01-01,2020-10-30,66,2,"CLIMAT(C) - deprecated:Closed, GOS General:Closed"
+GULLFAKS C,Norway,Sea (fixed),Operational,1997-01-01,,61.2042,2.2687,GOS General:Operational
+2CXJVYJ,Canada,Sea (mobile),Operational,2025-08-18,,70.4,-67.1,VOS-CA:Operational
+7SXVXXY,Canada,Sea (mobile),Silent,2025-11-10,,68.3,-133.7,VOS-CA:Non-reporting
+8UWN4HQ,Canada,Sea (mobile),Operational,2026-07-23,,69.4,-132.9,VOS-CA:Operational
+8VEUMXY,Canada,Sea (mobile),Operational,2025-08-18,,74.6,-91.3,VOS-CA:Operational
+ADC9EHA,Canada,Sea (mobile),Operational,2026-05-31,,68.3,-133.7,VOS-CA:Operational
+GREAT SLAVE LAKE,Canada,Sea (fixed),Operational,2022-06-20,,61.181,-115.314,Non-affiliated:Operational
+GT. SLAVE LK N. ARM,Canada,Sea (fixed),Operational,2022-06-09,,61.98,-114.129,Non-affiliated:Operational
+SGGQ4QX,Canada,Sea (mobile),Operational,2025-08-18,,89.8,-80.5,VOS-CA:Operational
+USFAPDJ,Canada,Sea (mobile),Operational,2026-05-30,,60.8,-115.7,VOS-CA:Operational
+ZTNDLFM,Canada,Sea (mobile),Operational,2025-08-18,,76.4,-89.2,VOS-CA:Operational
+1801947,(inapplicable),Sea (on ice),Operational,2026-10-31,,85.084,140.634,E-SURFMAR:Operational
+1902621,(inapplicable),Underwater (mobile),Operational,2025-12-03,,61.313,-14.707,EUROARGO:Operational
+2601561_100-2601561,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-09-03,62.137,-19.769,E-SURFMAR:Closed
+2802076,(inapplicable),Sea (mobile),Closed,2025-09-09,2024-03-16,62.52,-41.106,E-SURFMAR:Closed
+2802078,(inapplicable),Sea (mobile),Closed,2026-06-17,2025-12-23,81.752,85.808,E-SURFMAR:Closed
+2802247,(inapplicable),Sea (mobile),Operational,2026-07-29,,64.956,-4.502,E-SURFMAR:Operational
+2802248,(inapplicable),Sea (on ice),Operational,2026-10-31,,82.765,141.058,E-SURFMAR:Operational
+2904026,(inapplicable),Underwater (mobile),Operational,2025-11-24,,64.924,23.327,"EUROARGO:Operational, Euro-Argo RISE:Operational"
+3801676,(inapplicable),Sea (mobile),Operational,2026-04-13,,79.124,15.616,E-SURFMAR:Operational
+3801837,(inapplicable),Sea (mobile),Operational,2026-08-19,,67.874,-18.573,E-SURFMAR:Operational
+3801842,(inapplicable),Sea (mobile),Operational,2026-07-29,,62.999,-3.303,E-SURFMAR:Operational
+3901862,(inapplicable),Underwater (mobile),Closed,2025-09-30,2020-02-03,67.249,-1.258,"EUROARGO:Closed, MOCCA-EU:Closed"
+3901863,(inapplicable),Underwater (mobile),Closed,2025-09-30,2017-06-24,65.077,2.925,"EUROARGO:Closed, MOCCA-EU:Closed"
+3901864,(inapplicable),Underwater (mobile),Silent,2025-11-25,,62.717,-34.366,"EUROARGO:Non-reporting, MOCCA-EU:Non-reporting"
+3901865,(inapplicable),Underwater (mobile),Silent,2025-11-25,,73.165,10.134,"EUROARGO:Non-reporting, MOCCA-EU:Non-reporting"
+3901872,(inapplicable),Underwater (mobile),Silent,2025-11-25,,60.906,-3.479,"EUROARGO:Non-reporting, MOCCA-EU:Non-reporting"
+3901873,(inapplicable),Underwater (mobile),Silent,2025-11-25,,68.412,6.251,"EUROARGO:Non-reporting, MOCCA-EU:Non-reporting"
+3901874,(inapplicable),Underwater (mobile),Closed,2025-09-30,2018-10-08,72.991,-9.021,"EUROARGO:Closed, MOCCA-EU:Closed"
+3901875,(inapplicable),Underwater (mobile),Silent,2025-11-25,,63.348,-5.515,"EUROARGO:Non-reporting, MOCCA-EU:Non-reporting"
+3902134,(inapplicable),Underwater (mobile),Silent,2025-09-30,,62.616,18.2,"EUROARGO:Closed, MOCCA-EU:Non-reporting"
+4101605_100-4101605,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-01-14,67.815,-30.95,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4101608_100-4101608,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-08-23,62.045,-7.184,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4101622_100-4101622,(inapplicable),Sea (mobile),Silent,2025-08-18,2020-12-17,66.158,0.089,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4101625_100-4101625,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-08-03,66.603,-55.333,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4101626_100-4101626,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-03-19,61.89,-40.745,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4101629_100-4101629,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-01-01,63.407,-40.904,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4101653_100-4101653,(inapplicable),Sea (mobile),Silent,2025-08-18,2021-08-11,79.333,-0.581,"E-SURFMAR:Non-reporting, SIO-DB:Closed"
+4101655_100-4101655,(inapplicable),Sea (mobile),Operational,2025-08-18,,72.74,57.357,"E-SURFMAR:Operational, SIO-DB:Closed"
+4101656_100-4101656,(inapplicable),Sea (mobile),Operational,2025-08-18,,46.465,-16.26,"E-SURFMAR:Operational, GDP-ESURFMAR, SIO-DB:Closed"
+4101657_100-4101657,(inapplicable),Sea (mobile),Operational,2025-08-18,,73.489,4.669,"E-SURFMAR:Operational, SIO-DB:Closed"
+4101659_100-4101659,(inapplicable),Sea (mobile),Operational,2025-08-18,,73.608,39.863,"E-SURFMAR:Operational, GDP-ESURFMAR, SIO-DB:Closed"
+4101666_100-4101666,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-10-21,63.247,-5.602,"E-SURFMAR:Closed, SIO-DB:Closed"
+4101765_100-4101765,(inapplicable),Sea (mobile),Closed,2026-10-22,2020-01-27,61.786,-6.742,COPERNICUS-HRSST-FRM:Closed
+4101772_100-4101772,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-11-27,80.077,13.35,COPERNICUS-HRSST-FRM:Closed
+4101815_100-4101815,(inapplicable),Sea (mobile),Silent,2025-08-18,2021-07-21,64.127,-21.813,"E-SURFMAR:Non-reporting, SIO-DB:Closed"
+4401553_100-4401553,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-03-29,70.154,18.78,E-SURFMAR:Closed
+4401554_100-4401554,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-02-19,62.434,-15.278,E-SURFMAR:Closed
+4401555_100-4401555,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-11-28,60.375,-0.922,E-SURFMAR:Closed
+4401558_100-4401558,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-09-10,65.837,12.117,E-SURFMAR:Closed
+4401565_100-4401565,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-11-24,63.757,-20.742,E-SURFMAR:Closed
+4401568_100-4401568,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-06-24,60.638,5.274,E-SURFMAR:Closed
+4401569_100-4401569,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-11-21,63.81,8.454,E-SURFMAR:Closed
+4401574_100-4401574,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-10-02,48.159,-43.019,E-SURFMAR:Closed
+4401587,(inapplicable),Sea (mobile),Silent,2025-08-18,,72.914,9.887,E-SURFMAR:Non-reporting
+4401588,(inapplicable),Sea (mobile),Closed,2026-07-10,2026-05-11,70.206,17.094,E-SURFMAR:Closed
+4401754_100-4401754,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-10-26,65.189,6.219,"DBCP others:Closed, SIO-DB:Closed"
+4401758_100-4401758,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-09-30,64.463,6.292,"DBCP others:Closed, SIO-DB:Closed"
+4401821_100-4401821,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-12-09,63.388,-71.941,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4401823_100-4401823,(inapplicable),Sea (mobile),Silent,2025-08-18,2019-09-27,60.562,-64.785,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4401824_100-4401824,(inapplicable),Sea (mobile),Silent,2025-08-18,2020-01-06,63.215,-74.408,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4401825_100-4401825,(inapplicable),Sea (mobile),Silent,2025-08-18,2020-02-07,68.221,-55.275,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+4401828_100-4401828,(inapplicable),Sea (mobile),Operational,2025-08-18,,63.753,-21.609,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+4402603_100-4402603,(inapplicable),Sea (mobile),Operational,2025-08-18,,67.25,15.425,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+4402606_100-4402606,(inapplicable),Sea (mobile),Operational,2025-08-18,,67.729,10.079,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+4402608_100-4402608,(inapplicable),Sea (mobile),Operational,2025-08-18,,60.034,-47.452,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+4601531_100-4601531,(inapplicable),Sea (mobile),Silent,2025-08-18,2017-01-02,62.478,179.352,"DBCP others:Non-reporting, SIO-DB:Non-reporting"
+4601583_100-4601583,(inapplicable),Sea (mobile),Silent,2025-08-18,2016-12-23,71.301,-162.993,"DBCP others:Non-reporting, SIO-DB:Non-reporting"
+4601588_100-4601588,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-12-03,73.898,-172.195,"DBCP others:Closed, SIO-DB:Closed"
+4601590_100-4601590,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-08-15,71.193,-173.533,"DBCP others:Closed, SIO-DB:Closed"
+4601594_100-4601594,(inapplicable),Sea (mobile),Silent,2025-08-18,2018-05-11,60.176,-147.141,"AOML:Closed, DBCP others:Closed, EC DB"
+4601630_100-4601630,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-10-20,74.503,-153.309,"AOML:Closed, DBCP others:Closed"
+4601632_100-4601632,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-01-11,73.368,170.23,"AOML:Closed, DBCP others:Closed"
+4601635_100-4601635,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-12-05,73.711,-176.901,"AOML:Closed, DBCP others:Closed"
+4601638_100-4601638,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-11-01,71.019,-157.316,"AOML:Closed, DBCP others:Closed"
+4602501_100-4602501,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-07-18,68.163,13.318,COPERNICUS-HRSST-FRM:Closed
+4602502_100-4602502,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-10-26,70.409,49.005,COPERNICUS-HRSST-FRM:Closed
+4602503_100-4602503,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-10-02,74.212,55.384,COPERNICUS-HRSST-FRM:Closed
+4701679_100-4701679,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-11-11,69.275,-60.997,DBCP others:Closed
+4801600_100-4801600,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-09-25,78.816,-148.354,"DBCP others:Closed, SIO-DB:Closed"
+4801602_100-4801602,(inapplicable),Sea (mobile),Silent,2025-08-18,2017-01-19,78.061,-165.276,"DBCP others:Non-reporting, SIO-DB:Non-reporting"
+4801603_100-4801603,(inapplicable),Sea (mobile),Closed,2025-08-18,2016-09-11,76.048,-139.917,"DBCP others:Closed, SIO-DB:Closed"
+4801604_100-4801604,(inapplicable),Sea (mobile),Closed,2025-08-18,2016-11-08,75.72,-161.205,"DBCP others:Closed, SIO-DB:Closed"
+4801605_100-4801605,(inapplicable),Sea (mobile),Silent,2025-08-18,2017-02-28,74.556,-153.839,"DBCP others:Non-reporting, SIO-DB:Non-reporting"
+4801606_100-4801606,(inapplicable),Sea (mobile),Silent,2025-08-18,2016-11-10,73.299,-150.021,"DBCP others:Non-reporting, SIO-DB:Non-reporting"
+4801607_100-4801607,(inapplicable),Sea (mobile),Silent,2025-08-18,2017-01-13,72.526,-152.75,"DBCP others:Non-reporting, SIO-DB:Non-reporting"
+4801609_100-4801609,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-12-17,71.481,-155.812,DBCP others:Closed
+4801710_100-4801710,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-12-19,71.156,-161.335,"AOML:Closed, DBCP others:Closed"
+4804272,(inapplicable),Sea (mobile),Operational,2026-07-29,,65.567,-5.143,E-SURFMAR:Operational
+4900222,(inapplicable),Underwater (mobile),Closed,2026-03-04,2004-07-06,60.345,-49.647,"ARGO UK:Closed, CORIOLIS:Closed, GYROSCOPE:Closed"
+4900224,(inapplicable),Underwater (mobile),Operational,2026-03-04,2004-08-15,62.793,-54.955,"ARGO UK:Operational, CORIOLIS:Operational, GYROSCOPE:Operational"
+4900225,(inapplicable),Underwater (mobile),Closed,2026-03-04,2004-09-18,62.564,-38.353,"ARGO UK:Closed, CORIOLIS:Closed, GYROSCOPE:Closed"
+4900298,(inapplicable),Underwater (mobile),Operational,2026-03-04,2004-12-15,61.542,-31.512,"ARGO UK:Operational, CORIOLIS:Operational, GYROSCOPE:Operational"
+4900300,(inapplicable),Underwater (mobile),Operational,2026-03-04,2004-08-29,60.852,-53.872,"ARGO UK:Operational, CORIOLIS:Operational, GYROSCOPE:Operational"
+5301765_100-5301765,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-07-26,63.421,7.825,COPERNICUS-HRSST-FRM:Closed
+5802070,(inapplicable),Sea (mobile),Operational,2026-06-17,,78.506,45.229,E-SURFMAR:Operational
+5802071,(inapplicable),Sea (mobile),Closed,2025-08-18,2023-11-14,69.713,-18.709,E-SURFMAR:Closed
+5802072,(inapplicable),Sea (mobile),Closed,2026-06-17,2026-02-08,77.059,61.143,E-SURFMAR:Closed
+5802258,(inapplicable),Sea (on ice),Operational,2026-10-31,,86.483,151.172,E-SURFMAR:Operational
+5802259,(inapplicable),Sea (on ice),Operational,2026-10-31,,84.761,113.889,E-SURFMAR:Operational
+5907108,(inapplicable),Underwater (mobile),Operational,2025-11-25,,77.763,7.892,EUROARGO:Operational
+6202623_100-6202623,(inapplicable),Sea (mobile),Operational,2025-08-18,,78.205,72.434,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202624_100-6202624,(inapplicable),Sea (mobile),Operational,2025-08-18,,68.171,9.737,"E-SURFMAR:Operational, SIO-DB:Closed"
+6202627_100-6202627,(inapplicable),Sea (mobile),Operational,2025-08-18,,66.669,13.203,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202628_100-6202628,(inapplicable),Sea (mobile),Silent,2025-08-18,2020-12-13,65.304,-37.121,"E-SURFMAR, GDP-ESURFMAR:Closed, SIO-DB:Closed"
+6202631_100-6202631,(inapplicable),Sea (mobile),Operational,2025-08-18,,60.31,4.967,"E-SURFMAR:Operational, SIO-DB:Closed"
+6202632_100-6202632,(inapplicable),Sea (mobile),Operational,2025-08-18,,66.849,-53.631,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202633_100-6202633,(inapplicable),Sea (mobile),Operational,2025-08-18,,79.556,0.737,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202634_100-6202634,(inapplicable),Sea (mobile),Operational,2025-08-18,,78.787,-2.649,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202635_100-6202635,(inapplicable),Sea (mobile),Operational,2025-08-18,,73.825,46.406,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202636_100-6202636,(inapplicable),Sea (mobile),Operational,2025-08-18,,71.978,20.92,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6202637_100-6202637,(inapplicable),Sea (mobile),Operational,2025-08-18,,68.576,46.652,"E-SURFMAR, GDP-ESURFMAR:Operational, SIO-DB:Closed"
+6203522_100-6203522,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-07-19,65.347,-29.988,"DBCP others:Closed, SIO-DB:Closed"
+6203602_100-6203602,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-01-11,61.343,-61.813,E-SURFMAR:Closed
+6203605_100-6203605,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-08-13,64.006,-22.742,E-SURFMAR:Closed
+6203626_100-6203626,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-05-16,60.153,-1.148,E-SURFMAR:Closed
+6203633_100-6203633,(inapplicable),Sea (mobile),Closed,2025-08-18,2023-07-03,68.316,15.295,E-SURFMAR:Closed
+6203637_100-6203637,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-01-15,69.888,18.545,E-SURFMAR:Closed
+6203646_100-6203646,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-01-01,72.866,-58.309,E-SURFMAR:Closed
+6203650,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-02-20,62.732,6.437,E-SURFMAR:Closed
+6203656,(inapplicable),Sea (on ice),Closed,2025-08-18,2025-02-04,63.626,-22.742,E-SURFMAR:Closed
+6203657,(inapplicable),Sea (on ice),Closed,2025-08-18,2024-01-25,86.462,66.349,E-SURFMAR:Closed
+6203658,(inapplicable),Sea (on ice),Silent,2025-08-18,,61.868,-49.451,E-SURFMAR:Non-reporting
+6203661,(inapplicable),Sea (on ice),Silent,2025-08-18,,66.2,-15.335,E-SURFMAR:Non-reporting
+6203662,(inapplicable),Sea (on ice),Silent,2026-11-02,,74.638,-18.517,E-SURFMAR:Non-reporting
+6203663,(inapplicable),Sea (on ice),Silent,2025-08-18,,71.248,-7.613,E-SURFMAR:Non-reporting
+6203664,(inapplicable),Sea (on ice),Closed,2025-12-05,2025-11-14,68.5,43.642,E-SURFMAR:Closed
+6203667,(inapplicable),Sea (on ice),Silent,2025-08-18,,66.335,-22.23,E-SURFMAR:Non-reporting
+6203668,(inapplicable),Sea (on ice),Silent,2026-10-29,,79.387,15.419,E-SURFMAR:Non-reporting
+6203669,(inapplicable),Sea (on ice),Silent,2026-10-29,,78.645,10.54,E-SURFMAR:Non-reporting
+6203674,(inapplicable),Sea (mobile),Closed,2026-09-14,2026-08-15,61.842,-6.901,E-SURFMAR:Closed
+6203675,(inapplicable),Sea (mobile),Closed,2026-10-29,2026-10-05,61.393,4.784,E-SURFMAR:Closed
+6203676,(inapplicable),Sea (mobile),Operational,2026-01-13,,60.374,-31.154,E-SURFMAR:Operational
+6203680,(inapplicable),Sea (mobile),Operational,2026-08-11,,65.225,11.397,E-SURFMAR:Operational
+6203689,(inapplicable),Sea (mobile),Silent,2026-08-11,,62.382,-41.514,E-SURFMAR:Non-reporting
+6203710_100-6203710,(inapplicable),Sea (mobile),Silent,2025-08-18,,63.106,-54.552,COPERNICUS-HRSST-FRM:Non-reporting
+6203711_100-6203711,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-09-14,63.844,-21.88,COPERNICUS-HRSST-FRM:Closed
+6203715_100-6203715,(inapplicable),Sea (mobile),Closed,2025-11-14,2020-12-09,73.653,72.897,COPERNICUS-HRSST-FRM:Closed
+6203718_100-6203718,(inapplicable),Sea (mobile),Closed,2026-10-22,2020-05-11,70.673,54.535,COPERNICUS-HRSST-FRM:Closed
+6203719_100-6203719,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-12-09,72.121,30.286,COPERNICUS-HRSST-FRM:Closed
+6204583,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-09-21,64.749,-23.642,COPERNICUS-HRSST-FRM:Closed
+6204584,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-10-22,64.062,-38.931,COPERNICUS-HRSST-FRM:Closed
+6204585,(inapplicable),Sea (mobile),Closed,2026-10-22,2022-02-13,61.81,4.843,COPERNICUS-HRSST-FRM:Closed
+6204586,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-01-30,65.272,11.617,COPERNICUS-HRSST-FRM:Closed
+6204587,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-01-02,64.482,10.5,COPERNICUS-HRSST-FRM:Closed
+6204588,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-01-17,66.104,12.171,COPERNICUS-HRSST-FRM:Closed
+6204589,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-02-15,63.416,8.481,COPERNICUS-HRSST-FRM:Closed
+6204591,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-11-23,64.499,10.643,COPERNICUS-HRSST-FRM:Closed
+6204598,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-11-01,76.923,71.072,COPERNICUS-HRSST-FRM:Closed
+6204600,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-11-12,77.751,71.692,COPERNICUS-HRSST-FRM:Closed
+6204601,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-09-29,81.702,19.276,COPERNICUS-HRSST-FRM:Closed
+6204602,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-10-24,81.817,24.293,COPERNICUS-HRSST-FRM:Closed
+6301502_100-6301502,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-11-19,85.59,143.09,"DBCP others:Closed, SIO-DB:Closed"
+6301550_100-6301550,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-04-01,76.495,26.224,E-SURFMAR:Closed
+6301551_100-6301551,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-06-26,73.224,40.049,DBCP others:Closed
+6301552_100-6301552,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-09-26,78.811,26.636,E-SURFMAR:Closed
+6301554_100-6301554,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-01-26,71.031,27.34,E-SURFMAR:Closed
+6301555_100-6301555,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-12-12,74.432,18.899,E-SURFMAR:Closed
+6301556_100-6301556,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-06-26,78.415,-3.725,E-SURFMAR:Closed
+6301557_100-6301557,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-01-11,80.602,26.998,E-SURFMAR:Closed
+6301558_100-6301558,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-12-10,66.377,-14.883,E-SURFMAR:Closed
+6301559_100-6301559,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-09-23,82.019,14.4,E-SURFMAR:Closed
+6301560_100-6301560,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-06-28,70.274,20.194,E-SURFMAR:Closed
+6301561_100-6301561,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-12-21,82.605,44.485,E-SURFMAR:Closed
+6301564_100-6301564,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-02-08,61.844,-6.893,E-SURFMAR:Closed
+6301565_100-6301565,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-02-01,87.75,91.743,E-SURFMAR:Closed
+6301566_100-6301566,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-10-04,81.253,-1.638,E-SURFMAR:Closed
+6301567_100-6301567,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-10-08,56.452,-11.938,E-SURFMAR:Closed
+6301568_100-6301568,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-12-30,86.559,111.101,E-SURFMAR:Closed
+6301569_100-6301569,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-11-09,65.17,-39.819,E-SURFMAR:Closed
+6301570_100-6301570,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-06-28,52.099,5.176,E-SURFMAR:Closed
+6301571_100-6301571,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-02-20,56.967,-6.373,E-SURFMAR:Closed
+6301573,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-09-18,72.536,-22.218,E-SURFMAR:Closed
+6301574,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-01-11,78.851,-1.668,E-SURFMAR:Closed
+6301576,(inapplicable),Sea (on ice),Closed,2025-08-18,2023-02-23,62.071,-7.283,E-SURFMAR:Closed
+6301577,(inapplicable),Sea (mobile),Closed,2025-08-18,2024-06-25,70.939,25.612,E-SURFMAR:Closed
+6301578,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-04-21,69.266,-12.633,E-SURFMAR:Closed
+6301579,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-03-19,69.426,-12.857,E-SURFMAR:Closed
+6301580,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-01-08,67.868,-13.299,E-SURFMAR:Closed
+6301581,(inapplicable),Sea (on ice),Closed,2026-06-17,2025-11-28,77.799,24.057,E-SURFMAR:Closed
+6301582,(inapplicable),Sea (on ice),Closed,2025-11-27,2025-10-01,70.44,30.842,E-SURFMAR:Closed
+6301584,(inapplicable),Sea (on ice),Silent,2026-10-12,,77.999,-16.36,E-SURFMAR:Non-reporting
+6301585,(inapplicable),Sea (on ice),Silent,2025-08-18,,88.694,129.855,E-SURFMAR:Non-reporting
+6301586,(inapplicable),Sea (on ice),Silent,2025-08-18,,86.315,-101.113,E-SURFMAR:Non-reporting
+6301587,(inapplicable),Sea (on ice),Operational,2025-08-18,,85.835,-87.178,E-SURFMAR:Operational
+6301588,(inapplicable),Sea (on ice),Closed,2026-07-21,2025-11-15,81.791,21.311,E-SURFMAR:Closed
+6301589,(inapplicable),Sea (on ice),Closed,2026-06-25,2026-03-22,84.239,-81.645,E-SURFMAR:Closed
+6301635,(inapplicable),Sea (on ice),Closed,2026-06-17,2026-01-13,79.773,10.715,E-SURFMAR:Closed
+6301636,(inapplicable),Sea (on ice),Operational,2026-06-25,,63.236,-31.423,E-SURFMAR:Operational
+6301637,(inapplicable),Sea (on ice),Closed,2026-07-21,2025-11-16,80.278,20.619,E-SURFMAR:Closed
+6301638,(inapplicable),Sea (on ice),Operational,2025-11-19,,85.423,7.329,E-SURFMAR:Operational
+6301639,(inapplicable),Sea (on ice),Operational,2026-07-17,,88.552,-63.801,E-SURFMAR:Operational
+6301640,(inapplicable),Sea (on ice),Silent,2026-06-25,,89.255,155.148,E-SURFMAR:Non-reporting
+6301641,(inapplicable),Sea (on ice),Operational,2026-11-10,,62.477,-40.579,E-SURFMAR:Operational
+6301681_100-6301681,(inapplicable),Sea (mobile),Closed,2026-10-22,2020-12-01,71.768,51.464,COPERNICUS-HRSST-FRM:Closed
+6301682_100-6301682,(inapplicable),Sea (mobile),Closed,2026-10-22,2020-07-17,70.287,19.236,COPERNICUS-HRSST-FRM:Closed
+6401500_100-6401500,(inapplicable),Sea (mobile),Silent,2025-08-18,2016-12-17,61.252,-41.853,"E-SURFMAR, GDP-ESURFMAR:Non-reporting, Global Drifter Program (GDP):Non-reporting"
+6401550_100-6401550,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-07-20,67.526,12.138,E-SURFMAR:Closed
+6401553_100-6401553,(inapplicable),Sea (mobile),Silent,2025-08-18,2016-10-19,63.843,-21.877,DBCP others:Non-reporting
+6401554_100-6401554,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-06-01,70.149,23.173,DBCP others:Closed
+6401555_100-6401555,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-06-03,69.203,35.804,E-SURFMAR:Closed
+6401556_100-6401556,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-03-13,70.742,23.805,E-SURFMAR:Closed
+6401559_100-6401559,(inapplicable),Sea (mobile),Closed,2025-08-18,2017-10-13,65.48,-21.311,DBCP others:Closed
+6401561_100-6401561,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-02-13,68.603,14.455,E-SURFMAR:Closed
+6401562_100-6401562,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-04-15,70.72,22.374,E-SURFMAR:Closed
+6401564_100-6401564,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-10-02,70.944,24.552,E-SURFMAR:Closed
+6401565_100-6401565,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-10-17,70.657,29.787,E-SURFMAR:Closed
+6401566_100-6401566,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-05-10,63.409,7.8,E-SURFMAR:Closed
+6401567_100-6401567,(inapplicable),Sea (mobile),Closed,2025-08-18,2018-09-27,64.773,-22.7,E-SURFMAR:Closed
+6401568_100-6401568,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-03-19,71.099,24.766,E-SURFMAR:Closed
+6401569_100-6401569,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-01-31,66.32,-22.05,E-SURFMAR:Closed
+6401570_100-6401570,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-06-30,70.594,22.059,E-SURFMAR:Closed
+6401571_100-6401571,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-08-12,63.814,2.539,E-SURFMAR:Closed
+6401573_100-6401573,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-01-18,60.459,-1.506,E-SURFMAR:Closed
+6401574_100-6401574,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-09-23,64.846,11.33,E-SURFMAR:Closed
+6401575_100-6401575,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-10-21,69.682,19.001,E-SURFMAR:Closed
+6401576,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-05-28,71.707,-22.157,E-SURFMAR:Closed
+6401577,(inapplicable),Sea (on ice),Closed,2025-08-18,2021-11-06,66.384,-22.308,E-SURFMAR:Closed
+6401578_100-6401578,(inapplicable),Sea (on ice),Closed,2025-08-18,2022-11-24,78.102,-19.001,E-SURFMAR:Closed
+6401580_100-6401580,(inapplicable),Sea (on ice),Closed,2025-08-18,2021-10-07,78.96,28.718,E-SURFMAR:Closed
+6401581_100-6401581,(inapplicable),Sea (on ice),Closed,2025-08-18,2021-03-05,83.147,-20.483,E-SURFMAR:Closed
+6401583,(inapplicable),Sea (on ice),Silent,2025-08-18,,61.603,-6.951,E-SURFMAR:Non-reporting
+6401584,(inapplicable),Sea (on ice),Silent,2025-08-18,,62.253,-7.074,E-SURFMAR:Non-reporting
+6401592,(inapplicable),Sea (mobile),Silent,2025-08-18,,63.954,-9.598,E-SURFMAR:Non-reporting
+6401593,(inapplicable),Sea (mobile),Silent,2026-01-07,,74.042,42.134,COPERNICUS-HRSST-FRM:Non-reporting
+6401594,(inapplicable),Sea (mobile),Closed,2025-08-18,2023-09-30,82.534,35.015,COPERNICUS-HRSST-FRM:Closed
+6401595,(inapplicable),Sea (mobile),Closed,2025-08-18,2023-10-31,79.571,7.342,COPERNICUS-HRSST-FRM:Closed
+6401599,(inapplicable),Sea (on ice),Operational,2025-08-18,,85.374,-79.034,E-SURFMAR:Operational
+6401600,(inapplicable),Sea (on ice),Operational,2025-08-18,,84.436,-102.635,E-SURFMAR:Operational
+6401602,(inapplicable),Sea (on ice),Silent,2026-11-09,,66.159,-21.754,E-SURFMAR:Non-reporting
+6401603,(inapplicable),Sea (on ice),Silent,2025-08-18,,70.644,22.213,E-SURFMAR:Non-reporting
+6401604,(inapplicable),Sea (on ice),Silent,2025-08-18,,87.437,-51.21,E-SURFMAR:Non-reporting
+6401758,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-03-02,63.575,-20.292,E-SURFMAR:Closed
+6401759,(inapplicable),Sea (mobile),Silent,2025-08-18,,64.799,-34.051,E-SURFMAR:Non-reporting
+6401760,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-12-23,65.248,-57.861,E-SURFMAR:Closed
+6401761,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-10-12,67.888,-53.544,E-SURFMAR:Closed
+6401762,(inapplicable),Sea (mobile),Closed,2025-08-18,2023-12-04,68.243,-8.066,E-SURFMAR:Closed
+6401763,(inapplicable),Sea (mobile),Closed,2025-09-10,2025-09-09,65.687,11.813,E-SURFMAR:Closed
+6402593,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-01-13,63.307,-60.685,E-SURFMAR:Closed
+6402595,(inapplicable),Sea (mobile),Closed,2025-08-18,2021-10-11,61.175,-48.45,E-SURFMAR:Closed
+6402598,(inapplicable),Sea (mobile),Closed,2025-08-18,2022-03-11,62.152,-53.434,E-SURFMAR:Closed
+6402627_100,(inapplicable),Sea (mobile),Silent,2025-08-18,2021-07-19,79.264,3.335,DBCP others:Non-reporting
+6501555_100-6501555,(inapplicable),Sea (mobile),Closed,2025-08-18,2019-02-21,64.765,-52.183,E-SURFMAR:Closed
+6501556_100-6501556,(inapplicable),Sea (mobile),Closed,2025-08-18,2020-05-05,69.597,17.98,E-SURFMAR:Closed
+6501557_100-6501557,(inapplicable),Sea (mobile),Silent,2025-08-18,2017-02-23,67.14,-29.924,E-SURFMAR:Non-reporting
+6801876,(inapplicable),Sea (mobile),Closed,2025-08-18,2023-11-19,70.592,-17.953,E-SURFMAR:Closed
+6802061,(inapplicable),Sea (mobile),Operational,2026-11-10,,60.788,-40.905,E-SURFMAR:Operational
+6802062,(inapplicable),Sea (mobile),Operational,2026-10-31,,70.853,-14.225,E-SURFMAR:Operational
+6802063,(inapplicable),Sea (on ice),Operational,2026-10-31,,83.683,160.202,E-SURFMAR:Operational
+6900154,(inapplicable),Underwater (mobile),Operational,2026-03-04,2004-01-13,61.244,-23.398,"ARGO UK:Operational, CORIOLIS:Operational, GYROSCOPE:Operational"
+6900188,(inapplicable),Underwater (mobile),Closed,2026-03-04,2007-09-09,64.735,-29.62,"ARGO UK:Closed, CORIOLIS:Closed, GYROSCOPE:Closed"
+6900303,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-11-12,74.96,-10.862,"EUROARGO:Closed, MERSEA:Closed"
+6900304,(inapplicable),Underwater (mobile),Closed,2025-09-30,2008-08-17,68.972,-3.857,"EUROARGO:Closed, MERSEA:Closed"
+6900328,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-10-27,78.876,-1.428,"EUROARGO:Closed, MERSEA:Closed"
+6900329,(inapplicable),Underwater (mobile),Closed,2025-09-30,2008-12-31,70.517,13.604,"EUROARGO:Closed, MERSEA:Closed"
+6900330,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-04-21,76.647,-1.813,"EUROARGO:Closed, MERSEA:Closed"
+6900331,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-03-03,79.477,1.6,"EUROARGO:Closed, MERSEA:Closed"
+6900340,(inapplicable),Underwater (mobile),Closed,2025-09-30,2010-03-05,67.463,-7.145,"EUROARGO:Closed, MERSEA:Closed"
+6900341,(inapplicable),Underwater (mobile),Closed,2025-09-30,2006-11-07,73.166,-14.003,"EUROARGO:Closed, MERSEA:Closed"
+6900342,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-03-07,75.011,-8.715,"EUROARGO:Closed, MERSEA:Closed"
+6900343,(inapplicable),Underwater (mobile),Closed,2025-09-30,2011-07-17,69.755,-10.526,"EUROARGO:Closed, MERSEA:Closed"
+6900344,(inapplicable),Underwater (mobile),Closed,2025-09-30,2011-04-18,60.712,-52.591,"EUROARGO:Closed, MERSEA:Closed"
+6900347,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-03-21,67.574,-6.054,"EUROARGO:Closed, MERSEA:Closed"
+6900401,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-05-28,61.639,-10.004,"EUROARGO:Closed, MERSEA:Closed"
+6900449,(inapplicable),Underwater (mobile),Closed,2025-09-30,2008-02-14,62.897,-56.342,"EUROARGO:Closed, MERSEA:Closed"
+6900452,(inapplicable),Underwater (mobile),Closed,2025-09-30,2007-11-01,62.236,-40.672,"EUROARGO:Closed, MERSEA:Closed"
+6902042,(inapplicable),Underwater (mobile),Closed,2025-09-30,2016-01-03,78.711,4.609,"E-AIMS:Closed, EUROARGO:Closed"
+6902546,(inapplicable),Underwater (mobile),Closed,2025-09-30,2014-01-21,64.69,0.074,"E-AIMS:Closed, EUROARGO:Closed"
+6902547,(inapplicable),Underwater (mobile),Silent,2025-09-30,2016-05-11,67.649,-2.587,"E-AIMS:Non-reporting, EUROARGO:Closed"
+6903710,(inapplicable),Underwater (mobile),Silent,2025-11-25,,62.811,19.808,"EUROARGO:Non-reporting, Euro-Argo RISE:Non-reporting"
+7801698,(inapplicable),Sea (mobile),Silent,2025-11-04,,67.73,47.007,E-SURFMAR:Non-reporting
+7801700,(inapplicable),Sea (mobile),Closed,2025-11-04,2025-08-05,74.553,47.825,E-SURFMAR:Closed
+7894571,(inapplicable),Sea (mobile),Operational,2026-11-10,,69.995,-12.24,E-SURFMAR:Operational
+7894572,(inapplicable),Sea (on ice),Operational,2026-10-31,,86.173,163.582,E-SURFMAR:Operational
+7894573,(inapplicable),Sea (on ice),Operational,2026-10-31,,84.754,175.374,E-SURFMAR:Operational
+7894574,(inapplicable),Sea (on ice),Operational,2026-10-31,,85.429,179.196,E-SURFMAR:Operational
+3801550,Canada,Sea (on ice),Unknown,2025-08-09,,63.036,-37.527,EC DB
+4401601_100-4401601,Canada,Sea (mobile),Closed,2025-08-18,2019-01-16,60.831,-0.789,DFO DB:Closed
+4401605_100-4401605,Canada,Sea (mobile),Closed,2025-08-18,2019-05-09,66.209,12.216,DFO DB:Closed
+4401610_100-4401610,Canada,Sea (mobile),Silent,2025-08-18,2016-11-03,61.85,-67.91,DFO DB:Non-reporting
+4401614_100-4401614,Canada,Sea (mobile),Silent,2025-08-18,2016-10-13,62.849,-69.876,DFO DB:Non-reporting
+4401618_100-4401618,Canada,Sea (mobile),Silent,2025-08-18,2016-11-29,64.825,-60.485,DFO DB:Non-reporting
+4401620_100-4401620,Canada,Sea (mobile),Silent,2025-08-18,2017-01-06,61.853,-59.488,DFO DB:Non-reporting
+4401624_100-4401624,Canada,Sea (mobile),Silent,2025-08-18,2016-10-25,61.069,-70.334,DFO DB:Non-reporting
+4401634_100-4401634,Canada,Sea (mobile),Closed,2025-08-18,2017-11-16,60.222,-7.568,DFO DB:Closed
+4403557,Canada,Sea (mobile),Closed,2025-08-18,2023-09-13,60.411,5.003,DFO DB:Closed
+4500141,Canada,Sea (fixed),Closed,2026-10-02,2024-10-01,61.181,-115.314,EC MB:Closed
+4500150,Canada,Sea (fixed),Closed,2026-09-20,2024-09-19,61.98,-114.129,EC MB:Closed
+4701658_100-4701658,Canada,Sea (mobile),Closed,2025-08-18,2023-03-21,71.844,-95.387,EC DB:Closed
+4701659_100-4701659,Canada,Sea (mobile),Closed,2026-10-11,2026-07-12,71.264,-104.409,EC DB:Closed
+4701660_100-4701660,Canada,Sea (mobile),Closed,2025-08-18,2024-09-04,70.537,-96.258,EC DB:Closed
+4701735,Canada,Sea (on ice),Closed,2025-08-18,2022-09-16,71.727,-120.41,EC DB:Closed
+4701736,Canada,Sea (on ice),Closed,2025-08-18,2021-10-13,73.213,-80.925,EC DB:Closed
+4701737,Canada,Sea (on ice),Silent,2025-08-18,,73.314,-91.197,EC DB:Non-reporting
+4701738,Canada,Sea (on ice),Closed,2025-08-18,2023-08-28,69.848,-67.191,EC DB:Closed
+4701739,Canada,Sea (on ice),Closed,2025-08-18,2021-12-25,65.675,-61.754,EC DB:Closed
+4701740,Canada,Sea (on ice),Closed,2025-08-18,2021-10-31,72.081,-74.308,EC DB:Closed
+4701741,Canada,Sea (on ice),Closed,2025-08-18,2022-12-09,78.681,-108.525,EC DB:Closed
+4701742,Canada,Sea (on ice),Closed,2025-08-18,2023-01-26,76.844,-122.686,EC DB:Closed
+4701743,Canada,Sea (on ice),Closed,2025-08-18,2023-01-27,76.904,-122.082,EC DB:Closed
+4701744,Canada,Sea (on ice),Closed,2025-08-18,2023-10-17,76.605,-106.757,EC DB:Closed
+4701745,Canada,Sea (on ice),Closed,2025-08-18,2023-02-18,78.181,-106.857,EC DB:Closed
+4701747,Canada,Sea (on ice),Closed,2025-08-18,2023-04-09,76.537,-125.427,EC DB:Closed
+4800726_100-4800726,Canada,Sea (on ice),Closed,2025-08-18,2020-08-09,68.126,-177.005,EC-IABP:Closed
+4800769_100-4800769,Canada,Sea (on ice),Closed,2025-08-18,2021-01-26,70.668,-103.11,EC-IABP:Closed
+4801751_100-4801751,Canada,Sea (on ice),Closed,2025-08-18,2020-06-14,84.607,-62.55,EC DB:Closed
+4801753_100-4801753,Canada,Sea (on ice),Closed,2025-08-18,2022-08-03,67.051,-174.671,EC DB:Closed
+4801754_100-4801754,Canada,Sea (on ice),Closed,2025-08-18,2020-06-09,81.956,-105.443,EC DB:Closed
+4801755_100-4801755,Canada,Sea (on ice),Closed,2025-08-18,2022-03-08,76.805,-125.408,EC DB:Closed
+4801757_100-4801757,Canada,Sea (on ice),Closed,2025-08-18,2023-10-26,70.791,-127.295,EC DB:Closed
+4801759_100-4801759,Canada,Sea (on ice),Closed,2025-08-18,2020-03-30,77.756,-137.674,EC DB:Closed
+4801760,Canada,Sea (on ice),Closed,2025-08-18,2023-05-20,84.13,-50.928,EC DB:Closed
+4801761,Canada,Sea (on ice),Closed,2025-08-18,2023-07-31,66.105,-20.097,EC DB:Closed
+4801762,Canada,Sea (on ice),Operational,2025-08-18,,71.366,-128.859,EC DB:Operational
+4801763,Canada,Sea (on ice),Closed,2025-08-18,2024-09-19,81.589,-11.882,EC DB:Closed
+4801764,Canada,Sea (on ice),Closed,2025-08-18,2023-12-18,83.223,-75.031,EC DB:Closed
+4801765,Canada,Sea (on ice),Closed,2025-08-18,2023-03-03,84.052,-38.04,EC DB:Closed
+4801767,Canada,Sea (on ice),Closed,2025-08-18,2023-02-26,62.285,-39.93,EC DB:Closed
+4801768,Canada,Sea (on ice),Closed,2025-08-18,2022-01-04,82.426,-102.192,EC DB:Closed
+4801769,Canada,Sea (on ice),Closed,2025-08-18,2022-02-08,84.319,-78.983,EC DB:Closed
+4801770,Canada,Sea (on ice),Closed,2025-08-18,2023-04-08,66.01,-34.038,EC DB:Closed
+4801771,Canada,Sea (on ice),Closed,2025-08-18,2023-12-23,73.083,-66.408,EC DB:Closed
+4801772,Canada,Sea (on ice),Closed,2025-08-18,2023-01-06,83.48,-76.484,EC DB:Closed
+4801773,Canada,Sea (on ice),Closed,2025-08-18,2022-03-15,83.868,-128.025,EC DB:Closed
+4801774,Canada,Sea (on ice),Closed,2025-08-18,2022-06-30,83.512,-80.77,EC DB:Closed
+4802000_100-4802000,Canada,Sea (on ice),Closed,2025-08-18,2020-09-01,73.463,-166.636,EC DB:Closed
+4802001_100-4802001,Canada,Sea (on ice),Closed,2025-08-18,2020-10-14,78.572,-155.238,EC DB:Closed
+4802008_100,Canada,Sea (mobile),Closed,2025-08-18,2019-11-01,80.316,-98.774,EC DB:Closed
+4802503_100-4802503,Canada,Sea (on ice),Closed,2025-08-18,2022-05-20,71.985,-125.258,EC DB:Closed
+4802504_100-4802504,Canada,Sea (mobile),Closed,2026-03-25,2025-12-24,73.487,-88.473,EC DB:Closed
+4802505_100-4802505,Canada,Sea (on ice),Closed,2025-08-18,2020-05-13,82.956,-53.69,EC DB:Closed
+4802506_100-4802506,Canada,Sea (on ice),Closed,2025-08-18,2025-05-13,57.534,-7.582,EC DB:Closed
+4802507_100-4802507,Canada,Sea (mobile),Closed,2025-08-18,2019-03-04,77.939,-125.847,EC DB:Closed
+4802508_100-4802508,Canada,Sea (mobile),Closed,2025-08-18,2023-06-04,70.547,-103.103,EC DB:Closed
+4802509_100-4802509,Canada,Sea (mobile),Closed,2025-08-18,2018-09-14,83.963,-142.285,EC DB:Closed
+4802510_100-4802510,Canada,Sea (mobile),Closed,2025-08-18,2021-02-01,79.383,-109.531,EC DB:Closed
+4802511_100-4802511,Canada,Sea (mobile),Closed,2025-08-18,2021-03-26,76.975,-126.098,EC DB:Closed
+4802512_100-4802512,Canada,Sea (mobile),Closed,2025-08-18,2019-11-15,82.848,-62.303,EC DB:Closed
+4802514_100-4802514,Canada,Sea (mobile),Closed,2025-08-18,2020-10-01,80.975,-163.409,EC DB:Closed
+4802515_100-4802515,Canada,Sea (mobile),Closed,2025-08-18,2019-04-10,82.55,-127.821,EC DB:Closed
+4802516_100-4802516,Canada,Sea (mobile),Closed,2025-08-18,2018-08-31,85.074,-74.498,EC DB:Closed
+4802539_100-4802539,Canada,Sea (on ice),Operational,2025-08-18,,69.611,-139.997,EC DB:Operational
+4802653_100,Canada,Sea (on ice),Closed,2025-08-18,2021-06-27,81.88,-129.899,EC DB:Closed
+4802654_100,Canada,Sea (on ice),Closed,2025-08-18,2023-05-21,81.094,-153.608,EC DB:Closed
+4802655_100,Canada,Sea (on ice),Closed,2025-08-18,2023-10-24,72.549,-130.71,EC DB:Closed
+4802656_100,Canada,Sea (on ice),Closed,2025-08-18,2020-11-17,83.499,-155.26,EC DB:Closed
+4802657_100,Canada,Sea (on ice),Closed,2025-08-18,2023-12-31,71.249,-162.214,EC DB:Closed
+4802659_100,Canada,Sea (on ice),Closed,2025-08-18,2023-03-31,74.899,-155.164,EC DB:Closed
+4802660_100,Canada,Sea (on ice),Closed,2025-08-18,2022-09-21,78.037,-133.368,EC DB:Closed
+4802661_100,Canada,Sea (on ice),Closed,2025-08-18,2025-04-29,71.568,-150.824,EC DB:Closed
+4802662_100,Canada,Sea (on ice),Closed,2025-09-14,2025-06-15,70.171,-124.732,EC DB:Closed
+4802663_100,Canada,Sea (on ice),Closed,2025-08-18,2023-12-17,65.923,-60.743,EC DB:Closed
+4802664,Canada,Sea (on ice),Operational,2025-08-18,,83.401,-50.489,EC DB:Operational
+4802665,Canada,Sea (on ice),Closed,2025-08-18,2023-12-03,82.386,-103.063,EC DB:Closed
+4803979,Canada,Sea (on ice),Closed,2025-11-25,2025-08-26,75.492,-153.156,EC DB:Closed
+4900501,Canada,Underwater (mobile),Operational,2005-09-23,2009-03-15,64.761,-56.349,ARGO CANADA:Operational
+4900503,Canada,Underwater (mobile),Closed,2025-08-17,2013-12-24,68.73,11.816,ARGO CANADA:Closed
+4900676,Canada,Underwater (mobile),Operational,2025-08-18,2011-07-21,60.408,-14.03,ARGO CANADA:Operational
+4901094,Canada,Underwater (mobile),Closed,2025-08-19,2011-02-28,63.463,-58.408,ARGO CANADA:Closed
+4901101,Canada,Underwater (mobile),Closed,2025-08-19,2013-07-27,79.094,66.054,ARGO CANADA:Closed
+4901103,Canada,Underwater (mobile),Operational,2025-08-19,2013-03-06,61.995,-24.047,ARGO CANADA:Operational
+4901124,Canada,Underwater (mobile),Operational,2025-08-19,2012-04-30,61.857,-58.247,ARGO CANADA:Operational
+4901130,Canada,Underwater (mobile),Closed,2009-05-19,2011-03-01,62.509,-59.353,ARGO CANADA:Closed
+4901131,Canada,Underwater (mobile),Operational,2025-08-18,2011-11-16,62.225,-31.667,ARGO CANADA:Operational
+4901133,Canada,Underwater (mobile),Closed,2025-08-19,2015-01-02,63.139,-35.841,ARGO CANADA:Closed
+4901141,Canada,Underwater (mobile),Operational,2025-08-19,2011-03-15,62.985,-59.397,ARGO CANADA:Operational
+4901158,Canada,Underwater (mobile),Operational,2025-08-19,2011-04-04,64.565,-56.081,ARGO CANADA:Operational
+4901164,Canada,Underwater (mobile),Closed,2025-08-17,2014-03-26,60.932,-58.862,ARGO CANADA:Closed
+4901165,Canada,Underwater (mobile),Closed,2025-08-19,2014-02-14,63.66,-54.324,ARGO CANADA:Closed
+4901171,Canada,Underwater (mobile),Closed,2025-08-17,2013-04-24,63.763,-58.348,ARGO CANADA:Closed
+4901174,Canada,Underwater (mobile),Operational,2025-08-19,2013-04-25,62.12,-34.598,ARGO CANADA:Operational
+4901751,Canada,Underwater (mobile),Closed,2025-08-19,2016-08-16,60.656,-51.554,ARGO CANADA:Closed
+4901770,Canada,Sea (on ice),Closed,2014-09-22,2014-10-19,73.183,-159.768,Argo CANADA eq.:Closed
+4901771,Canada,Sea (on ice),Silent,2015-09-14,2015-10-07,76.488,-132.892,Argo CANADA eq.:Non-reporting
+4901779,Canada,Underwater (mobile),Closed,2026-05-22,2021-05-22,60.103,-51.271,ARGO CANADA:Closed
+4901802,Canada,Underwater (mobile),Silent,2016-07-09,2016-10-31,69.118,-62.852,NAOS-Canada:Non-reporting
+4901803,Canada,Underwater (mobile),Silent,2016-07-09,2016-10-31,70.904,-61.838,NAOS-Canada:Non-reporting
+4901804,Canada,Underwater (mobile),Silent,2022-06-29,,69.816,-59.888,NAOS-Canada:Non-reporting
+4901805,Canada,Underwater (mobile),Silent,2022-06-29,,72.629,-69.878,NAOS-Canada:Non-reporting
+4901806,Canada,Underwater (mobile),Operational,2022-06-29,,72.584,-66.547,NAOS-Canada:Operational
+4901809,Canada,Underwater (mobile),Silent,2025-08-19,,45.613,-34.357,ARGO CANADA:Non-reporting
+4901817,Canada,Underwater (mobile),Silent,2025-08-19,,58.029,-47.07,ARGO CANADA:Non-reporting
+4902397,Canada,Underwater (mobile),Silent,2026-05-25,,62.298,-39.42,ARGO CANADA:Non-reporting
+4902427,Canada,Underwater (mobile),Silent,2022-06-29,,71.626,-155.913,Argo CANADA eq.:Non-reporting
+4902428,Canada,Underwater (mobile),Silent,2022-06-29,,72.485,-157.912,Argo CANADA eq.:Non-reporting
+4902429,Canada,Underwater (mobile),Silent,2022-06-29,,73.613,-160.006,Argo CANADA eq.:Non-reporting
+4902430,Canada,Underwater (mobile),Silent,2022-06-29,,71.694,-153.038,Argo CANADA eq.:Non-reporting
+4902431,Canada,Underwater (mobile),Silent,2022-06-29,,72.294,-153.91,Argo CANADA eq.:Non-reporting
+4902432,Canada,Underwater (mobile),Silent,2022-06-29,,69.576,-60.445,Argo CANADA eq.:Non-reporting
+4902433,Canada,Underwater (mobile),Silent,2022-06-29,,63.762,-60.494,Argo CANADA eq.:Non-reporting
+4902437,Canada,Underwater (mobile),Operational,2025-11-24,,73.186,-63.859,ARGO CANADA:Operational
+4902438,Canada,Underwater (mobile),Silent,2026-05-07,,61.847,-51.07,ARGO CANADA:Non-reporting
+4902439,Canada,Underwater (mobile),Operational,2026-02-07,,62.628,-52.776,ARGO CANADA:Operational
+4902451,Canada,Underwater (mobile),Closed,2025-08-16,2019-07-22,61.807,-32.462,ARGO CANADA:Closed
+4902477,Canada,Underwater (mobile),Operational,2026-10-13,,60.465,-52.375,ARGO CANADA:Operational
+4902497,Canada,Underwater (mobile),Operational,2026-07-14,,60.666,-13.428,ARGO CANADA:Operational
+4902507,Canada,Underwater (mobile),Operational,2025-08-19,,50.734,-24.432,ARGO CANADA:Operational
+4902508,Canada,Underwater (mobile),Operational,2025-08-19,,52.755,-40.038,ARGO CANADA:Operational
+4902527,Canada,Underwater (mobile),Operational,2026-03-23,,60.44,-29.446,ARGO CANADA:Operational
+4902531,Canada,Underwater (mobile),Silent,2025-11-25,,72.477,-65.868,ARGO CANADA:Non-reporting
+4902532,Canada,Underwater (mobile),Silent,2026-10-28,,72.639,-66.953,ARGO CANADA:Non-reporting
+4902558,Canada,Underwater (mobile),Silent,2025-11-25,,73.123,-133.269,ARGO CANADA:Non-reporting
+4902594,Canada,Underwater (mobile),Operational,2025-11-25,,62.31,-38.844,ARGO CANADA:Operational
+4902610,Canada,Underwater (mobile),Silent,2025-11-25,,74.1,-126.25,ARGO CANADA:Non-reporting
+4902611,Canada,Underwater (mobile),Silent,2026-10-27,,73.576,-149.739,ARGO CANADA:Non-reporting
+4902687,Canada,Underwater (mobile),Operational,2026-11-10,,60.39,-56.414,ARGO CANADA:Operational
+4902693,Canada,Underwater (mobile),Operational,2025-11-25,,60.937,-55.228,ARGO CANADA:Operational
+4902700,Canada,Underwater (mobile),Silent,2025-11-25,,60.31,-55.012,ARGO CANADA:Non-reporting
+4902719,Canada,Underwater (mobile),Operational,2026-11-10,,61.548,-34.683,ARGO CANADA:Operational
+4902729,Canada,Underwater (mobile),Operational,2026-11-10,,60.419,-53.611,ARGO CANADA:Operational
+7801552,Canada,Sea (on ice),Unknown,2025-08-09,,60.461,-1.505,EC DB
+2902899,China,Underwater (mobile),Silent,2025-11-25,,60.713,176.031,ARGO EQ. CHINA:Non-reporting
+1902659,Denmark,Underwater (mobile),Silent,2025-11-24,,78.8,-9.003,ARGO DENMARK:Non-reporting
+2903997,Denmark,Underwater (mobile),Silent,2025-11-25,,74.389,-20.349,ARGO DENMARK:Non-reporting
+2903998,Denmark,Underwater (mobile),Silent,2025-12-01,,77.342,-69.491,ARGO DENMARK:Non-reporting
+3902564,Denmark,Underwater (mobile),Silent,2025-11-25,,79.002,-11.829,ARGO DENMARK:Non-reporting
+3902677,Denmark,Underwater (mobile),Operational,2025-11-25,,71.704,-14.985,ARGO DENMARK:Operational
+3902694,Denmark,Underwater (mobile),Silent,2025-11-25,,78.713,-10.969,ARGO DENMARK:Non-reporting
+6900069,Denmark,Underwater (mobile),Closed,2025-08-19,2003-04-14,74.558,-9.431,ARGO DENMARK:Closed
+6900070,Denmark,Underwater (mobile),Closed,2025-08-15,2003-01-23,75.016,-6.283,ARGO DENMARK:Closed
+6900071,Denmark,Underwater (mobile),Closed,2025-08-18,2003-09-02,68.899,-18.558,ARGO DENMARK:Closed
+6900072,Denmark,Underwater (mobile),Closed,2025-08-19,2003-04-15,74.653,-2.844,ARGO DENMARK:Closed
+6900073,Denmark,Underwater (mobile),Closed,2025-08-19,2003-10-22,75.2,-6.446,ARGO DENMARK:Closed
+6990657,Denmark,Underwater (mobile),Operational,2025-11-25,,67.279,-22.3,ARGO DENMARK:Operational
+7902223,Denmark,Underwater (mobile),Operational,2025-11-25,,61.469,-30.894,ARGO DENMARK:Operational
+7902329,Denmark,Underwater (mobile),Operational,2026-03-17,,75.041,-8.517,ARGO DENMARK:Operational
+2903899,Finland,Underwater (mobile),Silent,2025-11-25,,62.138,19.822,ARGO FINLAND:Non-reporting
+2903908,Finland,Underwater (mobile),Silent,2026-03-09,,65.305,23.108,ARGO FINLAND:Non-reporting
+3902531,Finland,Underwater (mobile),Silent,2025-08-18,,61.33,20.125,ARGO FINLAND:Non-reporting
+4903797,Finland,Underwater (mobile),Operational,2025-11-25,,61.603,20.085,ARGO FINLAND:Operational
+4904022,Finland,Underwater (mobile),Operational,2026-10-31,,61.684,20.076,ARGO FINLAND:Operational
+6900801,Finland,Underwater (mobile),Operational,2025-08-19,2012-12-10,73.069,-4.691,ARGO FINLAND:Operational
+6900802,Finland,Underwater (mobile),Operational,2025-08-19,2012-07-14,77.638,3.839,ARGO FINLAND:Operational
+6901086,Finland,Underwater (mobile),Closed,2025-08-19,2013-07-22,72.87,0.381,ARGO FINLAND:Closed
+6901087,Finland,Underwater (mobile),Operational,2025-08-19,2013-04-03,76.997,-2.358,ARGO FINLAND:Operational
+6901901,Finland,Underwater (mobile),Closed,2026-10-22,2014-06-16,61.202,20.865,ARGO FINLAND:Closed
+6901903,Finland,Underwater (mobile),Closed,2023-09-11,2014-05-23,74.753,-9.048,ARGO FINLAND:Closed
+6901904,Finland,Underwater (mobile),Operational,2025-08-17,2013-02-06,74.728,-5.407,ARGO FINLAND:Operational
+6901905,Finland,Underwater (mobile),Closed,2025-08-19,2017-09-30,72.485,-5.899,ARGO FINLAND:Closed
+6901906,Finland,Underwater (mobile),Closed,2025-08-19,2014-03-01,74.238,-11.32,ARGO FINLAND:Closed
+6902013,Finland,Underwater (mobile),Closed,2026-10-22,2013-10-02,62.474,19.589,ARGO FINLAND:Closed
+6902015,Finland,Underwater (mobile),Closed,2025-08-17,2017-05-26,79.727,5.959,ARGO FINLAND:Closed
+6902016,Finland,Underwater (mobile),Closed,2025-08-19,2018-01-31,72.754,8.47,ARGO FINLAND:Closed
+6902017,Finland,Underwater (mobile),Closed,2025-08-19,2015-10-24,62.261,19.936,ARGO FINLAND:Closed
+6902018,Finland,Underwater (mobile),Closed,2026-10-22,2014-11-14,61.569,20.456,ARGO FINLAND:Closed
+6902021,Finland,Underwater (mobile),Closed,2026-10-22,2016-05-13,62.694,19.805,ARGO FINLAND:Closed
+6902022,Finland,Underwater (mobile),Closed,2025-08-19,2016-10-12,62.026,20.493,ARGO FINLAND:Closed
+6902023,Finland,Underwater (mobile),Silent,2025-08-14,,63.114,18.764,ARGO FINLAND:Non-reporting
+6902025,Finland,Underwater (mobile),Closed,2025-08-19,2017-05-09,62.074,19.395,ARGO FINLAND:Closed
+6902026,Finland,Underwater (mobile),Closed,2025-08-19,2017-06-06,64.911,21.386,ARGO FINLAND:Closed
+6902028,Finland,Underwater (mobile),Closed,2025-08-19,2017-08-06,61.107,20.682,ARGO FINLAND:Closed
+6902029,Finland,Underwater (mobile),Closed,2025-08-15,2017-08-06,61.392,20.106,ARGO FINLAND:Closed
+6902030,Finland,Underwater (mobile),Closed,2025-08-19,2018-07-10,62.573,19.009,ARGO FINLAND:Closed
+6903695,Finland,Underwater (mobile),Operational,2025-08-19,,78.993,46.166,ARGO FINLAND:Operational
+6903698,Finland,Underwater (mobile),Silent,2025-08-19,,62.061,18.54,ARGO FINLAND:Non-reporting
+6903699,Finland,Underwater (mobile),Closed,2025-08-19,2021-05-21,61.835,19.955,ARGO FINLAND:Closed
+6903700,Finland,Underwater (mobile),Closed,2025-08-19,2021-06-07,65.067,22.315,ARGO FINLAND:Closed
+6903705,Finland,Underwater (mobile),Silent,2025-11-24,,78.158,41.192,ARGO FINLAND:Non-reporting
+6903707,Finland,Underwater (mobile),Closed,2025-08-19,2021-09-03,65.174,23.324,ARGO FINLAND:Closed
+6903711,Finland,Underwater (mobile),Closed,2025-08-15,2023-06-08,62.664,19.069,ARGO FINLAND:Closed
+6904243,Finland,Underwater (mobile),Closed,2026-04-03,2026-04-03,63.993,22.373,ARGO FINLAND:Closed
+6990729,Finland,Underwater (mobile),Silent,2026-09-07,,61.883,20.295,ARGO FINLAND:Non-reporting
+1900617,France,Underwater (mobile),Closed,2025-09-05,2017-03-13,65.795,-7.172,"CORIOLIS:Closed, CORIOLIS-CONGAS:Closed"
+1901210,France,Underwater (mobile),Closed,2025-09-05,2017-05-29,62.347,-37.993,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+1901211,France,Underwater (mobile),Closed,2025-09-05,2015-01-01,61.121,-28.171,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+1901214,France,Underwater (mobile),Closed,2025-09-05,2017-02-11,61.454,-24.856,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+1902637,France,Underwater (mobile),Operational,2026-11-04,,76.762,12.894,"CORIOLIS:Operational, CORIOLIS-BIOARGO:Operational"
+1902695,France,Underwater (mobile),Operational,2026-03-17,,60.505,-49.628,"CORIOLIS:Operational, REFINE:Operational"
+1902759,France,Underwater (mobile),Silent,2026-10-30,,83.726,72.812,CORIOLIS:Non-reporting
+1902772,France,Underwater (mobile),Silent,2026-11-17,,79.274,111.41,CORIOLIS:Non-reporting
+4903655,France,Underwater (mobile),Operational,2025-11-24,,80.23,145.368,CORIOLIS:Operational
+4903659,France,Underwater (mobile),Silent,2026-03-17,,61.043,-22.037,"CORIOLIS:Non-reporting, REFINE:Non-reporting"
+4903774,France,Underwater (mobile),Operational,2026-08-06,,71.344,-64.644,"CORIOLIS:Operational, REFINE:Operational"
+5902299,France,Underwater (mobile),Closed,2025-09-05,2012-03-19,63.104,-57.346,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+5902300,France,Underwater (mobile),Closed,2025-09-05,2013-10-19,65.25,-28.626,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+5902303,France,Underwater (mobile),Closed,2025-09-05,2011-09-08,60.517,-28.483,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+5906995,France,Underwater (mobile),Operational,2025-11-25,,69.912,2.145,"CORIOLIS:Operational, CORIOLIS-BIOARGO:Operational"
+5907282,France,Underwater (mobile),Operational,2026-08-11,,71.458,-1.627,CORIOLIS:Operational
+6900240,France,Underwater (mobile),Closed,2025-08-16,2008-04-19,60.776,-35.501,CORIOLIS:Closed
+6900273,France,Underwater (mobile),Closed,2025-08-19,2007-04-06,61.046,-31.937,CORIOLIS:Closed
+6900463,France,Underwater (mobile),Closed,2025-08-19,2014-12-29,62.518,6.124,CORIOLIS:Closed
+6900492,France,Underwater (mobile),Closed,2025-09-05,2011-08-17,63.542,-54.927,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+6900497,France,Underwater (mobile),Closed,2025-09-05,2010-12-03,65.183,-30.787,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+6900637,France,Underwater (mobile),Closed,2025-09-05,2011-01-04,60.975,-27.589,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+6900639,France,Underwater (mobile),Closed,2025-09-05,2010-02-18,61.151,-10.402,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+6900641,France,Underwater (mobile),Closed,2025-08-19,2009-06-05,65.193,-29.274,CORIOLIS:Closed
+6900676,France,Underwater (mobile),Closed,2025-09-05,2009-05-17,62.47,-32.739,"CORIOLIS:Closed, CORIOLIS-BIOARGO:Closed"
+6900678,France,Underwater (mobile),Closed,2025-09-05,2010-05-12,66.222,4.257,"CORIOLIS:Closed, CORIOLIS-BIOARGO:Closed"
+6900686,France,Underwater (mobile),Operational,2025-09-05,2009-07-13,71.832,-127.476,"CORIOLIS:Operational, CORIOLIS-BIOARGO:Operational"
+6900966,France,Underwater (mobile),Closed,2025-08-19,2018-01-06,62.822,-53.104,CORIOLIS:Closed
+6901025,France,Underwater (mobile),Closed,2025-08-19,2017-12-13,60.69,-31.362,CORIOLIS:Closed
+6901026,France,Underwater (mobile),Closed,2025-08-19,2016-11-10,63.732,-53.289,CORIOLIS:Closed
+6901028,France,Underwater (mobile),Closed,2025-08-18,2013-04-21,65.292,-29.251,CORIOLIS:Closed
+6901029,France,Underwater (mobile),Closed,2025-08-16,2014-02-27,65.191,-31.363,CORIOLIS:Closed
+6901481,France,Underwater (mobile),Closed,2025-09-05,2014-03-06,61.477,-57.652,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901484,France,Underwater (mobile),Closed,2025-09-05,2014-04-12,61.212,-56.376,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901514,France,Underwater (mobile),Closed,2025-09-05,2013-06-21,63.043,-23.379,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901515,France,Underwater (mobile),Closed,2025-09-05,2014-03-04,65.576,-28.405,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901517,France,Underwater (mobile),Closed,2025-09-05,2014-03-02,60.371,-48.699,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901518,France,Underwater (mobile),Closed,2025-09-05,2013-08-28,61.241,-27.679,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901519,France,Underwater (mobile),Closed,2025-09-05,2015-04-08,60.523,-41.767,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901520,France,Underwater (mobile),Closed,2025-09-05,2013-11-27,61.097,-28.373,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901521,France,Underwater (mobile),Closed,2025-09-05,2014-04-06,63.724,-53.163,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901523,France,Underwater (mobile),Closed,2025-09-05,2015-06-22,60.095,-47.425,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901527,France,Underwater (mobile),Closed,2025-09-05,2017-04-22,61.577,-32.336,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901564,France,Underwater (mobile),Silent,2025-09-05,,63.107,-52.774,"CORIOLIS:Closed, CORIOLIS-OVIDE:Non-reporting"
+6901592,France,Underwater (mobile),Closed,2025-09-05,2016-12-07,65.205,-31.013,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+6901601,France,Underwater (mobile),Closed,2025-08-19,2020-02-25,63.916,-30.511,CORIOLIS:Closed
+6901646,France,Underwater (mobile),Closed,2025-09-05,2017-09-16,60.977,-55.333,"CORIOLIS:Closed, CORIOLIS-REMOCEAN:Closed"
+6901647,France,Underwater (mobile),Closed,2025-09-05,2017-09-13,65.341,-29.707,"CORIOLIS:Closed, CORIOLIS-BIOARGO:Closed"
+6901720,France,Underwater (mobile),Closed,2026-10-06,2021-10-06,57.686,-46.576,CORIOLIS:Closed
+6901752,France,Underwater (mobile),Closed,2025-09-05,2020-08-14,60.784,-30.389,"CORIOLIS:Closed, CORIOLIS-OVIDE:Closed"
+6901760,France,Underwater (mobile),Closed,2025-08-17,2017-12-27,60.127,-57.736,CORIOLIS:Closed
+6901762,France,Underwater (mobile),Closed,2025-08-19,2018-04-24,61.082,-34.617,CORIOLIS:Closed
+6902666,France,Underwater (mobile),Silent,2025-09-05,,72.017,-71.385,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902667,France,Underwater (mobile),Silent,2025-09-05,2016-10-31,71.548,-61.671,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902668,France,Underwater (mobile),Silent,2025-09-05,2016-10-31,70.894,-61.963,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902669,France,Underwater (mobile),Closed,2025-09-05,2017-11-03,68.759,-63.445,"CORIOLIS:Closed, NAOS-FRANCE:Closed"
+6902670,France,Underwater (mobile),Closed,2025-09-05,2017-11-05,69.269,-62.897,"CORIOLIS:Closed, NAOS-FRANCE:Closed"
+6902671,France,Underwater (mobile),Closed,2025-09-05,2017-07-23,69.828,-64.446,"CORIOLIS:Closed, NAOS-FRANCE:Closed"
+6902694,France,Underwater (mobile),Silent,2025-08-19,,50.223,-37.24,CORIOLIS:Non-reporting
+6902695,France,Underwater (mobile),Silent,2025-08-19,,49.027,-32.612,CORIOLIS:Non-reporting
+6902705,France,Underwater (mobile),Closed,2025-08-29,2020-08-29,62.193,-25.007,CORIOLIS:Closed
+6902725,France,Underwater (mobile),Silent,2025-11-24,,77.801,8.281,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902726,France,Underwater (mobile),Silent,2025-11-24,,66.138,3.05,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902727,France,Underwater (mobile),Silent,2025-11-24,,70.624,-61.718,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902728,France,Underwater (mobile),Silent,2025-11-24,,62.547,-35.179,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902729,France,Underwater (mobile),Silent,2025-10-17,,82.756,79.414,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902730,France,Underwater (mobile),Silent,2025-09-05,,68.179,-18.459,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902749,France,Underwater (mobile),Silent,2025-09-05,,44.653,-48.465,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902750,France,Underwater (mobile),Silent,2025-11-25,,60.329,-17.474,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902751,France,Underwater (mobile),Silent,2025-09-05,,59.316,-49.132,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902752,France,Underwater (mobile),Silent,2025-11-25,,60.916,-52.883,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902754,France,Underwater (mobile),Silent,2025-09-05,,48.265,-37.983,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902755,France,Underwater (mobile),Silent,2025-09-05,,43.811,-28.851,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6902784,France,Underwater (mobile),Silent,2025-11-25,,70.082,9.615,CORIOLIS:Non-reporting
+6902786,France,Underwater (mobile),Silent,2025-08-14,,57.884,-54.79,CORIOLIS:Non-reporting
+6902787,France,Underwater (mobile),Silent,2025-08-19,,45.625,-46.4,CORIOLIS:Non-reporting
+6902789,France,Underwater (mobile),Silent,2025-11-25,,55.858,-55.902,CORIOLIS:Non-reporting
+6902790,France,Underwater (mobile),Silent,2025-11-25,,62.105,-13.651,CORIOLIS:Non-reporting
+6902791,France,Underwater (mobile),Silent,2025-08-17,,53.997,-49.662,CORIOLIS:Non-reporting
+6902792,France,Underwater (mobile),Silent,2025-11-25,,63,-59.335,CORIOLIS:Non-reporting
+6902793,France,Underwater (mobile),Silent,2025-08-19,,50.323,-37.447,CORIOLIS:Non-reporting
+6902800,France,Underwater (mobile),Silent,2025-08-19,,52.821,-40.109,CORIOLIS:Non-reporting
+6902801,France,Underwater (mobile),Silent,2025-08-19,,65.287,-29.16,CORIOLIS:Non-reporting
+6902802,France,Underwater (mobile),Silent,2025-11-25,,65.103,-57.337,CORIOLIS:Non-reporting
+6902805,France,Underwater (mobile),Silent,2026-05-01,,59.986,-60.517,CORIOLIS:Non-reporting
+6902807,France,Underwater (mobile),Silent,2025-11-25,,61.02,-34.125,CORIOLIS:Non-reporting
+6902818,France,Underwater (mobile),Silent,2025-08-16,,56.848,-52.841,CORIOLIS:Non-reporting
+6902829,France,Underwater (mobile),Silent,2025-09-05,,71.497,-65.466,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902864,France,Underwater (mobile),Operational,2026-09-21,,60.025,-19.068,CORIOLIS:Operational
+6902868,France,Underwater (mobile),Silent,2025-08-19,,65.2,-29.485,CORIOLIS:Non-reporting
+6902869,France,Underwater (mobile),Silent,2025-11-25,,65.433,-28.744,CORIOLIS:Non-reporting
+6902881,France,Underwater (mobile),Silent,2025-08-17,,53.537,-50.203,CORIOLIS:Non-reporting
+6902882,France,Underwater (mobile),Silent,2025-11-25,,63.531,-29.237,CORIOLIS:Non-reporting
+6902886-6902885,France,Underwater (mobile),Silent,2025-08-19,,51.29,-46.704,CORIOLIS:Non-reporting
+6902888,France,Underwater (mobile),Silent,2025-08-18,,55.799,-44.064,CORIOLIS:Non-reporting
+6902896,France,Underwater (mobile),Silent,2025-09-05,,62.365,-61.256,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902897,France,Underwater (mobile),Silent,2025-09-05,,67.391,-60.372,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902910,France,Underwater (mobile),Closed,2026-04-03,2026-04-03,60.774,-24.807,CORIOLIS:Closed
+6902911,France,Underwater (mobile),Silent,2026-04-15,,73.108,8.19,CORIOLIS:Non-reporting
+6902912,France,Underwater (mobile),Silent,2026-04-12,,74.149,10.764,CORIOLIS:Non-reporting
+6902952,France,Underwater (mobile),Closed,2025-08-18,2023-10-14,73.966,-60.971,CORIOLIS:Closed
+6902953,France,Underwater (mobile),Silent,2025-09-05,,68.012,-60.439,"CORIOLIS:Closed, NAOS-FRANCE:Non-reporting"
+6902967,France,Underwater (mobile),Silent,2025-10-20,,62.081,-62.438,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6903006,France,Underwater (mobile),Silent,2025-08-19,,49.325,-47.836,CORIOLIS:Non-reporting
+6903009,France,Underwater (mobile),Operational,2025-11-24,,61.927,-1.53,CORIOLIS:Operational
+6903102,France,Underwater (mobile),Silent,2026-05-20,,71.541,10.944,CORIOLIS:Non-reporting
+6903113,France,Underwater (mobile),Operational,2025-11-25,,67.642,-8.319,CORIOLIS:Operational
+6903119,France,Underwater (mobile),Unknown,2025-11-24,,82.042,68.76,CORIOLIS
+6903120,France,Underwater (mobile),Unknown,2026-08-04,,88.208,-2.706,CORIOLIS
+6903125,France,Underwater (mobile),Silent,2026-03-17,,68.24,-58.688,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6903126,France,Underwater (mobile),Silent,2025-11-24,,72.885,-66.804,"CORIOLIS:Non-reporting, NAOS-FRANCE:Non-reporting"
+6903127,France,Underwater (mobile),Operational,2025-11-24,,72.674,-66.121,"CORIOLIS:Non-reporting, NAOS-FRANCE:Operational"
+6903143,France,Underwater (mobile),Operational,2025-11-24,,75.185,-177.634,CORIOLIS:Operational
+6903144,France,Underwater (mobile),Silent,2026-07-28,,84.61,142.349,CORIOLIS:Non-reporting
+6903145,France,Underwater (mobile),Operational,2026-08-13,,84.987,70.936,CORIOLIS:Operational
+6903146,France,Underwater (mobile),Operational,2026-11-11,,60.986,-51.419,CORIOLIS:Operational
+6903147,France,Underwater (mobile),Silent,2026-10-11,,79.742,-10.349,CORIOLIS:Non-reporting
+6990636,France,Underwater (mobile),Operational,2026-03-17,,62.062,-32.213,"CORIOLIS:Operational, REFINE:Operational"
+6NZQK2K,France,Sea (mobile),Closed,2025-08-18,2022-09-30,64.1,-52.2,VOS-FR:Closed
+7901037,France,Underwater (mobile),Silent,2025-11-25,,60.165,-49.635,CORIOLIS:Non-reporting
+7901038,France,Underwater (mobile),Silent,2026-07-31,,83.028,87.736,CORIOLIS:Non-reporting
+7901124,France,Underwater (mobile),Operational,2026-09-01,,73.012,-67.468,"CORIOLIS:Operational, REFINE:Operational"
+7902405,France,Underwater (mobile),Operational,2026-08-11,,72.075,-3.053,CORIOLIS:Operational
+BZN77RP,France,Sea (mobile),Silent,2026-10-07,,60.75,-45.75,VOS-FR:Non-reporting
+CZDTV4H,France,Sea (mobile),Operational,2026-03-03,,70.1,22,VOS-FR:Operational
+MBBJ7YM,France,Sea (mobile),Operational,2026-08-28,,78.7,10.26,VOS-FR:Operational
+PGMAV4G,France,Sea (mobile),Operational,2026-02-28,,68.81,16.54,VOS-FR:Operational
+SXZPW9C,France,Sea (mobile),Operational,2025-08-18,,72.11,-23.01,VOS-FR:Operational
+VEVFC5X,France,Sea (mobile),Operational,2025-08-18,,63.3,-51.5,VOS-FR:Operational
+1902597,Germany,Underwater (mobile),Silent,2025-11-25,,83.38,123.911,ARGO BSH:Non-reporting
+1902773,Germany,Underwater (mobile),Silent,2026-11-04,,83.25,62.391,ARGO BSH:Non-reporting
+2903999,Germany,Underwater (mobile),Silent,2026-09-27,,79.89,110.082,ARGO BSH:Non-reporting
+2904020,Germany,Underwater (mobile),Operational,2026-03-25,,83.704,61.941,ARGO AWI:Operational
+3901589,Germany,Underwater (mobile),Closed,2025-08-19,2021-09-13,66.643,-4.405,ARGO BSH:Closed
+3901590,Germany,Underwater (mobile),Closed,2026-10-22,2021-01-05,72.746,-0.669,ARGO BSH:Closed
+3901591,Germany,Underwater (mobile),Closed,2025-08-18,2020-05-04,74.372,-7.296,ARGO BSH:Closed
+3901598,Germany,Underwater (mobile),Closed,2026-10-22,2025-06-11,68.357,-2.781,ARGO BSH:Closed
+3901619,Germany,Underwater (mobile),Closed,2025-08-17,2023-10-24,68.956,7.607,ARGO BSH:Closed
+3901620,Germany,Underwater (mobile),Closed,2026-10-22,2021-11-11,74.372,11.047,ARGO BSH:Closed
+3901621,Germany,Underwater (mobile),Operational,2022-02-02,,80.151,4.324,ARGO BSH:Closed
+3901623,Germany,Underwater (mobile),Closed,2025-08-19,2023-10-24,66.305,2.233,ARGO BSH:Closed
+3901629,Germany,Underwater (mobile),Closed,2025-08-15,2023-10-24,58.274,-30.941,ARGO BSH:Closed
+3901631,Germany,Underwater (mobile),Closed,2025-08-16,2023-10-24,70.585,-1.651,ARGO BSH:Closed
+3901632,Germany,Underwater (mobile),Closed,2025-08-19,2023-10-24,75.547,5.405,ARGO BSH:Closed
+3901633,Germany,Underwater (mobile),Closed,2025-08-16,2022-01-20,69.589,-20.614,ARGO BSH:Closed
+3902686,Germany,Underwater (mobile),Silent,2026-02-15,,83.18,42.133,ARGO AWI:Non-reporting
+3ZLJERM,Germany,Sea (mobile),Operational,2025-08-18,,71.9,20.49,VOS-DE:Operational
+4901416,Germany,Underwater (mobile),Closed,2025-08-19,2014-07-31,60.04,-38.606,ARGO BSH:Closed
+4901426,Germany,Underwater (mobile),Closed,2025-08-19,2018-09-11,63.04,-6.082,ARGO BSH:Closed
+4903667,Germany,Underwater (mobile),Closed,2025-09-15,2025-09-15,82.175,40.713,ARGO BSH:Closed
+4903885,Germany,Underwater (mobile),Operational,2025-11-25,,66.141,-8.46,ARGO BSH:Operational
+6900260,Germany,Underwater (mobile),Closed,2025-08-19,2013-08-23,63.095,-32.999,ARGO BSH:Closed
+6900305,Germany,Underwater (mobile),Closed,2025-08-19,2009-02-04,73.19,-2.527,ARGO EQ. UHH:Closed
+6900306,Germany,Underwater (mobile),Closed,2025-08-16,2006-02-20,73.116,-15.362,ARGO EQ. UHH:Closed
+6900307,Germany,Underwater (mobile),Closed,2025-08-19,2007-01-16,72.502,-16.552,ARGO EQ. UHH:Closed
+6900332,Germany,Underwater (mobile),Closed,2025-08-19,2010-04-28,64.194,-29.537,ARGO EQ. UHH:Closed
+6900333,Germany,Underwater (mobile),Closed,2025-08-15,2009-03-14,60.64,-60.779,ARGO EQ. UHH:Closed
+6900335,Germany,Underwater (mobile),Closed,2025-08-15,2008-07-20,78.144,3.508,ARGO EQ. UHH:Closed
+6900336,Germany,Underwater (mobile),Closed,2025-08-19,2009-02-05,68.335,0.316,ARGO EQ. UHH:Closed
+6900337,Germany,Underwater (mobile),Closed,2025-08-16,2009-03-26,62.378,-51.055,ARGO EQ. UHH:Closed
+6900339,Germany,Underwater (mobile),Closed,2025-08-19,2007-04-26,75.799,-4.576,ARGO EQ. UHH:Closed
+6900345,Germany,Underwater (mobile),Closed,2025-08-19,2011-09-15,79.719,4.424,ARGO EQ. UHH:Closed
+6900348,Germany,Underwater (mobile),Operational,2025-08-19,2008-10-08,68.772,-3.783,ARGO EQ. UHH:Operational
+6900544,Germany,Underwater (mobile),Closed,2025-08-18,2010-09-07,72.217,13.277,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900545,Germany,Underwater (mobile),Closed,2025-08-17,2010-07-19,68.689,9.323,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900546,Germany,Underwater (mobile),Closed,2025-08-19,2008-11-16,69.531,0.096,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900547,Germany,Underwater (mobile),Operational,2025-08-19,2010-04-07,70.01,5.28,"ARGO BSH:Operational, ARGO GERMANY:Operational"
+6900548,Germany,Underwater (mobile),Operational,2025-08-19,2008-11-14,73.094,-15.798,"ARGO BSH:Operational, ARGO GERMANY:Operational"
+6900549,Germany,Underwater (mobile),Operational,2025-08-18,2010-03-20,73.884,4.471,"ARGO BSH:Operational, ARGO GERMANY:Operational"
+6900550,Germany,Underwater (mobile),Operational,2025-08-17,2010-03-10,75.425,-4.31,"ARGO BSH:Operational, ARGO GERMANY:Operational"
+6900559,Germany,Underwater (mobile),Closed,2025-08-19,2014-09-11,61.847,-40.14,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900560,Germany,Underwater (mobile),Closed,2025-08-19,2014-02-28,78.478,-1.823,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900562,Germany,Underwater (mobile),Closed,2025-08-16,2013-11-04,63.128,-56.155,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900563,Germany,Underwater (mobile),Closed,2025-08-18,2016-04-16,71.665,37.707,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900566,Germany,Underwater (mobile),Closed,2025-08-17,2012-01-04,60.236,-58.832,"ARGO BSH:Closed, ARGO GERMANY:Closed"
+6900567,Germany,Underwater (mobile),Operational,2025-08-18,2013-02-13,64.648,-36.311,"ARGO BSH:Operational, ARGO GERMANY:Operational"
+6900599,Germany,Underwater (mobile),Operational,2025-08-19,2013-01-03,64.847,-11.707,ARGO BSH:Operational
+6900600,Germany,Underwater (mobile),Operational,2025-08-17,2013-01-11,67.433,-10.584,ARGO BSH:Operational
+6900601,Germany,Underwater (mobile),Operational,2025-08-19,2012-07-01,70.674,10.282,ARGO BSH:Operational
+6900666,Germany,Underwater (mobile),Operational,2025-08-19,2010-12-01,76.621,6.004,ARGO EQ. UHH:Operational
+6900667,Germany,Underwater (mobile),Closed,2025-08-17,2015-03-04,71.377,23.576,ARGO EQ. UHH:Closed
+6900668,Germany,Underwater (mobile),Closed,2025-08-19,2015-10-30,64.937,5.613,ARGO EQ. UHH:Closed
+6900669,Germany,Underwater (mobile),Operational,2025-08-19,2010-08-14,64.27,-6.869,ARGO EQ. UHH:Operational
+6900810,Germany,Underwater (mobile),Operational,2025-08-19,2012-12-08,71.572,9.458,ARGO BSH:Operational
+6900811,Germany,Underwater (mobile),Operational,2025-08-19,2012-04-04,75.205,-7.696,ARGO BSH:Operational
+6900812,Germany,Underwater (mobile),Operational,2025-08-17,2010-12-21,73.84,-15.322,ARGO BSH:Operational
+6900813,Germany,Underwater (mobile),Operational,2025-08-19,2012-05-01,69.671,-4.749,ARGO BSH:Operational
+6900814,Germany,Underwater (mobile),Operational,2025-08-19,2012-03-20,67.964,-1.983,ARGO BSH:Operational
+6900824,Germany,Underwater (mobile),Operational,2023-09-11,2011-02-10,62.59,-33.758,ARGO BSH:Operational
+6900835,Germany,Underwater (mobile),Closed,2025-08-19,2013-11-06,66.187,5.6,ARGO BSH:Closed
+6900836,Germany,Underwater (mobile),Operational,2025-08-19,2012-11-19,76.998,6.55,ARGO BSH:Operational
+6900837,Germany,Underwater (mobile),Closed,2025-08-19,2013-08-03,68.948,-2.357,ARGO BSH:Closed
+6900838,Germany,Underwater (mobile),Operational,2025-08-19,2012-11-26,69.817,-2.108,ARGO BSH:Operational
+6900839,Germany,Underwater (mobile),Operational,2025-08-16,2010-12-02,76.387,-3.57,ARGO BSH:Operational
+6900840,Germany,Underwater (mobile),Operational,2025-08-17,2011-03-03,74.909,-9.787,ARGO BSH:Operational
+6900841,Germany,Underwater (mobile),Closed,2025-08-19,2015-11-19,63.775,-0.464,ARGO BSH:Closed
+6900842,Germany,Underwater (mobile),Closed,2025-08-16,2015-11-08,72.48,4.6,ARGO BSH:Closed
+6900876,Germany,Underwater (mobile),Closed,2025-08-19,2021-12-15,62.095,-5.055,ARGO BSH:Closed
+6900877,Germany,Underwater (mobile),Closed,2025-08-18,2016-12-27,63.637,-17.233,ARGO BSH:Closed
+6900878,Germany,Underwater (mobile),Operational,2025-08-16,2012-03-08,70.852,-1.218,ARGO AWI:Operational
+6900880,Germany,Underwater (mobile),Operational,2025-08-19,2012-03-13,76.053,10.078,ARGO AWI:Operational
+6900881,Germany,Underwater (mobile),Operational,2025-08-19,2012-11-21,72.001,4.439,ARGO AWI:Operational
+6900882,Germany,Underwater (mobile),Closed,2012-06-18,2013-07-20,69.793,10.769,ARGO AWI:Closed
+6900883,Germany,Underwater (mobile),Closed,2025-08-19,2017-03-21,68.371,-9.822,ARGO AWI:Closed
+6900884,Germany,Underwater (mobile),Closed,2025-08-18,2016-02-24,80.479,3.362,ARGO AWI:Closed
+6901058,Germany,Underwater (mobile),Closed,2025-08-18,2014-12-07,64.037,-3.139,ARGO BSH:Closed
+6901059,Germany,Underwater (mobile),Closed,2025-08-18,2014-12-17,70.442,4.787,ARGO BSH:Closed
+6901067,Germany,Underwater (mobile),Closed,2025-08-19,2014-01-02,71.939,4.359,ARGO BSH:Closed
+6901068,Germany,Underwater (mobile),Closed,2025-08-16,2013-07-06,69.494,-0.985,ARGO BSH:Closed
+6901070,Germany,Underwater (mobile),Closed,2025-08-17,2014-07-11,66.658,-9.514,ARGO BSH:Closed
+6901077,Germany,Underwater (mobile),Closed,2025-08-19,2014-10-11,64.584,0.299,ARGO BSH:Closed
+6901078,Germany,Underwater (mobile),Closed,2025-08-19,2015-01-09,66.782,-10.317,ARGO BSH:Closed
+6901079,Germany,Underwater (mobile),Closed,2025-08-16,2015-02-18,65.471,-8.126,ARGO BSH:Closed
+6901080,Germany,Underwater (mobile),Closed,2025-08-19,2014-12-24,68.931,3.138,ARGO BSH:Closed
+6901081,Germany,Underwater (mobile),Closed,2025-08-16,2016-02-17,69.248,-4.266,ARGO BSH:Closed
+6901082,Germany,Underwater (mobile),Closed,2025-08-18,2016-02-02,70.489,4.354,ARGO BSH:Closed
+6901226,Germany,Underwater (mobile),Closed,2022-01-21,2015-05-30,66.699,-7.147,ARGO BSH:Closed
+6901230,Germany,Underwater (mobile),Closed,2025-08-19,2015-01-31,71.599,0.777,ARGO BSH:Closed
+6901231,Germany,Underwater (mobile),Closed,2025-08-19,2015-06-29,70.142,7.564,ARGO BSH:Closed
+6901232,Germany,Underwater (mobile),Closed,2025-08-18,2015-04-30,69.529,-0.428,ARGO BSH:Closed
+6901233,Germany,Underwater (mobile),Closed,2025-08-15,2016-09-10,68.772,-10.322,ARGO BSH:Closed
+6901234,Germany,Underwater (mobile),Silent,2025-08-19,,71.036,-14.322,ARGO BSH:Non-reporting
+6901235,Germany,Underwater (mobile),Closed,2025-08-16,2018-01-16,74.361,-2.832,ARGO BSH:Closed
+6901236,Germany,Underwater (mobile),Closed,2025-08-16,2018-02-19,70.47,3.16,ARGO BSH:Closed
+6901907,Germany,Underwater (mobile),Closed,2025-08-19,2016-11-18,82.015,17.924,ARGO BSH:Closed
+6901908,Germany,Underwater (mobile),Closed,2025-08-19,2019-09-23,67.224,4.808,ARGO BSH:Closed
+6901909,Germany,Underwater (mobile),Closed,2025-08-19,2022-01-20,71.959,13.091,ARGO BSH:Closed
+6901910,Germany,Underwater (mobile),Closed,2025-08-19,2021-09-20,60.461,-24.179,ARGO BSH:Closed
+6902586,Germany,Underwater (mobile),Closed,2026-10-22,2016-11-28,61.442,-50.5,ARGO BSH:Closed
+6902616,Germany,Underwater (mobile),Closed,2025-08-18,2016-01-14,72.519,6.944,ARGO BSH:Closed
+6902617,Germany,Underwater (mobile),Closed,2025-08-19,2018-07-24,75.526,9.394,ARGO BSH:Closed
+6902627,Germany,Underwater (mobile),Closed,2025-08-19,2019-09-23,69.927,-13.86,ARGO BSH:Closed
+6902628,Germany,Underwater (mobile),Partly operational,2022-01-28,,69.833,-2.602,ARGO BSH:Closed
+6904084,Germany,Underwater (mobile),Operational,2025-11-24,,68.44,-23.088,ARGO BSH:Operational
+6904086,Germany,Underwater (mobile),Silent,2025-11-24,,81.623,22.583,ARGO BSH:Non-reporting
+6904087,Germany,Underwater (mobile),Silent,2025-11-24,,88.168,117.791,ARGO BSH:Non-reporting
+6904088,Germany,Underwater (mobile),Operational,2025-11-25,,60.29,-23.145,ARGO BSH:Operational
+6904106,Germany,Underwater (mobile),Operational,2025-11-25,,61.143,-34.339,ARGO BSH:Operational
+6904121,Germany,Underwater (mobile),Operational,2025-11-25,,60.511,-17.641,ARGO BSH:Operational
+6904221,Germany,Underwater (mobile),Silent,2025-11-24,,82.605,44.047,ARGO BSH:Non-reporting
+6904222,Germany,Underwater (mobile),Silent,2025-11-24,,82.497,37.6,ARGO BSH:Non-reporting
+7900169,Germany,Underwater (mobile),Operational,2025-08-19,2009-12-24,78.188,5.068,ARGO EQ. UHH:Operational
+7900170,Germany,Underwater (mobile),Operational,2025-08-19,2010-01-22,68.907,-17.424,ARGO EQ. UHH:Operational
+7900171,Germany,Underwater (mobile),Operational,2025-08-16,2008-06-01,74.907,-9.149,ARGO EQ. UHH:Operational
+7900172,Germany,Underwater (mobile),Operational,2025-08-19,2009-03-01,75.051,0.165,ARGO EQ. UHH:Operational
+7900173,Germany,Underwater (mobile),Operational,2025-08-18,2010-06-18,65.188,0.066,ARGO EQ. UHH:Operational
+7900174,Germany,Underwater (mobile),Operational,2025-08-18,2009-04-04,66.75,-4.969,ARGO EQ. UHH:Operational
+7900175,Germany,Underwater (mobile),Operational,2023-09-11,2010-08-08,69.816,2.217,ARGO EQ. UHH:Operational
+7900176,Germany,Underwater (mobile),Operational,2025-08-17,2011-12-08,62.087,-10.614,ARGO EQ. UHH:Operational
+7900177,Germany,Underwater (mobile),Closed,2025-08-19,2014-12-22,70.274,8.545,ARGO EQ. UHH:Closed
+7900178,Germany,Underwater (mobile),Operational,2025-08-19,2010-08-20,76.278,3.705,ARGO EQ. UHH:Operational
+7900528,Germany,Underwater (mobile),Operational,2025-08-19,,60.757,-56.104,ARGO BSH:Operational
+7900535,Germany,Underwater (mobile),Operational,2025-11-24,,71.721,6.455,ARGO BSH:Operational
+7900536,Germany,Underwater (mobile),Operational,2025-11-24,,71.893,5.102,ARGO BSH:Operational
+7900537,Germany,Underwater (mobile),Operational,2025-11-24,,63.148,3.614,ARGO BSH:Operational
+7900539,Germany,Underwater (mobile),Closed,2025-08-19,2021-01-31,63.822,8.762,ARGO BSH:Closed
+7900549,Germany,Underwater (mobile),Closed,2025-11-05,2025-11-05,82.221,130.111,ARGO BSH:Closed
+7900550,Germany,Underwater (mobile),Closed,2025-11-05,2025-11-05,81.945,27.389,ARGO BSH:Closed
+7900556,Germany,Underwater (mobile),Operational,2025-08-19,,55.315,-36.611,ARGO BSH:Operational
+7900557,Germany,Underwater (mobile),Closed,2026-03-11,2026-03-11,60.594,-28.847,ARGO BSH:Closed
+7900571,Germany,Underwater (mobile),Operational,2025-11-25,,61.883,-37.676,ARGO BSH:Operational
+7900572,Germany,Underwater (mobile),Operational,2025-11-25,,61.114,-13.093,ARGO BSH:Operational
+7901144,Germany,Underwater (mobile),Operational,2025-11-24,,82.912,86.057,ARGO BSH:Operational
+7902186,Germany,Underwater (mobile),Operational,2026-07-04,,68.281,-15.853,ARGO BSH:Operational
+7902187,Germany,Underwater (mobile),Operational,2026-07-04,,63.135,-8.299,ARGO BSH:Operational
+7902188,Germany,Underwater (mobile),Silent,2026-07-10,,82.873,159.614,ARGO BSH:Non-reporting
+7902189,Germany,Underwater (mobile),Silent,2025-11-25,,82.623,30.765,ARGO BSH:Non-reporting
+7902291,Germany,Underwater (mobile),Operational,2025-11-25,,66.318,-4.943,ARGO BSH:Operational
+7902323,Germany,Underwater (mobile),Operational,2026-08-31,,82.722,87.908,ARGO AWI:Operational
+GPP23MW,Germany,Sea (mobile),Operational,2026-07-07,,69.57,18.79,VOS-DE:Operational
+HFYNWWX,Germany,Sea (mobile),Operational,2025-08-18,,63.26,-83.24,VOS-DE:Operational
+JKFA7QZ,Germany,Sea (mobile),Operational,2026-07-09,,79.7,4.5,VOS-DE:Operational
+PUZA8BS,Germany,Sea (mobile),Operational,2025-08-18,,78.23,15.62,VOS-DE:Operational
+VKNET9X,Germany,Sea (mobile),Closed,2025-08-18,2019-10-10,64.15,-21.86,VOS-DE:Closed
+XBDYVRP,Germany,Sea (mobile),Operational,2025-08-18,,78.99,11.33,VOS-DE:Operational
+XWFA5JQ,Germany,Sea (mobile),Operational,2025-08-18,,61.16,-167.86,VOS-DE:Operational
+XXKURDN,Germany,Sea (mobile),Operational,2025-08-18,,65.92,-52.8,VOS-DE:Operational
+4TLC4MB,Iceland,Sea (mobile),Closed,2025-08-18,2022-02-15,65,-24,VOS-IS:Closed
+PPH9LKT,Iceland,Sea (mobile),Closed,2025-08-18,2022-05-23,64.1,-22.9,VOS-IS:Closed
+ZEV4FYB,Iceland,Sea (mobile),Closed,2025-08-18,2022-05-28,64.1,-22.6,VOS-IS:Closed
+RHVTPPR,India,Sea (mobile),Silent,2025-08-19,,85,156,VOS-IN:Non-reporting
+6900445,Ireland,Underwater (mobile),Closed,2025-08-19,2014-08-18,61.848,-15.209,ARGO IRELAND:Closed
+6900647,Ireland,Underwater (mobile),Operational,2025-08-19,2013-06-24,62.317,-22.335,ARGO IRELAND:Operational
+6900651,Ireland,Underwater (mobile),Closed,2025-08-19,2012-10-14,60.851,-25.584,ARGO IRELAND:Closed
+6900653,Ireland,Underwater (mobile),Closed,2025-08-15,2015-03-01,61.45,-59.343,ARGO IRELAND:Closed
+6900658,Ireland,Underwater (mobile),Closed,2025-08-19,2017-07-15,61.703,-12.321,ARGO IRELAND:Closed
+6901921,Ireland,Underwater (mobile),Silent,2025-08-19,,56.754,-33.656,ARGO IRELAND:Non-reporting
+6901923,Ireland,Underwater (mobile),Closed,2025-08-19,2023-08-09,53.973,-52.642,ARGO IRELAND:Closed
+6901924,Ireland,Underwater (mobile),Silent,2025-11-25,,62.804,-20.501,ARGO IRELAND:Non-reporting
+6901925,Ireland,Underwater (mobile),Silent,2025-11-08,,52.431,-44.292,ARGO IRELAND:Non-reporting
+6901929,Ireland,Underwater (mobile),Silent,2026-10-07,,83.984,64.572,ARGO IRELAND:Non-reporting
+6901930,Ireland,Underwater (mobile),Silent,2025-11-20,,37.443,-53.516,ARGO IRELAND:Non-reporting
+6901933,Ireland,Underwater (mobile),Silent,2025-11-25,,62.678,-28.079,ARGO IRELAND:Non-reporting
+6901934,Ireland,Underwater (mobile),Silent,2025-11-24,,82.866,45.214,ARGO IRELAND:Non-reporting
+6901935,Ireland,Underwater (mobile),Operational,2025-11-24,,64.679,-6.51,ARGO IRELAND:Operational
+6901937,Ireland,Underwater (mobile),Operational,2026-01-13,,59.908,-60.144,ARGO IRELAND:Operational
+6901938,Ireland,Underwater (mobile),Operational,2026-06-19,,60.555,-49.902,ARGO IRELAND:Operational
+6901939,Ireland,Underwater (mobile),Silent,2025-11-25,,67.456,12.27,ARGO IRELAND:Non-reporting
+5907193,Italy,Underwater (mobile),Operational,2025-11-25,,66.622,-2.49,ARGO ITALY:Operational
+2900941,Japan,Underwater (mobile),Closed,2026-01-27,2009-01-23,85.425,151.809,"ARGO EQ. JAMSTEC:Closed, ARGO JAMSTEC:Closed"
+2900942,Japan,Underwater (mobile),Closed,2026-01-27,2009-04-20,86.18,176.683,"ARGO EQ. JAMSTEC:Closed, ARGO JAMSTEC:Closed"
+2901483,Japan,Underwater (mobile),Closed,2026-01-27,2010-08-29,85.049,5.012,"ARGO EQ. JAMSTEC:Closed, ARGO JAMSTEC:Closed"
+2901648,Japan,Underwater (mobile),Closed,2026-01-27,2011-08-26,87.045,-17.626,"ARGO EQ. JAMSTEC:Closed, ARGO JAMSTEC:Closed"
+4900904,Japan,Underwater (mobile),Closed,2026-01-27,2007-01-05,82.662,5.855,"ARGO EQ. JAMSTEC:Closed, ARGO JAMSTEC:Closed"
+6900845,Japan,Underwater (mobile),Closed,2026-01-27,2009-10-13,78.918,-4.738,"ARGO EQ. JAMSTEC:Closed, ARGO JAMSTEC:Closed"
+AWLAU7J,Japan,Sea (mobile),Silent,2026-05-11,,65.9,-168.4,VOS-JP:Non-reporting
+FCY9EWN,Japan,Sea (mobile),Silent,2026-11-10,,72.6,28.2,VOS-JP:Non-reporting
+WKEY8UK,Japan,Sea (mobile),Operational,2026-09-08,,70.6,32.3,VOS-JP:Operational
+XCS4YKQ,Japan,Sea (mobile),Closed,2026-05-11,2016-02-22,60.7,-151.4,VOS-JP:Closed
+XVJSHDE,Japan,Sea (mobile),Operational,2026-11-13,,70.4,174.7,VOS-JP:Operational
+ZNJY6BY,Japan,Sea (mobile),Operational,2026-05-13,,61.6,4.1,VOS-JP:Operational
+5907128,Netherlands,Underwater (mobile),Operational,2026-10-03,,70.787,-19.533,ARGO NETHERLANDS:Operational
+6900384,Netherlands,Underwater (mobile),Closed,2025-08-18,2006-11-20,61.612,-40.088,ARGO NETHERLANDS:Closed
+6900753,Netherlands,Underwater (mobile),Closed,2025-08-19,2013-08-27,62.557,-59.706,ARGO NETHERLANDS:Closed
+6900756,Netherlands,Underwater (mobile),Closed,2025-08-18,2013-08-28,60.124,-40.558,ARGO NETHERLANDS:Closed
+8VBM55D,Netherlands,Sea (mobile),Operational,2025-08-18,,60.33,0.66,VOS-NL:Operational
+9MLGNHM,Netherlands,Sea (mobile),Closed,2025-08-22,2022-08-22,70.3,-25.3,VOS-NL:Closed
+KDWTZ2Y,Netherlands,Sea (mobile),Closed,2026-09-01,2023-09-01,69,-168.6,VOS-NL:Closed
+MPBP5YM,Netherlands,Sea (mobile),Operational,2025-08-18,,78.23,13.85,VOS-NL:Operational
+1902579,Norway,Underwater (mobile),Operational,2025-11-25,,68.684,-12.502,ARGO NORWAY:Operational
+1902602,Norway,Underwater (mobile),Operational,2025-11-25,,64.694,-4.075,ARGO NORWAY:Operational
+1902603,Norway,Underwater (mobile),Silent,2025-11-24,,73.701,-8.134,ARGO NORWAY:Non-reporting
+1902604,Norway,Underwater (mobile),Operational,2025-11-25,,70.796,16.452,ARGO NORWAY:Operational
+1902698,Norway,Underwater (mobile),Silent,2026-09-23,,71.103,12.703,ARGO NORWAY:Non-reporting
+1902899,Norway,Underwater (mobile),Operational,2026-07-29,,72.457,10.049,ARGO NORWAY:Operational
+1902900,Norway,Underwater (mobile),Operational,2026-07-29,,68.615,2.613,ARGO NORWAY:Operational
+1902902,Norway,Underwater (mobile),Operational,2026-11-09,,64.507,-5.113,ARGO NORWAY:Operational
+2903771,Norway,Underwater (mobile),Operational,2025-11-24,,67.399,-10.138,ARGO NORWAY:Operational
+2903794,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,69.768,4.365,ARGO NORWAY:Closed
+2904087,Norway,Underwater (mobile),Operational,2026-08-11,,67.94,-12.6,ARGO NORWAY:Operational
+3901988,Norway,Underwater (mobile),Silent,2022-11-09,,64.712,-11.554,ARGO NORWAY:Non-reporting
+3902462,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,66.521,0.5,ARGO NORWAY:Closed
+3902463,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,72.839,4.176,ARGO NORWAY:Closed
+3902464,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,69.075,-4.431,ARGO NORWAY:Closed
+3902465,Norway,Underwater (mobile),Operational,2025-11-25,,67.725,8.33,ARGO NORWAY:Operational
+3902499,Norway,Underwater (mobile),Operational,2025-11-25,,80.755,39.823,ARGO NORWAY:Operational
+3902814,Norway,Underwater (mobile),Operational,2026-07-29,,72.296,3.729,ARGO NORWAY:Operational
+4903641,Norway,Underwater (mobile),Operational,2026-07-14,,83.761,102.16,ARGO NORWAY:Operational
+4903672,Norway,Underwater (mobile),Operational,2025-11-24,,72.544,-0.183,ARGO NORWAY:Operational
+4903673,Norway,Underwater (mobile),Operational,2025-11-24,,64.037,-5.905,ARGO NORWAY:Operational
+4903674,Norway,Underwater (mobile),Operational,2025-11-24,,70.271,-5.397,ARGO NORWAY:Operational
+5907194,Norway,Underwater (mobile),Operational,2026-01-26,,73.528,-4.09,ARGO NORWAY:Operational
+5907321,Norway,Underwater (mobile),Operational,2026-07-29,,72.418,1.729,ARGO NORWAY:Operational
+6900215,Norway,Underwater (mobile),Operational,2025-08-17,2005-10-22,67.352,-3.321,ARGO NORWAY:Operational
+6900216,Norway,Underwater (mobile),Operational,2025-08-19,2008-09-16,64.997,-8.172,ARGO NORWAY:Operational
+6900217,Norway,Underwater (mobile),Operational,2023-09-11,2005-11-21,63.698,3.377,ARGO NORWAY:Operational
+6900218,Norway,Underwater (mobile),Operational,2025-08-15,2007-07-03,79.246,5.244,ARGO NORWAY:Operational
+6900219,Norway,Underwater (mobile),Operational,2025-08-18,2009-11-30,63.672,-1.874,ARGO NORWAY:Operational
+6900220,Norway,Underwater (mobile),Operational,2025-08-19,2009-03-05,71.154,10.264,ARGO NORWAY:Operational
+6900221,Norway,Underwater (mobile),Operational,2023-09-11,2006-04-19,61.784,-3.012,ARGO NORWAY:Operational
+6900222,Norway,Underwater (mobile),Operational,2025-08-18,2008-06-07,68.03,-3.831,ARGO NORWAY:Operational
+6900223,Norway,Underwater (mobile),Operational,2025-08-19,2006-10-26,73.245,-13.588,ARGO NORWAY:Operational
+6900499,Norway,Underwater (mobile),Closed,2025-08-19,2009-08-09,65.373,2.69,ARGO NORWAY:Closed
+6900500,Norway,Underwater (mobile),Closed,2026-10-22,2012-05-08,69.734,9.764,ARGO NORWAY:Closed
+6900796,Norway,Underwater (mobile),Closed,2025-08-16,2013-01-19,65.064,-1.709,ARGO NORWAY:Closed
+6900797,Norway,Underwater (mobile),Closed,2025-08-19,2012-03-13,67.751,-2.82,ARGO NORWAY:Closed
+6900798,Norway,Underwater (mobile),Closed,2025-08-19,2015-09-13,77.675,-1.998,ARGO NORWAY:Closed
+6900799,Norway,Underwater (mobile),Closed,2025-08-19,2013-09-20,71.147,5.378,ARGO NORWAY:Closed
+6902543,Norway,Underwater (mobile),Closed,2025-08-16,2020-02-02,69.81,-7.373,ARGO NORWAY:Closed
+6902544,Norway,Underwater (mobile),Closed,2025-08-17,2018-04-11,63.185,-3.115,ARGO NORWAY:Closed
+6902545,Norway,Underwater (mobile),Closed,2025-08-19,2020-04-29,68.251,6.878,ARGO NORWAY:Closed
+6902548,Norway,Underwater (mobile),Closed,2025-08-19,2018-02-01,70.486,-2.039,ARGO NORWAY:Closed
+6902549,Norway,Underwater (mobile),Closed,2025-08-16,2018-02-07,70.341,-1.575,ARGO NORWAY:Closed
+6902550,Norway,Underwater (mobile),Silent,2025-08-19,,74.12,-13.907,ARGO NORWAY:Non-reporting
+6903272,Norway,Underwater (mobile),Silent,2025-11-25,,65.275,1.304,ARGO NORWAY:Non-reporting
+6903273,Norway,Underwater (mobile),Closed,2026-07-19,2021-07-19,68.535,5.109,ARGO NORWAY:Closed
+6903274,Norway,Underwater (mobile),Operational,2026-07-07,,72.656,2.415,ARGO NORWAY:Operational
+6903545,Norway,Underwater (mobile),Operational,2025-11-24,,61.14,-29.214,ARGO NORWAY:Operational
+6903546,Norway,Underwater (mobile),Operational,2025-11-24,,66.325,-2.59,ARGO NORWAY:Operational
+6903547,Norway,Underwater (mobile),Operational,2025-11-24,,70.164,-13.045,ARGO NORWAY:Operational
+6903548,Norway,Underwater (mobile),Closed,2025-08-19,2018-12-09,81.549,17.672,ARGO NORWAY:Closed
+6903549,Norway,Underwater (mobile),Closed,2025-08-19,2022-06-14,68.514,-5.673,ARGO NORWAY:Closed
+6903550,Norway,Underwater (mobile),Closed,2026-05-15,2021-05-15,70.915,16.739,ARGO NORWAY:Closed
+6903551,Norway,Underwater (mobile),Silent,2026-01-29,,72.706,-13.322,ARGO NORWAY:Non-reporting
+6903552,Norway,Underwater (mobile),Closed,2026-09-22,2021-09-22,67.854,4.279,ARGO NORWAY:Closed
+6903553,Norway,Underwater (mobile),Silent,2026-02-26,,74.233,7.781,ARGO NORWAY:Non-reporting
+6903554,Norway,Underwater (mobile),Closed,2026-06-13,2021-06-13,65.97,2.533,ARGO NORWAY:Closed
+6903555,Norway,Underwater (mobile),Silent,2025-08-19,,75.15,-5.036,ARGO NORWAY:Non-reporting
+6903556,Norway,Underwater (mobile),Closed,2025-08-19,2023-05-15,66.849,-1.656,ARGO NORWAY:Closed
+6903557,Norway,Underwater (mobile),Silent,2025-11-24,,64.688,-6.394,ARGO NORWAY:Non-reporting
+6903558,Norway,Underwater (mobile),Silent,2025-11-24,,70.773,-4.851,ARGO NORWAY:Non-reporting
+6903559,Norway,Underwater (mobile),Operational,2026-08-10,,80.768,13.363,ARGO NORWAY:Operational
+6903560,Norway,Underwater (mobile),Operational,2025-11-24,,64.025,-6.571,ARGO NORWAY:Operational
+6903561,Norway,Underwater (mobile),Operational,2025-11-24,,77.24,0.524,ARGO NORWAY:Operational
+6903562,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,74.033,4.877,ARGO NORWAY:Closed
+6903563,Norway,Underwater (mobile),Operational,2025-11-24,,71.728,14.286,ARGO NORWAY:Operational
+6903564,Norway,Underwater (mobile),Silent,2025-11-24,,82.24,79.054,ARGO NORWAY:Non-reporting
+6903565,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,74.134,33.246,ARGO NORWAY:Closed
+6903566,Norway,Underwater (mobile),Operational,2025-11-25,,73.842,4.01,ARGO NORWAY:Operational
+6903567,Norway,Underwater (mobile),Silent,2025-11-24,,77.064,4.183,ARGO NORWAY:Non-reporting
+6903568,Norway,Underwater (mobile),Closed,2026-08-06,2021-08-06,69.555,5.383,ARGO NORWAY:Closed
+6903569,Norway,Underwater (mobile),Silent,2025-11-24,,67.624,-6.002,ARGO NORWAY:Non-reporting
+6903570,Norway,Underwater (mobile),Silent,2025-11-25,,69.706,14.329,ARGO NORWAY:Non-reporting
+6903571,Norway,Underwater (mobile),Silent,2025-11-24,,72.92,5.385,ARGO NORWAY:Non-reporting
+6903572,Norway,Underwater (mobile),Silent,2025-11-25,,72.593,6.592,ARGO NORWAY:Non-reporting
+6903573,Norway,Underwater (mobile),Silent,2025-11-25,,71.896,-3.956,ARGO NORWAY:Non-reporting
+6903574,Norway,Underwater (mobile),Closed,2025-08-18,2023-05-19,67.229,-4.238,ARGO NORWAY:Closed
+6903575,Norway,Underwater (mobile),Silent,2025-11-25,,65.943,-5.885,ARGO NORWAY:Non-reporting
+6903576,Norway,Underwater (mobile),Silent,2025-11-24,,73.172,-14.006,ARGO NORWAY:Non-reporting
+6903577,Norway,Underwater (mobile),Silent,2025-11-25,,70.152,8.47,ARGO NORWAY:Non-reporting
+6903578,Norway,Underwater (mobile),Silent,2025-11-25,,70.227,11.23,ARGO NORWAY:Non-reporting
+6903580,Norway,Underwater (mobile),Silent,2025-11-25,,70.921,-11.318,ARGO NORWAY:Non-reporting
+6903581,Norway,Underwater (mobile),Silent,2025-11-25,,77.956,69.676,ARGO NORWAY:Non-reporting
+6903582,Norway,Underwater (mobile),Operational,2025-11-25,,71.328,8.96,ARGO NORWAY:Operational
+6903583,Norway,Underwater (mobile),Silent,2025-11-24,,83.684,49.102,ARGO NORWAY:Non-reporting
+6903584,Norway,Underwater (mobile),Operational,2025-11-25,,63.71,-2.808,ARGO NORWAY:Operational
+6903585,Norway,Underwater (mobile),Operational,2025-11-25,,64.867,-1.943,ARGO NORWAY:Operational
+6903586,Norway,Underwater (mobile),Operational,2025-11-25,,68.527,2.461,ARGO NORWAY:Operational
+6903587,Norway,Underwater (mobile),Silent,2025-11-25,,80.508,104.344,ARGO NORWAY:Non-reporting
+6903588,Norway,Underwater (mobile),Operational,2025-11-24,,78.767,141.687,ARGO NORWAY:Operational
+6903589,Norway,Underwater (mobile),Silent,2026-10-02,,79.192,136.918,ARGO NORWAY:Non-reporting
+6903590,Norway,Underwater (mobile),Silent,2025-11-25,,64.813,-7.933,ARGO NORWAY:Non-reporting
+6903591,Norway,Underwater (mobile),Silent,2025-11-25,,66.406,-3.651,ARGO NORWAY:Non-reporting
+6903592,Norway,Underwater (mobile),Silent,2026-05-21,,75.122,8.714,ARGO NORWAY:Non-reporting
+6904242,Norway,Underwater (mobile),Operational,2025-11-24,,74.848,3.673,ARGO NORWAY:Operational
+6990530,Norway,Underwater (mobile),Operational,2025-11-24,,74.409,2.063,ARGO NORWAY:Operational
+6990531,Norway,Underwater (mobile),Silent,2026-04-21,,78.749,-0.196,ARGO NORWAY:Non-reporting
+6990532,Norway,Underwater (mobile),Operational,2025-11-25,,78.819,70.996,ARGO NORWAY:Operational
+6990638,Norway,Underwater (mobile),Silent,2026-05-13,,78.649,-1.977,ARGO NORWAY:Non-reporting
+6MZLALT,Norway,Sea (mobile),Closed,2025-08-18,2021-11-05,63.1,6.7,VOS-NO:Closed
+7901006,Norway,Underwater (mobile),Silent,2026-03-09,,67.395,-12.783,ARGO NORWAY:Non-reporting
+7901007,Norway,Underwater (mobile),Operational,2025-11-24,,77.98,52.063,ARGO NORWAY:Operational
+7901028,Norway,Underwater (mobile),Closed,2026-04-03,2026-04-03,69.536,14.55,ARGO NORWAY:Closed
+7902203,Norway,Underwater (mobile),Operational,2025-11-25,,65.349,-7.222,ARGO NORWAY:Operational
+7902284,Norway,Underwater (mobile),Silent,2026-07-16,,81.921,29.605,ARGO NORWAY:Non-reporting
+7FTKJ5Y,Norway,Sea (mobile),Operational,2025-08-18,,71.39,18.49,VOS-NO:Operational
+9ELQHTH,Norway,Sea (mobile),Closed,2025-08-18,2022-07-29,61.79,4.69,VOS-NO:Closed
+FPY7SXL,Norway,Sea (mobile),Closed,2026-04-18,2023-04-18,60.4,5.32,VOS-NO:Closed
+VNQTB8V,Norway,Sea (mobile),Operational,2026-07-06,,66.03,8.09,VOS-NO:Operational
+3901850,Poland,Underwater (mobile),Silent,2025-11-25,,71.295,12.19,"ARGO POLAND:Non-reporting, MOCCA-POL:Non-reporting"
+3901851,Poland,Underwater (mobile),Silent,2025-09-30,,33.689,-59.295,"ARGO POLAND:Non-reporting, MOCCA-POL:Non-reporting"
+3901910,Poland,Underwater (mobile),Closed,2025-09-30,2018-12-14,82.227,39.626,"ARGO POLAND:Closed, MOCCA-POL:Closed"
+3901911,Poland,Underwater (mobile),Silent,2025-11-25,,68.852,9.745,"ARGO POLAND:Non-reporting, MOCCA-POL:Non-reporting"
+3902102,Poland,Underwater (mobile),Operational,2025-11-24,,69.814,3.769,ARGO POLAND:Operational
+3902103,Poland,Underwater (mobile),Silent,2025-11-24,,77.283,-11.92,ARGO POLAND:Non-reporting
+3902105,Poland,Underwater (mobile),Silent,2025-08-19,,81.242,43.704,ARGO POLAND:Non-reporting
+3902107,Poland,Underwater (mobile),Silent,2025-11-30,,81.837,35.749,ARGO POLAND:Non-reporting
+3902108,Poland,Underwater (mobile),Closed,2026-10-26,2021-10-24,82.263,33.161,ARGO POLAND:Closed
+3902111,Poland,Underwater (mobile),Silent,2025-11-24,,80.899,52.202,ARGO POLAND:Non-reporting
+3902112,Poland,Underwater (mobile),Silent,2025-11-24,,77.674,123.444,ARGO POLAND:Non-reporting
+3902113,Poland,Underwater (mobile),Closed,2025-08-19,2021-10-06,76.171,18.229,ARGO POLAND:Closed
+3902114,Poland,Underwater (mobile),Operational,2025-11-25,,74.035,12.73,ARGO POLAND:Operational
+3902116,Poland,Underwater (mobile),Operational,2025-11-25,,79.84,4.687,ARGO POLAND:Operational
+3902118,Poland,Underwater (mobile),Operational,2025-11-24,,81.926,100.164,ARGO POLAND:Operational
+3902119,Poland,Underwater (mobile),Silent,2026-04-18,,72.267,-12.586,ARGO POLAND:Non-reporting
+3902664,Poland,Underwater (mobile),Operational,2025-11-24,,75.532,9.084,ARGO POLAND:Operational
+5907173,Poland,Underwater (mobile),Operational,2026-11-09,,81.888,13.262,ARGO POLAND:Operational
+6900808,Poland,Underwater (mobile),Closed,2025-08-19,2010-02-11,77.517,-3.43,ARGO POLAND:Closed
+6901902,Poland,Underwater (mobile),Closed,2025-08-15,2012-12-17,79.91,7.462,ARGO POLAND:Closed
+6902038,Poland,Underwater (mobile),Closed,2025-08-19,2017-02-25,75,-2.611,ARGO POLAND:Closed
+6902039,Poland,Underwater (mobile),Closed,2025-08-19,2017-02-07,67.023,-7.15,ARGO POLAND:Closed
+6902040,Poland,Underwater (mobile),Closed,2025-08-19,2016-12-14,70.064,13.812,ARGO POLAND:Closed
+7902195,Poland,Underwater (mobile),Silent,2025-11-25,,76.975,-3.863,ARGO POLAND:Non-reporting
+7902196,Poland,Underwater (mobile),Operational,2025-11-25,,72.966,9.059,ARGO POLAND:Operational
+7902197,Poland,Underwater (mobile),Silent,2026-09-22,,80.432,109.593,ARGO POLAND:Non-reporting
+2501661_100-2501661,Russian Federation,Sea (mobile),Closed,2025-08-18,2020-01-06,76.999,-6.312,"AARI-USIABP:Closed, IABP US:Closed"
+2601623_100-2601623,Russian Federation,Sea (mobile),Closed,2025-08-18,2020-03-04,73.158,23.231,"AARI-USIABP:Closed, IABP US:Closed"
+2LY6FKR,Russian Federation,Sea (mobile),Silent,2026-05-12,,72.3,24.4,VOS-RU:Non-reporting
+4SLGHSJ,Russian Federation,Sea (mobile),Silent,2025-08-18,,73.6,37.8,VOS-RU:Non-reporting
+5ZQCA7C,Russian Federation,Sea (mobile),Operational,2026-05-27,,68.3,43.9,VOS-RU:Operational
+6UFJFVL,Russian Federation,Sea (mobile),Operational,2026-10-15,,71.2,35.2,VOS-RU:Operational
+BHMXU4J,Russian Federation,Sea (mobile),Operational,2026-11-17,,78,14.2,VOS-RU:Operational
+DRJUMEL,Russian Federation,Sea (mobile),Silent,2025-09-13,,66.2,40.3,VOS-RU:Non-reporting
+GJXAB7J,Russian Federation,Sea (mobile),Silent,2026-05-12,,73,31.3,VOS-RU:Non-reporting
+JEQJJAW,Russian Federation,Sea (mobile),Silent,2025-08-18,,68.2,42.2,VOS-RU:Non-reporting
+JGMRXSS,Russian Federation,Sea (mobile),Silent,2026-04-16,,70,34.2,VOS-RU:Non-reporting
+JUPX2RU,Russian Federation,Sea (mobile),Closed,2025-08-18,2022-01-06,70.5,50.3,VOS-RU:Closed
+KZX6LVD,Russian Federation,Sea (mobile),Operational,2026-09-25,,66.2,2.5,VOS-RU:Operational
+LPP2QBH,Russian Federation,Sea (mobile),Operational,2026-10-27,,71,168.9,VOS-RU:Operational
+LVDUYGE,Russian Federation,Sea (mobile),Silent,2026-10-15,,69.3,32.9,VOS-RU:Non-reporting
+RPFSSGW,Russian Federation,Sea (mobile),Operational,2026-05-29,,69.1,36.4,VOS-RU:Operational
+XBNS4NG,Russian Federation,Sea (mobile),Silent,2025-08-18,,69.3,32.8,VOS-RU:Non-reporting
+ZFNN88K,Russian Federation,Sea (mobile),Silent,2026-09-16,,69,40.5,VOS-RU:Non-reporting
+ZNLDSMF,Russian Federation,Sea (mobile),Closed,2026-02-10,2023-02-10,71.7,64.9,VOS-RU:Closed
+1902903,Spain,Underwater (mobile),Operational,2026-08-19,,64.604,-33.107,ARGO SPAIN:Operational
+2904138,Spain,Underwater (mobile),Operational,2026-08-19,,63.266,-38.361,ARGO SPAIN:Operational
+5907324,Spain,Underwater (mobile),Operational,2026-08-19,,67.463,-31.354,ARGO SPAIN:Operational
+6900761,Spain,Underwater (mobile),Closed,2025-08-17,2014-11-06,63.308,-15.197,ARGO SPAIN:Closed
+6901269,Spain,Underwater (mobile),Silent,2025-11-25,,60.001,-27.104,ARGO SPAIN:Non-reporting
+2HFRJ4M,Sweden,Sea (mobile),Operational,2026-08-29,,65.6,22.2,VOS-SE:Operational
+GADJHTY,Sweden,Sea (mobile),Operational,2026-08-26,,65.6,22.2,VOS-SE:Operational
+PFQBNEV,Sweden,Sea (mobile),Operational,2025-08-18,,89.7,-124.9,VOS-SE:Operational
+1902109,United Kingdom (the),Underwater (mobile),Silent,2026-05-26,,61.564,-53.112,ARGO UK:Non-reporting
+1902112,United Kingdom (the),Underwater (mobile),Operational,2025-11-25,,60.803,-58.483,ARGO UK:Operational
+2901932,United Kingdom (the),Underwater (mobile),Operational,2026-05-16,,66.747,-33.742,ARGO UK BIO:Operational
+2901948,United Kingdom (the),Underwater (mobile),Operational,2026-11-09,,60.246,-48.74,ARGO UK:Operational
+2901949,United Kingdom (the),Underwater (mobile),Operational,2026-09-17,,73.748,20.984,ARGO UK:Operational
+2901950,United Kingdom (the),Underwater (mobile),Operational,2026-10-02,,76.206,17.956,ARGO UK:Operational
+2901951,United Kingdom (the),Underwater (mobile),Operational,2026-09-18,,72.201,21.118,ARGO UK:Operational
+2901952,United Kingdom (the),Underwater (mobile),Operational,2026-10-24,,60.742,-49.337,ARGO UK:Operational
+2901953,United Kingdom (the),Underwater (mobile),Operational,2026-08-25,,66.938,-28.759,ARGO UK:Operational
+2903020,United Kingdom (the),Underwater (mobile),Operational,2026-09-06,,75.359,-8.487,ARGO UK EQ.:Operational
+2903021,United Kingdom (the),Underwater (mobile),Operational,2026-09-06,,77.201,-0.162,ARGO UK EQ.:Operational
+3901581,United Kingdom (the),Underwater (mobile),Silent,2026-03-10,,62.702,-28.623,ARGO UK BIO:Non-reporting
+3901586,United Kingdom (the),Underwater (mobile),Operational,2025-11-25,,64.505,-29.226,ARGO UK BIO:Operational
+4900064,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2003-06-29,61.955,-55.837,ARGO UK:Closed
+4900065,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2002-01-16,63.778,-29.058,ARGO UK:Closed
+4900066,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2014-11-07,64.048,-28.442,ARGO UK:Closed
+4903663,United Kingdom (the),Underwater (mobile),Operational,2025-08-19,,62.307,-59.471,ARGO UK:Operational
+4ANFBRL,United Kingdom (the),Sea (mobile),Closed,2026-01-12,2026-01-12,60.25,-33.42,VOS-GB:Closed
+5906983,United Kingdom (the),Underwater (mobile),Operational,2026-03-14,,62.339,-1.064,ARGO UK:Operational
+5906984,United Kingdom (the),Underwater (mobile),Operational,2025-11-25,,61.406,-55.161,ARGO UK:Operational
+6301642,United Kingdom (the),Sea (mobile),Operational,2026-10-07,,77.708,10.184,UK-MO DB:Operational
+6301643,United Kingdom (the),Sea (mobile),Operational,2026-10-13,,73.645,-8.6,UK-MO DB:Operational
+6301644,United Kingdom (the),Sea (mobile),Operational,2026-10-13,,72.564,14.312,UK-MO DB:Operational
+6301645,United Kingdom (the),Sea (mobile),Silent,2026-10-31,,73.641,-16.498,UK-MO DB:Non-reporting
+6301647,United Kingdom (the),Sea (mobile),Operational,2026-10-13,,69.531,41.402,UK-MO DB:Operational
+6301648,United Kingdom (the),Sea (on ice),Operational,2026-10-13,,85.605,23.183,UK-MO DB:Operational
+6301649,United Kingdom (the),Sea (on ice),Operational,2026-10-13,,86,12.068,UK-MO DB:Operational
+6401765,United Kingdom (the),Sea (on ice),Operational,2026-10-13,,86.018,8.748,UK-MO DB:Operational
+6900081,United Kingdom (the),Underwater (mobile),Closed,2001-05-10,2003-09-18,60.51,-18.318,ARGO UK:Closed
+6900082,United Kingdom (the),Underwater (mobile),Closed,2024-10-22,2003-04-05,64.388,-33.796,ARGO UK EQ.:Closed
+6900083,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2002-09-28,63.079,-37.98,ARGO UK EQ.:Closed
+6900084,United Kingdom (the),Underwater (mobile),Operational,2025-08-18,2002-08-13,61.832,-37.07,ARGO UK EQ.:Operational
+6900086,United Kingdom (the),Underwater (mobile),Operational,2025-08-16,2002-07-27,61.269,-39.725,ARGO UK EQ.:Operational
+6900192,United Kingdom (the),Underwater (mobile),Closed,2002-06-03,2004-11-19,67.692,3.225,ARGO UK:Closed
+6900193,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2005-02-13,64.306,-6.41,ARGO UK:Closed
+6900194,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2004-06-20,67.536,-0.618,ARGO UK:Closed
+6900195,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2005-01-11,70.212,3.817,ARGO UK:Closed
+6900196,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2005-01-12,65.69,4.728,ARGO UK:Closed
+6900198,United Kingdom (the),Underwater (mobile),Operational,2025-08-14,2003-01-31,61.684,-61.784,ARGO UK:Operational
+6900199,United Kingdom (the),Underwater (mobile),Operational,2025-08-18,2002-11-20,62.998,-35.722,ARGO UK:Operational
+6900202,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2003-04-10,71.634,-15.9,ARGO UK EQ.:Closed
+6900448,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2018-08-09,60.535,-38.984,ARGO UK:Closed
+6900603,United Kingdom (the),Underwater (mobile),Closed,2025-08-17,2013-08-12,60.252,-37.044,ARGO UK:Closed
+6900605,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2010-08-17,62.28,-60.422,ARGO UK:Closed
+6900606,United Kingdom (the),Underwater (mobile),Closed,2025-08-15,2011-03-08,67.235,-57.135,ARGO UK:Closed
+6900609,United Kingdom (the),Underwater (mobile),Closed,2007-09-26,2009-02-27,74.614,-7.84,ARGO UK:Closed
+6900612,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2009-04-30,69.106,-58.105,ARGO UK:Closed
+6900615,United Kingdom (the),Underwater (mobile),Operational,2025-08-19,2012-05-25,62.914,-40.89,ARGO UK:Operational
+6900618,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2014-02-17,62.788,-27.957,ARGO UK:Closed
+6901125,United Kingdom (the),Underwater (mobile),Closed,2025-08-17,2016-01-10,80.604,2.413,ARGO UK:Closed
+6901126,United Kingdom (the),Underwater (mobile),Closed,2025-08-16,2016-04-09,78.253,-1.041,ARGO UK:Closed
+6901127,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2017-11-22,72.915,0.519,ARGO UK:Closed
+6901128,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2017-12-10,70.001,2.634,ARGO UK:Closed
+6901129,United Kingdom (the),Underwater (mobile),Silent,2025-08-19,,67.546,-21.989,ARGO UK:Non-reporting
+6901130,United Kingdom (the),Underwater (mobile),Closed,2025-08-17,2018-02-15,76.209,4.281,ARGO UK:Closed
+6901131,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2018-01-19,73.655,-6.815,ARGO UK:Closed
+6901132,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2018-03-11,70.87,0.953,ARGO UK:Closed
+6901135,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2014-09-13,64.872,-34.163,ARGO UK:Closed
+6901136,United Kingdom (the),Underwater (mobile),Closed,2025-08-16,2014-09-14,62.467,-52.268,ARGO UK:Closed
+6901137,United Kingdom (the),Underwater (mobile),Closed,2023-08-01,2018-08-02,67.761,-4.079,ARGO UK:Closed
+6901138,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2017-01-11,71.895,9.408,ARGO UK:Closed
+6901139,United Kingdom (the),Underwater (mobile),Closed,2025-08-16,2015-12-13,65.465,-2.57,ARGO UK:Closed
+6901140,United Kingdom (the),Underwater (mobile),Closed,2025-08-17,2016-03-16,72.562,4.898,ARGO UK:Closed
+6901141,United Kingdom (the),Underwater (mobile),Closed,2025-08-19,2017-12-10,72.415,10.58,ARGO UK:Closed
+6901148,United Kingdom (the),Underwater (mobile),Closed,2025-09-25,2020-09-25,59.776,-17.049,ARGO UK:Closed
+6901157,United Kingdom (the),Underwater (mobile),Closed,2025-08-16,2016-11-14,66.665,-6.896,ARGO UK:Closed
+6901158,United Kingdom (the),Underwater (mobile),Closed,2013-11-17,2016-11-16,67.832,-4.268,ARGO UK:Closed
+6901159,United Kingdom (the),Underwater (mobile),Closed,2025-08-18,2017-01-21,70.061,9.769,ARGO UK:Closed
+6901166,United Kingdom (the),Underwater (mobile),Silent,2025-08-19,,54.742,-35.51,ARGO UK:Non-reporting
+6901171,United Kingdom (the),Underwater (mobile),Silent,2025-11-25,,63.034,-32.048,ARGO UK:Non-reporting
+6901177,United Kingdom (the),Underwater (mobile),Silent,2025-11-25,,62.884,-28.224,ARGO UK:Non-reporting
+6901179,United Kingdom (the),Underwater (mobile),Closed,2024-02-20,2017-12-02,61.287,-27.572,ARGO UK:Closed
+6901194,United Kingdom (the),Underwater (mobile),Silent,2025-08-18,,43.196,-58.658,ARGO UK:Non-reporting
+6901199,United Kingdom (the),Underwater (mobile),Silent,2025-08-19,,50.371,-32.612,ARGO UK:Non-reporting
+6901200,United Kingdom (the),Underwater (mobile),Silent,2025-08-19,,46.193,-40.66,ARGO UK:Non-reporting
+6901201,United Kingdom (the),Underwater (mobile),Silent,2025-11-25,,62.994,-17.863,ARGO UK:Non-reporting
+6901202,United Kingdom (the),Underwater (mobile),Silent,2025-08-19,,47.071,-31.509,ARGO UK:Non-reporting
+6901207,United Kingdom (the),Underwater (mobile),Closed,2026-01-22,2021-01-22,48.136,-47.621,ARGO UK:Closed
+6903724,United Kingdom (the),Underwater (mobile),Silent,2025-11-25,,60.828,-21.517,ARGO UK:Non-reporting
+6903726,United Kingdom (the),Underwater (mobile),Silent,2025-11-25,,62.116,-39.529,ARGO UK:Non-reporting
+6903760,United Kingdom (the),Underwater (mobile),Silent,2025-12-23,,67.884,4.132,ARGO UK:Non-reporting
+6904185,United Kingdom (the),Underwater (mobile),Silent,2025-11-25,,60.314,-46.888,ARGO UK BIO:Non-reporting
+DWEFBFY,United Kingdom (the),Sea (mobile),Operational,2026-10-19,,60.7,-2.4,VOS-GB:Operational
+EECHNAZ,United Kingdom (the),Sea (mobile),Operational,2026-03-31,,60.1,-1.1,VOS-GB:Operational
+FUK42BM,United Kingdom (the),Sea (mobile),Silent,2026-08-18,,60.9,1.7,VOS-GB:Non-reporting
+PFBRGQH,United Kingdom (the),Sea (mobile),Operational,2026-03-07,,61.5,1.2,VOS-GB:Operational
+WLZ9WHS,United Kingdom (the),Sea (mobile),Operational,2025-08-18,,79.6,14.1,VOS-GB:Operational
+WUKJN8R,United Kingdom (the),Sea (mobile),Operational,2026-05-26,,60.5,4.2,VOS-GB:Operational
+1301793,United States (the),Sea (mobile),Silent,2025-08-18,,61.472,-4.517,"E-SURFMAR, GDP-ESURFMAR, SIO-DB:Closed"
+1801803,United States (the),Sea (mobile),Closed,2025-08-18,2024-09-07,61.59,-6.723,Global Drifter Program (GDP):Closed
+1902304,United States (the),Underwater (mobile),Operational,2025-11-25,,60.867,-12.568,"ARGO PMEL:Operational, ARGO WHOI:Non-reporting"
+1902699,United States (the),Underwater (mobile),Silent,2025-11-25,,74.702,-144.954,ARGO WHOI:Non-reporting
+1902797,United States (the),Underwater (mobile),Silent,2025-11-25,,74.24,-138.024,ARGO WHOI:Non-reporting
+1902875,United States (the),Underwater (mobile),Silent,2026-11-02,,73.666,-151.506,ARGO SIO:Non-reporting
+2101547_100,United States (the),Sea (mobile),Closed,2025-08-18,2019-08-21,60.296,171.317,SIO-DB:Closed
+2101587_100-2101587,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-05,61.8,176.67,"AOML:Closed, SIO-DB:Closed"
+2101838,United States (the),Sea (mobile),Closed,2025-08-18,2025-01-27,60.181,-147.127,SIO-DB:Closed
+2101861,United States (the),Sea (mobile),Closed,2025-08-18,2023-12-26,61.964,-179.677,SIO-DB:Closed
+2501547,United States (the),Sea (on ice),Closed,2026-05-27,2026-02-25,79.693,-3.795,IABP US:Closed
+2501548,United States (the),Sea (on ice),Closed,2025-08-18,2024-12-15,85.184,141.026,IABP US:Closed
+2501549,United States (the),Sea (on ice),Silent,2026-11-14,,80.304,2.354,IABP US:Non-reporting
+2501550,United States (the),Sea (on ice),Closed,2025-08-18,2025-04-13,82.282,178.204,IABP US:Closed
+2501551,United States (the),Sea (on ice),Closed,2026-01-20,2025-10-21,85.232,-147.95,IABP US:Closed
+2501552,United States (the),Sea (on ice),Closed,2026-04-07,2026-01-06,81.602,-133.964,IABP US:Closed
+2501553,United States (the),Sea (on ice),Operational,2025-08-18,,81.926,-146.018,IABP US:Operational
+2501554,United States (the),Sea (on ice),Closed,2025-08-18,2025-02-10,76.409,-179.477,IABP US:Closed
+2501555,United States (the),Sea (on ice),Closed,2025-08-18,2024-12-29,75.621,168.581,IABP US:Closed
+2501556,United States (the),Sea (on ice),Closed,2026-03-16,2025-12-15,75.011,161.508,IABP US:Closed
+2501557,United States (the),Sea (on ice),Operational,2025-08-18,,76.734,164.135,IABP US:Operational
+2501559,United States (the),Sea (on ice),Closed,2026-08-09,2026-05-10,80.178,-161.821,IABP US:Closed
+2501575,United States (the),Sea (on ice),Closed,2025-08-18,2025-01-13,71.84,-177.656,IABP US:Closed
+2501576,United States (the),Sea (on ice),Closed,2025-08-18,2025-03-06,70.671,172.049,IABP US:Closed
+2501577,United States (the),Sea (on ice),Silent,2025-08-18,,75.08,-148.922,IABP US:Non-reporting
+2501578,United States (the),Sea (on ice),Silent,2025-08-18,,75.204,-148.951,IABP US:Non-reporting
+2501579,United States (the),Sea (on ice),Closed,2026-04-18,2026-01-16,68.39,-170.69,IABP US:Closed
+2501580,United States (the),Sea (on ice),Closed,2025-11-26,2025-08-27,78.483,-140.852,IABP US:Closed
+2501581,United States (the),Sea (on ice),Silent,2026-11-15,,76.206,-135.358,IABP US:Non-reporting
+2501582,United States (the),Sea (on ice),Operational,2025-08-18,,80.607,-144.455,IABP US:Operational
+2501583,United States (the),Sea (on ice),Operational,2025-08-18,,78.257,-140.42,IABP US:Operational
+2501584,United States (the),Sea (on ice),Operational,2025-08-18,,73.261,-135.878,IABP US:Operational
+2501585,United States (the),Sea (on ice),Closed,2025-09-03,2025-06-04,70.931,-174.28,IABP US:Closed
+2501586,United States (the),Sea (on ice),Operational,2025-08-18,,76.372,-150.917,IABP US:Operational
+2501587,United States (the),Sea (on ice),Silent,2026-11-09,,77.543,-131.256,IABP US:Non-reporting
+2501588,United States (the),Sea (on ice),Operational,2025-08-18,,76.175,-168.501,IABP US:Operational
+2501589,United States (the),Sea (on ice),Closed,2025-12-29,2025-09-29,70.184,177.511,IABP US:Closed
+2501641_100-2501641,United States (the),Sea (on ice),Closed,2025-08-18,2019-12-26,86.298,-15.035,IABP US:Closed
+2501643_100-2501643,United States (the),Sea (on ice),Closed,2025-08-18,2020-05-14,73.76,-3.164,IABP US:Closed
+2501644_100-2501644,United States (the),Sea (on ice),Closed,2025-08-18,2020-05-27,72.577,-8.983,IABP US:Closed
+2501645_100-2501645,United States (the),Sea (on ice),Closed,2025-08-18,2020-04-03,82.19,-7.231,IABP US:Closed
+2501647_100-2501647,United States (the),Sea (on ice),Closed,2025-08-18,2020-08-15,68.211,-27.467,IABP US:Closed
+2501651_100-2501651,United States (the),Sea (on ice),Closed,2025-08-18,2020-03-14,85.056,-26.315,IABP US:Closed
+2501653_100-2501653,United States (the),Sea (on ice),Closed,2025-08-18,2020-02-16,85.012,-16.513,IABP US:Closed
+2600570_100-2600570,United States (the),Sea (mobile),Closed,2025-08-18,2020-05-13,84.762,10.277,IABP US:Closed
+2601504_100-2601504,United States (the),Sea (on ice),Closed,2025-08-18,2020-10-07,80.129,-3.057,IABP:Closed
+2601505_100-2601505,United States (the),Sea (on ice),Closed,2025-08-18,2020-09-22,77.822,-7.003,IABP:Closed
+2601506_100-2601506,United States (the),Sea (on ice),Closed,2025-08-18,2020-02-18,87.684,89.045,IABP:Closed
+2601507_100-2601507,United States (the),Sea (on ice),Closed,2025-08-18,2021-02-13,86.471,26.619,IABP:Closed
+2601508_100-2601508,United States (the),Sea (on ice),Closed,2025-08-18,2020-12-02,74.05,-10.397,IABP:Closed
+2601509_100-2601509,United States (the),Sea (on ice),Closed,2025-08-18,2020-10-13,77.156,-8.538,IABP:Closed
+2801985,United States (the),Sea (mobile),Operational,2022-02-07,,61.722,-16.675,"E-SURFMAR:Operational, Global Drifter Program (GDP):Operational"
+2801986,United States (the),Sea (mobile),Operational,2022-02-09,,61.359,-11.379,"E-SURFMAR:Operational, Global Drifter Program (GDP):Operational"
+2802008,United States (the),Sea (mobile),Operational,2025-08-18,,65.086,-39.937,"Global Drifter Program (GDP):Operational, SIO-DB:Non-reporting"
+2802100,United States (the),Sea (mobile),Operational,2025-08-18,,65.6,-4.645,Global Drifter Program (GDP):Operational
+2901467,United States (the),Underwater (mobile),Closed,2026-02-27,2015-04-03,63.254,2.193,ARGO EQ. NAVOCEANO:Closed
+2903449,United States (the),Underwater (mobile),Silent,2026-11-14,,70.862,-53.277,ARGO WHOI:Non-reporting
+2HXXJLH,United States (the),Sea (mobile),Silent,2025-08-18,,75,14.1,VOS-US:Non-reporting
+3801586,United States (the),Sea (mobile),Silent,2025-08-18,,78.736,1.098,"E-SURFMAR, GDP-ESURFMAR, SIO-DB:Closed"
+3801616,United States (the),Sea (mobile),Silent,2025-08-18,,61.867,-42.114,"Global Drifter Program (GDP):Closed, SIO-DB:Non-reporting"
+3801722,United States (the),Sea (mobile),Operational,2025-08-18,,60.802,-147.716,Global Drifter Program (GDP):Operational
+3902259,United States (the),Underwater (mobile),Operational,2026-03-02,,62.99,-24.008,ARGO UW:Operational
+3902593,United States (the),Underwater (mobile),Silent,2025-11-25,,74.46,-145.489,ARGO WHOI:Non-reporting
+4101610_100-4101610,United States (the),Sea (mobile),Closed,2025-08-18,2020-09-07,68.212,3.144,"AOML:Closed, SIO-DB:Closed"
+4101652_101,United States (the),Sea (mobile),Closed,2025-08-18,2022-01-08,66.128,-25.877,SIO-DB:Closed
+4101654_100,United States (the),Sea (mobile),Silent,2025-08-18,2022-09-28,72.312,14.966,"E-SURFMAR, SIO-DB:Closed"
+4101661_100-4101661,United States (the),Sea (mobile),Silent,2025-08-18,2021-07-21,69.617,39.463,"AOML:Non-reporting, SIO-DB:Closed"
+4101662_100-4101662,United States (the),Sea (mobile),Operational,2025-08-18,,78.411,43.248,"AOML:Operational, SIO-DB:Closed"
+4101663_100-4101663,United States (the),Sea (mobile),Operational,2025-08-18,,31.606,-29.776,"AOML:Operational, E-SURFMAR, GDP-ESURFMAR, SIO-DB:Closed"
+4101665,United States (the),Sea (mobile),Operational,2025-12-05,,70.677,23.638,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Non-reporting"
+4101842,United States (the),Sea (mobile),Silent,2025-08-18,,68.968,15.862,"E-SURFMAR, GDP-ESURFMAR, SIO-DB:Closed"
+4101843,United States (the),Sea (mobile),Operational,2025-08-18,,69.209,-24.884,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Closed"
+4101845,United States (the),Sea (mobile),Operational,2025-08-18,,75.699,42.772,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Operational"
+4401549_100-4401549,United States (the),Sea (mobile),Closed,2022-03-16,2019-08-29,66.317,12.939,"AOML:Closed, OceanSITES:Closed, SIO-DB:Closed"
+4401750_100-4401750,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-18,65.521,-2.615,"AOML:Closed, SIO-DB:Closed"
+4401751_100-4401751,United States (the),Sea (mobile),Silent,2025-08-18,2021-07-21,70.784,23.194,"AOML:Non-reporting, SIO-DB:Closed"
+4401752_100-4401752,United States (the),Sea (mobile),Closed,2025-08-18,2018-04-30,63.794,-39.359,"AOML:Closed, SIO-DB:Closed"
+4401753_100-4401753,United States (the),Sea (mobile),Closed,2025-08-18,2020-03-15,71.767,13.431,"AOML:Closed, SIO-DB:Closed"
+4401755_100-4401755,United States (the),Sea (mobile),Closed,2025-08-18,2019-11-12,74.118,45.065,"AOML:Closed, SIO-DB:Closed"
+4401756_100-4401756,United States (the),Sea (mobile),Closed,2025-08-18,2020-08-12,63.881,4.734,"AOML:Closed, SIO-DB:Closed"
+4401757_100-4401757,United States (the),Sea (mobile),Closed,2025-08-18,2018-09-25,70.273,-2.798,"AOML:Closed, SIO-DB:Closed"
+4401768_100-4401768,United States (the),Sea (mobile),Closed,2025-08-18,2019-06-10,62.89,6.823,"AOML:Closed, SIO-DB:Closed"
+4401778_100-4401778,United States (the),Sea (mobile),Closed,2025-08-18,2019-07-15,69.368,12.659,"AOML:Closed, SIO-DB:Closed"
+4401779_100-4401779,United States (the),Sea (mobile),Closed,2025-08-18,2019-08-21,69.182,35.853,"AOML:Closed, SIO-DB:Closed"
+4401780_100-4401780,United States (the),Sea (mobile),Closed,2025-08-18,2018-07-25,63.834,-22.248,"AOML:Closed, SIO-DB:Closed"
+4401784_100-4401784,United States (the),Sea (mobile),Closed,2025-08-18,2019-02-18,65.529,0.747,"AOML:Closed, SIO-DB:Closed"
+4401804_100-4401804,United States (the),Sea (mobile),Closed,2025-08-18,2018-11-14,61.959,-9.677,"AOML:Closed, SIO-DB:Closed"
+4401807_100-4401807,United States (the),Sea (mobile),Closed,2025-08-18,2018-12-31,61.156,-2.935,"AOML:Closed, SIO-DB:Closed"
+4401809_100-4401809,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-12,63.1,-11.538,"AOML:Closed, SIO-DB:Closed"
+4401810_100-4401810,United States (the),Sea (mobile),Closed,2025-08-18,2018-09-23,62.044,-20.943,"AOML:Closed, SIO-DB:Closed"
+4401811_100-4401811,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-10,61.948,2.418,"AOML:Closed, SIO-DB:Closed"
+4401812_100-4401812,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-28,66.798,10.72,"AOML:Closed, SIO-DB:Closed"
+4401850_100-4401850,United States (the),Sea (mobile),Closed,2025-08-18,2022-09-27,66.788,13.119,AOML:Closed
+4401852_100-4401852,United States (the),Sea (mobile),Closed,2025-08-18,2022-01-16,60.22,-147.03,AOML:Closed
+4401894_100-4401894,United States (the),Sea (mobile),Closed,2025-08-18,2021-06-06,61.472,-18.912,"AOML:Closed, SIO-DB:Closed"
+4401895_100-4401895,United States (the),Sea (mobile),Operational,2025-08-18,,62.509,-21.402,"AOML:Operational, SIO-DB:Non-reporting"
+4401897_100-4401897,United States (the),Sea (mobile),Operational,2025-08-18,,52.209,-20.408,"AOML:Operational, SIO-DB:Closed"
+4401898_100-4401898,United States (the),Sea (mobile),Closed,2025-08-18,2021-04-27,69.816,2.458,"AOML:Closed, SIO-DB:Closed"
+4401899_100-4401899,United States (the),Sea (mobile),Silent,2025-08-18,,72.814,20.822,"AOML:Non-reporting, SIO-DB:Closed"
+4401900_100-4401900,United States (the),Sea (mobile),Operational,2025-08-18,,69.819,49.71,"AOML:Operational, SIO-DB:Closed"
+4402527_100-4402527,United States (the),Sea (mobile),Silent,2025-08-18,,71.836,21.772,"AOML:Non-reporting, SIO-DB:Closed"
+4402528_100-4402528,United States (the),Sea (mobile),Operational,2025-08-18,,70.576,8.9,"AOML:Operational, SIO-DB:Closed"
+4402529_100-4402529,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-08,60.038,-1.179,"AOML:Closed, SIO-DB:Closed"
+4402530_100-4402530,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-20,70.802,23.482,"AOML:Closed, SIO-DB:Closed"
+4402531_100-4402531,United States (the),Sea (mobile),Operational,2025-08-18,,64.252,8.432,"AOML:Operational, SIO-DB:Closed"
+4402533_100-4402533,United States (the),Sea (mobile),Operational,2025-08-18,2021-10-12,55.686,37.516,"AOML:Operational, SIO-DB:Closed"
+4402534_100-4402534,United States (the),Sea (mobile),Operational,2025-08-18,,46.299,-43.482,"AOML:Operational, SIO-DB:Closed"
+4402535_100-4402535,United States (the),Sea (mobile),Operational,2025-08-18,,65.786,-14.36,"AOML:Operational, SIO-DB:Closed"
+4402536_100-4402536,United States (the),Sea (mobile),Operational,2025-08-18,,73.413,8.794,"AOML:Operational, SIO-DB:Closed"
+4402537_100-4402537,United States (the),Sea (mobile),Operational,2025-08-18,,61.471,-24.947,"AOML:Operational, SIO-DB:Closed"
+4402538_100-4402538,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-25,65.717,-30.342,"AOML:Closed, SIO-DB:Closed"
+4402539_100-4402539,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-11,64.085,-29.036,"AOML:Closed, SIO-DB:Closed"
+4402541_100-4402541,United States (the),Sea (mobile),Closed,2025-08-18,2019-10-16,61.14,-22.004,"AOML:Closed, SIO-DB:Closed"
+4402544_100-4402544,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-15,61.429,-5.578,"AOML:Closed, SIO-DB:Closed"
+4402546_100-4402546,United States (the),Sea (mobile),Closed,2025-08-18,2019-11-23,60.196,-5.166,"AOML:Closed, SIO-DB:Closed"
+4402548_100-4402548,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-10,60.81,-7.642,"AOML:Closed, SIO-DB:Closed"
+4402554_100-4402554,United States (the),Sea (mobile),Operational,2025-08-18,,58.355,-16.53,"AOML:Operational, SIO-DB:Closed"
+4402555_100-4402555,United States (the),Sea (mobile),Silent,2025-08-18,2021-07-25,54.874,-20.549,"AOML:Non-reporting, SIO-DB:Closed"
+4402556_100-4402556,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-16,68.005,-53.52,"AOML:Closed, SIO-DB:Closed"
+4402561_100-4402561,United States (the),Sea (mobile),Silent,2025-08-18,,56.612,-51.789,"AOML:Non-reporting, SIO-DB:Closed"
+4402562_100-4402562,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-08,50.228,-51.19,"AOML:Closed, SIO-DB:Closed"
+4402565_100-4402565,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-19,58.303,-56.245,"AOML:Closed, SIO-DB:Closed"
+4402567_100-4402567,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-23,48.241,-48.337,"AOML:Closed, SIO-DB:Closed"
+4402584_100-4402584,United States (the),Sea (mobile),Operational,2025-08-18,,51.572,-9.619,"AOML:Operational, SIO-DB:Closed"
+4402586_100-4402586,United States (the),Sea (mobile),Silent,2025-08-18,2021-05-24,48.019,-43.129,"AOML:Non-reporting, SIO-DB:Closed"
+4402590_100-4402590,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-21,65.825,-57.202,"AOML:Closed, SIO-DB:Closed"
+4402591_100-4402591,United States (the),Sea (mobile),Closed,2025-08-18,2020-12-11,48.252,-45.853,"AOML:Closed, SIO-DB:Closed"
+4402593_100-4402593,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-07,67.754,-56.946,"AOML:Closed, SIO-DB:Closed"
+4402619_100-4402619,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-08,64.825,-53.842,"AOML:Closed, SIO-DB:Closed"
+4402622_100-4402622,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-25,61.244,-58.749,"AOML:Closed, SIO-DB:Closed"
+4402631_100-4402631,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-26,65.695,-57.784,"AOML:Closed, SIO-DB:Closed"
+4402639_100-4402639,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-18,68.477,-53.465,"AOML:Closed, SIO-DB:Closed"
+4402645_100-4402645,United States (the),Sea (mobile),Operational,2025-08-18,,63.368,-36.239,"AOML:Operational, SIO-DB:Closed"
+4402661_100-4402661,United States (the),Sea (mobile),Closed,2025-08-18,2021-03-20,61.04,-61.236,"AOML:Closed, SIO-DB:Closed"
+4402667_100,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-16,62.345,-63.25,AOML:Closed
+4402668_100,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-02,64.986,-63.551,AOML:Closed
+4402709,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-28,68.73,-67.479,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402710,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-03,73.636,-77.896,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402711,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-01,73.29,-74.249,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402712,United States (the),Sea (mobile),Silent,2025-08-18,2022-04-24,68.117,-65.786,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402713,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-11,73.34,-73.682,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402715,United States (the),Sea (mobile),Silent,2025-08-18,2022-01-08,65.281,-62.941,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402716,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-28,68.578,-67.239,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402717,United States (the),Sea (mobile),Silent,2025-08-18,2022-05-09,70.109,-68.237,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402719,United States (the),Sea (mobile),Silent,2025-08-18,2021-08-16,60.044,-61.916,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402724,United States (the),Sea (mobile),Silent,2025-08-18,2022-01-26,64.25,-74.89,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402727,United States (the),Sea (mobile),Silent,2025-08-18,,65.243,11.506,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402728,United States (the),Sea (mobile),Silent,2025-08-18,2021-12-04,70.505,-70.313,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+4402733,United States (the),Sea (mobile),Closed,2025-11-19,2025-08-20,62.023,-6.764,SIO-DB:Closed
+4402737,United States (the),Sea (mobile),Operational,2025-08-18,,60.346,-40.881,"E-SURFMAR, GDP-ESURFMAR, SIO-DB:Operational"
+4402749,United States (the),Sea (mobile),Operational,2025-08-18,,66.976,2.302,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Operational"
+4600060,United States (the),Sea (fixed),Operational,2025-08-18,,60.571,-146.795,NDBC-NOAA-NWS:Operational
+4600061,United States (the),Sea (fixed),Operational,2025-08-18,,60.231,-146.84,NDBC-NOAA-NWS:Operational
+4600081,United States (the),Sea (fixed),Operational,2025-08-18,,60.802,-148.283,NWS-NDBC-MB:Operational
+4601550_100-4601550,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-22,66.06,-20.034,IABP US:Closed
+4601597_100-4601597,United States (the),Sea (mobile),Silent,2025-08-18,2019-10-10,68.359,-166.771,"AOML:Closed, EC DB"
+4601598_100-4601598,United States (the),Sea (mobile),Silent,2025-08-18,2020-10-16,60.054,-143.388,"AOML:Closed, EC DB"
+4601603_100-4601603,United States (the),Sea (mobile),Silent,2025-08-18,2019-08-07,60.549,169.21,"AOML:Closed, EC DB"
+4601605_100-4601605,United States (the),Sea (mobile),Silent,2025-08-18,2019-04-11,60.002,-143.809,"AOML:Closed, EC DB, SIO-DB:Closed"
+4601607_100-4601607,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-02,60.295,-146.917,"AOML:Closed, EC DB"
+4601623_100-4601623,United States (the),Sea (mobile),Closed,2025-08-18,2019-06-18,87.868,168.86,"AOML:Closed, SIO-DB:Closed"
+4601698,United States (the),Sea (mobile),Closed,2025-08-18,2023-01-02,61.451,-172.154,SIO-DB:Closed
+4601785_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-12-15,81.111,-0.801,AOML:Closed
+4601786_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-08,85.572,-17.429,AOML:Closed
+4601787_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-04-28,86.209,-35.941,AOML:Closed
+4601790_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-03-26,83.573,-177.575,AOML:Closed
+4601793_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-08,85.351,-13.131,AOML:Closed
+4601816,United States (the),Sea (mobile),Silent,2025-08-18,2021-06-11,85.978,98.791,"AOML, SIO-DB:Closed"
+4601818,United States (the),Sea (mobile),Closed,2025-08-18,2023-11-29,73.398,-11.068,AOML:Closed
+4601819,United States (the),Sea (mobile),Closed,2025-08-18,2023-01-29,84.336,28.394,SIO-DB:Closed
+4601820,United States (the),Sea (mobile),Closed,2025-08-18,2023-06-05,62.199,-6.555,SIO-DB:Closed
+4602524,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-24,60.004,-143.801,SIO-DB:Closed
+4701522,United States (the),Sea (on ice),Closed,2025-08-18,2023-12-01,75.835,-148.883,IABP US:Closed
+4701567,United States (the),Sea (on ice),Closed,2025-08-18,2024-08-27,75.247,-145.187,IABP:Closed
+4701568,United States (the),Sea (on ice),Closed,2025-08-18,2023-11-25,75.022,-150.505,IABP:Closed
+4701569,United States (the),Sea (on ice),Silent,2025-08-18,,75.599,-150.054,IABP:Non-reporting
+4800642_100-4800642,United States (the),Sea (on ice),Closed,2025-08-18,2020-08-06,70.894,-152.805,IABP:Closed
+4801608_100-4801608,United States (the),Sea (mobile),Closed,2025-08-18,2018-09-01,70.755,-132.712,SIO-DB:Closed
+4801612_100-4801612,United States (the),Sea (on ice),Closed,2025-08-18,2019-11-22,81.092,-156.729,IABP US:Closed
+4801625_100-4801625,United States (the),Sea (on ice),Closed,2025-11-14,2021-09-03,77.954,-3.929,IABP US:Closed
+4801628_100-4801628,United States (the),Sea (on ice),Closed,2025-08-18,2022-08-30,86.048,-114.621,IABP US:Closed
+4801636_100-4801636,United States (the),Sea (on ice),Closed,2025-08-18,2024-08-24,74.279,-137.22,IABP US:Closed
+4801639_100-4801639,United States (the),Sea (on ice),Operational,2026-07-06,,70.229,-127.485,IABP US:Operational
+4801649_100-4801649,United States (the),Sea (on ice),Closed,2025-08-18,2019-12-20,73.424,-177.249,IABP US:Closed
+4801711_100-4801711,United States (the),Sea (mobile),Closed,2025-08-18,2018-11-23,85.457,-176.099,AOML:Closed
+4801713_100-4801713,United States (the),Sea (mobile),Closed,2025-08-18,2019-08-13,71.702,-161.659,"AOML:Closed, SIO-DB:Closed"
+4801715_100-4801715,United States (the),Sea (mobile),Operational,2025-08-18,,60.288,-145.458,"AOML:Operational, SIO-DB:Closed"
+4801717_100-4801717,United States (the),Sea (mobile),Operational,2025-08-18,,78.934,-136.27,"AOML:Operational, SIO-DB:Closed"
+4801718_100-4801718,United States (the),Sea (mobile),Closed,2025-08-18,2020-02-03,60.69,-174.509,"AOML:Closed, SIO-DB:Closed"
+4801721,United States (the),Sea (mobile),Silent,2025-08-18,2021-11-01,78.114,-161.721,"AOML, SIO-DB:Closed"
+4801723,United States (the),Sea (mobile),Silent,2025-08-18,,76.998,22.25,"AOML, SIO-DB:Closed"
+4801724,United States (the),Sea (mobile),Silent,2025-08-18,2021-10-04,80.104,-160.955,"AOML, SIO-DB:Closed"
+4801727,United States (the),Sea (mobile),Silent,2025-08-18,2022-04-25,78.081,1.495,"AOML, SIO-DB:Closed"
+4801729_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-18,76.3,-170.289,"AOML:Closed, SIO-DB:Closed"
+4802502_100-4802502,United States (the),Sea (on ice),Operational,2025-08-18,,83.741,-34.753,IABP US:Operational
+4802517_100-4802517,United States (the),Sea (on ice),Closed,2025-08-18,2019-08-24,71.27,-133.341,IABP US:Closed
+4802542_100,United States (the),Sea (mobile),Operational,2025-08-18,,81.696,-154.793,"AOML:Operational, SIO-DB:Closed"
+4802546_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-01,72.216,175.367,"AOML:Closed, SIO-DB:Closed"
+4900439,United States (the),Underwater (mobile),Closed,2025-08-18,2009-02-26,61.274,-19.743,ARGO WHOI:Closed
+4900469,United States (the),Underwater (mobile),Closed,2025-08-17,2009-09-02,60.448,-22.654,ARGO WHOI:Closed
+4900778,United States (the),Underwater (mobile),Closed,2025-08-19,2012-01-16,61.554,-30.693,ARGO WHOI:Closed
+4901040,United States (the),Underwater (mobile),Closed,2025-08-18,2009-01-07,82.93,179.61,ARGO WHOI:Closed
+4901041,United States (the),Underwater (mobile),Closed,2025-08-19,2008-10-08,81.174,154.985,ARGO WHOI:Closed
+4901045,United States (the),Underwater (mobile),Closed,2025-08-19,2011-07-04,78.061,-175.571,ARGO WHOI:Closed
+4901403,United States (the),Underwater (mobile),Operational,2026-02-27,2011-04-11,66.18,-54.293,"ARGO WHOI:Operational, ARGO WHOI EQ. IR:Operational"
+4901404,United States (the),Underwater (mobile),Closed,2026-02-27,2013-01-18,62.836,-54.717,"ARGO WHOI:Closed, ARGO WHOI EQ. IR:Closed"
+4901405,United States (the),Underwater (mobile),Closed,2026-02-27,2013-02-18,66.277,2.935,"ARGO WHOI:Closed, ARGO WHOI EQ. IR:Closed"
+4901407,United States (the),Underwater (mobile),Closed,2026-02-27,2013-02-27,64.11,-27.798,"ARGO WHOI:Closed, ARGO WHOI EQ. IR:Closed"
+4901449,United States (the),Underwater (mobile),Closed,2026-02-27,2013-03-18,66.127,3.716,"ARGO WHOI:Closed, ARGO WHOI EQ. IR:Closed"
+4902075,United States (the),Underwater (mobile),Closed,2025-08-19,2017-01-29,60.446,172.478,ARGO PMEL:Closed
+4902118,United States (the),Underwater (mobile),Silent,2025-08-19,,46.832,-30.794,ARGO WHOI:Non-reporting
+4902119,United States (the),Underwater (mobile),Silent,2025-08-19,,54.633,-43.451,ARGO WHOI:Non-reporting
+4902128,United States (the),Underwater (mobile),Closed,2026-02-27,2015-08-27,71.495,-161.892,ARGO EQ. NAVOCEANO:Closed
+4902129,United States (the),Underwater (mobile),Closed,2026-02-27,2015-12-28,72.666,-171.194,ARGO EQ. NAVOCEANO:Closed
+4902926,United States (the),Underwater (mobile),Silent,2025-09-24,,75.333,-177.515,ARGO WHOI:Non-reporting
+4902930,United States (the),Underwater (mobile),Silent,2025-08-19,,58.973,171.144,ARGO PMEL:Non-reporting
+4903037,United States (the),Underwater (mobile),Silent,2026-02-27,,75.761,-160.685,"ARGO WHOI:Closed, Argo WHOI-SODA eq.:Non-reporting"
+4903038,United States (the),Underwater (mobile),Silent,2026-02-27,,76.147,-163.405,"ARGO WHOI:Closed, Argo WHOI-SODA eq.:Non-reporting"
+4903039,United States (the),Underwater (mobile),Silent,2026-02-27,,74.838,-160.005,"ARGO WHOI:Closed, Argo WHOI-SODA eq.:Non-reporting"
+4903040,United States (the),Underwater (mobile),Silent,2026-02-27,,76.447,-164.201,"ARGO WHOI:Closed, Argo WHOI-SODA eq.:Non-reporting"
+4903041,United States (the),Underwater (mobile),Silent,2026-02-27,,75.976,-159.528,"ARGO WHOI:Closed, Argo WHOI-SODA eq.:Non-reporting"
+4903210,United States (the),Underwater (mobile),Operational,2025-11-25,,60.01,178.681,ARGO PMEL:Operational
+4903241,United States (the),Underwater (mobile),Closed,2025-08-19,2019-11-10,74.904,-153.383,ARGO WHOI:Closed
+4903242,United States (the),Underwater (mobile),Silent,2025-08-18,,73.669,-152.835,ARGO WHOI:Non-reporting
+4903243,United States (the),Underwater (mobile),Silent,2025-08-19,,75.489,-144.152,ARGO WHOI:Non-reporting
+4903275,United States (the),Underwater (mobile),Silent,2025-11-25,,64.878,-36.157,ARGO WHOI:Non-reporting
+4903357,United States (the),Underwater (mobile),Operational,2025-08-19,,62.461,-19.932,ARGO WHOI:Operational
+4903359,United States (the),Underwater (mobile),Closed,2026-09-29,2021-09-29,60.627,-51.111,ARGO WHOI:Closed
+4903360,United States (the),Underwater (mobile),Silent,2025-11-25,,63.77,-60.014,ARGO WHOI:Non-reporting
+4903361,United States (the),Underwater (mobile),Silent,2025-11-25,,68.86,-52.632,ARGO WHOI:Non-reporting
+4903362,United States (the),Underwater (mobile),Silent,2026-10-26,,65.267,-53.327,ARGO WHOI:Non-reporting
+4903455,United States (the),Underwater (mobile),Silent,2026-02-27,,66.755,-53.215,"ARGO EQ. WHOI:Non-reporting, ARGO WHOI:Non-reporting"
+4904028,United States (the),Underwater (mobile),Silent,2026-11-01,,74.523,-138.816,ARGO WHOI:Non-reporting
+4FL3UDU,United States (the),Sea (mobile),Closed,2025-08-18,2020-09-02,62.9,-156,VOS-US:Closed
+4PQFHNJ,United States (the),Sea (mobile),Operational,2026-11-04,,60.6,-147.5,VOS-US:Operational
+4VW33VN,United States (the),Sea (mobile),Silent,2025-08-18,,60.2,-165.4,VOS-US:Non-reporting
+5401509_100-5401509,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-15,60.573,-1.439,"AOML:Closed, SIO-DB:Closed"
+5802094,United States (the),Sea (mobile),Closed,2025-08-18,2024-08-15,60.196,-46.662,Global Drifter Program (GDP):Closed
+5802096,United States (the),Sea (mobile),Closed,2025-10-29,2025-07-30,65.201,-21.068,Global Drifter Program (GDP):Closed
+5903387,United States (the),Underwater (mobile),Silent,2025-08-19,,60.072,-41.318,ARGO UW:Non-reporting
+5903391,United States (the),Underwater (mobile),Closed,2025-08-19,2017-10-15,63.232,-20.717,ARGO UW:Closed
+5903394,United States (the),Underwater (mobile),Closed,2025-08-17,2020-02-25,62.307,-29.926,ARGO UW:Closed
+5903592,United States (the),Underwater (mobile),Closed,2025-08-19,2013-03-19,71.26,-13.06,ARGO UW:Closed
+5903724,United States (the),Underwater (mobile),Closed,2025-08-17,2016-01-23,72.142,-3.943,ARGO UW:Closed
+5903887,United States (the),Underwater (mobile),Closed,2025-08-19,2016-10-18,70.599,-7.674,ARGO UW:Closed
+5904173,United States (the),Underwater (mobile),Silent,2025-11-25,,61.222,-58.586,ARGO UW:Non-reporting
+5904774,United States (the),Underwater (mobile),Operational,2026-06-26,,59.023,-51.562,ARGO UW:Operational
+5906949,United States (the),Underwater (mobile),Silent,2026-10-08,,74.728,-151.18,ARGO SIO:Non-reporting
+5906950,United States (the),Underwater (mobile),Operational,2026-10-08,,74.088,-143.254,ARGO SIO:Operational
+5907197,United States (the),Underwater (mobile),Silent,2025-11-25,,77.446,-139.862,ARGO WHOI:Non-reporting
+5907198,United States (the),Underwater (mobile),Silent,2025-11-25,,75.829,-148.31,ARGO WHOI:Non-reporting
+5HWR25L,United States (the),Sea (mobile),Silent,2026-05-15,,60.1,-150,VOS-US:Non-reporting
+5SCGFYE,United States (the),Sea (mobile),Operational,2025-08-18,,63.3,-16.6,VOS-US:Operational
+6102571_100-6102571,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-03,70.626,22.391,"AOML:Closed, SIO-DB:Closed"
+6102773_100,United States (the),Sea (mobile),Operational,2025-08-18,2021-06-29,61.611,5.104,"AOML:Operational, ITALY-OGS:Closed, SIO-DB:Closed"
+6202658_100-6202658,United States (the),Sea (mobile),Operational,2025-08-18,,65.338,-37.39,"AOML:Operational, SIO-DB:Closed"
+6202661_100-6202661,United States (the),Sea (mobile),Operational,2025-08-18,,70.382,-7.372,"AOML:Operational, SIO-DB:Closed"
+6202662_100-6202662,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-18,68.116,-53.691,"AOML:Closed, SIO-DB:Closed"
+6202663_100-6202663,United States (the),Sea (mobile),Closed,2025-08-18,2021-05-14,47.518,-43.642,"AOML:Closed, SIO-DB:Closed"
+6202665_100-6202665,United States (the),Sea (mobile),Closed,2025-08-18,2021-03-15,66.785,-53.342,"AOML:Closed, SIO-DB:Closed"
+6202666_100-6202666,United States (the),Sea (mobile),Operational,2025-08-18,,79.813,-2.039,"AOML:Operational, SIO-DB:Closed"
+6202667_100-6202667,United States (the),Sea (mobile),Closed,2025-08-18,2020-09-07,64.951,-25.94,"AOML:Closed, SIO-DB:Closed"
+6202668_100-6202668,United States (the),Sea (mobile),Closed,2025-08-18,2020-08-11,62.896,6.824,"AOML:Closed, SIO-DB:Closed"
+6202669_100-6202669,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-30,67.848,-53.574,"AOML:Closed, SIO-DB:Closed"
+6202672_100-6202672,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-22,61.308,-12.514,"AOML:Closed, SIO-DB:Closed"
+6202674_100-6202674,United States (the),Sea (mobile),Closed,2025-08-18,2019-11-11,62.579,-20.39,"AOML:Closed, SIO-DB:Closed"
+6202676_100-6202676,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-17,63.423,-19.183,"AOML:Closed, SIO-DB:Closed"
+6202677_100-6202677,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-22,69.409,17.148,"AOML:Closed, SIO-DB:Closed"
+6202679_100-6202679,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-19,61.251,-59.81,"AOML:Closed, SIO-DB:Closed"
+6202680_100-6202680,United States (the),Sea (mobile),Silent,2025-08-18,2021-07-21,64.198,10.073,"AOML:Non-reporting, SIO-DB:Closed"
+6202681_100-6202681,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-21,70.967,18.545,"AOML:Closed, SIO-DB:Closed"
+6202682_100-6202682,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-23,63.693,-17.736,"AOML:Closed, SIO-DB:Closed"
+6202683_100-6202683,United States (the),Sea (mobile),Closed,2025-08-18,2020-12-24,70.609,30.336,"AOML:Closed, SIO-DB:Closed"
+6202684_100-6202684,United States (the),Sea (mobile),Operational,2025-08-18,,65.263,-2.755,"AOML:Operational, SIO-DB:Closed"
+6203506_100-6203506,United States (the),Sea (mobile),Closed,2025-08-18,2018-07-17,65.395,11.024,"AOML:Closed, SIO-DB:Closed"
+6203519_100-6203519,United States (the),Sea (mobile),Closed,2025-08-18,2017-12-25,62.601,-64.655,SIO-DB:Closed
+6203523_100-6203523,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-27,77.649,-0.556,"AOML:Closed, SIO-DB:Closed"
+6203524_100-6203524,United States (the),Sea (mobile),Closed,2025-08-18,2018-01-04,68.181,-53.656,SIO-DB:Closed
+6203525_100-6203525,United States (the),Sea (mobile),Closed,2025-08-18,2019-09-04,72.197,20.26,"AOML:Closed, SIO-DB:Closed"
+6203526_100-6203526,United States (the),Sea (mobile),Closed,2025-08-18,2019-01-13,80.058,1.905,SIO-DB:Closed
+6203527_100-6203527,United States (the),Sea (mobile),Closed,2025-08-18,2019-09-06,60.481,-1.543,"AOML:Closed, SIO-DB:Closed"
+6203549_100-6203549,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-02,71.225,59.759,"AOML:Closed, SIO-DB:Closed"
+6203550_100-6203550,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-19,77.52,3.061,"AOML:Closed, SIO-DB:Closed"
+6203551_100-6203551,United States (the),Sea (mobile),Operational,2025-08-18,,72.14,23.941,"AOML:Operational, SIO-DB:Closed"
+6203553_100-6203553,United States (the),Sea (mobile),Closed,2025-08-18,2019-09-06,64.246,-36.83,"AOML:Closed, SIO-DB:Closed"
+6203554_100-6203554,United States (the),Sea (mobile),Closed,2025-08-18,2020-07-16,68.878,4.508,"AOML:Closed, SIO-DB:Closed"
+6203555_100-6203555,United States (the),Sea (mobile),Closed,2025-08-18,2020-09-01,68.689,-14.302,"AOML:Closed, SIO-DB:Closed"
+6203556_100-6203556,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-19,69.987,-15.382,"AOML:Closed, SIO-DB:Closed"
+6203557_100-6203557,United States (the),Sea (mobile),Closed,2025-08-18,2019-06-21,65.617,-21.337,"AOML:Closed, SIO-DB:Closed"
+6203558_100-6203558,United States (the),Sea (mobile),Closed,2025-08-18,2019-08-07,64.198,-40.941,"AOML:Closed, SIO-DB:Closed"
+6203559_100-6203559,United States (the),Sea (mobile),Closed,2025-08-18,2019-09-13,61.316,4.73,"AOML:Closed, SIO-DB:Closed"
+6203560_100-6203560,United States (the),Sea (mobile),Closed,2025-08-18,2019-04-04,62.431,-7.724,"AOML:Closed, SIO-DB:Closed"
+6203561_100-6203561,United States (the),Sea (mobile),Closed,2025-08-18,2019-09-03,68.383,1.883,"AOML:Closed, SIO-DB:Closed"
+6203562_100-6203562,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-04,74.974,-4.271,"AOML:Closed, SIO-DB:Closed"
+6203563_100-6203563,United States (the),Sea (mobile),Operational,2025-08-18,,70.874,29.024,"AOML:Operational, SIO-DB:Closed"
+6203565_100-6203565,United States (the),Sea (mobile),Closed,2025-08-18,2019-11-29,80.892,19.087,"AOML:Closed, SIO-DB:Closed"
+6203566_100-6203566,United States (the),Sea (mobile),Closed,2025-08-18,2020-02-09,63.481,-59.906,"AOML:Closed, SIO-DB:Closed"
+6203567_100-6203567,United States (the),Sea (mobile),Closed,2025-08-18,2019-01-04,63.081,5.285,"AOML:Closed, SIO-DB:Closed"
+6203568_100-6203568,United States (the),Sea (mobile),Closed,2025-08-18,2019-06-25,68.009,-21.668,"AOML:Closed, SIO-DB:Closed"
+6203570_100-6203570,United States (the),Sea (mobile),Closed,2025-08-18,2019-09-13,63.798,-16.646,"AOML:Closed, SIO-DB:Closed"
+6203571_100-6203571,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-24,67.825,-55.88,"AOML:Closed, SIO-DB:Closed"
+6203572_100-6203572,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-02,65.088,-35.255,"AOML:Closed, SIO-DB:Closed"
+6203573_100-6203573,United States (the),Sea (mobile),Closed,2022-03-30,2019-03-12,60.926,0.567,"AOML:Closed, OceanSITES:Closed, SIO-DB:Closed"
+6203574_100-6203574,United States (the),Sea (mobile),Operational,2025-08-18,,66.023,11.912,"AOML:Operational, SIO-DB:Closed"
+6203575_100-6203575,United States (the),Sea (mobile),Closed,2025-08-18,2019-07-25,66.146,-21.489,"AOML:Closed, SIO-DB:Closed"
+6203579_100-6203579,United States (the),Sea (mobile),Closed,2025-08-18,2019-10-04,64.998,-40.114,"AOML:Closed, SIO-DB:Closed"
+6203580_100-6203580,United States (the),Sea (mobile),Closed,2025-08-18,2021-04-16,71.062,7.332,"AOML:Closed, SIO-DB:Closed"
+6203581_100-6203581,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-25,68.849,-23.25,"AOML:Closed, SIO-DB:Closed"
+6203583_100-6203583,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-20,63.831,4.259,"AOML:Closed, SIO-DB:Closed"
+6203584_100-6203584,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-23,64.781,-57.875,"AOML:Closed, SIO-DB:Closed"
+6203585_100-6203585,United States (the),Sea (mobile),Operational,2025-08-18,,76.717,70.369,"AOML:Operational, SIO-DB:Closed"
+6203586_100-6203586,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-12,67.947,-9.676,"AOML:Closed, SIO-DB:Closed"
+6203587_100-6203587,United States (the),Sea (mobile),Closed,2025-08-18,2021-05-11,72.817,47.903,"AOML:Closed, SIO-DB:Closed"
+6203744,United States (the),Sea (mobile),Operational,2025-08-18,,79.826,11.5,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Closed"
+6203747,United States (the),Sea (mobile),Silent,2025-08-18,2022-11-04,68.496,14.782,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203749,United States (the),Sea (mobile),Silent,2025-08-18,2022-06-24,71.237,30.011,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203750,United States (the),Sea (mobile),Silent,2025-08-18,2022-11-07,68.616,14.439,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203751,United States (the),Sea (mobile),Silent,2025-08-18,2022-07-31,78.659,-1.079,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203752,United States (the),Sea (mobile),Silent,2025-08-18,2022-01-04,63.019,-25.046,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203753_100,United States (the),Sea (mobile),Silent,2025-12-29,,62.183,-0.747,"E-SURFMAR, GDP-ESURFMAR, SIO-DB:Closed"
+6203785,United States (the),Sea (mobile),Closed,2025-08-18,2023-06-26,63.6,8.348,SIO-DB:Closed
+6203795,United States (the),Sea (mobile),Closed,2025-08-18,2024-02-03,63.196,-38.854,SIO-DB:Closed
+6203806,United States (the),Sea (mobile),Closed,2025-08-18,2024-01-20,60.136,-10.592,SIO-DB:Closed
+6203807,United States (the),Sea (mobile),Closed,2025-08-18,2024-06-01,63.568,-13.856,SIO-DB:Closed
+6203825,United States (the),Sea (mobile),Operational,2025-08-18,,70.644,30.223,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Closed"
+6203827,United States (the),Sea (mobile),Silent,2025-08-18,,65.879,11.798,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203853,United States (the),Sea (mobile),Operational,2025-08-18,,72.206,46.732,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Operational"
+6203854,United States (the),Sea (mobile),Operational,2025-08-18,,71.926,15.648,"E-SURFMAR, GDP-ESURFMAR:Operational, Global Drifter Program (GDP):Operational"
+6203855,United States (the),Sea (mobile),Silent,2025-08-18,,67.508,12.066,"E-SURFMAR, GDP-ESURFMAR, SIO-DB:Closed"
+6203856,United States (the),Sea (mobile),Silent,2025-08-18,,61.008,4.611,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203857,United States (the),Sea (mobile),Silent,2025-08-18,,63.847,8.458,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6203864,United States (the),Sea (mobile),Silent,2025-09-09,,66.36,-14.748,"E-SURFMAR, Global Drifter Program (GDP):Closed"
+6203866,United States (the),Sea (mobile),Silent,2025-08-18,,69.025,15.115,"E-SURFMAR, GDP-ESURFMAR:Closed, Global Drifter Program (GDP):Closed"
+6301500_100-6301500,United States (the),Sea (mobile),Closed,2025-08-18,2019-07-03,88.461,115.282,"AOML:Closed, SIO-DB:Closed"
+6301501_100-6301501,United States (the),Sea (mobile),Closed,2025-08-18,2019-10-16,80.825,7.676,"AOML:Closed, SIO-DB:Closed"
+6301504_100-6301504,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-19,76.104,16.31,"AOML:Closed, SIO-DB:Closed"
+6301505_100-6301505,United States (the),Sea (mobile),Closed,2025-08-18,2019-10-23,78.388,0.61,"AOML:Closed, SIO-DB:Closed"
+6301507_100-6301507,United States (the),Sea (mobile),Closed,2025-08-18,2019-08-29,80.81,33.599,"AOML:Closed, SIO-DB:Closed"
+6301508_100-6301508,United States (the),Sea (mobile),Closed,2025-08-18,2020-07-27,68.89,33.091,"AOML:Closed, SIO-DB:Closed"
+6301536_100-6301536,United States (the),Sea (mobile),Closed,2025-08-18,2020-12-28,72.674,62.02,"AOML:Closed, SIO-DB:Closed"
+6301543_100-6301543,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-04,67.172,42.72,"AOML:Closed, SIO-DB:Closed"
+6301544_100-6301544,United States (the),Sea (mobile),Closed,2025-08-18,2021-06-08,70.994,58.301,"AOML:Closed, SIO-DB:Closed"
+6301545_100-6301545,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-10,75.289,26.182,"AOML:Closed, SIO-DB:Closed"
+6301546_100-6301546,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-10,71.392,47.211,"AOML:Closed, SIO-DB:Closed"
+6301547_100-6301547,United States (the),Sea (mobile),Closed,2025-08-18,2019-10-11,74.304,22.62,"AOML:Closed, SIO-DB:Closed"
+6301688_100-6301688,United States (the),Sea (mobile),Closed,2025-08-18,2020-02-24,78.053,-1.032,"AOML:Closed, SIO-DB:Closed"
+6401501_100-6401501,United States (the),Sea (mobile),Closed,2025-08-18,2020-12-28,68.73,52.758,"AOML:Closed, SIO-DB:Closed"
+6401502_100-6401502,United States (the),Sea (mobile),Closed,2025-08-18,2020-12-14,76.795,-0.409,"AOML:Closed, SIO-DB:Closed"
+6401503_100-6401503,United States (the),Sea (mobile),Closed,2025-08-18,2020-03-22,67.744,7.664,"AOML:Closed, SIO-DB:Closed"
+6401504_100-6401504,United States (the),Sea (mobile),Closed,2025-08-18,2018-12-16,62.107,-8.682,"AOML:Closed, SIO-DB:Closed"
+6401505_100-6401505,United States (the),Sea (mobile),Closed,2025-08-18,2019-03-08,64.201,-39.832,"AOML:Closed, SIO-DB:Closed"
+6401506_100-6401506,United States (the),Sea (mobile),Closed,2025-08-18,2020-07-17,69.359,1.001,"AOML:Closed, SIO-DB:Closed"
+6401507_100-6401507,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-21,78.749,10.605,"AOML:Closed, SIO-DB:Closed"
+6401508_100-6401508,United States (the),Sea (mobile),Closed,2025-08-18,2017-12-01,76.619,-3.357,"AOML:Closed, SIO-DB:Closed"
+6401530_100-6401530,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-07,68.122,-30.917,"AOML:Closed, SIO-DB:Closed"
+6401531_100-6401531,United States (the),Sea (mobile),Operational,2025-08-18,,53.234,-9.395,"AOML:Operational, SIO-DB:Closed"
+6401532_100-6401532,United States (the),Sea (mobile),Closed,2025-08-18,2018-03-14,67.688,-18.95,"AOML:Closed, SIO-DB:Closed"
+6401533_100-6401533,United States (the),Sea (mobile),Closed,2025-08-18,2018-03-04,64.662,-37.801,"AOML:Closed, SIO-DB:Closed"
+6401535_100-6401535,United States (the),Sea (mobile),Closed,2025-08-18,2018-05-05,64.667,-30.024,"AOML:Closed, SIO-DB:Closed"
+6401536_100-6401536,United States (the),Sea (mobile),Closed,2025-08-18,2018-12-26,64.571,-40.388,"AOML:Closed, SIO-DB:Closed"
+6401537_100-6401537,United States (the),Sea (mobile),Closed,2025-08-18,2018-12-11,62.662,-42.292,"AOML:Closed, SIO-DB:Closed"
+6401538_100-6401538,United States (the),Sea (mobile),Closed,2025-08-18,2018-09-17,68.383,-28.624,"AOML:Closed, SIO-DB:Closed"
+6401540_100-6401540,United States (the),Sea (mobile),Closed,2025-08-18,2018-09-09,68.828,-26.05,"AOML:Closed, SIO-DB:Closed"
+6401541_100-6401541,United States (the),Sea (mobile),Closed,2025-08-18,2018-11-17,67.962,-31.389,"AOML:Closed, SIO-DB:Closed"
+6401542_100-6401542,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-29,66.916,-21.813,"AOML:Closed, SIO-DB:Closed"
+6401543_100-6401543,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-15,66.782,-21.788,"AOML:Closed, SIO-DB:Closed"
+6401544_100-6401544,United States (the),Sea (mobile),Closed,2025-08-18,2019-01-16,60.745,-47.407,"AOML:Closed, SIO-DB:Closed"
+6401545_100-6401545,United States (the),Sea (mobile),Closed,2025-08-18,2018-10-30,70.129,-23.591,"AOML:Closed, SIO-DB:Closed"
+6401546_100-6401546,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-05,66.7,-34.184,"AOML:Closed, SIO-DB:Closed"
+6401547_100-6401547,United States (the),Sea (mobile),Silent,2025-08-18,2021-07-17,64.311,-1.11,"AOML:Non-reporting, SIO-DB:Closed"
+6401548_100-6401548,United States (the),Sea (mobile),Closed,2025-08-18,2020-07-24,68.311,1.688,"AOML:Closed, SIO-DB:Closed"
+6401549_100-6401549,United States (the),Sea (mobile),Closed,2025-08-18,2021-04-05,72.182,20.083,"AOML:Closed, SIO-DB:Closed"
+6401780_100-6401780,United States (the),Sea (mobile),Closed,2025-08-18,2019-12-05,65.987,-21.328,"AOML:Closed, SIO-DB:Closed"
+6401781_100-6401781,United States (the),Sea (mobile),Closed,2025-08-18,2020-08-12,68.281,9.034,"AOML:Closed, SIO-DB:Closed"
+6401782_100-6401782,United States (the),Sea (mobile),Closed,2025-08-18,2020-06-15,57.142,-2.078,"AOML:Closed, SIO-DB:Closed"
+6401784_100-6401784,United States (the),Sea (mobile),Closed,2025-08-18,2020-11-17,81.564,39.014,"AOML:Closed, SIO-DB:Closed"
+6401789_100-6401789,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-09,67.74,-26.576,"AOML:Closed, SIO-DB:Closed"
+6401795_100-6401795,United States (the),Sea (mobile),Closed,2025-08-18,2021-04-03,68.294,-17.695,"AOML:Closed, SIO-DB:Closed"
+6401796_100-6401796,United States (the),Sea (mobile),Closed,2025-08-18,2020-05-16,69.723,34.307,"AOML:Closed, SIO-DB:Closed"
+6401797_100-6401797,United States (the),Sea (mobile),Closed,2025-08-18,2020-04-26,74.147,30.641,"AOML:Closed, SIO-DB:Closed"
+6401798_100-6401798,United States (the),Sea (mobile),Closed,2025-08-18,2019-11-14,73.973,20.951,"AOML:Closed, SIO-DB:Closed"
+6401804_100-6401804,United States (the),Sea (mobile),Closed,2025-08-18,2020-03-18,78.203,7.267,"AOML:Closed, SIO-DB:Closed"
+6401805_100-6401805,United States (the),Sea (mobile),Closed,2025-08-18,2019-10-28,73.917,18.652,"AOML:Closed, SIO-DB:Closed"
+6401806_100-6401806,United States (the),Sea (mobile),Closed,2025-08-18,2020-05-08,76.127,-1.252,"AOML:Closed, SIO-DB:Closed"
+6401807_100-6401807,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-28,77.628,39.32,"AOML:Closed, SIO-DB:Closed"
+6401808_100-6401808,United States (the),Sea (mobile),Closed,2025-08-18,2020-02-06,79.904,3.066,"AOML:Closed, SIO-DB:Closed"
+6401811_100-6401811,United States (the),Sea (mobile),Operational,2025-08-18,,62.246,-6.662,"AOML:Operational, SIO-DB:Closed"
+6401824_100-6401824,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-06,64.689,-58.126,"AOML:Closed, SIO-DB:Closed"
+6401830_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,71.91,11.265,SIO-DB:Closed
+6401831_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-01-01,61.97,-6.741,SIO-DB:Closed
+6401833_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-05,70.977,15.93,SIO-DB:Closed
+6401834_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,66.018,-21.673,SIO-DB:Closed
+6401835_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,75.917,11.777,SIO-DB:Closed
+6401836_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,68.517,-52.867,SIO-DB:Closed
+6401837_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-28,65.806,-21.326,SIO-DB:Closed
+6401838_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-11-30,64.158,-21.665,SIO-DB:Closed
+6401839_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,72.633,14.56,SIO-DB:Closed
+6401840_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-03-29,71.084,24.647,SIO-DB:Closed
+6401841_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-11-13,62.615,-12.465,SIO-DB:Closed
+6401842_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-03-21,62.111,-40.777,SIO-DB:Closed
+6401843_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,73.01,16.922,SIO-DB:Closed
+6401844_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-11-29,64.16,-21.666,SIO-DB:Closed
+6401845_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-08,63.416,-21.825,SIO-DB:Closed
+6401846_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-08,62.872,-8.354,SIO-DB:Closed
+6401847_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-09,63.329,-5.322,SIO-DB:Closed
+6401848_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-08-18,63.401,-20.279,SIO-DB:Closed
+6401850_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-07-15,62.209,-23.461,SIO-DB:Closed
+6401851_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-08-21,63.475,-19.483,SIO-DB:Closed
+6401852_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-05-12,63.027,-20.301,SIO-DB:Closed
+6401855_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-06-26,64.741,-23.71,SIO-DB:Closed
+6401856_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-10-19,65.933,-21.454,SIO-DB:Closed
+6401857_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-10-29,63.851,-26.514,SIO-DB:Closed
+6401858_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-05-12,62.676,-22.182,SIO-DB:Closed
+6401859_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-08,60.949,-7.446,SIO-DB:Closed
+6401860_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-05-12,63.475,-18.113,SIO-DB:Closed
+6401861_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-09,64.471,-22.106,SIO-DB:Closed
+6401863_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-09,64.374,-38.821,SIO-DB:Closed
+6401865_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-09,60.336,-49.769,SIO-DB:Closed
+6401866_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-10-24,63.741,-17.551,SIO-DB:Closed
+6401868_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-13,64.741,-23.848,SIO-DB:Closed
+6401869_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-04-25,63.175,3.895,SIO-DB:Closed
+6401870_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-23,66.168,-18.892,SIO-DB:Closed
+6401871_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-11-30,64.159,-21.666,SIO-DB:Closed
+6401872_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,65.461,-52.854,SIO-DB:Closed
+6401873_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,63.749,-20.614,SIO-DB:Closed
+6401874_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,63.311,8.23,SIO-DB:Closed
+6401875_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,63.656,-18.01,SIO-DB:Closed
+6402515_100-6402515,United States (the),Sea (mobile),Operational,2025-08-18,,51.498,-9.585,"AOML:Operational, SIO-DB:Closed"
+6402518_100-6402518,United States (the),Sea (mobile),Operational,2025-08-18,,48.525,-25.481,"AOML:Operational, SIO-DB:Closed"
+6402522_100-6402522,United States (the),Sea (mobile),Operational,2025-08-18,,62.559,-11.292,"AOML:Operational, SIO-DB:Closed"
+6402523_100-6402523,United States (the),Sea (mobile),Operational,2025-08-18,,64.923,-54.396,"AOML:Operational, SIO-DB:Closed"
+6402531_100-6402531,United States (the),Sea (mobile),Operational,2025-08-18,,61.602,-56.587,"AOML:Operational, SIO-DB:Closed"
+6402539_100-6402539,United States (the),Sea (mobile),Operational,2025-08-18,,69.387,34.116,"AOML:Operational, SIO-DB:Closed"
+6402540_100-6402540,United States (the),Sea (mobile),Silent,2025-08-18,2021-05-29,49.306,-46.454,"AOML:Non-reporting, SIO-DB:Closed"
+6402541_100-6402541,United States (the),Sea (mobile),Operational,2025-08-18,,67.476,-13.51,"AOML:Operational, SIO-DB:Closed"
+6402542_100-6402542,United States (the),Sea (mobile),Operational,2025-08-18,,62.862,-13.472,"AOML:Operational, SIO-DB:Non-reporting"
+6402544_100-6402544,United States (the),Sea (mobile),Operational,2025-08-18,,71.03,13.607,"AOML:Operational, SIO-DB:Closed"
+6402545_100-6402545,United States (the),Sea (mobile),Operational,2025-08-18,,79.508,2.222,"AOML:Operational, SIO-DB:Closed"
+6402546_100-6402546,United States (the),Sea (mobile),Operational,2025-08-18,,71.604,17.692,"AOML:Operational, SIO-DB:Closed"
+6402547_100-6402547,United States (the),Sea (mobile),Operational,2025-08-18,,60.226,-16.829,"AOML:Operational, SIO-DB:Closed"
+6402548_100-6402548,United States (the),Sea (mobile),Operational,2025-08-18,,79.579,15.276,"AOML:Operational, SIO-DB:Closed"
+6402549_100-6402549,United States (the),Sea (mobile),Operational,2025-08-18,,78.886,1.211,"AOML:Operational, SIO-DB:Closed"
+6402550_100-6402550,United States (the),Sea (mobile),Operational,2025-08-18,,75.619,12.347,"AOML:Operational, SIO-DB:Closed"
+6402552_100,United States (the),Sea (mobile),Operational,2025-08-18,,76.497,9.794,"AOML:Operational, SIO-DB:Closed"
+6402553_100,United States (the),Sea (mobile),Silent,2025-08-18,2021-03-27,67.018,6.132,"AOML:Non-reporting, SIO-DB:Closed"
+6402554_100,United States (the),Sea (mobile),Operational,2025-08-18,,71.655,30.719,"AOML:Operational, SIO-DB:Closed"
+6402555_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-03-12,64.593,-38.56,"AOML:Closed, SIO-DB:Closed"
+6402557_100,United States (the),Sea (mobile),Operational,2025-08-18,,79.219,4.795,"AOML:Operational, SIO-DB:Closed"
+6402558_100,United States (the),Sea (mobile),Silent,2025-08-18,,65.075,-14.024,"AOML:Non-reporting, SIO-DB:Closed"
+6402560_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-22,72.463,9.832,AOML:Closed
+6402563_100,United States (the),Sea (mobile),Closed,2025-08-18,2023-07-11,69.831,54.91,AOML:Closed
+6402564_100-6402564,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-05,60.092,-26.381,"AOML:Closed, SIO-DB:Closed"
+6402565_100-6402565,United States (the),Sea (mobile),Closed,2025-08-18,2020-09-10,61.579,4.74,"AOML:Closed, SIO-DB:Closed"
+6402567_100-6402567,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-16,66.172,-4.901,"AOML:Closed, SIO-DB:Closed"
+6402568_100-6402568,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-19,63.652,-39.849,"AOML:Closed, SIO-DB:Closed"
+6402569_100-6402569,United States (the),Sea (mobile),Closed,2025-08-18,2021-03-13,65.381,-56.042,"AOML:Closed, SIO-DB:Closed"
+6402623_100,United States (the),Sea (mobile),Operational,2025-08-18,,81.393,8.313,"AOML:Closed, DBCP others:Operational"
+6402624_100,United States (the),Sea (mobile),Operational,2025-08-18,,78.18,21.027,"AOML:Closed, DBCP others:Operational"
+6402625_100,United States (the),Sea (mobile),Operational,2025-08-18,2021-07-26,80.173,16.235,"AOML:Non-reporting, DBCP others:Operational"
+6402645_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-12-31,65.898,-29.624,SIO-DB:Closed
+6402647_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,63.793,-16.726,SIO-DB:Closed
+6402648_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,65.764,8.363,SIO-DB:Closed
+6402649_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-11-08,63.839,-22.385,SIO-DB:Closed
+6402650_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-08-23,69.62,17.885,SIO-DB:Closed
+6402651_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-01-05,63.448,-19.331,SIO-DB:Closed
+6402652_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,71.489,23.08,SIO-DB:Closed
+6402653_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-04,63.853,-21.824,SIO-DB:Closed
+6402655_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-05,63.093,-10.973,SIO-DB:Closed
+6402657_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-01-19,65.618,-25.215,SIO-DB:Closed
+6402658_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-10-25,65.647,-14.212,SIO-DB:Closed
+6402659_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,70.147,18.78,SIO-DB:Closed
+6402660_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-05-30,66.044,-23.156,SIO-DB:Closed
+6402661_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,62.135,-3.916,SIO-DB:Closed
+6402663_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-16,65.757,-21.392,SIO-DB:Closed
+6402664_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-07-13,63.301,-20.615,SIO-DB:Closed
+6402665_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-15,71.401,33.623,SIO-DB:Closed
+6402666_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,63.834,-21.016,SIO-DB:Closed
+6402667_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,63.556,-20.242,SIO-DB:Closed
+6402668_100,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,70.992,28.513,SIO-DB:Closed
+6402670_100,United States (the),Sea (mobile),Silent,2025-08-18,,66.216,-1.112,SIO-DB:Non-reporting
+6402671,United States (the),Sea (mobile),Closed,2025-08-18,2021-08-05,64.253,10.182,SIO-DB:Closed
+6402675_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-08,61.633,4.165,SIO-DB:Closed
+6402677_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-09,65.354,-29.275,SIO-DB:Closed
+6402678_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-09-09,61.841,-35.079,SIO-DB:Closed
+6402679_100,United States (the),Sea (mobile),Closed,2025-08-18,2021-12-13,69.753,-9.757,SIO-DB:Closed
+6402682,United States (the),Sea (mobile),Silent,2025-08-18,,65.574,-35.186,SIO-DB:Non-reporting
+6402683,United States (the),Sea (mobile),Silent,2025-08-18,,66.869,-24.994,SIO-DB:Non-reporting
+6402684,United States (the),Sea (mobile),Silent,2025-08-18,,67.953,-12.798,SIO-DB:Non-reporting
+6402710,United States (the),Sea (mobile),Closed,2025-08-18,2022-08-20,71.701,1.153,SIO-DB:Closed
+6402711,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-04,75.761,-6.035,SIO-DB:Closed
+6402712,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-13,76.485,-3.694,SIO-DB:Closed
+6402713,United States (the),Sea (mobile),Closed,2025-08-18,2022-07-27,68.946,7.917,SIO-DB:Closed
+6402714,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,73.446,0.63,SIO-DB:Closed
+6402715,United States (the),Sea (mobile),Closed,2025-08-18,2022-09-16,69.639,5.086,SIO-DB:Closed
+6402716,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-07,64.377,-11.944,SIO-DB:Closed
+6402717,United States (the),Sea (mobile),Closed,2025-08-18,2022-07-04,74.786,0.68,SIO-DB:Closed
+6402718,United States (the),Sea (mobile),Closed,2025-08-18,2022-08-23,71.305,12.489,SIO-DB:Closed
+6402719,United States (the),Sea (mobile),Closed,2025-08-18,2022-07-13,71.634,-1.365,SIO-DB:Closed
+6402720,United States (the),Sea (mobile),Closed,2025-08-18,2022-09-08,72.123,42.109,SIO-DB:Closed
+6402721,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-10,71.59,7.824,SIO-DB:Closed
+6402722,United States (the),Sea (mobile),Closed,2025-08-18,2021-12-13,69.703,-10.195,SIO-DB:Closed
+6402730,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-11,63.857,-40.593,SIO-DB:Closed
+6402731,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-23,64.477,-14.489,SIO-DB:Closed
+6402732,United States (the),Sea (mobile),Closed,2025-08-18,2024-03-05,70.887,24.652,SIO-DB:Closed
+6402733,United States (the),Sea (mobile),Closed,2025-10-30,2025-07-31,72.019,29.721,SIO-DB:Closed
+6402734,United States (the),Sea (mobile),Closed,2025-08-18,2024-02-26,62.771,-8.461,SIO-DB:Closed
+6402737,United States (the),Sea (mobile),Closed,2025-09-09,2024-04-22,69.911,18.032,Global Drifter Program (GDP):Closed
+6402739,United States (the),Sea (mobile),Operational,2025-08-18,,75.158,46.286,Global Drifter Program (GDP):Operational
+6402740,United States (the),Sea (mobile),Closed,2025-08-18,2024-09-21,70.853,29.151,Global Drifter Program (GDP):Closed
+6501500_100-6501500,United States (the),Sea (mobile),Silent,2025-08-18,2021-03-30,61.176,-60.086,"AOML:Non-reporting, SIO-DB:Closed"
+6501501_100-6501501,United States (the),Sea (mobile),Operational,2025-08-18,,56.621,-6.229,"AOML:Operational, SIO-DB:Closed"
+6501502_100-6501502,United States (the),Sea (mobile),Operational,2025-08-18,,65.145,-38.109,"AOML:Operational, SIO-DB:Closed"
+6501504_100-6501504,United States (the),Sea (mobile),Closed,2025-08-18,2020-10-21,62.704,-62.992,"AOML:Closed, SIO-DB:Closed"
+6501541_100-6501541,United States (the),Sea (mobile),Operational,2025-08-18,,45.973,-20.868,"AOML:Operational, SIO-DB:Closed"
+6501543_100-6501543,United States (the),Sea (mobile),Closed,2025-08-18,2021-01-20,47.296,-42.848,"AOML:Closed, SIO-DB:Closed"
+6501544_100-6501544,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-06,53.211,-55.692,"AOML:Closed, SIO-DB:Closed"
+6501670,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-08,79.623,18.243,SIO-DB:Closed
+6501671,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-20,80.42,22.554,SIO-DB:Closed
+6501674,United States (the),Sea (mobile),Closed,2025-08-18,2022-10-08,80.438,23.261,SIO-DB:Closed
+6501675,United States (the),Sea (mobile),Silent,2025-08-18,,73.839,-7.99,SIO-DB:Non-reporting
+6501679,United States (the),Sea (mobile),Closed,2025-08-18,2022-11-26,67.843,-31.752,SIO-DB:Closed
+6501689,United States (the),Sea (mobile),Closed,2025-08-18,2022-07-05,78.792,25.949,SIO-DB:Closed
+6501695_100-6501695,United States (the),Sea (mobile),Operational,2025-08-18,,60.004,11.138,"AOML:Operational, SIO-DB:Closed"
+6501704_100-6501704,United States (the),Sea (mobile),Closed,2025-08-18,2021-02-07,61.217,-60.442,"AOML:Closed, SIO-DB:Closed"
+6900114,United States (the),Underwater (mobile),Closed,2026-02-27,2014-10-28,63.018,-19.386,ARGO EQ. NAVOCEANO:Closed
+6900318,United States (the),Underwater (mobile),Closed,2026-02-27,2015-07-06,73.014,-12.106,ARGO EQ. NAVOCEANO:Closed
+6900319,United States (the),Underwater (mobile),Closed,2026-02-27,2015-12-02,68.623,-9.742,ARGO EQ. NAVOCEANO:Closed
+6900373,United States (the),Underwater (mobile),Closed,2026-02-27,2014-11-04,62.397,-1.721,ARGO EQ. NAVOCEANO:Closed
+6900375,United States (the),Underwater (mobile),Closed,2026-02-27,2015-08-20,69.048,4.933,ARGO EQ. NAVOCEANO:Closed
+6900376,United States (the),Underwater (mobile),Closed,2026-02-27,2015-08-02,69.747,18.314,ARGO EQ. NAVOCEANO:Closed
+6900380,United States (the),Underwater (mobile),Closed,2026-02-27,2017-03-21,61.41,-59.084,ARGO EQ. NAVOCEANO:Closed
+6900414,United States (the),Underwater (mobile),Closed,2026-02-27,2016-04-13,62.48,1.426,ARGO EQ. NAVOCEANO:Closed
+6900428,United States (the),Underwater (mobile),Closed,2026-02-27,2018-10-10,70.697,23.568,ARGO EQ. NAVOCEANO:Closed
+6900429,United States (the),Underwater (mobile),Closed,2026-02-27,2019-02-27,60.198,-28.751,ARGO EQ. NAVOCEANO:Closed
+6900430,United States (the),Underwater (mobile),Closed,2026-02-27,2019-02-27,68.131,8.594,ARGO EQ. NAVOCEANO:Closed
+6900438,United States (the),Underwater (mobile),Silent,2026-02-27,,72.299,3.665,ARGO EQ. NAVOCEANO:Non-reporting
+6900440,United States (the),Underwater (mobile),Silent,2026-02-27,,70.285,-10.814,ARGO EQ. NAVOCEANO:Non-reporting
+6900441,United States (the),Underwater (mobile),Silent,2026-02-27,,68.464,-18.462,ARGO EQ. NAVOCEANO:Non-reporting
+6900443,United States (the),Underwater (mobile),Silent,2026-02-27,,65.666,1.019,ARGO EQ. NAVOCEANO:Non-reporting
+6903327,United States (the),Underwater (mobile),Closed,2026-02-27,2019-09-27,60.371,-9.289,ARGO EQ. NAVOCEANO:Closed
+6903330,United States (the),Underwater (mobile),Silent,2026-02-27,,65.743,-0.645,ARGO EQ. NAVOCEANO:Non-reporting
+6903331,United States (the),Underwater (mobile),Closed,2026-02-27,2020-01-04,63.186,-4.689,ARGO EQ. NAVOCEANO:Closed
+6990555,United States (the),Underwater (mobile),Silent,2026-10-16,,73.754,-149.465,ARGO SIO:Non-reporting
+6990556,United States (the),Underwater (mobile),Silent,2026-10-08,,75.47,-145.584,ARGO SIO:Non-reporting
+6990557,United States (the),Underwater (mobile),Operational,2026-10-08,,74.154,-142.103,ARGO SIO:Operational
+6990558,United States (the),Underwater (mobile),Operational,2026-10-08,,76.978,-134.149,ARGO SIO:Operational
+6990559,United States (the),Underwater (mobile),Operational,2026-10-08,,76.107,-139.266,ARGO SIO:Operational
+6990560,United States (the),Underwater (mobile),Operational,2026-10-08,,73.467,-154.99,ARGO SIO:Operational
+6990561,United States (the),Underwater (mobile),Operational,2026-10-08,,75.719,-139.515,ARGO SIO:Operational
+6990563,United States (the),Underwater (mobile),Operational,2026-08-24,,72.524,-145.605,ARGO SIO:Operational
+6990564,United States (the),Underwater (mobile),Operational,2026-11-03,,73.245,-159.673,ARGO SIO:Operational
+6990565,United States (the),Underwater (mobile),Operational,2026-10-08,,74.477,-139.528,ARGO SIO:Operational
+6999993,United States (the),Underwater (mobile),Silent,2026-07-31,,75.356,-61.478,ARGO WHOI:Non-reporting
+6WW94PK,United States (the),Sea (mobile),Silent,2025-10-19,,71.4,-156.6,VOS-US:Non-reporting
+7810005,United States (the),Sea (mobile),Operational,2025-06-11,,71.23,-148.792,Global Drifter Program (GDP):Operational
+7810006,United States (the),Sea (mobile),Operational,2025-06-11,,61.307,-171.726,Global Drifter Program (GDP):Operational
+7810580,United States (the),Sea (mobile),Operational,2025-03-25,,68.094,-3.207,Global Drifter Program (GDP):Operational
+7810582,United States (the),Sea (mobile),Closed,2025-03-25,2026-02-15,64.807,10.541,Global Drifter Program (GDP):Closed
+7810583,United States (the),Sea (mobile),Operational,2025-03-25,,64.859,2.256,Global Drifter Program (GDP):Operational
+7810584,United States (the),Sea (mobile),Operational,2025-03-25,,64.848,-5.511,Global Drifter Program (GDP):Operational
+7810586,United States (the),Sea (mobile),Operational,2025-03-25,,65.822,-7.231,Global Drifter Program (GDP):Operational
+7810587,United States (the),Sea (mobile),Operational,2025-03-25,,61.618,-23.927,Global Drifter Program (GDP):Operational
+7810977,United States (the),Sea (mobile),Operational,2026-05-26,,66.652,-32.486,Global Drifter Program (GDP):Operational
+7810979,United States (the),Sea (mobile),Operational,2026-05-26,,64.007,-40.07,Global Drifter Program (GDP):Operational
+7810980,United States (the),Sea (mobile),Operational,2026-05-26,,65.772,-37.063,Global Drifter Program (GDP):Operational
+7810981,United States (the),Sea (mobile),Operational,2026-05-26,,66.875,-33.772,Global Drifter Program (GDP):Operational
+7901119,United States (the),Underwater (mobile),Silent,2026-10-08,,74.601,-137.828,ARGO SIO:Non-reporting
+7901120,United States (the),Underwater (mobile),Operational,2026-10-08,,73.386,-162.398,ARGO SIO:Operational
+7902433,United States (the),Underwater (mobile),Silent,2026-11-02,,73.167,-144.993,ARGO SIO:Non-reporting
+7902435,United States (the),Underwater (mobile),Silent,2026-11-02,,74.571,-145.69,ARGO SIO:Non-reporting
+7902436,United States (the),Underwater (mobile),Silent,2026-11-01,,75.718,-141.268,ARGO SIO:Non-reporting
+7902437,United States (the),Underwater (mobile),Silent,2026-11-02,,73.754,-147.011,ARGO SIO:Non-reporting
+7902438,United States (the),Underwater (mobile),Silent,2026-11-02,,74.242,-138.225,ARGO SIO:Non-reporting
+7LUP2KP,United States (the),Sea (mobile),Silent,2025-10-27,,60.5,-165.1,VOS-US:Non-reporting
+7PYR52J,United States (the),Sea (mobile),Silent,2026-10-05,,67.6,-164.2,VOS-US:Non-reporting
+8MW4EHW,United States (the),Sea (mobile),Operational,2026-10-15,,60.3,-146.7,VOS-US:Operational
+9DAHEZQ,United States (the),Sea (mobile),Silent,2026-09-21,,66.1,-162.7,VOS-US:Non-reporting
+9EHMZWV,United States (the),Sea (mobile),Operational,2026-10-29,,67.7,-173.1,VOS-US:Operational
+BMC5FFA,United States (the),Sea (mobile),Silent,2026-11-08,,65.2,-166.7,VOS-US:Non-reporting
+BRQMKUV,United States (the),Sea (mobile),Operational,2026-10-02,,60.6,-151.4,VOS-US:Operational
+CAA7ZYT,United States (the),Sea (mobile),Operational,2026-09-23,,64.8,-166.7,VOS-US:Operational
+CZCGVXZ,United States (the),Sea (mobile),Operational,2026-10-12,,61.4,178.4,VOS-US:Operational
+DPMSWTG,United States (the),Sea (mobile),Silent,2026-08-09,,60.8,177.5,VOS-US:Non-reporting
+DPVJPNK,United States (the),Sea (mobile),Silent,2026-07-31,,66.9,-166.7,VOS-US:Non-reporting
+ELCUMWU,United States (the),Sea (mobile),Operational,2026-10-21,,60.6,-147.5,VOS-US:Operational
+FKB4ZVJ,United States (the),Sea (mobile),Silent,2026-09-14,,65.7,-169.6,VOS-US:Non-reporting
+GBJSBRP,United States (the),Sea (mobile),Silent,2025-08-18,,61.2,-149.9,VOS-US:Non-reporting
+GGG5XFX,United States (the),Sea (mobile),Operational,2025-08-18,,61.1,-146.3,VOS-US:Operational
+JPXYABB,United States (the),Sea (mobile),Operational,2026-04-16,,60.1,-149.4,VOS-US:Operational
+KUHP6AQ,United States (the),Sea (mobile),Silent,2026-10-09,,71.3,-156.9,VOS-US:Non-reporting
+MCJJKVQ,United States (the),Sea (mobile),Operational,2025-08-18,,64.1,-10.1,VOS-US:Operational
+MLBS7AF,United States (the),Sea (mobile),Operational,2026-01-08,,60.1,-149.4,VOS-US:Operational
+MSNRJBX,United States (the),Sea (mobile),Silent,2025-09-13,,74.3,-95,VOS-US:Non-reporting
+PGHHFLR,United States (the),Sea (mobile),Silent,2025-08-18,,66.8,-163.8,VOS-US:Non-reporting
+PQF2SPC,United States (the),Sea (mobile),Silent,2025-09-29,,69.1,-178.3,VOS-US:Non-reporting
+QFH3JWE,United States (the),Sea (mobile),Operational,2026-07-04,,60.2,4,VOS-US:Operational
+QJCBKVU,United States (the),Sea (mobile),Operational,2026-04-17,,60.1,-149.4,VOS-US:Operational
+QKD9VCA,United States (the),Sea (mobile),Operational,2026-10-30,,61.2,-149.8,VOS-US:Operational
+QNH32UP,United States (the),Sea (mobile),Operational,2026-11-04,,60.3,-146.7,VOS-US:Operational
+QTAVSQU,United States (the),Sea (mobile),Operational,2026-10-22,,60.3,-146.7,VOS-US:Operational
+RNLUJNF,United States (the),Sea (mobile),Operational,2026-08-01,,76.5,-68.9,VOS-US:Operational
+RUEK7SA,United States (the),Sea (mobile),Operational,2026-10-29,,60.3,-146.7,VOS-US:Operational
+SET2MMJ,United States (the),Sea (mobile),Silent,2026-10-26,,61.5,178.7,VOS-US:Non-reporting
+SGVWMFB,United States (the),Sea (mobile),Silent,2025-10-19,,67.6,-164.2,VOS-US:Non-reporting
+TCM5MVP,United States (the),Sea (mobile),Silent,2026-11-16,,60.3,-146.7,VOS-US:Non-reporting
+UBTNWBD,United States (the),Sea (mobile),Operational,2026-10-10,,60.6,-147.8,VOS-US:Operational
+UQCW45B,United States (the),Sea (mobile),Silent,2026-11-13,,60.3,-146.7,VOS-US:Non-reporting
+WKPJG9M,United States (the),Sea (mobile),Operational,2026-10-04,,60.1,-165.3,VOS-US:Operational
+WVA7BBP,United States (the),Sea (mobile),Silent,2026-10-26,,62.8,-165,VOS-US:Non-reporting
+XGEZT3G,United States (the),Sea (mobile),Silent,2026-02-09,,84.8,62.9,VOS-US:Non-reporting
+XZXTBKL,United States (the),Sea (mobile),Silent,2026-10-23,,69,-105.1,VOS-US:Non-reporting
+YMB4PPC,United States (the),Sea (mobile),Closed,2025-08-18,2022-01-07,60.9,-146.8,VOS-US:Closed
+YTX4DCW,United States (the),Sea (mobile),Silent,2025-08-18,,60.2,4.3,VOS-US:Non-reporting
+ZAWZB9N,United States (the),Sea (mobile),Silent,2026-09-06,,60.3,-146.7,VOS-US:Non-reporting
+ZCQZCUN,United States (the),Sea (mobile),Operational,2026-09-30,,60.6,-147.5,VOS-US:Operational
+ZJC2N4F,United States (the),Sea (mobile),Closed,2025-08-18,2020-01-24,60.7,-151.6,VOS-US:Closed
+ZMU7DJS,United States (the),Sea (mobile),Operational,2025-08-18,,63.9,-93.6,VOS-US:Operational

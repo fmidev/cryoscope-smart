@@ -22,9 +22,13 @@ This folder contains a comprehensive analysis of Arctic meteorological stations 
 **Note on the reports above:** the "Core Reports" describe a single 2026 snapshot of
 the station network (the WMO OSCAR export only includes currently-Operational
 stations) and still include 14 Bosnia and Herzegovina WMO **test stations** (not
-real Arctic observing sites) in their totals and High Arctic counts. For how the
-network has changed *over time* since the 1980s — and with those test stations
-excluded — see
+real Arctic observing sites) in their totals and High Arctic counts. The bundled
+`oscar_arctic_stations_60n.csv` export was also found to **undercount even the
+Operational stations** by 10-46% depending on country (see the evolution report) —
+for anything beyond a quick first look, use
+[oscar_arctic_land_stations_allstatus_60n.csv](oscar_arctic_land_stations_allstatus_60n.csv)
+instead. For how the network has changed *over time* since the 1980s — with the
+undercount fixed and closures finally included — see
 [ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md](ARCTIC_STATION_NETWORK_EVOLUTION_1980-PRESENT.md).
 
 ### Marine Observations Follow-Up
@@ -34,6 +38,11 @@ excluded — see
   charts against the OSCAR data, explains why the global ship-observation growth
   trend doesn't carry over to the Arctic Ocean, and reconstructs a 2000-2024 trend
   in Arctic drifting-buoy counts from public IABP data.
+- **[ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md)** -
+  Pulls OSCAR's own ship/buoy/float register (all declared statuses) for ≥60°N,
+  cross-checks it against the external IABP estimate, and explains why these
+  platforms' OSCAR establishment dates can't be used for a time-series analysis
+  the way land-station dates can.
 
 ---
 
@@ -51,14 +60,28 @@ excluded — see
   - Ideal for climate research and polar monitoring
 
 ### Network Evolution Dataset
+- **[oscar_arctic_land_stations_allstatus_60n.csv](oscar_arctic_land_stations_allstatus_60n.csv)**
+  - **Supersedes the primary dataset above for historical/evolution analysis.**
+    1,621 land stations (`Land (fixed)` + `Land (on ice)`) north of 60°N, **all
+    declared statuses** (Operational, Closed, Silent, Partly operational, Unknown),
+    pulled directly from the OSCAR API rather than the bundled export
+  - Includes `Date established` and `Date closed` for true historical active-count analysis
+- **[oscar_arctic_land_stations_by_decade_allstatus.csv](oscar_arctic_land_stations_by_decade_allstatus.csv)**
+  - Established/closed/net-change/cumulative true-active counts per decade (pre-1980 through 2020s)
 - **[oscar_arctic_stations_by_decade.csv](oscar_arctic_stations_by_decade.csv)**
-  - New and cumulative active-station counts per decade (pre-1980 through 2020s), by country
-  - Derived from the `Date established` field of the primary dataset; see the evolution report for caveats
+  - *(Superseded — kept for history)* Same idea but from the undercounted,
+    operational-only bundled CSV; see the evolution report for why the file above
+    should be used instead
 
 ### Marine Observations Dataset
 - **[iabp_arctic_buoy_counts_by_year.csv](iabp_arctic_buoy_counts_by_year.csv)**
   - Distinct International Arctic Buoy Programme (IABP) buoy IDs reporting from ≥60°N, for 13 sample years 2000-2024
   - Reconstructed from IABP's public Level-1 bulk per-year data; see the marine observations report for methodology and caveats
+- **[oscar_arctic_marine_platforms_allstatus_60n.csv](oscar_arctic_marine_platforms_allstatus_60n.csv)**
+  - 1,651 OSCAR-registered marine/ocean platforms (ships, drifting ice buoys, moored
+    buoys, Argo floats) north of 60°N, all declared statuses, with program affiliation
+  - See [ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md) for why
+    these platforms' dates aren't used for a time series the way land stations' are
 
 ---
 
@@ -75,7 +98,12 @@ excluded — see
   - Elevation analysis and sector distribution
 
 - **[oscar_arctic_station_network_evolution.png](oscar_arctic_station_network_evolution.png)**
-  - Cumulative active-station growth by establishment year (1950-2026) and new stations added per decade, by country
+  - *(Superseded)* Cumulative active-station growth from the undercounted,
+    operational-only bundled CSV — see
+    [oscar_arctic_land_stations_true_evolution.png](oscar_arctic_land_stations_true_evolution.png) below instead
+- **[oscar_arctic_land_stations_true_evolution.png](oscar_arctic_land_stations_true_evolution.png)**
+  - TRUE cumulative active-station count by establishment year (1950-2026),
+    accounting for real closures, plus stations established vs. closed per decade
 
 ### Marine Observations Context
 
@@ -87,6 +115,8 @@ excluded — see
   domain) used as a reference in the marine observations report
 - **[iabp_arctic_buoy_count_trend.png](iabp_arctic_buoy_count_trend.png)** -
   Reconstructed count of distinct IABP drifting buoys reaching ≥60°N per year, 2000-2024
+- **[oscar_arctic_marine_platforms_by_status.png](oscar_arctic_marine_platforms_by_status.png)** -
+  OSCAR-registered marine/ocean platforms (ships, ice buoys, Argo floats) by type and current status
 
 ---
 
