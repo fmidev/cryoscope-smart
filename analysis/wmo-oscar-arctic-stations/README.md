@@ -44,6 +44,14 @@ undercount fixed and closures finally included — see
   platforms' OSCAR establishment dates can't be used for a time-series analysis
   the way land-station dates can.
 
+### Geographic Context
+- **[ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md](ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md)** -
+  The latitude-band histograms elsewhere in this folder slice equal-sized degree
+  bands that represent very different amounts of actual ground: this shows how
+  sharply the circumference of the circle of latitude shrinks toward the pole, and
+  checks (and confirms) that the High Arctic monitoring gap is real even after
+  adjusting for that shrinking ring.
+
 ---
 
 ## 📊 Data Files
@@ -83,6 +91,11 @@ undercount fixed and closures finally included — see
   - See [ARCTIC_MARINE_OSCAR_REGISTRY.md](ARCTIC_MARINE_OSCAR_REGISTRY.md) for why
     these platforms' dates aren't used for a time series the way land stations' are
 
+### Geographic Context Dataset
+- **[latitude_circle_length_by_band.csv](latitude_circle_length_by_band.csv)**
+  - Operational station count, latitude-circle circumference, and stations-per-1,000km-of-circle for each 5° band 60-90°N
+  - See [ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md](ARCTIC_LATITUDE_CIRCLE_GEOMETRY.md) for the derivation and findings
+
 ---
 
 ## 📈 Visualizations
@@ -117,6 +130,15 @@ undercount fixed and closures finally included — see
   Reconstructed count of distinct IABP drifting buoys reaching ≥60°N per year, 2000-2024
 - **[oscar_arctic_marine_platforms_by_status.png](oscar_arctic_marine_platforms_by_status.png)** -
   OSCAR-registered marine/ocean platforms (ships, ice buoys, Argo floats) by type and current status
+
+### Geographic Context
+
+- **[oscar_latitude_distribution_with_circle_length.png](oscar_latitude_distribution_with_circle_length.png)** -
+  Updated version of the dashboard's "Latitude Distribution" panel, with the
+  circumference of the circle of latitude overlaid on a secondary axis
+- **[oscar_latitude_circle_length_vs_stations.png](oscar_latitude_circle_length_vs_stations.png)** -
+  3-panel band view: station counts by 5° latitude band, circle-of-latitude
+  circumference, and the resulting density-adjusted coverage
 
 ---
 
